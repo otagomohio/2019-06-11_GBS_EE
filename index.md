@@ -15,6 +15,7 @@ by using restriction enzymes to repeatedly sequence the same genomic locations a
 individuals. The thousands of loci sequenced can bring high resolution to population
 genomic or phylogenomic analyses at a fraction of the cost associated with whole genome
 sequencing.
+
 This two day workshop is designed to show how to process GBS/RAD data through
 hands\-on analysis using the Stacks software pipeline. It will be opened by a mini\-symposia
 where researchers will share experiences using GBS/RADseq to answer questions in their
@@ -34,7 +35,7 @@ Time | Topic | Location |
 15:30-17:00 | Introduction to the command line, part 2 | Seminar Room, Marples Building |
 17:00- | *End of day 1 - Social* | |
  | | |
-**Day 2 June 12 2019** | |
+**Day 2 -** | **June 12 2019** | |
 09:00-10:30 | From raw reads to individual samples  | Seminar Room, Marples Building |
 10:30-11:00 | *Break* | |
 11:00-12:30 | SNP calling in the absence of a genome | Seminar Room, Marples Building |
