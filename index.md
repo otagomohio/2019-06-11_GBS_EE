@@ -27,7 +27,7 @@ research.
 
 Time | Topic | Location |
 ------|------|-----|
-09:00-12:00 | **Mini Symposia: Genotyping-by-Sequencing and its applications in ecology and evolution** | Seminar Room, Benham Building |
+09:00-12:00 | **Mini Symposium: Genotyping-by-Sequencing and its applications in ecology and evolution** | Seminar Room, Benham Building |
 12:00-13:00 | *Lunch Break* | |
 13:00-13:30 | Participant introduction | Seminar Room, Marples Building |
 13:30-15:00 | Introduction to the command line, part 1 | Seminar Room, Marples Building |
@@ -38,9 +38,9 @@ Time | Topic | Location |
 **Day 2 -** | **June 12 2019** | |
 09:00-10:30 | From raw reads to individual samples  | Seminar Room, Marples Building |
 10:30-11:00 | *Break* | |
-11:00-12:30 | SNP calling in the absence of a genome | Seminar Room, Marples Building |
+11:00-12:30 | SNP calling in the absence of a genome part 1 | Seminar Room, Marples Building |
 12:30-13:30 | *Lunch Break* | |
-13:30-15:00 | SNP calling in the absence of a genome | Seminar Room, Marples Building |
+13:30-15:00 | SNP calling in the absence of a genome part 2 | Seminar Room, Marples Building |
 15:00-15:30 | *Break* | |
 15:30-17:00 | Filtering your variants | Seminar Room, Marples Building |
 
