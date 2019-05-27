@@ -27,10 +27,10 @@ research.
 
 Time | Topic | Location |
 ------|------|-----|
-09:00-12:00 | **Mini Symposium: Genotyping-by-Sequencing and its applications in ecology and evolution** | Seminar Room, Benham Building |
-12:00-13:00 | *Lunch Break* | |
-13:00-13:30 | Participant introduction | Seminar Room, Marples Building |
-13:30-15:00 | Introduction to the command line, part 1 | Seminar Room, Marples Building |
+09:00-12:30 | **Mini Symposium: Genotyping-by-Sequencing and its applications in ecology and evolution** | Seminar Room, Benham Building |
+12:30-13:15 | *Lunch Break* | |
+13:15-13:45 | Participant introduction | Seminar Room, Marples Building |
+13:45-15:00 | Introduction to the command line, part 1 | Seminar Room, Marples Building |
 15:00-15:30 | *Break* | |
 15:30-17:00 | Introduction to the command line, part 2 | Seminar Room, Marples Building |
 17:00- | *End of day 1 - Social* | |
