@@ -42,7 +42,7 @@ Time | Topic | Location |
 12:30-13:30 | *Lunch Break* | |
 13:30-15:00 | SNP calling in the absence of a genome part 2 | [Seminar Room, Marples Building](https://goo.gl/maps/62XWtwgqsKxKir4V9) |
 15:00-15:30 | *Break* | |
-15:30-17:00 | Filtering your variants | Seminar Room, Marples Building](https://goo.gl/maps/62XWtwgqsKxKir4V9) |
+15:30-17:00 | Filtering your variants | [Seminar Room, Marples Building](https://goo.gl/maps/62XWtwgqsKxKir4V9) |
 
 
 
