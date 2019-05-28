@@ -19,7 +19,7 @@ Time | Topic | Speaker |
 09:00-09:05 | *Introduction* | Alana Alexander |
 09:05-09:20 | Genomics Aotearoa| TBD|
 09:20-09:40 | Talk  | TBD |
-09:40:-10:00 |  | Talk  | TBD |
+09:40:-10:00 |  Talk  | TBD |
 13:00-11:20 | *Coffee Break* | |
 15:30-17:00 | Lighting talks | TBD |
 17:00- | *End of day 1 - Social* | |
