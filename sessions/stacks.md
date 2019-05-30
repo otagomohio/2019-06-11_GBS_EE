@@ -1,6 +1,6 @@
 **In construction**
-
-* Reminder of yesterday
+CREDIT JULIAN
+* Reminder of day 1
 * Short intro on RAD/GBS
 * Intro on FASTQ files. FASTQC
 * Following Julian Catchen's intro. Run the long bit on the front end but also as slurm.
