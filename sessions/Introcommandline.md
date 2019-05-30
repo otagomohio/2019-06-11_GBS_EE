@@ -1,4 +1,3 @@
-**In construction**
 
 # Introduction to the command line
 
@@ -20,14 +19,11 @@ We weill go through the following carpentries lessons:
 * [Working With Files and Directories](https://swcarpentry.github.io/shell-novice/03-create/index.html)
 * [Pipes and Filters](https://swcarpentry.github.io/shell-novice/04-pipefilter/index.html)
 * [Finding things](https://swcarpentry.github.io/shell-novice/07-find/index.html)
+* [Loops](https://swcarpentry.github.io/shell-novice/05-loop/index.html)
 
 
 
 **In Construction**
-And this additional tools:
-* copying and moving files (cp / mv)
-* parameters and help for command-line programs
-
 If extra time: loops
 
 Learning the command line might seem hard at first but it gets a lot easier with a little bit of practice!
