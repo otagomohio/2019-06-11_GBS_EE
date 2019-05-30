@@ -2,7 +2,7 @@
 
 ### Practical workshop on the analysis of reduced representation libraries using Stacks
 
-June 11-12 2019 | Ludovic Dutoit, Alana Alexander
+June 11-12 2019 | Ludovic Dutoit and Alana Alexander
 
 ## Description
 With the age of high\-throughput sequencing, several techniques have been developed to
