@@ -14,6 +14,7 @@ In this symposium, we are delighted to be able to present a range of talks from 
 This Mini-symposium will serve as an opening for a two-days hands-on workshop introducing the practicalities of GBS to a wide audience.
 
 
+
 Time | Topic | Speaker |
 ------|------|-----|
 09:00-09:05 | Welcoming remarks | Alana Alexander |
