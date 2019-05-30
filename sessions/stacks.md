@@ -505,98 +505,92 @@ menu and then “Show”.
 can you tell?
 
 ### Citations and Readings
-Paris, J. R., Stevens, J. R., & Catchen, J. M. (2017). Lost in parameter space: a road map for stacks.Methods in Ecology and Evolution, 188, 799–14.
+* Paris, J. R., Stevens, J. R., & Catchen, J. M. (2017). Lost in parameter space: a road map for stacks.Methods in Ecology and Evolution, 188, 799–14.
 Rochette, N. C., & Catchen, J. M. (2017). Deriving genotypes from RAD-seq short-read datausing Stacks. Nature Protocols, 12(12), 2640–2659.
-Catchen, J. et al. 2013a. The population structure and recent colonization history of Oregonthreespine stickleback determined using restriction-site associated DNA-sequencing. Molecular Ecology, 22:2864–2883.
-Nelson, T. C. and Cresko, W. A. 2018. Ancient genomic variation underlies repeated ecological
+* Catchen, J. et al. 2013a. The population structure and recent colonization history of Oregonthreespine stickleback determined using restriction-site associated DNA-sequencing. Molecular Ecology, 22:2864–2883.
+* Nelson, T. C. and Cresko, W. A. 2018. Ancient genomic variation underlies repeated ecological
 adaptation in young stickleback populations. Evolution Letters, 2: 9-21.
-McCluskey, B. M., & Postlethwait, J. H. (2015). Phylogeny of zebrafish, a "model species," within
+* McCluskey, B. M., & Postlethwait, J. H. (2015). Phylogeny of zebrafish, a "model species," within
 Danio, a "model genus". Molecular Biology and Evolution, 32(3), 635–652.
-Core readings in preparation for the lecture and workshop
-Amores, A., et al. 2011. Genome evolution and meiotic maps by massively parallel DNA
+* Amores, A., et al. 2011. Genome evolution and meiotic maps by massively parallel DNA
 sequencing. Genetics 188:799-808.
-Andrews, K. R., Good, J. M., Miller, M. R., Luikart, G., & Hohenlohe, P. A. (2016). Harnessing
+* Andrews, K. R., Good, J. M., Miller, M. R., Luikart, G., & Hohenlohe, P. A. (2016). Harnessing
 the power of RADseq for ecological and evolutionary genomics. Nature Reviews Genetics 1–
-12.
-Arnold, B. et al. 2013. RADseq underestimates diversity and introduces genealogical biases due
+* Arnold, B. et al. 2013. RADseq underestimates diversity and introduces genealogical biases due
 to nonrandom haplotype sampling. Molecular Ecology 22: 3179–3190.
 Catchen, J. et al. 2011. Stacks: building and genotyping loci de novo from short-read sequences.
 G3: Genes, Genomes and Genetics 1:171-182.
-Catchen, J. et al. 2013b. Stacks: an analysis tool set for population genomics. Molecular Ecology
+* Catchen, J. et al. 2013b. Stacks: an analysis tool set for population genomics. Molecular Ecology
 22:3124–3140.
-Davey, J. W., et al. 2011. Genome-wide genetic marker discovery and genotyping using nextgeneration
+* Davey, J. W., et al. 2011. Genome-wide genetic marker discovery and genotyping using nextgeneration
 sequencing. Nature Reviews Genetics 12:499-510.
-Davey, J. W. et al. Special features of RAD Sequencing data: implications for genotyping.
+* Davey, J. W. et al. Special features of RAD Sequencing data: implications for genotyping.
 Molecular Ecology 22: 3151–3164.
-Etter, P. D., et al. 2011. SNP Discovery and Genotyping for Evolutionary Genetics using RAD
+* Etter, P. D., et al. 2011. SNP Discovery and Genotyping for Evolutionary Genetics using RAD
 sequencing. in Molecular Methods in Evolutionary Genetics, Rockman, M., and Orgonogozo,
 V., eds.
-Ekblom, R., and J. Galindo. 2010. Applications of next generation sequencing in molecular
+* Ekblom, R., and J. Galindo. 2010. Applications of next generation sequencing in molecular
 ecology of non-model organisms. Heredity 107:1-15.
-Hohenlohe, P. A. et al. 2010. Population genomics of parallel adaptation in threespine
+* Hohenlohe, P. A. et al. 2010. Population genomics of parallel adaptation in threespine
 stickleback using sequenced RAD tags. PLoS Genetics 6: 1-23.
-Lescak, E. A., Bassham, S. L., Catchen, J., gelmond, O., Sherbick, M. L., Hippel, von, F. A., &
+* Lescak, E. A., Bassham, S. L., Catchen, J., gelmond, O., Sherbick, M. L., Hippel, von, F. A., &
 Cresko, W. A. (2015). Evolution of stickleback in 50 years on earthquake-uplifted islands.
 Proceedings of the National Academy of Sciences 112(52), E7204–12.
-Population genomics background, concepts and statistical considerations
-16
-Cariou, M. et al. 2013. Is RAD-seq suitable for phylogenetic inference? An in silico assessment
+* Population genomics background, concepts and statistical considerations
+* Cariou, M. et al. 2013. Is RAD-seq suitable for phylogenetic inference? An in silico assessment
 and optimization. Ecol Evol 3, 846–852.
-Gompert, Z., and C. A. Buerkle. 2011a. A hierarchical Bayesian model for next-generation
+* Gompert, Z., and C. A. Buerkle. 2011a. A hierarchical Bayesian model for next-generation
 population genomics. Genetics 187:903-917.
 Hohenlohe, P. A., et al. 2010. Using population genomics to detect selection in natural
 populations: Key concepts and methodological considerations. International Journal of Plant
 Sciences 171:1059-1071.
-Luikart, G.,et al. 2003. The power and promise of population genomics: from genotyping to
+* Luikart, G.,et al. 2003. The power and promise of population genomics: from genotyping to
 genome typing. Nature Reviews Genetics 4:981-994.
-Lynch, M. 2009. Estimation of allele frequencies from high-coverage genome-sequencing
+* Lynch, M. 2009. Estimation of allele frequencies from high-coverage genome-sequencing
 projects. Genetics 182:295-301.
-Nielsen, R., et al. 2005. Genomic scans for selective sweeps using SNP data. Genome Research
+* Nielsen, R., et al. 2005. Genomic scans for selective sweeps using SNP data. Genome Research
 15:1566-1575.
-Nielsen, R., et al. 2011. Genotype and SNP calling from next-generation sequencing data.
+* Nielsen, R., et al. 2011. Genotype and SNP calling from next-generation sequencing data.
 Nature Reviews Genetics 12:443-451.
-Rubin, B. E. R. et al. 2012. Inferring Phylogenies from RAD Sequence Data. PLoS ONE 7,
+* Rubin, B. E. R. et al. 2012. Inferring Phylogenies from RAD Sequence Data. PLoS ONE 7,
 e33394–e33394.
-Stapley, J., et al. 2010. Adaptation genomics: the next generation. Trends in Ecology and
+* Stapley, J., et al. 2010. Adaptation genomics: the next generation. Trends in Ecology and
 Evolution 25:705-712.
-Empirical studies using RRL and RAD sequencing
-Altshuler, D., et al. 2000. An SNP map of the human genome generated by reduced
+* Altshuler, D., et al. 2000. An SNP map of the human genome generated by reduced
 representation shotgun sequencing. Nature 407:513-516.
-Baxter, S. W., et al. 2011. Linkage mapping and comparative genomics using next-generation
+* Baxter, S. W., et al. 2011. Linkage mapping and comparative genomics using next-generation
 RAD sequencing of a non-model organism. PLoS ONE 6:e19315.
 Chutimanitsakun, Y., et al. 2011. Construction and application for QTL analysis of a Restriction
 Site Associated DNA (RAD) linkage map in barley. BMC Genomics 12: 1-13.
-Emerson, K. J., et al. 2010. Resolving postglacial phylogeography using high-throughput
+* Emerson, K. J., et al. 2010. Resolving postglacial phylogeography using high-throughput
 sequencing. Proceedings of the National Academy of Sciences 107:16196-16200.
-Gore, M. A., et al. 2009. A first-generation haplotype map of maize. Science 326:1115-1117.
-Richards, P. M. et al. 2013. RAD-Seq derived markers flank the shell colour and banding loci of
+* Gore, M. A., et al. 2009. A first-generation haplotype map of maize. Science 326:1115-1117.
+* Richards, P. M. et al. 2013. RAD-Seq derived markers flank the shell colour and banding loci of
 the Cepaea nemoralis supergene. Molecular Ecology 22, 3077–3089.
 RAD-seq genotyping methodology
-Baird, N. A., et al. 2008. Rapid SNP discovery and genetic mapping using sequenced RAD
+* Baird, N. A., et al. 2008. Rapid SNP discovery and genetic mapping using sequenced RAD
 markers. PLoS ONE 3:e3376.
-Etter, P. D., et al. 2011. Local De Novo Assembly of RAD Paired-End Contigs Using Short
+* Etter, P. D., et al. 2011. Local De Novo Assembly of RAD Paired-End Contigs Using Short
 Sequencing Reads. PLoS ONE 6:e18561
-Hohenlohe, P. A., et al. 2011. Next-generation RAD sequencing identifies thousands of SNPs for
+* Hohenlohe, P. A., et al. 2011. Next-generation RAD sequencing identifies thousands of SNPs for
 assessing hybridization between rainbow and westslope cutthroat trout. Molecular Ecology
 Resources 11 Suppl 1:117-122.
-Miller, M. R., et al. 2007. Rapid and cost-effective polymorphism identification and genotyping
+* Miller, M. R., et al. 2007. Rapid and cost-effective polymorphism identification and genotyping
 using restriction site associated DNA (RAD) markers. Genome Research 17:240-248.
-Willing, E. M., et al. 2011. Paired-end RAD-seq for de novo assembly and marker design without
+*Willing, E. M., et al. 2011. Paired-end RAD-seq for de novo assembly and marker design without
 available reference. Bioinformatics 27:2187-2193.
-
-Related reduced representation library (RRL) methodologies
-Andolfatto, P., et al. 2011. Multiplexed shotgun genotyping for rapid and efficient genetic
+* Andolfatto, P., et al. 2011. Multiplexed shotgun genotyping for rapid and efficient genetic
 mapping. Genome Research 21:610-617.
-Elshire, R. J., et al. 2011. A Robust, Simple Genotyping-by-Sequencing (GBS) Approach for High
+* Elshire, R. J., et al. 2011. A Robust, Simple Genotyping-by-Sequencing (GBS) Approach for High
 Diversity Species. PLoS ONE 6:e19379.
-Peterson, B. K. et al. 2012. Double digest RADseq: an inexpensive method for de novo SNP
+* Peterson, B. K. et al. 2012. Double digest RADseq: an inexpensive method for de novo SNP
 discovery and genotyping in model and non-model species. PLoS ONE 7, e37135.
-Rigola, D., et al. 2009. High-Throughput Detection of Induced Mutations and Natural Variation
+* Rigola, D., et al. 2009. High-Throughput Detection of Induced Mutations and Natural Variation
 Using KeyPoint™ Technology. PLoS ONE 4:e4761.
-van Orsouw, N. J., et al. 2007. Complexity reduction of polymorphic sequences (CRoPS): a
+* van Orsouw, N. J., et al. 2007. Complexity reduction of polymorphic sequences (CRoPS): a
 novel approach for large-scale polymorphism discovery in complex genomes. PLoS ONE
 2:e1172.
-van Tassell, C. P., et al. 2008. SNP discovery and allele frequency estimation by deep sequencing
+* van Tassell, C. P., et al. 2008. SNP discovery and allele frequency estimation by deep sequencing
 of reduced representation libraries. Nature Methods 5:247-252
 Wang, S. et al. 2012. 2b-RAD: a simple and flexible method for genome-wide genotyping.
 Nature Methods 9, 808–810.
