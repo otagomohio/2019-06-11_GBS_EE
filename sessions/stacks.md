@@ -9,11 +9,14 @@ CREDIT JULIAN
 * Plan one extra activity if extra time
 
 
-## Genetic and genomic analyses using RAD-seq and Stacks
+# Genetic and genomic analyses using RAD-seq and Stacks
 ### Tutorial developed by: 
 Julian Catchen <jcatchen@illinois.edu>
+
 Department of Animal Biology, University of Illinois at Urbana-Champaign
+
 Nicolas Rochette <rochette@illinois.edu>
+
 Department of Animal Biology, University of Illinois at Urbana-Champaign
 
 ### Objectives:
@@ -30,7 +33,7 @@ signatures of selection. Stacks can be used for other analyses of RAD-seq data a
 such as constructing genetic maps and phylogeography, although those are beyond the
 scope of this exercise.
 
-### Introduction
+## Introduction
 The advent of short-read sequencing technologies has revolutionized the study of genomic
 variation from complete sequences in model organisms such as nematode worms, fruit
 flies, zebrafish, mice and humans. In addition, the long-standing dream of biologists of
