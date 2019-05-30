@@ -24,11 +24,12 @@ We will go through the following carpentries lessons together:
 
 *To develop: Add one exercise to remind the day that is GBS based, in another folder*
 
-## Additional ressources:
-
-* Codecademy
-* The carpentries
-* Linux Cheatsheet
-
+## Additional ressources
 
 Learning the command line might seem hard at first but it gets a lot easier with a little bit of practice!
+
+* [Codecademy](https://www.codecademy.com/learn/learn-the-command-line)
+* [The carpentries](https://otagocarpentries.github.io/)
+* [Linux Cheatsheet](http://cheatsheetworld.com/programming/unix-linux-cheat-sheet/)
+
+
