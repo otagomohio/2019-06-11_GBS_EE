@@ -1,5 +1,3 @@
-**In construction**
-
 # Genotyping-by-Sequencing and its applications in ecology and evolution
 
 Tuesday June 11 2019 | 09:00 - 12-30 | [Seminar Room, Benham Building](https://goo.gl/maps/62XWtwgqsKxKir4V9)
