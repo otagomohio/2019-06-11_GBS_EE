@@ -29,7 +29,7 @@ We will go through the following carpentries lessons together:
 * [Finding things](https://swcarpentry.github.io/shell-novice/07-find/index.html)
 * [Loops](https://swcarpentry.github.io/shell-novice/05-loop/index.html)
 
-*To develop: Add one exercise to remind the day that is GBS based, in another folder*
+We have now gone through the basics of the command line. Let's reinforce some of what we just learnt in this [final exercise]().
 
 ## Additional ressources
 
