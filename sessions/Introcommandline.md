@@ -8,7 +8,9 @@ During this session, we will learn to be comfortable with the command line. Firs
 get people to login, get them in the setup mini directory for themselves.
 SHORT INTRO COMMAND LINE
 
-* NeSI login
+* NeSI login End up by
+
+cd /nesi/project/uoo..../YOURUSERNAME/introunixfolder
 
 ## 2. Introduction to the command line
 
