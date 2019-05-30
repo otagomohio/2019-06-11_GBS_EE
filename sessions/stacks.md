@@ -144,35 +144,35 @@ analysis. We will use the directory ~/working on the cloud to hold these analyse
 careful that your are reading and writing files to the appropriate directories within
 your hierarchy. You’ll be making many directories, so stay organized!
 
-⋅⋅⋅•Each step of your analysis goes into the hierarchy of the workspace, and each step of
-the analysis takes its input from one directory and places it into another directory, this
-is known as a ‘waterfall workspace’. We will name the directories in a way that
-correspond to each stage and that allow us to remember where they are. A well
-organized workspace makes analyses easier and prevents data from being overwritten.
+    •Each step of your analysis goes into the hierarchy of the workspace, and each step of  
+    the analysis takes its input from one directory and places it into another directory, this
+    is known as a ‘waterfall workspace’. We will name the directories in a way that
+    correspond to each stage and that allow us to remember where they are. A well
+    organized workspace makes analyses easier and prevents data from being overwritten.
 
-⋅⋅⋅• In working, create a directory called clean to contain all the data for this exercise.
-Inside that directory create two additional directories: lane1 and samples. We will
-refer to the clean directory as the working directory.
+    • In working, create a directory called clean to contain all the data for this exercise.
+    Inside that directory create two additional directories: lane1 and samples. We will
+    refer to the clean directory as the working directory.
 
-⋅⋅⋅• Unarchive data set 1 (DS1):
-/opt/data/clean/lane1.tar
-to the lane1 directory.
+    • Unarchive data set 1 (DS1):
+       ```/opt/data/clean/lane1.tar```
+       to the lane1 directory.
 
-⋅⋅⋅• You can copy the file to your working directory and use tar to unarchive it, or you can
-change to your working directory and untar it without moving the file (this will save
-you time and will dump the unarchived files into the directory you are currently in).
+    • You can copy the file to your working directory and use tar to unarchive it, or you can
+    change to your working directory and untar it without moving the file (this will save
+    you time and will dump the unarchived files into the directory you are currently in).
 
 4. Your decompressed files has millions of reads in it, too many for you to examine in a
 spreadsheet or word processor. Examine the contents of the set of files in the terminal
 (the head, more, and tail commands may be of use).
 
-⋅⋅⋅• *You should see multiple different lines with different encodings.*
+    • *You should see multiple different lines with different encodings.*
 
-⋅⋅⋅• *How does the FASTQ file format work?*
+    • *How does the FASTQ file format work?*
 
-⋅⋅⋅• *How are quality scores encoded? (See the link to quality scores in Appendix!!!.)*
+    • *How are quality scores encoded? (See the link to quality scores in Appendix!!!.)*
 
-⋅⋅⋅• *How could you tell by eye which type of encoding your data are using?*
+    • *How could you tell by eye which type of encoding your data are using?*
 
 5. You probably noticed that not all of the data is high quality. In general, you will want
 to remove the lowest quality sequences from your data set before you proceed.
@@ -182,11 +182,11 @@ alignments to a reference genome. However, low quality data will almost always
 affect downstream analysis, producing false positives, such as errant SNP predictions.
 6. We will use the Stacks’s program process_radtags to clean and demultiplex our
 samples.
-⋅⋅⋅• Take advantage of the Stacks manual as well as the individual manual page for
-process_radtags on the Stacks website to find information and examples:
-http://catchenlab.life.illinois.edu/stacks/manual/#specbc
-http://catchenlab.life.illinois.edu/stacks/comp/process_radtags.php
-⋅⋅⋅• You will need to specify the set of barcodes used in the construction of the RAD library.
+    • Take advantage of the Stacks manual as well as the individual manual page for
+    process_radtags on the Stacks website to find information and examples:
+    http://catchenlab.life.illinois.edu/stacks/manual/#specbc
+    http://catchenlab.life.illinois.edu/stacks/comp/process_radtags.php
+    • You will need to specify the set of barcodes used in the construction of the RAD library.
 Remember, each P1 adaptor in RAD has a particular DNA sequence (an inline
 barcode) that gets sequenced first, allowing data to be associated with samples such as
 individuals or populations.
