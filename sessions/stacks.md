@@ -144,34 +144,35 @@ analysis. We will use the directory ~/working on the cloud to hold these analyse
 careful that your are reading and writing files to the appropriate directories within
 your hierarchy. You’ll be making many directories, so stay organized!
 
-•Each step of your analysis goes into the hierarchy of the workspace, and each step of
+⋅⋅⋅•Each step of your analysis goes into the hierarchy of the workspace, and each step of
 the analysis takes its input from one directory and places it into another directory, this
 is known as a ‘waterfall workspace’. We will name the directories in a way that
 correspond to each stage and that allow us to remember where they are. A well
 organized workspace makes analyses easier and prevents data from being overwritten.
 
-• In working, create a directory called clean to contain all the data for this exercise.
+⋅⋅⋅• In working, create a directory called clean to contain all the data for this exercise.
 Inside that directory create two additional directories: lane1 and samples. We will
 refer to the clean directory as the working directory.
 
-• Unarchive data set 1 (DS1):
+⋅⋅⋅• Unarchive data set 1 (DS1):
 /opt/data/clean/lane1.tar
 to the lane1 directory.
 
-• You can copy the file to your working directory and use tar to unarchive it, or you can
+⋅⋅⋅• You can copy the file to your working directory and use tar to unarchive it, or you can
 change to your working directory and untar it without moving the file (this will save
 you time and will dump the unarchived files into the directory you are currently in).
+
 4. Your decompressed files has millions of reads in it, too many for you to examine in a
 spreadsheet or word processor. Examine the contents of the set of files in the terminal
 (the head, more, and tail commands may be of use).
 
-• *You should see multiple different lines with different encodings.*
+⋅⋅⋅• *You should see multiple different lines with different encodings.*
 
-• *How does the FASTQ file format work?*
+⋅⋅⋅• *How does the FASTQ file format work?*
 
-• *How are quality scores encoded? (See the link to quality scores in Appendix!!!.)*
+⋅⋅⋅• *How are quality scores encoded? (See the link to quality scores in Appendix!!!.)*
 
-• *How could you tell by eye which type of encoding your data are using?*
+⋅⋅⋅• *How could you tell by eye which type of encoding your data are using?*
 
 5. You probably noticed that not all of the data is high quality. In general, you will want
 to remove the lowest quality sequences from your data set before you proceed.
@@ -181,41 +182,41 @@ alignments to a reference genome. However, low quality data will almost always
 affect downstream analysis, producing false positives, such as errant SNP predictions.
 6. We will use the Stacks’s program process_radtags to clean and demultiplex our
 samples.
-• Take advantage of the Stacks manual as well as the individual manual page for
+⋅⋅⋅• Take advantage of the Stacks manual as well as the individual manual page for
 process_radtags on the Stacks website to find information and examples:
 http://catchenlab.life.illinois.edu/stacks/manual/#specbc
 http://catchenlab.life.illinois.edu/stacks/comp/process_radtags.php
-• You will need to specify the set of barcodes used in the construction of the RAD library.
+⋅⋅⋅• You will need to specify the set of barcodes used in the construction of the RAD library.
 Remember, each P1 adaptor in RAD has a particular DNA sequence (an inline
 barcode) that gets sequenced first, allowing data to be associated with samples such as
 individuals or populations.
-• Enter the following barcodes into a file called lane1_barcodes in your working
+⋅⋅⋅• Enter the following barcodes into a file called lane1_barcodes in your working
 directory (make sure you enter them in the right format LINK THAT):
-• AAACGG AACGTT AACTGA AAGACG
-• AAGCTA AATGAG ACAAGA ACAGCG
-• ACATAC ACCATG ACCCCC ACTCTT
-• ACTGGC AGCCAT AGCGCA
-• Assign a sample name for each barcode. Normally, these sample names would
+    AAACGG AACGTT AACTGA AAGACG
+    AAGCTA AATGAG ACAAGA ACAGCG
+    ACATAC ACCATG ACCCCC ACTCTT
+    ACTGGC AGCCAT AGCGCA
+⋅⋅⋅• Assign a sample name for each barcode. Normally, these sample names would
 correspond to the individuals used in a particular experiment, but for this exercise, we
 could name the samples in a simple way, say indv_01, indv_02, etc.
-• Copy the remaining barcodes for this lane of samples from the file:
+⋅⋅⋅• Copy the remaining barcodes for this lane of samples from the file:
 /opt/data/clean/lane1_barcodes!!!
 and append them to your barcodes file in your working directory.
-• You can concatenate this file onto the end of your file using the cat command and
+⋅⋅⋅• You can concatenate this file onto the end of your file using the cat command and
 the shell’s append operator: cat file1 >> file2, or you can cut+paste.
-• Based on the barcode file, how many samples were multiplexed together in this
+⋅⋅⋅• Based on the barcode file, how many samples were multiplexed together in this
 RAD library? (The wc command can tell you this.)
-• You will need to specify the restriction enzyme used to construct the library (SbfI), the
+⋅⋅⋅• You will need to specify the restriction enzyme used to construct the library (SbfI), the
 directory of input files (the lane1 directory), the list of barcodes, the output directory
 (samples), and specify that process_radtags clean, discard, and rescue reads.
-• The process_radtags program will write a log file into the output directory.
+⋅⋅⋅• The process_radtags program will write a log file into the output directory.
 Examine the log and answer the following questions:
-• How many raw reads were there?
-• How many were retained?
-• Of those discarded, what were the reasons?
-• In the process_radtags log file what can the list of “sequences not recorded” tell
+⋅⋅⋅• How many raw reads were there?
+⋅⋅⋅• How many were retained?
+⋅⋅⋅• Of those discarded, what were the reasons?
+⋅⋅⋅• In the process_radtags log file what can the list of “sequences not recorded” tell
 you about the barcodes analyzed and about the sequencing quality in general?
-• If you found that something is possibly missing from your process_radtags
+⋅⋅⋅• If you found that something is possibly missing from your process_radtags
 input, correct the error and re-run the process_radtags.
 
 ### Exercise 1. Data preparation, part 2
@@ -224,9 +225,9 @@ have been double-digested and dual barcoded. Each set of paired reads contains a
 inline barcode on the first read, and an indexed barcode on both reads. These are
 known as combinatorial barcodes as many unique combinations can be made from
 pairs of barcodes.
-• In ./working/clean, create a directory called lane2 to contain the raw data for this
+⋅⋅⋅• In ./working/clean, create a directory called lane2 to contain the raw data for this
 exercise and create the directory ddsamples to contain the cleaned output.
-• Unarchive data set 2 (DS2):
+⋅⋅⋅• Unarchive data set 2 (DS2):
 /opt/data/clean/lane2.tar
 into the lane2 directory.
 2. Examine the contents of the pairs of files in the terminal again.
