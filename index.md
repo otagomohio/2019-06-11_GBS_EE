@@ -17,7 +17,7 @@ genomic or phylogenomic analyses at a fraction of the cost associated with whole
 sequencing.
 
 This two day workshop is designed to show how to process GBS/RAD data through
-hands\-on analysis using the Stacks software pipeline. It will be opened by a mini\-symposia
+hands\-on analysis using the Stacks software pipeline. It will be opened by a mini-symposium
 where researchers will share experiences using GBS/RADseq to answer questions in their
 research.
 
@@ -27,7 +27,7 @@ research.
 
 Time | Topic | Location |
 ------|------|-----|
-09:00-12:30 | **Mini Symposium: Genotyping-by-Sequencing and its applications in ecology and evolution** | [Seminar Room, Benham Building](https://goo.gl/maps/62XWtwgqsKxKir4V9) |
+09:00-12:30 | [**Mini Symposium: Genotyping-by-Sequencing and its applications in ecology and evolution**](sessions/minisymposium.md) | [Seminar Room, Benham Building](https://goo.gl/maps/62XWtwgqsKxKir4V9) |
 12:30-13:15 | *Lunch Break* | |
 13:15-13:45 | Participant introduction | [Seminar Room, Marples Building](https://goo.gl/maps/62XWtwgqsKxKir4V9) |
 13:45-15:00 | Introduction to the command line, part 1 | [Seminar Room, Marples Building](https://goo.gl/maps/62XWtwgqsKxKir4V9) |
