@@ -24,7 +24,7 @@ Time | Title | Speaker |
 10:50-11:10 | Utilizing Restriction Enzyme-Reduced Representation Sequencing for high-throughput microbial profiling | Melanie Hess |
 11:10-11:30 | *Coffee Break* | |
 11:30-11:37 | **Lightning talk** - Enhancing resilience in kēkēwai: a mahinga kai species-at-risk | Aisling Rayne |
-11:37-11:45 | **Lightning talk** - *TBD* | Denise Martini |
+11:37-11:45 | **Lightning talk**  | Denise Martini |
 11:45-12:05 | Where did you come from? Using GBS to determine the source populations of dispersing individuals. | Ceridwen Fraser |
 12:05-12:25 | Genomic architecture of inbreeding in all living adults of the critically endangered kākāpō parrot (*Strigops habroptilus*) | Yasmin Foster |
 12:25-12:30 | **Lightning talk** - GBS for developing Wildlife Forensics tools | Hester Roberts |
