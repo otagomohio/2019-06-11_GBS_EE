@@ -505,14 +505,9 @@ menu and then “Show”.
 can you tell?
 
 ### Citations and Readings
-* Protocols for running a Stacks analysis: 
 Paris, J. R., Stevens, J. R., & Catchen, J. M. (2017). Lost in parameter space: a road map for stacks.Methods in Ecology and Evolution, 188, 799–14.
-Rochette, N. C., & Catchen, J. M. (2017). Deriving genotypes from RAD-seq short-read data
-using Stacks. Nature Protocols, 12(12), 2640–2659.
-Sources for data sets in the tutorial
-Catchen, J. et al. 2013a. The population structure and recent colonization history of Oregon
-threespine stickleback determined using restriction-site associated DNA-sequencing.
-Molecular Ecology, 22:2864–2883.
+Rochette, N. C., & Catchen, J. M. (2017). Deriving genotypes from RAD-seq short-read datausing Stacks. Nature Protocols, 12(12), 2640–2659.
+Catchen, J. et al. 2013a. The population structure and recent colonization history of Oregonthreespine stickleback determined using restriction-site associated DNA-sequencing. Molecular Ecology, 22:2864–2883.
 Nelson, T. C. and Cresko, W. A. 2018. Ancient genomic variation underlies repeated ecological
 adaptation in young stickleback populations. Evolution Letters, 2: 9-21.
 McCluskey, B. M., & Postlethwait, J. H. (2015). Phylogeny of zebrafish, a "model species," within
@@ -588,7 +583,7 @@ Miller, M. R., et al. 2007. Rapid and cost-effective polymorphism identification
 using restriction site associated DNA (RAD) markers. Genome Research 17:240-248.
 Willing, E. M., et al. 2011. Paired-end RAD-seq for de novo assembly and marker design without
 available reference. Bioinformatics 27:2187-2193.
-17
+
 Related reduced representation library (RRL) methodologies
 Andolfatto, P., et al. 2011. Multiplexed shotgun genotyping for rapid and efficient genetic
 mapping. Genome Research 21:610-617.
