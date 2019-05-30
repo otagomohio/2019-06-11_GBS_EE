@@ -12,6 +12,7 @@ CREDIT JULIAN
 # Genetic and genomic analyses using RAD-seq and Stacks
 ## Credits
 Julian Catchen <jcatchen@illinois.edu>
+
 Nicolas Rochette <rochette@illinois.edu>
 
 ## Objectives
@@ -70,7 +71,7 @@ help you better understand both the molecular biology, computational analyses, a
 conceptual framework for the analysis of RRL data such as RAD.
 
 ## Datasets and Software
-### Datasets
+### Datasets (DO WE HAVE THIS?) 
 • Dataset 1 (DS1) - This data set comprises just a small proportion of a lane of singleend
 standard RAD data.
 • Dataset 2 (DS2) - A fragment of a lane of paired-end RAD sequences that have been
@@ -107,7 +108,7 @@ loci for genetic maps, and extended to be used more flexibly in studies of organ
 with and without a reference genome. The pipeline has a Perl wrapper allowing sets
 of programs to be run. However, the software is modular, allowing it to be applied to
 many scenarios. You will use the Perl wrapper in class and the modules on your own.
-• Structure (http://pritch.bsd.uchicago.edu/structure.html) - A software program
+• [Structure](http://pritch.bsd.uchicago.edu/structure.html) - A software program
 originally written by Jonathan Pritchard and colleagues that uses Bayesian stochastic
 models of multi-locus genotype data. The package was written to estimate the
 distribution and abundance of genetic variation within and among populations,
@@ -123,8 +124,8 @@ primary file format that read alignments are stored) in very useful ways.
 • [RAxML](http://sco.h-its.org/exelixis/web/software/raxml/index.html) - A software
 program written by the Exelixis Lab for the construction of maximum likelihood
 phylogenetic trees.
-4
-### Exercise 1. Data preparation
+
+### Exercise 1. Data preparation. Part 1.
 1. 10 minute mini-lecture on Phred scores and the process_radtags cleaning
 algorithm.
 2. The first step in the analysis of all short-read sequencing data, including RAD-seq
@@ -162,7 +163,6 @@ spreadsheet or word processor. Examine the contents of the set of files in the t
 to remove the lowest quality sequences from your data set before you proceed.
 However, the stringency of the filtering will depend on the final application. In
 general, higher stringency is needed for de novo assemblies as compared to
-5
 alignments to a reference genome. However, low quality data will almost always
 affect downstream analysis, producing false positives, such as errant SNP predictions.
 6. We will use the Stacks’s program process_radtags to clean and demultiplex our
@@ -176,17 +176,16 @@ Remember, each P1 adaptor in RAD has a particular DNA sequence (an inline
 barcode) that gets sequenced first, allowing data to be associated with samples such as
 individuals or populations.
 • Enter the following barcodes into a file called lane1_barcodes in your working
-directory (make sure you enter them in the right format):
+directory (make sure you enter them in the right format LINK THAT):
 • AAACGG AACGTT AACTGA AAGACG
 • AAGCTA AATGAG ACAAGA ACAGCG
 • ACATAC ACCATG ACCCCC ACTCTT
 • ACTGGC AGCCAT AGCGCA
-[Use the nano editor to create your file.]
 • Assign a sample name for each barcode. Normally, these sample names would
 correspond to the individuals used in a particular experiment, but for this exercise, we
 could name the samples in a simple way, say indv_01, indv_02, etc.
 • Copy the remaining barcodes for this lane of samples from the file:
-/opt/data/clean/lane1_barcodes
+/opt/data/clean/lane1_barcodes!!!
 and append them to your barcodes file in your working directory.
 • You can concatenate this file onto the end of your file using the cat command and
 the shell’s append operator: cat file1 >> file2, or you can cut+paste.
@@ -200,12 +199,12 @@ Examine the log and answer the following questions:
 • How many raw reads were there?
 • How many were retained?
 • Of those discarded, what were the reasons?
-
 • In the process_radtags log file what can the list of “sequences not recorded” tell
 you about the barcodes analyzed and about the sequencing quality in general?
 • If you found that something is possibly missing from your process_radtags
 input, correct the error and re-run the process_radtags.
-Exercise 1. Data preparation, part 2
+
+### Exercise 1. Data preparation, part 2
 1. We will now work with the second data set. These data contain paired-end reads that
 have been double-digested and dual barcoded. Each set of paired reads contains an
 inline barcode on the first read, and an indexed barcode on both reads. These are
