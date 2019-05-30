@@ -5,9 +5,9 @@ Tuesday June 11 2019 | 09:00 - 12-30 | [Seminar Room, Benham Building](https://g
 
 ## Introduction
 
-Genotyping-by-Sequencing (GBS) in the broad sense has been revolutionising population genomics by bring state of the art genomic technologies within reach of most New-Zealand researchers.
+Genotyping-by-Sequencing (GBS) in the broad sense has been revolutionising population genomics by bringing state of the art genomic technologies within reach of most researchers.
 
-In this symposium, we are delighted to be able to present a range of talks from various departments and institutions connecting researchers that are familiar with this technique to labs that might consider it as an interesting possibility or who have never heard of it.
+In this symposium, we are delighted to be able to present a range of talks from various departments and institutions connecting researchers across the country.
 
 This Mini-symposium will serve as an opening for a two-days hands-on workshop introducing the practicalities of GBS to a wide audience.
 
