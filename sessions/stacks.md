@@ -505,9 +505,8 @@ menu and then “Show”.
 can you tell?
 
 ### Citations and Readings
-Protocols for running a Stacks analysis
-Paris, J. R., Stevens, J. R., & Catchen, J. M. (2017). Lost in parameter space: a road map for stacks.
-Methods in Ecology and Evolution, 188, 799–14.
+* Protocols for running a Stacks analysis: 
+Paris, J. R., Stevens, J. R., & Catchen, J. M. (2017). Lost in parameter space: a road map for stacks.Methods in Ecology and Evolution, 188, 799–14.
 Rochette, N. C., & Catchen, J. M. (2017). Deriving genotypes from RAD-seq short-read data
 using Stacks. Nature Protocols, 12(12), 2640–2659.
 Sources for data sets in the tutorial
