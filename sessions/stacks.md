@@ -15,6 +15,7 @@ Julian Catchen <jcatchen@illinois.edu>
 
 Nicolas Rochette <rochette@illinois.edu>
 
+
 ## Objectives
 The goal of this exercise is to familiarize students with the use of next generation sequence
 data produced from Reduced Representation Libraries (RRL) approaches such as
