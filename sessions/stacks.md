@@ -10,16 +10,11 @@ CREDIT JULIAN
 
 
 # Genetic and genomic analyses using RAD-seq and Stacks
-### Tutorial developed by: 
+## Credits
 Julian Catchen <jcatchen@illinois.edu>
-
-Department of Animal Biology, University of Illinois at Urbana-Champaign
-
 Nicolas Rochette <rochette@illinois.edu>
 
-Department of Animal Biology, University of Illinois at Urbana-Champaign
-
-### Objectives:
+## Objectives
 The goal of this exercise is to familiarize students with the use of next generation sequence
 data produced from Reduced Representation Libraries (RRL) approaches such as
 Restriction site Associated DNA (RAD-tags). These libraries are often used for genotyping
@@ -74,8 +69,8 @@ and statistical issues, see the papers listed at the end of this document. These
 help you better understand both the molecular biology, computational analyses, and
 conceptual framework for the analysis of RRL data such as RAD.
 
-### Datasets and Software
-• Datasets
+## Datasets and Software
+### Datasets
 • Dataset 1 (DS1) - This data set comprises just a small proportion of a lane of singleend
 standard RAD data.
 • Dataset 2 (DS2) - A fragment of a lane of paired-end RAD sequences that have been
@@ -106,7 +101,7 @@ and Postlethwait, 2015.
 ### Software 
 **All are open source software**
 
-• Stacks (http://catchenlab.life.illinois.edu/stacks/) - A set of interconnected open
+• [Stacks](http://catchenlab.life.illinois.edu/stacks/) - A set of interconnected open
 source programs designed initially for the de novo assembly of RAD sequences into
 loci for genetic maps, and extended to be used more flexibly in studies of organisms
 with and without a reference genome. The pipeline has a Perl wrapper allowing sets
@@ -117,19 +112,19 @@ originally written by Jonathan Pritchard and colleagues that uses Bayesian stoch
 models of multi-locus genotype data. The package was written to estimate the
 distribution and abundance of genetic variation within and among populations,
 patterns that are now commonly called the genetic structure of populations.
-• BWA (bio-bwa.sourceforge.net/) - BWA is a very fast and efficient software package
+• [BWA](bio-bwa.sourceforge.net/) - BWA is a very fast and efficient software package
 used for aligning sequences against a reference genome. We will use BWA to align
 RAD reads against the stickleback reference genome, and then analyze these reads
 within the Stacks pipeline. Although we will use BWA for this exercise, many other
 algorithms and software exist for aligning against a reference genome, and these
 could be used in conjunction with Stacks as well.
-• Samtools (www.htslib.org/) - A program that manipulates SAM and BAM files (the
+• [Samtools](www.htslib.org/) - A program that manipulates SAM and BAM files (the
 primary file format that read alignments are stored) in very useful ways.
-• RAxML (http://sco.h-its.org/exelixis/web/software/raxml/index.html) - A software
+• [RAxML](http://sco.h-its.org/exelixis/web/software/raxml/index.html) - A software
 program written by the Exelixis Lab for the construction of maximum likelihood
 phylogenetic trees.
 4
-Exercise 1. Data preparation, part 1
+### Exercise 1. Data preparation
 1. 10 minute mini-lecture on Phred scores and the process_radtags cleaning
 algorithm.
 2. The first step in the analysis of all short-read sequencing data, including RAD-seq
@@ -205,7 +200,7 @@ Examine the log and answer the following questions:
 • How many raw reads were there?
 • How many were retained?
 • Of those discarded, what were the reasons?
-6
+
 • In the process_radtags log file what can the list of “sequences not recorded” tell
 you about the barcodes analyzed and about the sequencing quality in general?
 • If you found that something is possibly missing from your process_radtags
@@ -241,7 +236,7 @@ your particular experimental design. Here, for simplicity, we can just use indv_
 indv_02, etc.
 • Copy the remaining barcodes for this lane of samples from the file:
 /opt/data/clean/lane2_barcodes
-7
+
 and append them to your barcodes file in your working directory.
 • You can concatenate this file onto the end of your file using the cat command and
 the shell’s append operator: cat file1 >> file2, or you can cut+paste.
@@ -256,9 +251,10 @@ Examine the log and answer the following questions:
 • What is the purpose of the four different output files for each set of barcodes?
 • How many raw reads were there?
 • How many were retained?
-8
-Exercise II. part 1: de novo assembly of RAD tags without a
-genome
+
+### Exercise II
+**part 1: de novo assembly of RAD tags without a
+genome**
 1. Mini-lecture on Stacks, primary/secondary reads, and parameters.
 2. In the first part of the second exercise we will be constructing stacks in two separate
 samples. These samples are from the same (anonymous) populations, however their
@@ -286,9 +282,8 @@ case you will need to redirect STDOUT and STDERR to a file, to do so, use
 Do not allow more than two mismatches between stacks for this exercise.
 7. Examine the output from ustacks. What characteristics are different between the two
 samples? What could potentially be causing these differences?
-9
-Exercise II. part 2: de novo assembly of RAD tags without a
-genome
+
+**part 2: de novo assembly of RAD tags without a genome**
 1. In this second exercise we will be working on a subset of data from threespine
 stickleback data from Oregon, on the
 west coast of the United States.
@@ -328,7 +323,7 @@ into the samples directory. The unarchived dataset contains 30 stickleback
 samples, and we will use 9 of them in this exercise:
 cs_1335.01, cs_1335.02, cs_1335.05, pcr_1211.04, pcr_1211.05,
 pcr_1211.06, stl_1274.33, stl_1274.35, stl_1274.37
-10
+
 Stickleback populations sampled from Oregon, USA in Catchen,
 et al., 2013. Populations in red are sampled for this tutorial.
 3. Run the Stacks’ denovo_map.pl pipeline program, each time changing the value for
@@ -368,7 +363,7 @@ text file like so:
 M2/M3<tab>xxx
 M3/M4<tab>xxx
 M4/M5<tab>xxx
-11
+
 M5/M6<tab>xxx
 M6/M7<tab>xxx
 Save this file as r80_loci.tsv.
@@ -382,7 +377,7 @@ script.
 • Open the PDF to examine the hockey stick plot. Based on the plot and the
 number of r80 loci, which value for M do you think is most appropriate for the
 Oregon stickleback data?
-12
+
 Exercise II. part 3: de novo assembly of RAD tags without a
 genome
 1. In this third exercise we will now be working on the full set of threespine stickleback
@@ -418,7 +413,7 @@ denovo_map.pl program will read the sample names out of the population map, and
 look for them in the samples directory you specify.
 • Execute the Stacks pipeline.
 5. Examine the Stacks log and output files when execution is complete.
-13
+
 • After processing all the individual samples, denovo_map.pl will print a table
 containing the depth of coverage of each sample. Find this table in the log, what were
 the depths of coverage?
