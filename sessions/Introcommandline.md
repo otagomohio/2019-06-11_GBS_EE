@@ -1,19 +1,20 @@
 
+**In construction
+
 # Introduction to the command line
 
+## 1. Getting on the supercomputer
 During this session, we will learn to be comfortable with the command line. First, we will login to the server...
 get people to login, get them in the setup mini directory for themselves.
 SHORT INTRO COMMAND LINE
 
-SHORT INTRO CARPENTRIES
-
 * NeSI login
 
-## Introduction to the command line
+## 2. Introduction to the command line
 
 For this session, we will material under a Creative Commons license developped by The Carpentries. [The Carpentries](https://docs.carpentries.org/index.html) teaches foundational coding, and data science skills to researchers worldwide. The carpentries is active in New Zealand and @Otago, we encourage you to keep your eyes open for [local events](https://otagocarpentries.github.io/).
 
-We weill go through the following carpentries lessons:
+We will go through the following carpentries lessons together:
 
 * [Navigating Files and Directories](https://swcarpentry.github.io/shell-novice/02-filedir/index.html)
 * [Working With Files and Directories](https://swcarpentry.github.io/shell-novice/03-create/index.html)
@@ -21,9 +22,13 @@ We weill go through the following carpentries lessons:
 * [Finding things](https://swcarpentry.github.io/shell-novice/07-find/index.html)
 * [Loops](https://swcarpentry.github.io/shell-novice/05-loop/index.html)
 
+*To develop: Add one exercise to remind the day that is GBS based, in another folder*
 
+## Additional ressources:
 
-**In Construction**
-If extra time: loops
+* Codecademy
+* The carpentries
+* Linux Cheatsheet
+
 
 Learning the command line might seem hard at first but it gets a lot easier with a little bit of practice!
