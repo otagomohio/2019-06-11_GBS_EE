@@ -3,7 +3,7 @@
 # Introduction to the command line
 
 During this session, we will learn to be comfortable with the command line. First, we will login to the server...
-
+get people to login, get them in the setup mini directory for themselves.
 SHORT INTRO COMMAND LINE
 
 SHORT INTRO CARPENTRIES
