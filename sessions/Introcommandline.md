@@ -25,7 +25,9 @@ We weill go through the following carpentries lessons:
 
 **In Construction**
 And this additional tools:
-* copying and moving files
+* copying and moving files (cp / mv)
 * parameters and help for command-line programs
 
+If extra time: loops
 
+Learning the command line might seem hard at first but it gets a lot easier with a little bit of practice!
