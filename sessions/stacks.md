@@ -109,19 +109,23 @@ loci for genetic maps, and extended to be used more flexibly in studies of organ
 with and without a reference genome. The pipeline has a Perl wrapper allowing sets
 of programs to be run. However, the software is modular, allowing it to be applied to
 many scenarios. You will use the Perl wrapper in class and the modules on your own.
+
 • [Structure](http://pritch.bsd.uchicago.edu/structure.html) - A software program
 originally written by Jonathan Pritchard and colleagues that uses Bayesian stochastic
 models of multi-locus genotype data. The package was written to estimate the
 distribution and abundance of genetic variation within and among populations,
 patterns that are now commonly called the genetic structure of populations.
+
 • [BWA](bio-bwa.sourceforge.net/) - BWA is a very fast and efficient software package
 used for aligning sequences against a reference genome. We will use BWA to align
 RAD reads against the stickleback reference genome, and then analyze these reads
 within the Stacks pipeline. Although we will use BWA for this exercise, many other
 algorithms and software exist for aligning against a reference genome, and these
 could be used in conjunction with Stacks as well.
+
 • [Samtools](www.htslib.org/) - A program that manipulates SAM and BAM files (the
 primary file format that read alignments are stored) in very useful ways.
+
 • [RAxML](http://sco.h-its.org/exelixis/web/software/raxml/index.html) - A software
 program written by the Exelixis Lab for the construction of maximum likelihood
 phylogenetic trees.
@@ -139,27 +143,36 @@ our Amazon Virtual Machine) that will hold your data and the different steps of 
 analysis. We will use the directory ~/working on the cloud to hold these analyses. Be
 careful that your are reading and writing files to the appropriate directories within
 your hierarchy. You’ll be making many directories, so stay organized!
-• Each step of your analysis goes into the hierarchy of the workspace, and each step of
+
+•Each step of your analysis goes into the hierarchy of the workspace, and each step of
 the analysis takes its input from one directory and places it into another directory, this
 is known as a ‘waterfall workspace’. We will name the directories in a way that
 correspond to each stage and that allow us to remember where they are. A well
 organized workspace makes analyses easier and prevents data from being overwritten.
+
 • In working, create a directory called clean to contain all the data for this exercise.
 Inside that directory create two additional directories: lane1 and samples. We will
 refer to the clean directory as the working directory.
+
 • Unarchive data set 1 (DS1):
 /opt/data/clean/lane1.tar
 to the lane1 directory.
+
 • You can copy the file to your working directory and use tar to unarchive it, or you can
 change to your working directory and untar it without moving the file (this will save
 you time and will dump the unarchived files into the directory you are currently in).
 4. Your decompressed files has millions of reads in it, too many for you to examine in a
 spreadsheet or word processor. Examine the contents of the set of files in the terminal
 (the head, more, and tail commands may be of use).
-• You should see multiple different lines with different encodings.
-• How does the FASTQ file format work?
-• How are quality scores encoded? (See the link to quality scores in Appendix.)
-• How could you tell by eye which type of encoding your data are using?
+
+• *You should see multiple different lines with different encodings.*
+
+• *How does the FASTQ file format work?*
+
+• *How are quality scores encoded? (See the link to quality scores in Appendix!!!.)*
+
+• *How could you tell by eye which type of encoding your data are using?*
+
 5. You probably noticed that not all of the data is high quality. In general, you will want
 to remove the lowest quality sequences from your data set before you proceed.
 However, the stringency of the filtering will depend on the final application. In
