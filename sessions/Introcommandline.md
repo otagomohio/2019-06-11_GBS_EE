@@ -2,7 +2,7 @@
 
 # Introduction to the command line
 
-During this session, we will learn to be comfortable with the command line. 
+During this session, we will learn to be comfortable with the command line. First, we will login to the server...
 
 SHORT INTRO COMMAND LINE
 
@@ -22,8 +22,9 @@ We weill go through the following carpentries lessons:
 * [Finding things](https://swcarpentry.github.io/shell-novice/07-find/index.html)
 
 
-And this additional tools:
 
+**In Construction**
+And this additional tools:
 * copying and moving files
 * parameters and help for command-line programs
 
