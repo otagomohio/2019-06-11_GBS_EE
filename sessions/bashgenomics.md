@@ -1,43 +1,54 @@
-# 
+# Bash genomics
 
-We learn the basics of bash. Those are .. of everuday..
-
+Over the last few lessons, we learnt the every day tools that will allow you to work in the command line environment.
 In this exercise, we will try to **reinforce our skills, touch base with genomics and appreciate the power of the command line**.
 
 
+For this exercise we will work with the human genome.
 
-go inside the PATH final exercise folder
+It is currently stored on your computer at:
 
-Which files are in there?
-Someone left you the human genome in there as a fasta file:
+```
+PATH TO THE GENOME # WRITE PROTECT IT CALL it hgenome.fa
+```
 
-short description of a fasta....
+1. Create a directory called *human_genome_exercise/*. 
 
-Can you print all the sequence names to the screen ?
+2. Copy the human genome *hgenome.fa* in the newly created *human_genome_exercise/*. .
 
-Can you tell me the total length of the genome?
+
+The fasta format DESCRIPTION
+
+```
+>CHROM 1
+ATGAGAGCGGTCTGAGAGTCTTAGAGGAGCGGATTATTA
+GAGAGGGAGAGATCTATAGAGCTA
+>GENE HYPOXIA 2
+GAGAGCTATSTCGATATCTGAGGAGA
+```
+
+3. Can you print all the sequence names to the screen ?
+
+4. Can you tell me the total length of the genome?
+
 
 Hint: Can you find eveything BUT the sequence names? You only have to count the characters now, can you remember how to count the lines?
 
 
-What is the length of chromosome 5?
-Hint : Find chrosome five, use the -A option of the grep function once you looked in the help to print more than the line you found. You just need to get ride of the sequence name, but you already did that jus above?
+5. Since we will look for restrinction enzymes. Can you tell me how many cut sites there are for :
 
-How many As in the human genome? 
+	* Pst1 CTGCAG
+	* X X
+	* Pst1 CTGCAG
 
-Since we will look for restrinction enzymes. Can you tell me how many cut sites there are for :
+4 cutters are much more frequents than  6 cutters.
 
-Pst1 CTGCAG
-put a few others!
-....
-....
-.... 
 
-If you did not already, take into account the reverse strand when calculateing the number of sites!
+6. Bonus question: Take into account the reverse strand when calculateing the number of sites!
 
 
 
 
-In this exercise you played around with some basics data using pre-existing programs and the available help you could find (i.e. the instructors, colleagues, --help and Google). This is very much like real-life genomics!
+In this challenging exercise you played around with some basics data using pre-existing programs and the available help you could find (i.e. the instructors, colleagues, --help and Google). This is very much like real-life genomics!
 
 
