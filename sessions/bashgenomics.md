@@ -2,7 +2,7 @@
 
 We learn the basics of bash. Those are .. of everuday..
 
-In this exercise, we will try to reinforce our skills, touch base with genomics and appreciate the power of the command line.
+In this exercise, we will try to **reinforce our skills, touch base with genomics and appreciate the power of the command line**.
 
 
 
@@ -27,20 +27,17 @@ How many As in the human genome?
 
 Since we will look for restrinction enzymes. Can you tell me how many cut sites there are for :
 
-....
+Pst1 CTGCAG
+put a few others!
 ....
 ....
 .... 
 
+If you did not already, take into account the reverse strand when calculateing the number of sites!
 
 
 
 
-
-
-key:
-
-Hint: look for the character ">"
-
+In this exercise you played around with some basics data using pre-existing programs and the available help you could find (i.e. the instructors, colleagues, --help and Google). This is very much like real-life genomics!
 
 
