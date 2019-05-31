@@ -3,7 +3,7 @@
 
 # Introduction to the command line
 
-## 1. Getting on the supercomputer
+## Getting on the supercomputer
 
 During this session, we will learn to be comfortable with the command line. First, we will login to the server Mahuika. A resource maintained by the New Zealand eScience Infrastructure (NeSI).
 You should all have access to NeSI and we will start byt the logon to [Mahuika](https://support.nesi.org.nz/hc/en-gb/articles/360000163575-Mahuika), their newest resource.
@@ -17,7 +17,7 @@ cd /nesi/project/uooXXX/YOURUSERNAME/introunixfolder
 ```
 
 
-## 2. Introduction to the command line
+## Introduction to the command line
 
 For this session, we will material under a Creative Commons license developped by The Carpentries. [The Carpentries](https://docs.carpentries.org/index.html) teaches foundational coding, and data science skills to researchers worldwide. The carpentries is active in New Zealand and @Otago, we encourage you to keep your eyes open for [local events](https://otagocarpentries.github.io/). All the content is at ```FILLINTHEPATH```
 
