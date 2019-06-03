@@ -13,11 +13,12 @@ This Mini-symposium will serve as an opening for a two day hands-on workshop int
 Time | Title | Speaker |
 ------|------|-----|
 09:00-09:05 | Welcoming remarks | Alana Alexander |
-09:05-09:20 | An introduction to Genomics Aotearoa | |
+09:05-09:20 | An introduction to Genomics Aotearoa | 
+Ngoni Faya |
 09:20-09:40 | Rapid genomic shifts underpin parallel ecological speciation in alpine insects  | Graham McCulloch |
 09:40:-10:00 | Assessing impacts of past hybridisation in the critically endangered kakī  | Nat Forsdick |
 10:00-10:15 | *Coffee Break* | |
-10:15-10:30 | What can The New Zealand eScience Infrastructure (NeSI) do for you? |  |
+10:15-10:30 | What can The New Zealand eScience Infrastructure (NeSI) do for you? | Dinindu Senanayake |
 10:30-10:50 | Argentine stem weevil: Insights into an invasive insect using GBS | Marissa Le Lec |
 10:50-11:10 | Genomic architecture of inbreeding in all living adults of the critically endangered kākāpō parrot (*Strigops habroptilus*) | Yasmin Foster |
 11:10-11:30 | *Coffee Break* | |
