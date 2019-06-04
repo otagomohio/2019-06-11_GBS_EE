@@ -1,12 +1,9 @@
 **In construction**
-CREDIT JULIAN
-* Reminder of day 1
+* Remaining of day of day 1
 * Short intro on RAD/GBS
-* Intro on FASTQ files. FASTQC
-* Following Julian Catchen's intro. Run the long bit on the front end but also as slurm.
 * Filtering in the afternoon
 * End with structure and PCA
-* Plan one extra activity if extra time
+* Plan one extra activity if extra time...
 
 
 # Genetic and genomic analyses using RAD-seq and Stacks
@@ -434,6 +431,7 @@ available on your instance.
 denovo_map.pl program will read the sample names out of the population map, and
 look for them in the samples directory you specify.
 • Execute the Stacks pipeline.
+
 5. Examine the Stacks log and output files when execution is complete.
 
 • After processing all the individual samples, denovo_map.pl will print a table
@@ -489,28 +487,30 @@ population map that you generated above to populations so that this information 
 passed into the Structure output file.
 9. Create a new directory called structure and copy the Structure output file that
 Stacks generated to this directory.
-• Edit the Structure output file to remove the comment (first line in the file, starts with
-“#”).
-• You may need to edit your Structure output file to change the alphanumeric
-population names to be numbers. This can be done using sed.
-• The parameters to run Structure (including a value of k=3) have already been
-prepared, you can find them here:
-/opt/data/denovo/mainparams
-and
-/opt/data/denovo/extraparams
-Copy them into your structure directory as well.
+    
+    • Edit the Structure output file to remove the comment (first line in the file, starts with
+        “#”).
+    • You may need to edit your Structure output file to change the alphanumeric
+        population names to be numbers. This can be done using sed.
+    • The parameters to run Structure (including a value of k=3) have already been
+        prepared, you can find them here:
+            /opt/data/denovo/mainparams
+        and
+            /opt/data/denovo/extraparams
+     • Copy them into your structure directory as well.
 10. Execute Structure, saving the data into this new directory:
 structure > populations.structure.console
 [A common STRUCTURE error happens when your population output contains less
 than 1000 loci. You may need to adjust the number of loci in the mainparams file to
 match your exact Stacks output.]
 11. You will need to download the populations.structure.console and
-populations.structure.out_f files from the cluster. You can then load them into
+populations.structure.out_f files from the cluster!!!. You can then load them into
 the graphical interface for Structure on your local computer. Select the “File” menu
 and then “Load structure results…” to load the Structure output. Choose the “Barplot”
 menu and then “Show”.
-• Are the three Oregon threespine stickleback populations related to one another? How
-can you tell?
+    
+    • *Are the three Oregon threespine stickleback populations related to one another? How
+        can you tell?*
 
 ### Citations and Readings
 * Paris, J. R., Stevens, J. R., & Catchen, J. M. (2017). Lost in parameter space: a road map for stacks.Methods in Ecology and Evolution, 188, 799–14.
