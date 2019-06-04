@@ -189,17 +189,17 @@ samples.
     • The process_radtags program will write a log file into the output directory.
         Examine the log and answer the following questions:
     
-    • How many raw reads were there?
+            • How many raw reads were there?
     
-    • How many were retained?
+            • How many were retained?
     
-    • Of those discarded, what were the reasons?
+            • Of those discarded, what were the reasons?
     
-    • In the process_radtags log file what can the list of “sequences not recorded” tell
-        you about the barcodes analyzed and about the sequencing quality in general?
+            • In the process_radtags log file what can the list of “sequences not recorded” tell
+                you about the barcodes analyzed and about the sequencing quality in general?
     
-    • If you found that something is possibly missing from your process_radtags
-        input, correct the error and re-run the process_radtags.
+            • If you found that something is possibly missing from your process_radtags
+                input, correct the error and re-run the process_radtags.
 
 **Part 2: Add subtitle**
 
