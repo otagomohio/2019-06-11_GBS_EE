@@ -72,33 +72,8 @@ help you better understand both the molecular biology, computational analyses, a
 conceptual framework for the analysis of RRL data such as RAD.
 
 ## Datasets and Software
-### Datasets (DO WE HAVE THIS?) 
-• Dataset 1 (DS1) - This data set comprises just a small proportion of a lane of singleend
-standard RAD data.
-• Dataset 2 (DS2) - A fragment of a lane of paired-end RAD sequences that have been
-double-digested with two restriction enzymes.
-You will use these first two data sets to become familiar with the structure of RAD
-sequences, as well as to become proficient with the pre-processing (i.e. cleaning
-and de-multiplexing) of data before alignment or assembly. Dataset 1 (DS1) - This
-dataset consists of two samples of single-end RAD data from the same set of
-samples, but constructed in two different libraries and sequenced independently.
-• Dataset 3 (DS3) - This dataset consists of two samples of single-end RAD data from
-the same set of samples, but constructed in two different libraries and sequenced
-independently.
-• Dataset 4 (DS4) - This dataset comprises a subset of RAD-seq data generated from 30
-individuals from three populations of threespine stickleback, each of which has been
-individually barcoded. The RAD-seq data were prepared using the restriction enzyme
-SbfI, and single-end sequenced using an Illumina HiSeq sequencer. These data are a
-component of the data originally published in Catchen, et al. 2013.
-• Dataset 5 (DS5) - This is a set of population genomic data from the threespine
-stickleback. The dataset comprises 5 individuals from each of two differentiated
-populations, for a total of 10 barcoded individuals. The RAD data were prepared
-using the restriction enzyme SbfI, and paired-end sequenced using an Illumina
-MiSeq sequencer. These data are published, Nelson, et al. 2018.
-• Dataset 6 (DS6) - This is a set of population genomic data from several Danio
-species, including Danio rerio, the zebrafish. The dataset comprises 1 individual from
-each of 15 species, 13 Danios and two outgroups. These data are from McClusckey
-and Postlethwait, 2015.
+### Datasets
+*Short description of the dataset*
 
 ### Software 
 **All are open source software**
@@ -131,7 +106,7 @@ program written by the Exelixis Lab for the construction of maximum likelihood
 phylogenetic trees.
 
 ### Exercise 1. Data preparation. Part 1.
-1. 10 minute mini-lecture on Phred scores and the process_radtags cleaning
+1. 10 minute mini-lecture on Phred scores and the *process_radtags* cleaning
 algorithm.
 2. The first step in the analysis of all short-read sequencing data, including RAD-seq
 data, is removing low quality sequences and separating out reads from different
@@ -183,41 +158,41 @@ affect downstream analysis, producing false positives, such as errant SNP predic
 6. We will use the Stacks’s program process_radtags to clean and demultiplex our
 samples.
     • Take advantage of the Stacks manual as well as the individual manual page for
-    process_radtags on the Stacks website to find information and examples:
-    http://catchenlab.life.illinois.edu/stacks/manual/#specbc
-    http://catchenlab.life.illinois.edu/stacks/comp/process_radtags.php
+        process_radtags on the Stacks website to find information and examples:
+        http://catchenlab.life.illinois.edu/stacks/manual/#specbc
+        http://catchenlab.life.illinois.edu/stacks/comp/process_radtags.php
     • You will need to specify the set of barcodes used in the construction of the RAD library.
-Remember, each P1 adaptor in RAD has a particular DNA sequence (an inline
-barcode) that gets sequenced first, allowing data to be associated with samples such as
-individuals or populations.
-⋅⋅⋅• Enter the following barcodes into a file called lane1_barcodes in your working
-directory (make sure you enter them in the right format LINK THAT):
-    AAACGG AACGTT AACTGA AAGACG
-    AAGCTA AATGAG ACAAGA ACAGCG
-    ACATAC ACCATG ACCCCC ACTCTT
-    ACTGGC AGCCAT AGCGCA
-⋅⋅⋅• Assign a sample name for each barcode. Normally, these sample names would
-correspond to the individuals used in a particular experiment, but for this exercise, we
-could name the samples in a simple way, say indv_01, indv_02, etc.
-⋅⋅⋅• Copy the remaining barcodes for this lane of samples from the file:
-/opt/data/clean/lane1_barcodes!!!
-and append them to your barcodes file in your working directory.
-⋅⋅⋅• You can concatenate this file onto the end of your file using the cat command and
-the shell’s append operator: cat file1 >> file2, or you can cut+paste.
-⋅⋅⋅• Based on the barcode file, how many samples were multiplexed together in this
-RAD library? (The wc command can tell you this.)
-⋅⋅⋅• You will need to specify the restriction enzyme used to construct the library (SbfI), the
-directory of input files (the lane1 directory), the list of barcodes, the output directory
-(samples), and specify that process_radtags clean, discard, and rescue reads.
-⋅⋅⋅• The process_radtags program will write a log file into the output directory.
-Examine the log and answer the following questions:
-⋅⋅⋅• How many raw reads were there?
-⋅⋅⋅• How many were retained?
-⋅⋅⋅• Of those discarded, what were the reasons?
-⋅⋅⋅• In the process_radtags log file what can the list of “sequences not recorded” tell
-you about the barcodes analyzed and about the sequencing quality in general?
-⋅⋅⋅• If you found that something is possibly missing from your process_radtags
-input, correct the error and re-run the process_radtags.
+        Remember, each P1 adaptor in RAD has a particular DNA sequence (an inline
+        barcode) that gets sequenced first, allowing data to be associated with samples such as
+        individuals or populations.
+    • Enter the following barcodes into a file called lane1_barcodes in your working
+        directory (make sure you enter them in the right format LINK THAT):
+            AAACGG AACGTT AACTGA AAGACG
+            AAGCTA AATGAG ACAAGA ACAGCG
+            ACATAC ACCATG ACCCCC ACTCTT
+            ACTGGC AGCCAT AGCGCA
+    • Assign a sample name for each barcode. Normally, these sample names would
+        correspond to the individuals used in a particular experiment, but for this exercise, we
+        could name the samples in a simple way, say indv_01, indv_02, etc.
+    • Copy the remaining barcodes for this lane of samples from the file:
+        /opt/data/clean/lane1_barcodes!!!
+        and append them to your barcodes file in your working directory.
+    • You can concatenate this file onto the end of your file using the cat command and
+        the shell’s append operator: cat file1 >> file2, or you can cut+paste.
+    • Based on the barcode file, how many samples were multiplexed together in this
+        RAD library? (The wc command can tell you this.)
+    • You will need to specify the restriction enzyme used to construct the library (SbfI), the
+        directory of input files (the lane1 directory), the list of barcodes, the output directory
+        (samples), and specify that process_radtags clean, discard, and rescue reads.
+    • The process_radtags program will write a log file into the output directory.
+        Examine the log and answer the following questions:
+    • How many raw reads were there?
+    • How many were retained?
+    • Of those discarded, what were the reasons?
+    • In the process_radtags log file what can the list of “sequences not recorded” tell
+        you about the barcodes analyzed and about the sequencing quality in general?
+    • If you found that something is possibly missing from your process_radtags
+        input, correct the error and re-run the process_radtags.
 
 ### Exercise 1. Data preparation, part 2
 1. We will now work with the second data set. These data contain paired-end reads that
@@ -225,46 +200,45 @@ have been double-digested and dual barcoded. Each set of paired reads contains a
 inline barcode on the first read, and an indexed barcode on both reads. These are
 known as combinatorial barcodes as many unique combinations can be made from
 pairs of barcodes.
-⋅⋅⋅• In ./working/clean, create a directory called lane2 to contain the raw data for this
+    • In ./working/clean, create a directory called lane2 to contain the raw data for this
 exercise and create the directory ddsamples to contain the cleaned output.
-⋅⋅⋅• Unarchive data set 2 (DS2):
-/opt/data/clean/lane2.tar
-into the lane2 directory.
+    • Unarchive data set 2 (DS2):
+    /opt/data/clean/lane2.tar(ADAPT PATH)
+    into the lane2 directory.
 2. Examine the contents of the pairs of files in the terminal again.
-• How are the FASTQ headers related between pairs of files?
-• Can you identify the indexed barcode in the FASTQ header?
+    • How are the FASTQ headers related between pairs of files?
+    • Can you identify the indexed barcode in the FASTQ header?
 3. We will again use the Stacks’ program process_radtags to clean and demultiplex
 our samples.
-• You will need to specify the set of barcode pairs used in the construction of the RAD
-library.
-• Enter the following barcodes into a file called lane2_barcodes in your working
-directory (make sure you enter them in the right format):
-• AACCA/ATCACG CATAT/ATCACG GAGAT/ATCACG
-• TACCG/ATCACG AAGGA/CGATGT CAACC/CGATGT
-• GACAC/CGATGT TACGT/CGATGT
-[Use the nano editor to create your file.]
-• Modify your barcodes file by adding a third column to it, specifying a human-readable
-name for each sample (instead of having the output files named after the barcodes). As
-we saw in the previous exercise, these sample names would normally coincide with
-your particular experimental design. Here, for simplicity, we can just use indv_01,
-indv_02, etc.
-• Copy the remaining barcodes for this lane of samples from the file:
-/opt/data/clean/lane2_barcodes
-
-and append them to your barcodes file in your working directory.
-• You can concatenate this file onto the end of your file using the cat command and
-the shell’s append operator: cat file1 >> file2, or you can cut+paste.
-• How many samples were multiplexed together in this RAD library? (The wc
-command can tell you this.)
-• You will need to specify the two restriction enzymes used to construct the library
-(NlaIII and MluCI), the directory of input files (the lane2 directory), the list of
-barcodes, the output directory (ddsamples) and specify that process_radtags
-clean, discard, and rescue reads.
-• The process_radtags program will write a log file into the output directory.
-Examine the log and answer the following questions:
-• What is the purpose of the four different output files for each set of barcodes?
-• How many raw reads were there?
-• How many were retained?
+    • You will need to specify the set of barcode pairs used in the construction of the RAD
+        library.
+    • Enter the following barcodes into a file called lane2_barcodes in your working
+        directory (make sure you enter them in the right format):
+            AACCA/ATCACG CATAT/ATCACG GAGAT/ATCACG
+            TACCG/ATCACG AAGGA/CGATGT CAACC/CGATGT
+        GACAC/CGATGT TACGT/CGATGT
+        [Use the nano editor to create your file.] (EXPLAIN HERE)
+    • Modify your barcodes file by adding a third column to it, specifying a human-readable
+        name for each sample (instead of having the output files named after the barcodes). As
+        we saw in the previous exercise, these sample names would normally coincide with
+        your particular experimental design. Here, for simplicity, we can just use indv_01,
+        indv_02, etc.
+    • Copy the remaining barcodes for this lane of samples from the file:
+        /opt/data/clean/lane2_barcodes
+        and append them to your barcodes file in your working directory.
+    • You can concatenate this file onto the end of your file using the cat command and
+        the shell’s append operator: cat file1 >> file2, or you can cut+paste.
+    • How many samples were multiplexed together in this RAD library? (The wc
+        command can tell you this.)
+    • You will need to specify the two restriction enzymes used to construct the library
+        (NlaIII and MluCI), the directory of input files (the lane2 directory), the list of
+        barcodes, the output directory (ddsamples) and specify that process_radtags
+        clean, discard, and rescue reads.
+    • The process_radtags program will write a log file into the output directory.
+        Examine the log and answer the following questions:
+    * What is the purpose of the four different output files for each set of barcodes?
+    • How many raw reads were there?
+    • How many were retained?
 
 ### Exercise II
 **part 1: de novo assembly of RAD tags without a
