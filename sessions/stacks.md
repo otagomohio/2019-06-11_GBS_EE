@@ -208,7 +208,7 @@ samples.
     • If you found that something is possibly missing from your process_radtags
         input, correct the error and re-run the process_radtags.
 
-**part 2: Add subtitle **
+**part 2: Add subtitle**
 
 1. We will now work with the second data set. These data contain paired-end reads that
 have been double-digested and dual barcoded. Each set of paired reads contains an
