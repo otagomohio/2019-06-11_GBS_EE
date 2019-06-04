@@ -104,7 +104,7 @@ phylogenetic trees.
 
 ### Exercise I. Data preparation. 
 
-**part 1: Add subtitle **
+**part 1: Add subtitle**
 
 
 1. 10 minute mini-lecture on Phred scores and the *process_radtags* cleaning
