@@ -102,7 +102,11 @@ primary file format that read alignments are stored) in very useful ways.
 program written by the Exelixis Lab for the construction of maximum likelihood
 phylogenetic trees.
 
-### Exercise 1. Data preparation. Part 1.
+### Exercise I. Data preparation. 
+
+**part 1: Add subtitle **
+
+
 1. 10 minute mini-lecture on Phred scores and the *process_radtags* cleaning
 algorithm.
 2. The first step in the analysis of all short-read sequencing data, including RAD-seq
@@ -204,7 +208,7 @@ samples.
     • If you found that something is possibly missing from your process_radtags
         input, correct the error and re-run the process_radtags.
 
-### Exercise 1. Data preparation, part 2
+**part 2: Add subtitle **
 
 1. We will now work with the second data set. These data contain paired-end reads that
 have been double-digested and dual barcoded. Each set of paired reads contains an
@@ -280,9 +284,7 @@ analysis results in two quite different outcomes.
 3. In your ./working workspace, create a directory called ustacks to contain all the
 data for this exercise. 
 
-    Inside that directory, create two additional directories:
-
-samples, and stacks. To save time, we have already cleaned and demultiplexed
+    *   Inside that directory, create two additional directories: ```samples```, and ```stacks```. To save time, we have                already cleaned and demultiplexed
 this data and will start from the cleaned samples stage.
 Copy data set 3 (DS3):
 /opt/data/denovo/lib01_samp01.fq.gz
@@ -482,7 +484,7 @@ program.
     
     • What is the mean value of nucleotide diversity (π) and FIS for each of the three
         populations? [HINT: The less -S command may help you view these files easily.]
-     
+  
 6. Our goal now is to export a subset of loci for analysis in Structure, which analyzes the
 distribution of multi-locus genotypes within and among populations in a Bayesian
 framework to make predictions about the most probable population of origin for each
