@@ -340,19 +340,17 @@ data and will start from the cleaned samples stage. Inside the opt directory, cr
 additional directories: M2, M3, M4, M5, M6 and M7. We have already prepared
 the clean samples for this exercise.
 
-Unarchive dataset 2 (DS2):
-/opt/data/denovo/oregon_stickleback.tar
-into the samples directory. The unarchived dataset contains 30 stickleback
-samples, and we will use 9 of them in this exercise:
-cs_1335.01, cs_1335.02, cs_1335.05, pcr_1211.04, pcr_1211.05,
-pcr_1211.06, stl_1274.33, stl_1274.35, stl_1274.37
+    *   Unarchive dataset 2 (DS2):
+        ```/opt/data/denovo/oregon_stickleback.tar```
+        into the samples directory. The unarchived dataset contains 30 stickleback
+        samples, and we will use 9 of them in this exercise:
+        cs_1335.01, cs_1335.02, cs_1335.05, pcr_1211.04, pcr_1211.05,
+        pcr_1211.06, stl_1274.33, stl_1274.35, stl_1274.37 Stickleback populations sampled from Oregon, USA in Catchen, et             al., 2013. Populations in red are sampled for this tutorial.
 
-Stickleback populations sampled from Oregon, USA in Catchen,
-et al., 2013. Populations in red are sampled for this tutorial.
 3. Run the Stacks’ denovo_map.pl pipeline program, each time changing the value for
 M. This program will run ustacks, cstacks, and sstacks on the individuals in our
 study as well as the populations program.
-[Once you get denovo_map.pl running, it will take approximately 10 minutes.]
+*Once you get denovo_map.pl running, it will take approximately 10 minutes.*
     
     • Information on denovo_map.pl and its parameters can be found online:
         http://catchenlab.life.illnois.edu/stacks/comp/denovo_map.php
@@ -405,18 +403,26 @@ text file like so:
 ```
 
 Save this file as ```r80_loci.tsv.```
+
 6. Copy the Gnuplot script to the opt directory:
-/opt/data/denovo/hockey_stick.gnuplot
-• Cat the file to see what it does.
+    ```/opt/data/denovo/hockey_stick.gnuplot```
+
+    • Cat the file to see what it does.
+
 7. Put the r80_loci.tsv file in the same directory as the hockey_stick.gnuplot
 script.
-• Execute Gnuplot:
-% gnuplot < hockey_stick.gnuplot
-• Open the PDF to examine the hockey stick plot. Based on the plot and the
-number of r80 loci, which value for M do you think is most appropriate for the
-Oregon stickleback data?
+    
+    • Execute Gnuplot:
+    ```
+    % gnuplot < hockey_stick.gnuplot
+    ```
+    
+    • Open the PDF to examine the hockey stick plot. Based on the plot and the
+        number of r80 loci, which value for M do you think is most appropriate for the
+        Oregon stickleback data?
 
-Exercise II. part 3: de novo assembly of RAD tags without agenome
+**Part 3: de novo assembly of RAD tags without a genome**
+
 1. In this third exercise we will now be working on the full set of threespine stickleback
 data sampled from throughout Oregon, on the west coast of the United States. These
 data consist of three populations: a coastal marine population, a costal freshwater, and
@@ -429,7 +435,7 @@ the assembled data for this exercise.
 4. Run the Stacks’ denovo_map.pl pipeline program. This program will run ustacks,
 cstacks, and sstacks on the individuals in our study as well as the populations
 program.
-[Once you get denovo_map.pl running, it will take approximately 30 minutes.]
+*Once you get denovo_map.pl running, it will take approximately 30 minutes.*
     
     • Information on denovo_map.pl and its parameters can be found online:
     
@@ -507,12 +513,14 @@ than enough information to define population structure.
         don’t want to output multiple SNPs from the same RAD locus, since they are not
         independent but are in linkage blocks within each RAD tag. We can achieve this
         behavior by specifying the --write_single_snp parameter to populations.
+
 7. Now we want to select 1,000 loci randomly from the results and save these loci into a
 file. We can easily do this using the shell given a list of catalog IDs output in the
 previous step. The populations.sumstats.tsv file gives a list of all polymorphic
-loci. Use the zcat, grep, cut, sort, uniq, shuf, and head commands to generate a
+loci. Use the ```zcat, grep, cut, sort, uniq, shuf, and head``` commands to generate a
 list of 1000 random loci. Save this list of loci as a whitelist, that we can feed back into
-populations. This operation can be done in a single shell command.
+populations. This operation can be done in a single shell command. ADD HINTS
+
 8. Now execute populations again, this time feeding back in the whitelist you just
 generated. This will cause populations to only process the loci in the whitelist.
 Specify that a Structure output file be included this time and again insist that only a
