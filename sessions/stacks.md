@@ -98,7 +98,7 @@ phylogenetic trees.
 
 ### Exercise I. Data preparation. 
 
-**part 1: Add subtitle**
+**Part 1: Add subtitle**
 
 
 1. 10 minute mini-lecture on Phred scores and the *process_radtags* cleaning
@@ -202,7 +202,7 @@ samples.
     • If you found that something is possibly missing from your process_radtags
         input, correct the error and re-run the process_radtags.
 
-**part 2: Add subtitle**
+**Part 2: Add subtitle**
 
 1. We will now work with the second data set. These data contain paired-end reads that
 have been double-digested and dual barcoded. Each set of paired reads contains an
