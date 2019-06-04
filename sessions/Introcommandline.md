@@ -1,6 +1,4 @@
 
-**In construction**
-
 # Introduction to the command line
 
 ## Getting on the supercomputer
