@@ -2,9 +2,9 @@
 
 # Genetic and genomic analyses using RAD-seq and Stacks
 ## Credits
-Julian Catchen <jcatchen@illinois.edu>
+Julian Catchen      <jcatchen@illinois.edu>
 
-Nicolas Rochette <rochette@illinois.edu>
+Nicolas Rochette    <rochette@illinois.edu>
 
 
 ## Objectives
@@ -215,6 +215,7 @@ pairs of barcodes.
     • Unarchive data set 2 (DS2):
         ```/opt/data/clean/lane2.tar```(ADAPT PATH)
         into the ```lane2``` directory.
+        
 2. Examine the contents of the pairs of files in the terminal again.
 
     • How are the FASTQ headers related between pairs of files?
@@ -258,11 +259,11 @@ our samples.
     • The process_radtags program will write a log file into the output directory.
         Examine the log and answer the following questions:
  
-                *What is the purpose of the four different output files for each set of barcodes?*
+                •   What is the purpose of the four different output files for each set of barcodes?*
     
-                *How many raw reads were there?*
+                •   How many raw reads were there?*
     
-                *How many were retained?*
+                •   How many were retained?*
 
 ### Exercise II
 
