@@ -205,6 +205,7 @@ samples.
         input, correct the error and re-run the process_radtags.
 
 ### Exercise 1. Data preparation, part 2
+
 1. We will now work with the second data set. These data contain paired-end reads that
 have been double-digested and dual barcoded. Each set of paired reads contains an
 inline barcode on the first read, and an indexed barcode on both reads. These are
@@ -266,6 +267,7 @@ our samples.
             •   *How many were retained?*
 
 ### Exercise II
+
 **part 1: de novo assembly of RAD tags without a
 genome**
 
@@ -303,6 +305,7 @@ Do not allow more than two mismatches between stacks for this exercise.
 samples? What could potentially be causing these differences?
 
 **part 2: de novo assembly of RAD tags without a genome**
+
 1. In this second exercise we will be working on a subset of data from threespine
 stickleback data from Oregon, on the
 west coast of the United States.
@@ -413,8 +416,7 @@ script.
 number of r80 loci, which value for M do you think is most appropriate for the
 Oregon stickleback data?
 
-Exercise II. part 3: de novo assembly of RAD tags without a
-genome
+Exercise II. part 3: de novo assembly of RAD tags without agenome
 1. In this third exercise we will now be working on the full set of threespine stickleback
 data sampled from throughout Oregon, on the west coast of the United States. These
 data consist of three populations: a coastal marine population, a costal freshwater, and
@@ -456,10 +458,10 @@ program.
     • Execute the Stacks pipeline.
 
 5. Examine the Stacks log and output files when execution is complete.
-
+    
     • After processing all the individual samples, denovo_map.pl will print a table
-containing the depth of coverage of each sample. Find this table in the log, what were
-the depths of coverage?
+        containing the depth of coverage of each sample. Find this table in the log, what were
+        the depths of coverage?
     
     • Examine the output of the populations program in the log.
     
