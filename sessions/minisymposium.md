@@ -2,7 +2,6 @@
 
 Tuesday June 11 2019 | 09:00 - 12-30 | [Seminar Room, Benham Building](https://goo.gl/maps/62XWtwgqsKxKir4V9)
 
-Organised by: Ludovic Dutoit and Alana Alexander
 
 
 ## Introduction
@@ -11,8 +10,9 @@ Genotyping-by-Sequencing (GBS) in the broad sense has been revolutionising popul
 
 This Mini-symposium will serve as an opening for a two day hands-on workshop introducing the practicalities of GBS. We are delighted to be able to present a range of talks from various departments and institutions connecting researchers across the country.
 
-**Supported by:** The Department of Zoology, Genomic Aotearoa, The New Zealand eScience Infrastructure
 
+**Organised by:** Ludovic Dutoit and Alana Alexander
+**Supported by:** The Department of Zoology @Otago, Genomic Aotearoa, The New Zealand eScience Infrastructure 
 
 Time | Title | Speaker |
 ------|------|-----|
