@@ -1,3 +1,5 @@
+**In construction
+
 # Bash genomics
 
 Over the last few lessons, we learnt the every day tools that will allow you to work in the command line environment.
@@ -46,7 +48,7 @@ Hint: Can you find eveything BUT the sequence names? You only have to count the 
 
 6. Bonus question: Take into account the reverse strand when calculateing the number of sites!
 
-
+TODO: TRY TO INCROPORATE SOME of the commands zcat etc that we need for the rest
 
 
 In this challenging exercise you played around with some basics data using pre-existing programs and the available help you could find (i.e. the instructors, colleagues, --help and Google). This is very much like real-life genomics!
