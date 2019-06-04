@@ -215,58 +215,74 @@ known as combinatorial barcodes as many unique combinations can be made from
 pairs of barcodes.
     
     • In ./working/clean, create a directory called lane2 to contain the raw data for this
-exercise and create the directory ddsamples to contain the cleaned output.
+        exercise and create the directory ddsamples to contain the cleaned output.
     
     • Unarchive data set 2 (DS2):
     /opt/data/clean/lane2.tar(ADAPT PATH)
     into the lane2 directory.
 2. Examine the contents of the pairs of files in the terminal again.
-    
-    • How are the FASTQ headers related between pairs of files?
-    
-    • Can you identify the indexed barcode in the FASTQ header?
+
+    * How are the FASTQ headers related between pairs of files?
+    * Can you identify the indexed barcode in the FASTQ header?
 
 3. We will again use the Stacks’ program process_radtags to clean and demultiplex
 our samples.
+    
     • You will need to specify the set of barcode pairs used in the construction of the RAD
         library.
+    
     • Enter the following barcodes into a file called lane2_barcodes in your working
         directory (make sure you enter them in the right format):
             AACCA/ATCACG CATAT/ATCACG GAGAT/ATCACG
             TACCG/ATCACG AAGGA/CGATGT CAACC/CGATGT
-        GACAC/CGATGT TACGT/CGATGT
-        [Use the nano editor to create your file.] (EXPLAIN HERE)
+            GACAC/CGATGT TACGT/CGATGT
+            [Use the nano editor to create your file.] (EXPLAIN HERE)
+    
     • Modify your barcodes file by adding a third column to it, specifying a human-readable
         name for each sample (instead of having the output files named after the barcodes). As
         we saw in the previous exercise, these sample names would normally coincide with
         your particular experimental design. Here, for simplicity, we can just use indv_01,
         indv_02, etc.
+    
     • Copy the remaining barcodes for this lane of samples from the file:
         /opt/data/clean/lane2_barcodes
         and append them to your barcodes file in your working directory.
+    
     • You can concatenate this file onto the end of your file using the cat command and
         the shell’s append operator: cat file1 >> file2, or you can cut+paste.
+    
     • How many samples were multiplexed together in this RAD library? (The wc
         command can tell you this.)
+    
     • You will need to specify the two restriction enzymes used to construct the library
         (NlaIII and MluCI), the directory of input files (the lane2 directory), the list of
         barcodes, the output directory (ddsamples) and specify that process_radtags
         clean, discard, and rescue reads.
+    
     • The process_radtags program will write a log file into the output directory.
         Examine the log and answer the following questions:
-    * What is the purpose of the four different output files for each set of barcodes?
-    • How many raw reads were there?
-    • How many were retained?
+    
+            * *What is the purpose of the four different output files for each set of barcodes?*
+    
+            • *How many raw reads were there?*
+    
+            • *How many were retained?*
 
 ### Exercise II
 **part 1: de novo assembly of RAD tags without a
 genome**
+
 1. Mini-lecture on Stacks, primary/secondary reads, and parameters.
+
 2. In the first part of the second exercise we will be constructing stacks in two separate
 samples. These samples are from the same (anonymous) populations, however their
 analysis results in two quite different outcomes.
+
 3. In your ./working workspace, create a directory called ustacks to contain all the
-data for this exercise. Inside that directory, create two additional directories:
+data for this exercise. 
+
+    Inside that directory, create two additional directories:
+
 samples, and stacks. To save time, we have already cleaned and demultiplexed
 this data and will start from the cleaned samples stage.
 Copy data set 3 (DS3):
