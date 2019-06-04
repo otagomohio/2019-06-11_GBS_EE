@@ -265,10 +265,10 @@ our samples.
                 
                 •   How many were retained?
 
-### Exercise II
+### Exercise II: de novo assembly of RAD tags without a
+genome
 
-**part 1: de novo assembly of RAD tags without a
-genome**
+**Part 1: Your first stacks run!**
 
 1. Mini-lecture on Stacks, primary/secondary reads, and parameters.
 
@@ -301,7 +301,7 @@ Do not allow more than two mismatches between stacks for this exercise.
 7. Examine the output from ustacks. What characteristics are different between the two
 samples? What could potentially be causing these differences?
 
-**part 2: de novo assembly of RAD tags without a genome**
+**Part 2: approach the parameter space**
 
 1. In this second exercise we will be working on a subset of data from threespine
 stickleback data from Oregon, on the
@@ -418,7 +418,7 @@ script.
         number of r80 loci, which value for M do you think is most appropriate for the
         Oregon stickleback data?
 
-**Part 3: de novo assembly of RAD tags without a genome**
+**Part 3: Getting to opulation genetics analyses**
 
 1. In this third exercise we will now be working on the full set of threespine stickleback
 data sampled from throughout Oregon, on the west coast of the United States. These
