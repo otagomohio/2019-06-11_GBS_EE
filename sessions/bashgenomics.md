@@ -41,7 +41,7 @@ Hint: Can you find eveything BUT the sequence names? You only have to count the 
 	* X X
 	* Pst1 CTGCAG
 
-4 cutters are much more frequents than  6 cutters.
+	4 cutters are much more frequents than  6 cutters.
 
 
 6. Bonus question: Take into account the reverse strand when calculateing the number of sites!
