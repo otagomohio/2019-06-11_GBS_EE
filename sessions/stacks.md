@@ -258,12 +258,12 @@ our samples.
     
     • The process_radtags program will write a log file into the output directory.
         Examine the log and answer the following questions:
- 
-                •   What is the purpose of the four different output files for each set of barcodes?*
-    
-                •   How many raw reads were there?*
-    
-                •   How many were retained?*
+        
+                •   What is the purpose of the four different output files for each set of barcodes?
+                
+                •   How many raw reads were there?
+                
+                •   How many were retained?
 
 ### Exercise II
 
@@ -337,12 +337,12 @@ data and will start from the cleaned samples stage. Inside the opt directory, cr
 additional directories: M2, M3, M4, M5, M6 and M7. We have already prepared
 the clean samples for this exercise.
 
-    *   Unarchive dataset 2 (DS2):
+    •   Unarchive dataset 2 (DS2):
         ```/opt/data/denovo/oregon_stickleback.tar```
         into the samples directory. The unarchived dataset contains 30 stickleback
         samples, and we will use 9 of them in this exercise:
-        cs_1335.01, cs_1335.02, cs_1335.05, pcr_1211.04, pcr_1211.05,
-        pcr_1211.06, stl_1274.33, stl_1274.35, stl_1274.37 Stickleback populations sampled from Oregon, USA in Catchen, et             al., 2013. Populations in red are sampled for this tutorial.
+            cs_1335.01, cs_1335.02, cs_1335.05, pcr_1211.04, pcr_1211.05,
+            pcr_1211.06, stl_1274.33, stl_1274.35, stl_1274.37 Stickleback populations sampled from Oregon, USA in Catchen, et             al., 2013. Populations in red are sampled for this tutorial. ADRESS THE RED ISSUE
 
 3. Run the Stacks’ denovo_map.pl pipeline program, each time changing the value for
 M. This program will run ustacks, cstacks, and sstacks on the individuals in our
