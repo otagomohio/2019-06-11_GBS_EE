@@ -1,9 +1,3 @@
-**In construction**
-* Remaining of day of day 1
-* Short intro on RAD/GBS
-* Filtering in the afternoon
-* End with structure and PCA
-* Plan one extra activity if extra time...
 
 
 # Genetic and genomic analyses using RAD-seq and Stacks
@@ -556,6 +550,9 @@ menu and then “Show”.
     
     • *Are the three Oregon threespine stickleback populations related to one another? How
         can you tell?*
+
+
+ADD PCA EXERCISE
 
 ### Citations and Readings
 * Paris, J. R., Stevens, J. R., & Catchen, J. M. (2017). Lost in parameter space: a road map for stacks.Methods in Ecology and Evolution, 188, 799–14.
