@@ -12,6 +12,7 @@ This Mini-symposium will serve as an opening for a two day hands-on workshop int
 
 
 **Organised by:** Ludovic Dutoit and Alana Alexander
+
 **Supported by:** The Department of Zoology @Otago, Genomic Aotearoa, The New Zealand eScience Infrastructure 
 
 Time | Title | Speaker |
