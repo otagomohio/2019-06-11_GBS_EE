@@ -135,7 +135,7 @@ your hierarchy. You’ll be making many directories, so stay organized!
 spreadsheet or word processor. Examine the contents of the set of files in the terminal
 (the head, more, and tail commands may be of use).
 
-    • *You should see multiple different lines with different encodings.*
+    • You should see multiple different lines with different encodings.
 
     • *How does the FASTQ file format work?*
 
@@ -189,16 +189,16 @@ samples.
     • The process_radtags program will write a log file into the output directory.
         Examine the log and answer the following questions:
     
-            • How many raw reads were there?
+            How many raw reads were there?
     
-            • How many were retained?
+            How many were retained?
     
-            • Of those discarded, what were the reasons?
+            Of those discarded, what were the reasons?
     
-            • In the process_radtags log file what can the list of “sequences not recorded” tell
+            In the process_radtags log file what can the list of “sequences not recorded” tell
                 you about the barcodes analyzed and about the sequencing quality in general?
     
-            • If you found that something is possibly missing from your process_radtags
+            If you found that something is possibly missing from your process_radtags
                 input, correct the error and re-run the process_radtags.
 
 **Part 2: Add subtitle**
