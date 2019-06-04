@@ -187,7 +187,7 @@ samples.
         (samples), and specify that process_radtags clean, discard, and rescue reads.
     
     • The process_radtags program will write a log file into the output directory.
-        Examine the log and answer the following questions:
+        Examine the log and answer the following questions
     
             How many raw reads were there?
     
