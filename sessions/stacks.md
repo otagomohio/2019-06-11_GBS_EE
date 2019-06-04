@@ -121,16 +121,15 @@ your hierarchy. You’ll be making many directories, so stay organized!
     organized workspace makes analyses easier and prevents data from being overwritten.
 
     • In working, create a directory called clean to contain all the data for this exercise.
-    Inside that directory create two additional directories: lane1 and samples. We will
+    Inside that directory create two additional directories: ```lane1``` and ```samples```. We will
     refer to the clean directory as the working directory.
-
     • Unarchive data set 1 (DS1):
        ```/opt/data/clean/lane1.tar```
        to the lane1 directory.
 
     • You can copy the file to your working directory and use tar to unarchive it, or you can
-    change to your working directory and untar it without moving the file (this will save
-    you time and will dump the unarchived files into the directory you are currently in).
+        change to your working directory and untar it without moving the file (this will save
+        you time and will dump the unarchived files into the directory you are currently in).
 
 4. Your decompressed files has millions of reads in it, too many for you to examine in a
 spreadsheet or word processor. Examine the contents of the set of files in the terminal
@@ -210,16 +209,17 @@ inline barcode on the first read, and an indexed barcode on both reads. These ar
 known as combinatorial barcodes as many unique combinations can be made from
 pairs of barcodes.
     
-    • In ./working/clean, create a directory called lane2 to contain the raw data for this
+    • In ```./working/clean```, create a directory called ```lane2``` to contain the raw data for this
         exercise and create the directory ddsamples to contain the cleaned output.
     
     • Unarchive data set 2 (DS2):
-    /opt/data/clean/lane2.tar(ADAPT PATH)
-    into the lane2 directory.
+        ```/opt/data/clean/lane2.tar```(ADAPT PATH)
+        into the ```lane2``` directory.
 2. Examine the contents of the pairs of files in the terminal again.
 
-    * How are the FASTQ headers related between pairs of files?
-    * Can you identify the indexed barcode in the FASTQ header?
+    • How are the FASTQ headers related between pairs of files?
+    
+    • Can you identify the indexed barcode in the FASTQ header?
 
 3. We will again use the Stacks’ program process_radtags to clean and demultiplex
 our samples.
