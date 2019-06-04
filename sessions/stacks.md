@@ -519,7 +519,7 @@ file. We can easily do this using the shell given a list of catalog IDs output i
 previous step. The populations.sumstats.tsv file gives a list of all polymorphic
 loci. Use the ```zcat, grep, cut, sort, uniq, shuf, and head``` commands to generate a
 list of 1000 random loci. Save this list of loci as a whitelist, that we can feed back into
-populations. This operation can be done in a single shell command. ADD HINTS
+populations. This operation can be done in a single shell command. ADD  A LINK TO DESCRIPTION OF THOSE COMMANDS
 
 8. Now execute populations again, this time feeding back in the whitelist you just
 generated. This will cause populations to only process the loci in the whitelist.
