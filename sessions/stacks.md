@@ -257,12 +257,12 @@ our samples.
     
     • The process_radtags program will write a log file into the output directory.
         Examine the log and answer the following questions:
+ 
+                *What is the purpose of the four different output files for each set of barcodes?*
     
-            •   *What is the purpose of the four different output files for each set of barcodes?*
+                *How many raw reads were there?*
     
-            •   *How many raw reads were there?*
-    
-            •   *How many were retained?*
+                *How many were retained?*
 
 ### Exercise II
 
