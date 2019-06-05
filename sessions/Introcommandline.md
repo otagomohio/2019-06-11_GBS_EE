@@ -28,6 +28,9 @@ We will go through the following carpentries lessons together:
 * [Finding things](https://swcarpentry.github.io/shell-novice/07-find/index.html)
 * [Loops](https://swcarpentry.github.io/shell-novice/05-loop/index.html)
 
+
+## Let's practice what we just learned!
+
 We have now gone through the basics of the command line. Let's reinforce some of what we just learnt in this [final exercise](bashgenomics.md).
 
 
