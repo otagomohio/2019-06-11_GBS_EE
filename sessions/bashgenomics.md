@@ -31,8 +31,8 @@ GAGAGGGAGAGATCTATAGAGCTA
 GAGAGCTATSTCGATATCTGAGGAGA
 ```
 
-3. Can you print all the sequence names to the screen ? [HINT](hints/bash_genomics_3.md)
-)
+3. Can you print all the sequence names to the screen ? [Hint](hints/bash_genomics_3.md)
+
 
 4. Can you tell the total length of the genome? This command can take a little bit of time to run! [Hint](hints/bash_genomics_4.md)
 
