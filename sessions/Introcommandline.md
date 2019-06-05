@@ -13,7 +13,7 @@ Once you login, get into the space created for you for this workshop by using th
 cd /nesi/project/nesi02659/users/<yourusername>
 ```
 
-NeSI has a ton of different projects for a bunch of researchers around the motu (country). The project we are using for this workshop is `nesi02659`. You'll notice it is in the path above. We are going to cover paths to files and folders in just a minute!
+NeSI has a ton of different projects for a bunch of researchers around the motu (country). The project we are using for this workshop is `nesi02659`. You might notice `nesi02659` is in the path to the space we are working in shown in the `cd` command above. We are going to cover paths to files and folders in just a minute!
 
 
 ## Introduction to the command line
