@@ -6,7 +6,7 @@
 **Adapted by:** Ludovic Dutoit
 
 ## Objectives
-The goal of this exercise is to familiarize students with the use of next generation sequence
+The goal of this exercise is to familiarize ourselves with the use of next generation sequence
 data produced from Reduced Representation Libraries (RRL) approaches such as
 Restriction site Associated DNA (RAD-tags). These libraries are often used for genotyping
 by sequencing, and can provide a dense set of single nucleotide polymorphism (SNP)
@@ -14,8 +14,7 @@ markers that are spread evenly across a genome. These markers are useful for a v
 genetic and genomic analyses in model and non-model organisms. Students will gain
 experience with a computational pipeline called Stacks that was designed for the analysis
 of such data. Data will be analyzed de novo to perform a population analysis without the
-aid of a reference genome, and from an organism with a reference genome to identify
-signatures of selection. Stacks can be used for other analyses of RAD-seq data as well,
+aid of a reference genome. Stacks can be used with a reference genome as well as for many other analyses of RAD-seq data
 such as constructing genetic maps and phylogeography, although those are beyond the
 scope of this exercise.
 
@@ -53,10 +52,11 @@ and software pipelines for the analysis of such data. We have produced Stacks fo
 analysis of RAD-seq data. You will learn how to analyze RAD data with and without the
 use of a reference genome with the goal of identifying population structure in one case
 and identifying signatures of selection in a second case. Through the completion of these
-tasks you will learn how to process RAD-seq data and use the software programs Stacks,
-BWA and Structure.
+tasks you will learn how to process RAD-seq data and use the software programs ```Stacks,
+BWA and Structure.```
+
 For more information on RAD genotyping and related methods, in particular conceptual
-and statistical issues, see the papers listed at the end of this document. These papers will
+and statistical issues, see the [papers]() listed at the end of this document. These papers will
 help you better understand both the molecular biology, computational analyses, and
 conceptual framework for the analysis of RRL data such as RAD.
 
