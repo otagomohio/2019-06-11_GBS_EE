@@ -1,4 +1,4 @@
-
+IN CONSTRUCTION
 
 # Genetic and genomic analyses using RAD-seq and Stacks
 ## Credits
@@ -56,13 +56,13 @@ tasks you will learn how to process RAD-seq data and use the software programs `
 BWA and Structure.```
 
 For more information on RAD genotyping and related methods, in particular conceptual
-and statistical issues, see the [papers]() listed at the end of this document. These papers will
+and statistical issues, see the [papers](https://github.com/otagomohio/2019-06-11_GBS_EE/blob/master/sessions/stacks.md#citations-and-readings) listed at the end of this document. These papers will
 help you better understand both the molecular biology, computational analyses, and
 conceptual framework for the analysis of RRL data such as RAD.
 
 ## Datasets and Software
 ### Datasets
-*Short description of the dataset*
+*Short description of the dataset TOCOME *
 
 ### Software 
 **All are open source software**
@@ -101,16 +101,22 @@ phylogenetic trees.
 
 1. 10 minute mini-lecture on Phred scores and the *process_radtags* cleaning
 algorithm.
-2. The first step in the analysis of all short-read sequencing data, including RAD-seq
+
+The first step in the analysis of all short-read sequencing data, including RAD-seq
 data, is removing low quality sequences and separating out reads from different
 samples that were individually barcoded. This ‘de-multiplexing’ serves to associate
 reads with the different individuals or population samples from which they were
 derived.
-3. In each exercise you will set up a directory structure on the remote server (in this case
-our Amazon Virtual Machine) that will hold your data and the different steps of your
-analysis. We will use the directory ~/working on the cloud to hold these analyses. Be
-careful that your are reading and writing files to the appropriate directories within
-your hierarchy. You’ll be making many directories, so stay organized!
+
+2. Let's organise ourselves and copy the data :
+
+    • In each exercise you will set up a directory structure on the remote server (in this case
+        our Amazon Virtual Machine) that will hold your data and the different steps of your
+        analysis. We will start by making the directory ```working``` in your working space:
+
+    • Create the directory: ```/nesi/project/nesi02659/users/<username>/working and``` and get in there
+        to hold these analyses. Be careful that your are reading and writing files to the appropriate directories within
+        your hierarchy. You’ll be making many directories, so stay organized!
 
     •Each step of your analysis goes into the hierarchy of the workspace, and each step of  
     the analysis takes its input from one directory and places it into another directory, this
@@ -118,20 +124,25 @@ your hierarchy. You’ll be making many directories, so stay organized!
     correspond to each stage and that allow us to remember where they are. A well
     organized workspace makes analyses easier and prevents data from being overwritten.
 
-    • In working, create a directory called clean to contain all the data for this exercise.
-    Inside that directory create two additional directories: ```lane1``` and ```samples```. We will
+    • First let's make a few directories. In ```working```, create a directory called ```clean``` to contain all the data for     this exercise. Inside that directory create two additional directories: ```lane1``` and ```samples```. We will
     refer to the clean directory as the working directory.
-    • Unarchive data set 1 (DS1):
-       ```/opt/data/clean/lane1.tar```
+    Add a check showing what the structure should look like
+    
+    
+    • Copy the  data set 1 (DS1) to your working directory. The data set is in the file
+  
+       ```/nesi/project/nesi02659/source_data/clean/lane1.tar```
+       
        to the lane1 directory.
 
-    • You can copy the file to your working directory and use tar to unarchive it, or you can
-        change to your working directory and untar it without moving the file (this will save
-        you time and will dump the unarchived files into the directory you are currently in).
+    • You can use the command 
+    ```tar -xvf lane1.tar``` 
+    from your ```lane1``` folder to extract the content of this archive. Then, get back into your clean directory.
+    
 
-4. Your decompressed files has millions of reads in it, too many for you to examine in a
+Have a look at what is there now. Your decompressed files have millions of reads in it, too many for you to examine in a
 spreadsheet or word processor. Examine the contents of the set of files in the terminal
-(the head, more, and tail commands may be of use).
+(the ```less`` command may be of use).
 
     • You should see multiple different lines with different encodings.
 
@@ -139,9 +150,11 @@ spreadsheet or word processor. Examine the contents of the set of files in the t
 
     • *How are quality scores encoded? (See the link to quality scores in Appendix!!!.)*
 
-    • *How could you tell by eye which type of encoding your data are using?*
+    • *How could you tell by eye which type of encoding your data are using (i.e. PHRED33 or PHRED64)?*
+    
+    • Run fastqc on one of your samples... we need to laod fastqc and run it !!!
 
-5. You probably noticed that not all of the data is high quality. In general, you will want
+You probably noticed that not all of the data is high quality. In general, you will want
 to remove the lowest quality sequences from your data set before you proceed.
 However, the stringency of the filtering will depend on the final application. In
 general, higher stringency is needed for de novo assemblies as compared to
@@ -150,19 +163,17 @@ affect downstream analysis, producing false positives, such as errant SNP predic
 6. We will use the Stacks’s program process_radtags to clean and demultiplex our
 samples.
     
-    • Take advantage of the Stacks manual as well as the individual manual page for
-        process_radtags on the Stacks website to find information and examples:
-        http://catchenlab.life.illinois.edu/stacks/manual/#specbc
-        http://catchenlab.life.illinois.edu/stacks/comp/process_radtags.php
+    • Take advantage of the Stacks manual as well as the individual [manual page for
+        process_radtags](http://catchenlab.life.illinois.edu/stacks/manual/#procrad) on the Stacks website to find information         and examples. Do not run it yet!
     
     • You will need to specify the set of barcodes used in the construction of the RAD library.
         Remember, each P1 adaptor in RAD has a particular DNA sequence (an inline
         barcode) that gets sequenced first, allowing data to be associated with samples such as
         individuals or populations.
     
-    • Enter the following barcodes into a file called lane1_barcodes in your working
+    • Enter the following barcodes into a file called lane1_barcodes.txt in your working
         directory (make sure you enter them in the right format LINK THAT):
-            AAACGG AACGTT AACTGA AAGACG
+            indvAAACGG AACGTT AACTGA AAGACG
             AAGCTA AATGAG ACAAGA ACAGCG
             ACATAC ACCATG ACCCCC ACTCTT
             ACTGGC AGCCAT AGCGCA
@@ -172,8 +183,8 @@ samples.
         could name the samples in a simple way, say indv_01, indv_02, etc.
     
     • Copy the remaining barcodes for this lane of samples from the file:
-        /opt/data/clean/lane1_barcodes!!!
-        and append them to your barcodes file in your working directory.
+        PUT IT HERE
+        and append them to your barcodes file in your file.
     
     • You can concatenate this file onto the end of your file using the cat command and
         the shell’s append operator: cat file1 >> file2, or you can cut+paste.
@@ -298,6 +309,7 @@ case you will need to redirect STDOUT and STDERR to a file, to do so, use
 Do not allow more than two mismatches between stacks for this exercise.
 7. Examine the output from ustacks. What characteristics are different between the two
 samples? What could potentially be causing these differences?
+```
 
 **Part 2: approach the parameter space**
 
@@ -342,7 +354,7 @@ the clean samples for this exercise.
             cs_1335.01, cs_1335.02, cs_1335.05, pcr_1211.04, pcr_1211.05,
             pcr_1211.06, stl_1274.33, stl_1274.35, stl_1274.37 Stickleback populations sampled from Oregon, USA in Catchen, et             al., 2013. Populations in red are sampled for this tutorial. ADRESS THE RED ISSUE
 
-3. Run the Stacks’ denovo_map.pl pipeline program, each time changing the value for
+3. We will run the Stacks’ denovo_map.pl pipeline program, each time changing the value for
 M. This program will run ustacks, cstacks, and sstacks on the individuals in our
 study as well as the populations program.
 *Once you get denovo_map.pl running, it will take approximately 10 minutes.*
