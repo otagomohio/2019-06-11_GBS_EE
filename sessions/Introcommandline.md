@@ -7,7 +7,7 @@ During this session, we will learn to be comfortable with the command line. Firs
 
 You might have managed to log in to NeSI already. If you have not, please request help from one of us and we will assist you.
 
-Once you login, get into the space that created for you in this workshop by using the `cd` (change directory) command (don't worry - we are going to go through commands like `cd` in more detail in a sec!):
+Once you login, get into the space created for you for this workshop by using the `cd` (change directory) command (don't worry - we are going to go through commands like `cd` in more detail in a sec!):
 
 ```
 cd /nesi/project/nesi02659/users/<yourusername>
