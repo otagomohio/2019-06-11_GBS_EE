@@ -1,10 +1,10 @@
-2. Copy the human genome *hgenome.fa* from: 
+2. Copy the human genome *chicken.fa* from: 
 
 ```
-cp /nesi/project/nesi02659/source_data/hgenome.fa
+cp /nesi/project/nesi02659/source_data/chicken.fa
 ```
 
-in the newly created *human_genome_exercise/* directory.
+in the newly created *chicken_genome_exercise/* directory.
 
 
 **HINT:** The command ```cp``` should help you here. It takes two arguments, the origin and the destination.
