@@ -25,8 +25,8 @@ We will go through the following carpentries lessons together:
 * [Navigating Files and Directories](https://swcarpentry.github.io/shell-novice/02-filedir/index.html)
 * [Working With Files and Directories](https://swcarpentry.github.io/shell-novice/03-create/index.html)
 * [Pipes and Filters](https://swcarpentry.github.io/shell-novice/04-pipefilter/index.html)
-* [Finding things](https://swcarpentry.github.io/shell-novice/07-find/index.html)
 * [Loops](https://swcarpentry.github.io/shell-novice/05-loop/index.html)
+* [Finding things](https://swcarpentry.github.io/shell-novice/07-find/index.html)
 
 
 ## Let's practice what we just learned!
