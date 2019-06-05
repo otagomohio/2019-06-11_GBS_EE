@@ -18,7 +18,7 @@ NeSI has a ton of different projects for a bunch of researchers around the motu 
 
 ## Introduction to the command line
 
-For this session, we will material under use a Creative Commons license developped by The Carpentries. [The Carpentries](https://docs.carpentries.org/index.html) teaches foundational coding, and data science skills to researchers worldwide. The carpentries is active in New Zealand and @Otago, we encourage you to keep your eyes open for [local events](https://otagocarpentries.github.io/).
+For this session, we will use material created under a Creative Commons license by The Carpentries. [The Carpentries](https://docs.carpentries.org/index.html) teaches foundational coding and data science skills to researchers worldwide. The Carpentries is active in New Zealand and @Otago, we encourage you to keep your eyes open for [local events](https://otagocarpentries.github.io/).
 
 We will go through the following carpentries lessons together:
 
@@ -29,7 +29,6 @@ We will go through the following carpentries lessons together:
 * [Loops](https://swcarpentry.github.io/shell-novice/05-loop/index.html)
 
 We have now gone through the basics of the command line. Let's reinforce some of what we just learnt in this [final exercise](bashgenomics.md).
-
 
 
 ## Additional ressources
