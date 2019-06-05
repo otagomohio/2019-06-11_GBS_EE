@@ -2,10 +2,8 @@
 
 # Genetic and genomic analyses using RAD-seq and Stacks
 ## Credits
-Julian Catchen      <jcatchen@illinois.edu>
-
-Nicolas Rochette    <rochette@illinois.edu>
-
+**Developed by:** Julian Catchen, Nicolas Rochette   
+**Adapted by:** Ludovic Dutoit
 
 ## Objectives
 The goal of this exercise is to familiarize students with the use of next generation sequence
