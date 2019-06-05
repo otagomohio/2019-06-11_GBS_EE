@@ -17,7 +17,7 @@ cd /nesi/project/uooXXX/YOURUSERNAME/introunixfolder
 
 ## Introduction to the command line
 
-For this session, we will material under use a Creative Commons license developped by The Carpentries. [The Carpentries](https://docs.carpentries.org/index.html) teaches foundational coding, and data science skills to researchers worldwide. The carpentries is active in New Zealand and @Otago, we encourage you to keep your eyes open for [local events](https://otagocarpentries.github.io/). All the content is at ```FILLINTHEPATH```
+For this session, we will material under use a Creative Commons license developped by The Carpentries. [The Carpentries](https://docs.carpentries.org/index.html) teaches foundational coding, and data science skills to researchers worldwide. The carpentries is active in New Zealand and @Otago, we encourage you to keep your eyes open for [local events](https://otagocarpentries.github.io/).
 
 We will go through the following carpentries lessons together:
 
