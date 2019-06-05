@@ -33,10 +33,11 @@ We have now gone through the basics of the command line. Let's reinforce some of
 
 ## Additional ressources
 
-Learning the command line might seem hard at first but it gets a lot easier with a little bit of practice!
-
+Learning the command line might seem hard at first but it gets a lot easier with a little bit of practice! As well as the resources we just covered, here are a few more to help you out if you get stuck:
 * [Codecademy](https://www.codecademy.com/learn/learn-the-command-line)
-* [The carpentries](https://otagocarpentries.github.io/)
 * [Linux Cheatsheet](http://cheatsheetworld.com/programming/unix-linux-cheat-sheet/)
 
-
+If you learn better in person with other folks, please check out the events run by Otago Carpentries, Otago Study Group, and Otago Mohio (a Otago South Campus spin-off of Otago Study Group):
+* [The Carpentries](https://otagocarpentries.github.io/)
+* [Otago Study Group](http://otagostudygroup.github.io/studyGroup/)
+* [Otago Mohio](https://otagomohio.github.io/)
