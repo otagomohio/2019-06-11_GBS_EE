@@ -1,4 +1,4 @@
-2. Copy the human genome *chicken.fa* from: 
+2. Copy the chicken genome *chicken.fa* from: 
 
 ```
 cp /nesi/project/nesi02659/source_data/chicken.fa
