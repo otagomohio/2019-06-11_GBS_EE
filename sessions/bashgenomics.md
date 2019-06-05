@@ -22,7 +22,6 @@ in the newly created *chicken_genome_exercise/* directory. [Hint](hints/bash_gen
 The *.fa* extension denotes the fasta format. 
 The fasta format is a text-based format for representing either nucleotide sequences or peptide sequences, in which base pairs or amino acids are represented using single-letter codes. A sequence in FASTA format begins with a single-line description, followed by lines of sequence data. The description line is distinguished from the sequence data by a greater-than (">") symbol in the first column. [Source](https://zhanglab.ccmb.med.umich.edu/FASTA/)
 
-*Example:
 ```
 >CHROM 1
 ATGAGAGCGGTCTGAGAGTCTTAGAGGAGCGGATTATTA
