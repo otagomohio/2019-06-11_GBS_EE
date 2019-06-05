@@ -37,7 +37,7 @@ Learning the command line might seem hard at first but it gets a lot easier with
 * [Codecademy](https://www.codecademy.com/learn/learn-the-command-line)
 * [Linux Cheatsheet](http://cheatsheetworld.com/programming/unix-linux-cheat-sheet/)
 
-If you learn better in person with other folks, please check out the events run by Otago Carpentries, Otago Study Group, and Otago Mohio (a Otago South Campus spin-off of Otago Study Group):
+If you learn better in person with other folks, please check out the events run by Otago Carpentries, Otago Study Group, and Otago Mohio (a South Campus spin-off of Otago Study Group):
 * [The Carpentries](https://otagocarpentries.github.io/)
 * [Otago Study Group](http://otagostudygroup.github.io/studyGroup/)
 * [Otago Mohio](https://otagomohio.github.io/)
