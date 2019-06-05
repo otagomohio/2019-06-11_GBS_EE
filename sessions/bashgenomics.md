@@ -8,7 +8,7 @@ For this exercise we will work with the chicken genome.
 
 
 
-1. Create a directory called *chicken_genome_exercise/*. [HINT](hints/bash_genomics_1.md)
+1. Create a directory called *chicken_genome_exercise/*. [Hint](hints/bash_genomics_1.md)
 
 2. Copy the chicken genome *chicken.fa* from: 
 
@@ -16,13 +16,13 @@ For this exercise we will work with the chicken genome.
 cp /nesi/project/nesi02659/source_data/chicken.fa
 ```
 
-in the newly created *chicken_genome_exercise/* directory. [HINT](hints/bash_genomics_2.md)
+in the newly created *chicken_genome_exercise/* directory. [Hint](hints/bash_genomics_2.md)
 
 
 The *.fa* extension denotes the fasta format. 
-The fasta format is a text-based format for representing either nucleotide sequences or peptide sequences, in which base pairs or amino acids are represented using single-letter codes. A sequence in FASTA format begins with a single-line description, followed by lines of sequence data. The description line is distinguished from the sequence data by a greater-than (">") symbol in the first column.[Source](https://zhanglab.ccmb.med.umich.edu/FASTA/)
+The fasta format is a text-based format for representing either nucleotide sequences or peptide sequences, in which base pairs or amino acids are represented using single-letter codes. A sequence in FASTA format begins with a single-line description, followed by lines of sequence data. The description line is distinguished from the sequence data by a greater-than (">") symbol in the first column. [Source](https://zhanglab.ccmb.med.umich.edu/FASTA/)
 
-Example:
+*Example:
 ```
 >CHROM 1
 ATGAGAGCGGTCTGAGAGTCTTAGAGGAGCGGATTATTA
@@ -34,7 +34,7 @@ GAGAGCTATSTCGATATCTGAGGAGA
 3. Can you print all the sequence names to the screen ? [HINT](hints/bash_genomics_3.md)
 )
 
-4. Can you tell the total length of the genome? This command can take a little bit of time to run! [HINT](hints/bash_genomics_4.md)
+4. Can you tell the total length of the genome? This command can take a little bit of time to run! [Hint](hints/bash_genomics_4.md)
 
 
 5. Since we are doing GBS we are interested in knowing how frequent restriction enzymesare . Can you tell me how many cut sites there are for :
@@ -42,7 +42,8 @@ GAGAGCTATSTCGATATCTGAGGAGA
 	* PstI CTGCAG
 	* ecoRI CTTAAG	
 	* SbfI CCTGCAGG
-	[HINT](hints/bash_genomics_5.md)
+	
+	[Hint](hints/bash_genomics_5.md)
 	
 
 6. Bonus question: Take into account the reverse strand when calculateing the number of sites!
