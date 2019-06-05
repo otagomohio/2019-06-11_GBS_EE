@@ -3,12 +3,11 @@
 
 ## Getting on the supercomputer
 
-During this session, we will learn to be comfortable with the command line. First, we will login to the server Mahuika, a resource maintained by the New Zealand eScience Infrastructure (NeSI).
-You should all have access to NeSI and we will start by logging on to [Mahuika](https://support.nesi.org.nz/hc/en-gb/articles/360000163575-Mahuika), one of NeSI's new computing servers.
+During this session, we will learn to be comfortable with the command line. First, we will login to the server to [Mahuika](https://support.nesi.org.nz/hc/en-gb/articles/360000163575-Mahuika), a computing resource maintained by the New Zealand eScience Infrastructure (NeSI).
 
 You might have managed to log in to NeSI already. If you have not, please request help from one of us and we will assist you.
 
-Once you login, get into the space that created for you in this workshop by using the 'cd' (change directory) command (don't worry - we are going to go through commands like 'cd' in more detail in a sec!):
+Once you login, get into the space that created for you in this workshop by using the `cd` (change directory) command (don't worry - we are going to go through commands like `cd` in more detail in a sec!):
 
 ```
 cd /nesi/project/nesi02659/users/<yourusername>
