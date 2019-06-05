@@ -1,4 +1,5 @@
 # Bash genomics
+**Developed by:** Ludovic Dutoit
 
 Over the last few lessons, we learnt the every day tools that will allow you to work in the command line environment.
 In this exercise, we will try to **reinforce our skills, touch base with genomics and appreciate the power of the command line**.
