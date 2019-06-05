@@ -31,7 +31,7 @@ We will go through the following carpentries lessons together:
 We have now gone through the basics of the command line. Let's reinforce some of what we just learnt in this [final exercise](bashgenomics.md).
 
 
-## Additional ressources
+## Additional resources
 
 Learning the command line might seem hard at first but it gets a lot easier with a little bit of practice! As well as the resources we just covered, here are a few more to help you out if you get stuck:
 * [Codecademy](https://www.codecademy.com/learn/learn-the-command-line)
