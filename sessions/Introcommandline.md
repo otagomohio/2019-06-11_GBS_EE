@@ -3,7 +3,7 @@
 
 ## Getting on the supercomputer
 
-During this session, we will learn to be comfortable with the command line. First, we will login to the server to [Mahuika](https://support.nesi.org.nz/hc/en-gb/articles/360000163575-Mahuika), a computing resource maintained by the New Zealand eScience Infrastructure (NeSI).
+During this session, we will learn to be comfortable with the command line. First, we will log in to the server [Mahuika](https://support.nesi.org.nz/hc/en-gb/articles/360000163575-Mahuika), a computing resource maintained by the New Zealand eScience Infrastructure (NeSI).
 
 You might have managed to log in to NeSI already. If you have not, please request help from one of us and we will assist you.
 
