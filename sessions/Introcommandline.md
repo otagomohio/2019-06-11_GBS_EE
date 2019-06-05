@@ -6,12 +6,13 @@
 During this session, we will learn to be comfortable with the command line. First, we will login to the server Mahuika. A resource maintained by the New Zealand eScience Infrastructure (NeSI).
 You should all have access to NeSI and we will start byt the logon to [Mahuika](https://support.nesi.org.nz/hc/en-gb/articles/360000163575-Mahuika), their newest resource.
 
+You might have managed to log in to NeSI already. If you have not, please request help from one of us and we will assist you.
 
-* [NeSI login]()
+Once you login, get into a space that we created for you in this workshop:
 
 
 ```
-cd /nesi/project/uooXXX/YOURUSERNAME/introunixfolder
+cd /nesi/project/nesi02659/users/<yourusername>
 ```
 
 
