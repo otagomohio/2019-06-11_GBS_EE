@@ -49,14 +49,27 @@ nano popmap.txt
 ```
 (remember to get out of nano use Ctrl+O to write the file, and then Ctrl+X to exit it)
 
-**GBS_SNP_filter.txt**: The final file we need is GBS_SNP_filter.txt. This file contains the options that we want to use to filter our SNPs. The [GBS_SNP_filter](https://github.com/laninsky/GBS_SNP_filter#gbs_snp_filtertxt) repository has a lot of background on thi
+**GBS_SNP_filter.txt**: The final file we need is GBS_SNP_filter.txt. This eight line long file contains the options that we want to use to filter our SNPs. The [GBS_SNP_filter](https://github.com/laninsky/GBS_SNP_filter#gbs_snp_filtertxt) repository has a lot of background on some of the options, but briefly:
+1. the name of the vcf file (in our case, populations.snps.vcf)
+2. the SNP missingness threshold (e.g. 0.85 = SNP needs to be found in 85% or more of samples) 
+3. the sample missingness threshold (e.g. 0.9 = a sample can have up to 90% missing data before it is removed from the dataset)
+4. the p-value used for determining whether something is out of HWE (e.g. 0.05, larger values will remove more loci, smaller values less)
+5. the r^2 cut-off used for determining whether loci are in LD with each other (e.g. 0.5, smaller values will remove more loci, larger values less)
+6. the number of populations that a locus has to be out of HWE/in LD across in before that locus is discarded
+7. the column header in the vcf file that has the locus ID
+8. the locus ID regex pattern (we don't have to worry about this for our example, but we do need to leave a blank line here).
 
+Let's start off with the following info in our GBS_SNP_filter.txt file. After our first run we can play around with this to see how it affects our results (and see whether we can break [GBS_SNP_filter](https://github.com/laninsky/GBS_SNP_filter) by choosing some crazy values while we are at it!):
+```
+populations.snps.vcf
+0.85
+0.9
+0.05
+0.5
+3
+#CHROM
 
-
-On the first line you need to give the name of your original vcf file that will be processed. On the second line you should give the proportion of samples that has to be equalled or exceeded for a SNP to be retained in the dataset (e.g 0.85 = a SNP needs to be found in 85% or more of total samples to be retained). On the third line you need to give the proportion of missing loci that will be tolerated for individual samples before they will be removed from the dataset (e.g. 0.9 = a sample can have up to 90% missing data before it is removed from the dataset). On the fourth line you need to give the p-value cut-off for determining whether a locus is out of HWE within a population. On the fifth line you need to give the r^2 cut-off for determining whether SNPs are in LD with each other within a population. On the sixth line you need to give the number of populations a locus has to be out of HWE/in LD across in before that locus is discarded. On the seventh line you need to give the column header for where the locus id you wish to use resides. 
-
-
-
+```
 
 
 
