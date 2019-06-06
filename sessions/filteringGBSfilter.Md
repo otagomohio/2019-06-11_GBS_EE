@@ -5,7 +5,7 @@
 
 ***
 
-#### Getting the scripts for GBS_SNP_filter
+### Getting the scripts for GBS_SNP_filter
 [GBS_SNP_filter](https://github.com/laninsky/GBS_SNP_filter) is github repository. To get it on to the computer we will use `git clone`. First, make sure you are in your working directory: `/nesi/project/nesi02659/users/<yourusername>` then...
 ```
 git clone https://github.com/laninsky/GBS_SNP_filter.git
@@ -14,7 +14,7 @@ If we run a `ls` we should now see a folder called `GBS_SNP_filter` - this folde
 
 ***
 
-#### Loading required modules
+### Loading required modules
 [GBS_SNP_filter](https://github.com/laninsky/GBS_SNP_filter) requires some dependencies (other programs it needs to run), namely [VCFtools](https://vcftools.github.io/index.html), [PLINK](https://www.cog-genomics.org/plink/2.0/), and [R](https://www.r-project.org/). Luckily, these are installed on Mahuika already! We load them using the `module load` command:
 ```
 module load VCFtools
@@ -25,7 +25,7 @@ When you are working on other projects on Mahuika/NeSI, you can see what other m
 
 ***
 
-#### Getting together the files we need to run GBS_SNP_filter
+### Getting together the files we need to run GBS_SNP_filter
 **vcf file**: First up, we need the vcf file we want to filter! For this, we will use the `populations.snps.vcf` file we created for the stickleback data in our [2nd STACKS exercise](https://otagomohio.github.io/2019-06-11_GBS_EE/sessions/stacks_exerciseII_denovo.html). Let's copy that into the GBS_SNP_filter folder:
 ```
 cp /path/to/populations.snps.vcf /path/to/GBS_SNP_filter
@@ -96,7 +96,7 @@ We can create this file by `nano GBS_SNP_filter.txt` (don't forget the blank lin
 
 ***
 
-#### Running GBS_SNP_filter
+### Running GBS_SNP_filter
 Alright, we are pretty much ready to run GBS_SNP_filter.txt! Our final checklist:
 - [ ] We've used `git clone` to clone the GBS_SNP_filter github repository
 - [ ] We've loaded the modules we need (VCFtools, PLINK and R)
@@ -120,7 +120,7 @@ If you want more detail that's going on in each step, please check out the [deta
 
 ***
 
-#### How can a monitor how GBS_SNP_filter is going?
+### How can a monitor how GBS_SNP_filter is going?
 Although GBS_SNP_filter will print out some messages to screen, the real detail of how it is going is written out to a log file in the GBS_SNP_filter folder. To monitor the log while GBS_SNP_filter is running, we need to log in to Mahuika using a different terminal window, and then get to the bit of Mahuika we are running the analyses on by:
 ```
 ssh -Y ga-vl01
@@ -143,7 +143,7 @@ Can you see your user name and a process using a good whack of %CPU? If so, cool
 
 ***
 
-#### Comparing different parameter choices
+### Comparing different parameter choices
 After GBS_SNP_filter completes, have a go tweaking the parameters and rerun it to see how it affects the number of SNPs retained. Keep line 1 (populations.snps.vcf), line 7 (#CHROM), and line 8 (blank line) the same, but play around with the other filters. How does this affect the number of SNPs left at the end? Are there any combinations that cause GBS_SNP_filter to fail? Why do you think that might be?
 
 **Some known ways to make GBS_SNP_filter fail**:
@@ -152,8 +152,10 @@ After GBS_SNP_filter completes, have a go tweaking the parameters and rerun it t
 
 ***
 
-## What if I want to filter on other stuff?
-There are further criteria and useful programs for further filtering of data that you should check out [here](https://otagomohio.github.io/2019-06-11_GBS_EE/sessions/furtherfiltering.html).
+### What if I want to learn more about GBS_SNP_filter and/or filter on other stuff?
+The [readme](https://github.com/laninsky/GBS_SNP_filter) for GBS_SNP_filter provides additional detail on this set of scripts, and the repository also has further utility scripts for calculating multi-locus heterozygosity for your individuals, and observed/expected heterozygosity for your populations.
+
+In addition, there are yet more potential filters you can use on your data, and other useful programs for further filtering of data that you should check out [here](https://otagomohio.github.io/2019-06-11_GBS_EE/sessions/furtherfiltering.html).
 
 ---
 [Jump back to filtering SNPs intro](https://otagomohio.github.io/2019-06-11_GBS_EE/sessions/filteringSNPs.html)  
