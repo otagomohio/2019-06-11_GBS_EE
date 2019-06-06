@@ -70,22 +70,37 @@ populations.snps.vcf
 #CHROM
 
 ```
-We can create this file by `nano GBS_SNP_filter.txt`- don't forget the blank line on line 8!
+We can create this file by `nano GBS_SNP_filter.txt` (don't forget the blank line on line 8!).
 
 ***
 
 #### Running GBS_SNP_filter
+Alright, we are pretty much ready to run GBS_SNP_filter.txt! Our final checklist:
+- [] We've used `git clone` to clone the GBS_SNP_filter github repository
+- [] We've loaded the modules we need (VCFtools, PLINK and R)
+- [] We've copied the vcf file into the GBS_SNP_filter folder
+- [] We've created a popmap.txt and GBS_SNP_filter.txt file and placed them in the GBS_SNP_filter folder
 
+After doing all that, we are ready to run! `cd` into the GBS_SNP_filter folder and run the filter by:
+```
+bash GBS_SNP_filter.sh
+```
 
-
-* Bi-allelic variants 
-* One SNP per locus
-* SNPs that have genotypes across most of the individuals (i.e. completeness)
-* Individuals that have genotypes across most of the SNPs (i.e. filtering out individuals with high levels of missing data)
-* SNPs in Hardy Weinberg Equilibrium (LWE)
-* Unlinked SNPs (based on LD) 
+The script is going to go through the following steps:
+* Filtering for bi-allelic variants 
+* Filtering down to one SNP per locus
+* Filtering out SNPs that have don't pass the missingness filter
+* Filtering out individuals with too much missing data
+* Filtering out SNPs that are out of HWE in too many populations
+* Filtering out SNPs that are in linkage across too many populations 
 
 If you want more detail that's going on in each step, please check out the [detailed workflow](https://github.com/laninsky/GBS_SNP_filter#detailed-workflow).
+
+***
+
+#### How can a monitor how GBS_SNP_filter is going?
+
+
 
 ## What if I want to filter on other stuff?
 https://otagomohio.github.io/2019-06-11_GBS_EE/sessions/furtherfiltering.html
