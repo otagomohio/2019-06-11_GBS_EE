@@ -183,26 +183,13 @@ our samples.
         clean, discard, and rescue reads.  
    
    • The process_radtags program will write a log file into the output directory.
-     Examine the log and answer the following questions:
-        
-        • What is the purpose of the four different output files for each set of barcodes?       
-        
-        • How many raw reads were there?
-               
-        • How many were retained?
-               
-   • The process_radtags program will write a log file into the output directory.
         Examine the log and answer the following questions:
     
-    -   How many were retained?
+    -   What is the purpose of the four different output files for each set of barcodes?
     
-    -   Of those discarded, what were the reasons? 
+    -   How many raw reads were there?
     
-    -   In the process_radtags log file what can the list of “sequences not recorded” tel
-                you about the barcodes analyzed and about the sequencing quality in general?
+    -   How many reads were retained?
     
-    -   If you found that something is possibly missing from your process_radtags
-                input, correct the error and re-run the process_radtags.
 
-                
 *Congratulations, you reached the end of Exercise 1. Have a breathe, help your fellow attendees, grab a coffee and we will be back shortly for [Exercise II](https://github.com/otagomohio/2019-06-11_GBS_EE/blob/master/sessions/stacks_exerciseII_denovo.md).*
