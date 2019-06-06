@@ -17,7 +17,7 @@ For this exercise we will work with the chicken genome.
 /nesi/project/nesi02659/source_data/chicken.fa
 ```
 
-in the newly created *chicken_genome_exercise/* directory. [Hint](hints/bash_genomics_2.md)
+to your newly created *chicken_genome_exercise/* directory. [Hint](hints/bash_genomics_2.md)
 
 
 The *.fa* extension denotes the fasta format. 
