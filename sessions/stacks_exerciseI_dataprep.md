@@ -11,7 +11,7 @@ derived.
 1. Let's organise our space, get comfortable moving around and copy our data :
 
     • For each exercise, you will set up a directory structure on the remote server that will hold your data and the different          steps of your analysis. We will start by making the directory ```working``` in your working space:
-           ```/nesi/project/nesi02659/users/<youruesername>```
+           ```/nesi/project/nesi02659/users/<yourusername>```
 
     • Create the directory: ```/nesi/project/nesi02659/users/<username>/working and``` and get in there
         to hold these analyses. Be careful that your are reading and writing files to the appropriate directories within
@@ -42,7 +42,7 @@ derived.
     ```
     • Copy the data set 1 (DS1) to your ```lane1``` directory. The data set is in the file
   
-       ```/nesi/project/nesi02659/source_data/clean/lane1.tar```
+       /nesi/project/nesi02659/source_data/clean/lane1.tar
        
            
     • From your ```lane1``` folder to extract the content of this ```tar``` archive. Then, get back into your clean directory.         We realise that we have not told you how to do so! But a quick look to a friendly search engine will show you how             easy it is to find this kind of information on basic bash commands. 
@@ -51,13 +51,9 @@ derived.
 2. Have a look at what is there now. Your decompressed files have millions of reads in it, too many for you to examine in a
 spreadsheet or word processor. Examine the contents of the set of files in the terminal
 (the ```less``` command may be of use).
-
     • You should see multiple different lines with different encodings.
-
     • How does the FASTQ file format work?
-
     • How are quality scores encoded?
-
     • How could you tell by eye which type of encoding your data are using (i.e. PHRED33 or PHRED64)?
     
 
@@ -80,12 +76,10 @@ affect downstream analysis, producing false positives, such as errant SNP predic
 4. We will use the Stacks’s program **process_radtags** to clean and demultiplex our
 samples. Take advantage of the Stacks manual as well as the individual [manual page for
 process_radtags](http://catchenlab.life.illinois.edu/stacks/manual/#procrad) on the Stacks website to find information         and examples. Do not run it yet but follow through the points below:
-    
     • You will need to specify the set of barcodes used in the construction of the RAD library.
         Remember, each P1 adaptor in RAD has a particular DNA sequence (an inline
         barcode) that gets sequenced first, allowing data to be associated with samples such as
         individuals or populations.
-    
     • Enter the following barcodes into a file called lane1_barcodes.txt in your working
         directory (make sure you enter them in the [right format](http://catchenlab.life.illinois.edu/stacks/manual/#specbc).
         Assign a sample name for each barcode below. Normally, these sample names would
@@ -95,31 +89,21 @@ process_radtags](http://catchenlab.life.illinois.edu/stacks/manual/#procrad) on 
             AAGCTA AATGAG ACAAGA ACAGCG
             ACATAC ACCATG ACCCCC ACTCTT
             ACTGGC AGCCAT AGCGCA
-    
     • Copy the remaining barcodes for this lane of samples from this file!!!
-           
     • Based on the barcode file, how many samples were multiplexed together in this
         RAD library? (Hint: count the lines.)
-    
     • You will need to specify the restriction enzyme used to construct the library (SbfI), the
         directory of input files (the lane1 directory), the list of barcodes, the output directory
         (samples), and specify that process_radtags clean, discard, and rescue reads.
-        
-    • You should now be able to run the command from the ```dataprep``` directory. It will take a couple of minutes to run.
-    
+    • You should now be able to run the command from the ```dataprep``` directory. It will take a couple of minutes to run. 
     • The process_radtags program will write a log file into the output directory.
         Examine the log and answer the following questions:
         
-        -   How many raw reads were there?
-    
-        -   How many were retained?
-    
-        -   Of those discarded, what were the reasons?
-    
-        -   In the process_radtags log file what can the list of “sequences not recorded” tell
-                you about the barcodes analyzed and about the sequencing quality in general?
-    
-        -   If you found that something is possibly missing from your process_radtags
+   -   How many were retained?
+   -   Of those discarded, what were the reasons? 
+   -   In the process_radtags log file what can the list of “sequences not recorded” tel
+        you about the barcodes analyzed and about the sequencing quality in general?
+   -   If you found that something is possibly missing from your process_radtags
                 input, correct the error and re-run the process_radtags.
 
 
