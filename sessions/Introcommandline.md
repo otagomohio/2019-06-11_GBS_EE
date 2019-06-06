@@ -7,12 +7,12 @@ During this session, we will learn to be comfortable with the command line. Firs
 
 You might have managed to log in to NeSI already. If you have not, please request help from one of us and we will assist you.
 
-Next, we will hop across to the bit of Mahuika we are using for this workshop using:
+Next, we will hop across to the bit of Mahuika we are using for this workshop using (note, the l following v is a lower case "L" not a one!):
 ```
 ssh -Y ga-vl01
 ```
 
-Once you have jumped on to `ga-v101` using the commands above, get into the space created for you for this workshop by using the `cd` (change directory) command (don't worry - we are going to go through commands like `cd` in more detail in a sec!):
+Once you have jumped on to `ga-vl01` using the commands above, get into the space created for you for this workshop by using the `cd` (change directory) command (don't worry - we are going to go through commands like `cd` in more detail in a sec!):
 
 ```
 cd /nesi/project/nesi02659/users/<yourusername>
