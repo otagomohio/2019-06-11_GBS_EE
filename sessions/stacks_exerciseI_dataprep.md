@@ -229,4 +229,6 @@ our samples.
     -   How many reads were retained?
     
 
-*Congratulations, you reached the end of Exercise 1. Have a breathe, help your fellow attendees, grab a coffee and we will be back shortly for [Exercise II](https://github.com/otagomohio/2019-06-11_GBS_EE/blob/master/sessions/stacks_exerciseII_denovo.md).*
+*Congratulations, you reached the end of Exercise 1. Have a breathe, help your fellow attendees, grab a coffee and we will be back shortly*
+
+[Jump back to the main workshop schedule](https://otagomohio.github.io/2019-06-11_GBS_EE/)
