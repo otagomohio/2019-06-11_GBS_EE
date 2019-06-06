@@ -7,7 +7,7 @@ During this session, we will learn to be comfortable with the command line. Firs
 
 You might have managed to log in to NeSI already. If you have not, please request help from one of us and we will assist you.
 
-Next, we will hop across to the bit of Mahuika we are using for this workshop using (note, the l following v is a lower case "L" not a one!):
+Next, we will hop across to the bit of Mahuika we are using for this workshop using (note, the `l` following `v` is a lower case "L" not a one!):
 ```
 ssh -Y ga-vl01
 ```
