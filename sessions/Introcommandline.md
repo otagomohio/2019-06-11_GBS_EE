@@ -49,3 +49,5 @@ If you learn better in person with other folks, please check out the events run 
 * [The Carpentries](https://otagocarpentries.github.io/)
 * [Otago Study Group](http://otagostudygroup.github.io/studyGroup/)
 * [Otago Mohio](https://otagomohio.github.io/)
+
+[Jump back to main workshop schedule)[https://otagomohio.github.io/2019-06-11_GBS_EE/]
