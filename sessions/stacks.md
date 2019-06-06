@@ -1,5 +1,3 @@
-IN CONSTRUCTION
-
 # Genetic and genomic analyses using RAD-seq and Stacks
 ## Credits
 **Developed by:** Julian Catchen, Nicolas Rochette   
@@ -60,11 +58,9 @@ and statistical issues, see the papers listed at the end of this document. These
 help you better understand both the molecular biology, computational analyses, and
 conceptual framework for the analysis of RRL data such as RAD.
 
-## Datasets and Software
-### Datasets
-*Short description of the dataset TOCOME *
 
-### Software 
+
+## Software 
 **All are open source software**
 
 • [Stacks](http://catchenlab.life.illinois.edu/stacks/) - A set of interconnected open
