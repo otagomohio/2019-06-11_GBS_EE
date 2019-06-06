@@ -2,7 +2,7 @@
 **Developed by:** Alana Alexander
 
 ## Using GBS_SNP_filter
--
+------
 #### Getting the scripts for GBS_SNP_filter
 [GBS_SNP_filter](https://github.com/laninsky/GBS_SNP_filter) is github repository. To get it on to the computer we will use `git clone`. First, make sure you are in your working directory: `/nesi/project/nesi02659/users/<yourusername>` then...
 ```
