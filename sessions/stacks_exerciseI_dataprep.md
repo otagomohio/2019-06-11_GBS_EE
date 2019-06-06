@@ -188,11 +188,11 @@ our samples.
    • The process_radtags program will write a log file into the output directory.
         Examine the log and answer the following questions:
         
-        -   What is the purpose of the four different output files for each set of barcodes?       
+        • What is the purpose of the four different output files for each set of barcodes?       
         
-        -   How many raw reads were there?
+        • How many raw reads were there?
                
-        -   How many were retained?
+        • How many were retained?
                 
                 
-You reached the end of Exercise 1! Have a breathe, help your fellow attendees, grab a coffee, we will be back shortly for [Exercise II](https://github.com/otagomohio/2019-06-11_GBS_EE/blob/master/sessions/stacks_exerciseII_denovo.md).
+*Congratulations, you reached the end of Exercise 1. Have a breathe, help your fellow attendees, grab a coffee and we will be back shortly for [Exercise II](https://github.com/otagomohio/2019-06-11_GBS_EE/blob/master/sessions/stacks_exerciseII_denovo.md).*
