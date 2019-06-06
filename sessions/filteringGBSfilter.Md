@@ -22,9 +22,9 @@ module load R
 ```
 When you are working on other projects on Mahuika/NeSI, you can see what other modules are available to support your analyses by `module avail`, but VCFtools, PLINK and R are all we need for GBS_SNP_filter.  
 
-The PLINK version on Mahuika has some conflicts with the other programs we are using, so I've downloaded a 'clean' version. For Mahuika to find it, we need to run the following code (your $PATH is where the computer looks for programs to run):
+The PLINK version on Mahuika has some conflicts with the other programs we are using, so I've downloaded a 'clean' version. For Mahuika to find it, we need to run the following code (your $PATH is where the computer looks for programs to run, and the plink executable is located in the `source_data`folder, so we are tacking this location on to the beginning of our $PATH):
 ```
-
+export PATH=/nesi/project/nesi02659/source_data:$PATH
 ```
 
 ***
