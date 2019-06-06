@@ -70,8 +70,9 @@ stl_1274.77 stl
 stl_1274.79 stl
 stl_1274.80 stl
 ```
-We can create this file in nano, but first, let's `cd GBS_SNP_filter` because that's where we are going to run all these scripts before running nano:
+We can create this file in nano, but first, let's `cd GBS_SNP_filter` because that's where we are going to run all these scripts and where all our files need to be located:
 ```
+cd GBS_SNP_filter
 nano popmap.txt
 ```
 (remember to get out of nano use Ctrl+O to write the file, enter to confirm the name, and then Ctrl+X to exit it)
