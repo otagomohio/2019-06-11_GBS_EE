@@ -167,8 +167,8 @@ our samples.
    • Modify your barcodes file by adding a third column to it, specifying a human-readable
         name for each sample (instead of having the output files named after the barcodes). As
         we saw in the previous exercise, these sample names would normally coincide with
-        your particular experimental design. Here, for simplicity, we can just use indv_01,
-        indv_02, etc.    
+        your particular experimental design. Here, for simplicity, we can just use ```indv_01```,
+        ```indv_02```, etc.    
    
    • Copy the remaining barcodes for this lane of samples from the file:
         /opt/data/clean/lane2_barcodes
@@ -177,11 +177,10 @@ our samples.
    • You can concatenate this file onto the end of your file using the cat command and
         the shell’s append operator: cat file1 >> file2, or you can cut+paste.   
    
-   • How many samples were multiplexed together in this RAD library? (The wc
-        command can tell you this.) 
+   • How many samples were multiplexed together in this RAD library? (Hint: count the lines.) 
    
    • You will need to specify the two restriction enzymes used to construct the library
-        (NlaIII and MluCI), the directory of input files (the lane2 directory), the list of
+        (```NlaIII``` and ```MluCI```), the directory of input files (the lane2 directory), the list of
         barcodes, the output directory (ddsamples) and specify that process_radtags
         clean, discard, and rescue reads.  
    
