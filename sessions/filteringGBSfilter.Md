@@ -15,7 +15,7 @@ If we run a `ls` we should now see a folder called `GBS_SNP_filter` - this folde
 ***
 
 #### Loading required modules
-[GBS_SNP_filter](https://github.com/laninsky/GBS_SNP_filter) requires some dependencies (other programs it needs to run), namely [VCFtools](https://vcftools.github.io/index.html), [PLINK](https://www.cog-genomics.org/plink/2.0/), and [R](https://www.r-project.org/). Luckily, these are installed on Mahuika already! We load them using the `modules` command:
+[GBS_SNP_filter](https://github.com/laninsky/GBS_SNP_filter) requires some dependencies (other programs it needs to run), namely [VCFtools](https://vcftools.github.io/index.html), [PLINK](https://www.cog-genomics.org/plink/2.0/), and [R](https://www.r-project.org/). Luckily, these are installed on Mahuika already! We load them using the `module load` command:
 ```
 module load VCFtools
 module load PLINK
@@ -26,22 +26,43 @@ When you are working on other projects on Mahuika/NeSI, you can see what other m
 ***
 
 #### Getting together the files we need to run GBS_SNP_filter
-**vcf file**:First up, we need the vcf file we want to filter! For this, we will use the `populations.snps.vcf` file we created for the stickleback data in our [2nd STACKS exercise](https://otagomohio.github.io/2019-06-11_GBS_EE/sessions/stacks_exerciseII_denovo.html). Let's copy that into the GBS_SNP_filter folder:
+**vcf file**: First up, we need the vcf file we want to filter! For this, we will use the `populations.snps.vcf` file we created for the stickleback data in our [2nd STACKS exercise](https://otagomohio.github.io/2019-06-11_GBS_EE/sessions/stacks_exerciseII_denovo.html). Let's copy that into the GBS_SNP_filter folder:
 ```
 cp /path/to/populations.snps.vcf /path/to/GBS_SNP_filter
 ```
 
 **popmap.txt file**: The next thing we need is a popmap.txt file. This file (also described [here](https://github.com/laninsky/GBS_SNP_filter#popmaptxt)) has sample names (exactly the same as they appear in the populations.snps.vcf file) in the left hand column, and the population they map to on the right (separated by white space) e.g.
 ```
-cs_1335.01 csl
-cs_1335.02 csl
-cs_1335.05 csl
+cs_1335.01 cs
+cs_1335.02 cs
+cs_1335.05 cs
+cs_1335.16 cs
+cs_1335.27 cs
+cs_1335.28 cs
+cs_1335.44 cs
+cs_1874.01 cs
+cs_1874.02 cs
+cs_1874.03 cs
+pcr_1193.00 pcr
+pcr_1193.01 pcr
+pcr_1193.08 pcr
+pcr_1193.11 pcr
+pcr_1210.05 pcr
+pcr_1211.01 pcr
+pcr_1211.02 pcr
 pcr_1211.04 pcr
 pcr_1211.05 pcr
 pcr_1211.06 pcr
 stl_1274.33 stl
 stl_1274.35 stl
 stl_1274.37 stl
+stl_1274.46 stl
+stl_1274.52 stl
+stl_1274.71 stl
+stl_1274.73 stl
+stl_1274.77 stl
+stl_1274.79 stl
+stl_1274.80 stl
 ```
 We can create this file in nano:
 ```
@@ -76,10 +97,10 @@ We can create this file by `nano GBS_SNP_filter.txt` (don't forget the blank lin
 
 #### Running GBS_SNP_filter
 Alright, we are pretty much ready to run GBS_SNP_filter.txt! Our final checklist:
-- [] We've used `git clone` to clone the GBS_SNP_filter github repository
-- [] We've loaded the modules we need (VCFtools, PLINK and R)
-- [] We've copied the vcf file into the GBS_SNP_filter folder
-- [] We've created a popmap.txt and GBS_SNP_filter.txt file and placed them in the GBS_SNP_filter folder
+- [ ] We've used `git clone` to clone the GBS_SNP_filter github repository
+- [ ] We've loaded the modules we need (VCFtools, PLINK and R)
+- [ ] We've copied the vcf file into the GBS_SNP_filter folder
+- [ ] We've created a popmap.txt and GBS_SNP_filter.txt file and placed them in the GBS_SNP_filter folder
 
 After doing all that, we are ready to run! `cd` into the GBS_SNP_filter folder and run the filter by:
 ```
@@ -99,7 +120,10 @@ If you want more detail that's going on in each step, please check out the [deta
 ***
 
 #### How can a monitor how GBS_SNP_filter is going?
+Although GBS_SNP_filter will print out some messages to screen, the real detail of how it is going is written out to a log file in the GBS_SNP_filter folder. If we log in to Mahuika using a different terminal window, and then get to the bit of Mahuika we are running the analyses on by:
+```
 
+```
 
 
 ## What if I want to filter on other stuff?
