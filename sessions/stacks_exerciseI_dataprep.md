@@ -9,20 +9,26 @@ reads with the different individuals or population samples from which they were
 derived.
 
 1. Let's organise our space, get comfortable moving around and copy our data :
+    
     • For each exercise, you will set up a directory structure on the remote server that will hold your data and the different          steps of your analysis. We will start by making the directory ```working``` in your working space:
            ```/nesi/project/nesi02659/users/<yourusername>```
+    
     • Create the directory: ```/nesi/project/nesi02659/users/<yourusername>/working``` and get in there
         to hold these analyses. Be careful that your are reading and writing files to the appropriate directories within
         your hierarchy. You’ll be making many directories, so stay organized!
+    
     •Each step of your analysis goes into the hierarchy of the workspace, and each step of  
         the analysis takes its input from one directory and places it into another directory, this
         is known as a ‘waterfall workspace’. We will name the directories in a way that
         correspond to each stage and that allow us to remember where they are. A well
         organized workspace makes analyses easier and prevents data from being overwritten.
+    
     • First let's make a few directories. In ```working```, create a directory called ```dataprep``` to contain all the data        for this exercise. Inside that directory create two additional directories: ```lane1``` and ```samples```. We will
      refer to the clean directory as the working directory.
+    
     • As a check, go back to your ```working``` directory and use the '''ls''' command with the ```-R``` flag 
         (i.e.recursive), it should show you sthe following:
+    
     ```
     working/:
     dataprep
@@ -35,9 +41,12 @@ derived.
     working/dataprep/samples:
     
     ```
+    
     • Copy the data set 1 (DS1) to your ```lane1``` directory. The data set is in the file
        /nesi/project/nesi02659/source_data/clean/lane1.tar          
+    
     • From your ```lane1``` folder to extract the content of this ```tar``` archive. We realise that we have not told you how         to do so! But a quick look to a friendly search engine will show you how easy it is to find this kind of information           on basic bash commands. 
+    
     • Get back in your basic directory
     
 
@@ -149,4 +158,4 @@ our samples.
                 -   How many were retained?
                 
                 
-You reached the end of Exercise 1! Have a breathe, help your fellow attendees, grab a coffee, we will be back shortly for [ExerciseII](https://github.com/otagomohio/2019-06-11_GBS_EE/blob/master/sessions/stacks_exerciseII_denovo.md).
+You reached the end of Exercise 1! Have a breathe, help your fellow attendees, grab a coffee, we will be back shortly for [Exercise II](https://github.com/otagomohio/2019-06-11_GBS_EE/blob/master/sessions/stacks_exerciseII_denovo.md).
