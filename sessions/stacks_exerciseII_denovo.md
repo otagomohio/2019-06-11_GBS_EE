@@ -4,7 +4,7 @@
 
 ## Part 1: Running Stacks denovo
 
-1. In this first exercise, we will be working on a subset of data from threespine
+In this first exercise, we will be working on a subset of data from threespine
 stickleback data from Oregon (Catchen et al, [2013](https://onlinelibrary.wiley.com/doi/10.1111/mec.12330)), on the
 west coast of the United States.
 These stickleback can be found in a
@@ -62,11 +62,11 @@ study as well as the populations program.
     • Load the Stacks module
     
     • Information on denovo_map.pl and its parameters can be found online[ http://catchenlab.life.illnois.edu/stacks/comp/denovo_map.php]
-       
     
     • We want Stacks to only use the nine individuals in our parameter optimization. To
         specify this, create a file in the working directory called ```opt_popmap.txt```, using an editor.
         The file should be formatted like this:
+        
             ```<sample file prefix><tab><population ID>```
         
         Note: do not include the extension ```.fq.gz``` in the sample name.
