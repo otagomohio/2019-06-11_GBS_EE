@@ -1,23 +1,5 @@
 # Exercise II: de novo assembly of RAD tags without a genome
 
-## Part 1: Your first stacks run
-
-
-2. In the first part of the second exercise we will be constructing stacks in two separate
-samples. These samples are from the same (anonymous) populations, however their
-analysis results in two quite different outcomes.
-
-3. In your ./working workspace, create a directory called ustacks to contain all the
-data for this exercise. 
-
-    *   Inside that directory, create two additional directories: ```samples```, and ```stacks```.  To save time, we have              already cleaned and demultiplexed
-         this data and will start from the cleaned samples stage.
-Copy data set 3 (DS3):
-/opt/data/denovo/lib01_samp01.fq.gz
-and
-/opt/data/denovo/lib02_samp01.fq.gz
-
-
 ## Part 1: approach the parameter space**
 
 1. In this first exercise, we will be working on a subset of data from threespine
