@@ -25,11 +25,12 @@ cs_1335.01, cs_1335.02, cs_1335.05, pcr_1211.04, pcr_1211.05,
 
 
 ## Other filtering parameters
-There are a boat load of additional filters you have on your data set, and also a boatload of differing opinions on why and how you should further filter your SNP set! Some filters you might consider:
-* overall sequencing depth i.e. chucking out low depth loci. This might reduce the likelihood of calling the wrong genotype at a locus because of low depth (e.g. hard to call a heterozygote when you only have one read at a locus!), but 
+There are a boat load of additional filters you could apply to your data set, and also a boatload of differing opinions on why and whether you should further filter your SNP set! Some filters you might consider:
+* overall sequencing depth i.e. chucking out low depth loci. This might reduce the likelihood of calling the wrong genotype at a locus because of low depth (e.g. hard to call a heterozygote when you only have one read at a locus!), but also see [below](https://github.com/otagomohio/2019-06-11_GBS_EE/blob/master/sessions/filteringSNPs.md#do-i-even-need-to-filter-at-all).
+* throwing out loci missing for most samples. 
 
 If you are interested in any of these further filtering steps, I'd highly encourage you to check out the following tutorial, which walks through several of these steps:
 http://www.ddocent.com/filtering/
 
 ## Do I even need to filter at all?
-Instead of filtering at the genotype level, other alternatives include using pipelines that can handle low depth data (e.g. [ANGSD](http://www.popgen.dk/angsd/index.php/ANGSD)) and conducting your analyses at a population level rather than individual level (e.g. [Genotype‐free estimation of allele frequencies reduces bias and improves demographic inference from RADSeq data](https://onlinelibrary-wiley-com.ezproxy.otago.ac.nz/doi/full/10.1111/1755-0998.12990))
+Instead of filtering at the genotype level, other alternatives include using pipelines that can handle and calculate population-level statistics for low depth data at a population level rather than individual level (e.g. [ANGSD](http://www.popgen.dk/angsd/index.php/ANGSD), [Genotype‐free estimation of allele frequencies reduces bias and improves demographic inference from RADSeq data](https://onlinelibrary-wiley-com.ezproxy.otago.ac.nz/doi/full/10.1111/1755-0998.12990)), or incorporate the biases from low-depth in individual level calculations e.g. [KGD](https://github.com/AgResearch/KGD).
