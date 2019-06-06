@@ -95,7 +95,7 @@ spreadsheet or word processor. Examine the contents of the set of files in the t
                      
        module load FastQC # Be careful with the case
     
-    • Use the ```---help``` of ```fastqc``` to run it on any single fastq file of your choice..
+    • Use the ```--help``` of ```fastqc``` to run it on any single fastq file of your choice..
                          
     • List the content of your directory, what did fastqc create?
     
