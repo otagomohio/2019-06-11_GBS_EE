@@ -47,15 +47,19 @@ derived.
     
     • From your ```lane1``` folder to extract the content of this ```tar``` archive. We realise that we have not told you how         to do so! But a quick look to a friendly search engine will show you how easy it is to find this kind of information           on basic bash commands. 
     
-    • Get back in your basic directory
+    • Get back in your ```dataprep``` directory
     
 
 2. Have a look at what is there now. Your decompressed files have millions of reads in it, too many for you to examine in a
 spreadsheet or word processor. Examine the contents of the set of files in the terminal
 (the ```less``` command may be of use).
+    
     • You should see multiple different lines with different encodings.
+    
     • How does the FASTQ file format work?
+    
     • How are quality scores encoded?
+    
     • How could you tell by eye which type of encoding your data are using (i.e. PHRED33 or PHRED64)?
     
 
