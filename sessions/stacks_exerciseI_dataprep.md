@@ -82,11 +82,13 @@ spreadsheet or word processor. Examine the contents of the set of files in the t
     
     • Let's try to copy this file to your local computer in order to visualise it
        
-    • Open a new terminal window **without closing the current one**. 
+    • Open a new terminal window **without closing the current one** and stay on your local computer, do not login to mahuika. 
     
     • Check out [how to copy files](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/). To identify out your path,          use the ```pwd``` command.
        
     • Once you have this file on your local computer, just double-click on it to open it with your favorite browser.
+
+    • What is this weird thing in the base-pair content from base 7 to 12-13?
 
 You probably noticed that not all of the data is high quality. In general, you will want
 to remove the lowest quality sequences from your data set before you proceed.
@@ -99,6 +101,11 @@ affect downstream analysis, producing false positives, such as errant SNP predic
 samples. Take advantage of the Stacks manual as well as the individual [manual page for
 process_radtags](http://catchenlab.life.illinois.edu/stacks/manual/#procrad) on the Stacks website to find information         and examples. Do not run it yet but follow through the points below:
     
+    • Get back into your ```dataprep``` folder
+    
+    • It is time to load the ```stacks``` module to be able to access the ```process_radtags``` command. Find it, load it.
+     
+     
     • You will need to specify the set of barcodes used in the construction of the RAD library.
         Remember, each P1 adaptor in RAD has a particular DNA sequence (an inline
         barcode) that gets sequenced first, allowing data to be associated with samples such as
@@ -114,21 +121,21 @@ process_radtags](http://catchenlab.life.illinois.edu/stacks/manual/#procrad) on 
             ACATAC ACCATG ACCCCC ACTCTT
             ACTGGC AGCCAT AGCGCA
     
-    • Copy the remaining barcodes for this lane of samples from this file!!!
+    • Copy the remaining barcodes for this lane of samples from ``` /nesi/project/nesi02659/source_data/lane1_barcodes.txt```
     
     • Based on the barcode file, how many samples were multiplexed together in this
         RAD library? (Hint: count the lines.)
-    
+       
     • You will need to specify the restriction enzyme used to construct the library (SbfI), the
-        directory of input files (the lane1 directory), the list of barcodes, the output directory
-        (samples), and specify that process_radtags clean, discard, and rescue reads.
+        directory of input files (the ```lane1``` directory), the list of barcodes, the output directory
+        (```samples```), and specify that process_radtags ```clean, discard, and rescue reads.```
     
     • You should now be able to run the command from the ```dataprep``` directory. It will take a couple of minutes to run. 
     
-    • The process_radtags program will write a log file into the output directory.
+    • The process_radtags program will write a log file into the output directory. Have a look in there.
         Examine the log and answer the following questions:
     
-    -   How many were retained?
+    -   How many reads were retained?
     
     -   Of those discarded, what were the reasons? 
     
@@ -168,19 +175,16 @@ our samples.
         library.
    
    • Enter the following barcodes into a file called lane2_barcodes.txt in your working
-        directory (make sure you enter them in the [right format](http://catchenlab.life.illinois.edu/stacks/manual/#specbc)):
-            AACCA/ATCACG CATAT/ATCACG GAGAT/ATCACG
-            TACCG/ATCACG AAGGA/CGATGT CAACC/CGATGT
-            GACAC/CGATGT TACGT/CGATGT
-   
-   • Modify your barcodes file by adding a third column to it, specifying a human-readable
-        name for each sample (instead of having the output files named after the barcodes). As
-        we saw in the previous exercise, these sample names would normally coincide with
+        directory (make sure you enter them in the [right format for paired-end reads]                          (http://catchenlab.life.illinois.edu/stacks/manual/#specbc)). As
+        we saw in the previous exercise, the sample names would normally coincide with
         your particular experimental design. Here, for simplicity, we can just use ```indv_01```,
         ```indv_02```, etc.    
    
+            AACCA/ATCACG CATAT/ATCACG GAGAT/ATCACG
+            TACCG/ATCACG AAGGA/CGATGT CAACC/CGATGT
+            GACAC/CGATGT TACGT/CGATGT
    • Copy the remaining barcodes for this lane of samples from the file:
-        /opt/data/clean/lane2_barcodes
+        /nesi/project/nesi02659/source_data/lane2_barcodes.txt
         and append them to your barcodes file in your working directory.
    
    • You can concatenate this file onto the end of your file using the cat command and
