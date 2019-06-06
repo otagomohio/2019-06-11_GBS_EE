@@ -74,9 +74,7 @@ spreadsheet or word processor. Examine the contents of the set of files in the t
     • Open a new terminal window **without closing the current one**. 
     
     • Check out [how to copy files](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/). To identify out your path,          use the ```pwd``` command.
-   
-    • Copy the file
-    
+       
     • Once you have this file on your local computer, just double-click on it to open it with your favorite browser.
 
 You probably noticed that not all of the data is high quality. In general, you will want
@@ -185,13 +183,26 @@ our samples.
         clean, discard, and rescue reads.  
    
    • The process_radtags program will write a log file into the output directory.
-        Examine the log and answer the following questions:
+     Examine the log and answer the following questions:
         
         • What is the purpose of the four different output files for each set of barcodes?       
         
         • How many raw reads were there?
                
         • How many were retained?
-                
+               
+   • The process_radtags program will write a log file into the output directory.
+        Examine the log and answer the following questions:
+    
+    -   How many were retained?
+    
+    -   Of those discarded, what were the reasons? 
+    
+    -   In the process_radtags log file what can the list of “sequences not recorded” tel
+                you about the barcodes analyzed and about the sequencing quality in general?
+    
+    -   If you found that something is possibly missing from your process_radtags
+                input, correct the error and re-run the process_radtags.
+
                 
 *Congratulations, you reached the end of Exercise 1. Have a breathe, help your fellow attendees, grab a coffee and we will be back shortly for [Exercise II](https://github.com/otagomohio/2019-06-11_GBS_EE/blob/master/sessions/stacks_exerciseII_denovo.md).*
