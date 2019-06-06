@@ -253,3 +253,5 @@ menu and then “Show”.
 
 
 ADD PCA EXERCISE
+
+[Jump back to the main workshop schedule](https://otagomohio.github.io/2019-06-11_GBS_EE/)
