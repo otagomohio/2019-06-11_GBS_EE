@@ -2,7 +2,7 @@
 
 ## Datasets
 
-• Dataset 1 (DS1) - This data set comprises just a small proportion of a lane of singleend
+• Dataset 1 (DS1) - This data set comprises just a small proportion of a lane of single-end
 standard RAD data.
 
 • Dataset 2 (DS2) - A fragment of a lane of paired-end RAD sequences that have been
