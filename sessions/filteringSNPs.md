@@ -1,6 +1,7 @@
 ** Under construction **
 
 # Filtering your SNPs
+**Developed by:** Alana Alexander
 
 ## Background
 Congratulations! Over the last day you've learned how to use [STACKS](http://catchenlab.life.illinois.edu/stacks/) to generate a vcf file (and other file formats) containing variable SNPs derived from GBS/RADseq data. By tweaking some of the parameters of the STACKS pipeline (particularly m - the minimum read depth; M - the number of mismatches between alleles; and n - the number of mismatches between loci in the catalog), we can make it less likely that we've included problematic loci (e.g. paralogous loci smushed into one "super stack"). Other RADseq assembly pipelines like [ipyrad](https://ipyrad.readthedocs.io/) and [dDocent](http://www.ddocent.com/) also have similar parameters that can be tweaked.
