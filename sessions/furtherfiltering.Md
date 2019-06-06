@@ -14,7 +14,7 @@ http://www.ddocent.com/filtering/
 ## Do I even need to filter at all?
 Instead of filtering at the genotype level, other alternatives include using pipelines that can handle and calculate population-level statistics for low depth data at a population level rather than individual level (e.g. [ANGSD](http://www.popgen.dk/angsd/index.php/ANGSD), [Genotype‐free estimation of allele frequencies reduces bias and improves demographic inference from RADSeq data](https://onlinelibrary-wiley-com.ezproxy.otago.ac.nz/doi/full/10.1111/1755-0998.12990)), or incorporate the biases from low-depth in individual level calculations e.g. [KGD](https://github.com/AgResearch/KGD).
 
-
-[Jump back to using GBS filter](https://otagomohio.github.io/2019-06-11_GBS_EE/sessions/filteringGBSfilter.html)
-[Jump back to filtering SNPs intro](https://otagomohio.github.io/2019-06-11_GBS_EE/sessions/filteringSNPs.html)
+---
+[Jump back to using GBS filter](https://otagomohio.github.io/2019-06-11_GBS_EE/sessions/filteringGBSfilter.html)  
+[Jump back to filtering SNPs intro](https://otagomohio.github.io/2019-06-11_GBS_EE/sessions/filteringSNPs.html)  
 [Jump back to main workshop schedule](https://otagomohio.github.io/2019-06-11_GBS_EE/)
