@@ -90,6 +90,7 @@ populations.snps.vcf
 3
 #CHROM
 
+
 ```
 We can create this file by `nano GBS_SNP_filter.txt` (don't forget the blank line on line 8!).
 
@@ -145,10 +146,14 @@ Can you see your user name and a process using a good whack of %CPU? If so, cool
 #### Comparing different parameter choices
 After GBS_SNP_filter completes, have a go tweaking the parameters and rerun it to see how it affects the number of SNPs retained. Keep line 1 (populations.snps.vcf), line 7 (#CHROM), and line 8 (blank line) the same, but play around with the other filters. How does this affect the number of SNPs left at the end? Are there any combinations that cause GBS_SNP_filter to fail? Why do you think that might be?
 
+**Some known ways to make GBS_SNP_filter fail**:
+* setting line 3 to extremely low values (i.e. allowing hardly any missing data for any individuals) - this causes the code to fail because no samples are left in the data set!
+* setting line 6 to 0 (i.e. if any HWE/r^2 value occurs in any population, remove that locus!) - this causes the code to fail because no SNPs are left in the data set!
+
 ***
 
 ## What if I want to filter on other stuff?
-https://otagomohio.github.io/2019-06-11_GBS_EE/sessions/furtherfiltering.html
+There are further criteria and useful programs for further filtering of data that you should check out [here](https://otagomohio.github.io/2019-06-11_GBS_EE/sessions/furtherfiltering.html).
 
 ---
 [Jump back to filtering SNPs intro](https://otagomohio.github.io/2019-06-11_GBS_EE/sessions/filteringSNPs.html)  
