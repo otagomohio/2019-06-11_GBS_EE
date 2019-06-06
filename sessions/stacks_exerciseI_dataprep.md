@@ -19,6 +19,8 @@ samples that were individually barcoded. This **‘de-multiplexing’** serves t
 reads with the different individuals or population samples from which they were
 derived.
 
+Before doing anything, open a text file in your favorite text editor. You will write your commands in there and then paste them into the terminal. You want to remember how and why you did things later today but also in the future.
+
 1. Let's organise our space, get comfortable moving around and copy our data :
     
     • For each exercise, you will set up a directory structure on the remote server that will hold your data and the different          steps of your analysis. We will start by making the directory ```working``` in your working space:
@@ -81,7 +83,7 @@ spreadsheet or word processor. Examine the contents of the set of files in the t
     • To ```find``` and ```load``` our first module
     
                                        
-       #in our case
+       #The below command can help find any module
        module spider fastqc
                      
        #The command should present you with some inforation about the module that have a closely matching name.
@@ -134,7 +136,7 @@ process_radtags](http://catchenlab.life.illinois.edu/stacks/manual/#procrad) on 
             ACATAC ACCATG ACCCCC ACTCTT
             ACTGGC AGCCAT AGCGCA
     
-    • Copy the remaining barcodes for this lane of samples from ``` /nesi/project/nesi02659/source_data/lane1_barcodes.txt```
+    • Copy the remaining barcodes for this lane of samples from ``` /nesi/project/nesi02659/source_data/clean/lane1_barcodes.txt```
     
     • Based on the barcode file, how many samples were multiplexed together in this
         RAD library? (Hint: count the lines.)
@@ -170,10 +172,11 @@ pairs of barcodes.
     • In ```working/dataprep```, create a directory called ```lane2``` to contain the raw data for this
         exercise and create the directory ```ddsamples``` to contain the cleaned output.
     
-    • Unarchive data set 2 (DS2):
+    •  Copy the dataset 2 (DS2):
         /nesi/project/nesi02659/source_data/clean/lane2.tar
         into the ```lane2``` directory.
-        
+    •  Extract the lane2.tar
+    
 2. Examine the contents of the pairs of files in the terminal again.
    
    • How are the FASTQ headers related between pairs of files?
@@ -189,7 +192,7 @@ our samples.
    • You will need to specify the set of barcode pairs used in the construction of the RAD
         library.
    
-   • Enter the following pairs of barcodes into a file called lane2_barcodes.txt in your working
+   • Enter the following pairs of barcodes into a file called *lane2_barcodes.txt* in your working
         directory (make sure you enter them in the [right format]                         (http://catchenlab.life.illinois.edu/stacks/manual/#specbc) ). As
         we saw in the previous exercise, the sample names would normally coincide with
         your particular experimental design. Here, for simplicity, we can just use ```indv_01```,
@@ -199,15 +202,15 @@ our samples.
             GACAC/CGATGT TACGT/CGATGT
    
    • Copy the remaining barcodes for this lane of samples from the file:
-        /nesi/project/nesi02659/source_data/lane2_barcodes.txt
+        ```/nesi/project/nesi02659/source_data/clean/lane2_barcodes.txt```
         and append them to your barcodes file in your working directory.
    
    • How many samples were multiplexed together in this RAD library? (Hint: count the lines.) 
    
-   • You will need to specify the two restriction enzymes used to construct the library
+   • Similarly to what we saw aboveou will need to specify the two restriction enzymes used to construct the library
         (```NlaIII``` and ```MluCI```), the directory of input files (the lane2 directory), the list of
         barcodes, the output directory (ddsamples) and specify that process_radtags
-        clean, discard, and rescue reads.  
+        clean, discard, and rescue reads. Do not forget to specify the inline index and the fact that you are providing               paired-end reads.
    
    • The process_radtags program will write a log file into the output directory.
         Examine the log and answer the following questions:
