@@ -80,18 +80,18 @@ spreadsheet or word processor. Examine the contents of the set of files in the t
     
     • To ```find``` and ```load``` our first module
     
-                     ```                     
-                     #in our case
-                     module spider fastqc
+                                       
+       #in our case
+       module spider fastqc
                      
-                     #The command should present you with some inforation about the module that have a closely matching name.
-                     #You can then load your module of interest, i our case fastqc
+       #The command should present you with some inforation about the module that have a closely matching name.
+       #You can then load your module of interest, i our case fastqc
                      
-                     module load FastQC # Be careful with the case
-                     
-                     ```l
+       module load FastQC # Be careful with the case
     
-    • list the content of your directory, what did fastqc create?
+    • Use the ```---help``` of ```fastqc``` to run it on any single fastq file of your choice..
+                         
+    • List the content of your directory, what did fastqc create?
     
     • Let's try to copy this file to your local computer in order to visualise it
        
