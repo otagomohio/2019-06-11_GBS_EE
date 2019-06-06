@@ -22,7 +22,7 @@ module load R
 ```
 When you are working on other projects on Mahuika/NeSI, you can see what other modules are available to support your analyses by `module avail`, but VCFtools, PLINK and R are all we need for GBS_SNP_filter.  
 
-The PLINK version on Mahuika has some conflicts with the other programs we are using, so I've downloaded a 'clean' version. For Mahuika to find it, we need to run the following code (your $PATH is where the computer looks for programs to run, and the plink executable is located in the `source_data`folder, so we are tacking this location on to the beginning of our $PATH):
+The PLINK version on Mahuika has some conflicts with the other programs we are using, so I've downloaded a 'clean' version. For Mahuika to find it, we need to run the following code (your $PATH is where the computer looks for programs to run, and the plink executable is located in the `source_data` folder, so we are tacking this location on to the beginning of our $PATH):
 ```
 export PATH=/nesi/project/nesi02659/source_data:$PATH
 ```
@@ -70,7 +70,7 @@ stl_1274.77 stl
 stl_1274.79 stl
 stl_1274.80 stl
 ```
-We can create this file in nano, but first, let's `cd GBS_SNP_filter` because that's where we are going to run all these scripts:
+We can create this file in nano, but first, let's `cd GBS_SNP_filter` because that's where we are going to run all these scripts before running nano:
 ```
 nano popmap.txt
 ```
@@ -82,8 +82,8 @@ nano popmap.txt
 3. the sample missingness threshold (e.g. 0.9 = a sample can have up to 90% missing data before it is removed from the dataset)
 4. the p-value used for determining whether something is out of HWE (e.g. 0.05, larger values will remove more loci, smaller values less)
 5. the r^2 cut-off used for determining whether loci are in LD with each other (e.g. 0.5, smaller values will remove more loci, larger values less)
-6. the number of populations that a locus has to be out of HWE/in LD across in before that locus is discarded
-7. the column header in the vcf file that has the locus ID
+6. the number of populations that a locus has to be out of HWE/in LD across in before that locus is discarded (e.g. 3, smaller values will remove more loci, larger values less)
+7. the column header in the vcf file that has the locus ID (in our case, #CHROM)
 8. the locus ID regex pattern (we don't have to worry about this for our example, but we do need to leave a blank line here).
 
 Let's start off with the following info in our GBS_SNP_filter.txt file. After our first run we can play around with this to see how it affects our results (and see whether we can break [GBS_SNP_filter](https://github.com/laninsky/GBS_SNP_filter) by choosing some crazy values while we are at it!):
@@ -147,6 +147,8 @@ Alternatively, we can also monitor our job by using the `top` command. First, we
 top
 ```
 Can you see your user name and a process using a good whack of %CPU? If so, cool!
+
+Once GBS_SNP_filter completes, a large number of files will be present. The final output vcf file will have ".ld.vcf" as a suffix, and the rest of the files are described [here](https://github.com/laninsky/GBS_SNP_filter#detailed-workflow). The log file will detail how many SNPs were filtered out at each step.
 
 ***
 
