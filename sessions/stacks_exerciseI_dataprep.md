@@ -82,7 +82,7 @@ spreadsheet or word processor. Examine the contents of the set of files in the t
 
 3. Let's have a better look at this data. [FastQC] is a common software to quality-control a fastq file. 
 
-    • Run the ```fastqc``` on any one of the fastq files. To do so, you will first need to find fastqc. It is available on the          server but it is not *loaded*. If all the softwares installed on the server were accessible at the same time it would          be one happy mess.
+    • Run the ```fastqc``` on any one of the fastq files. To do so, you will first need to find fastqc. It is available on the          server but it is not *loaded*. If all the softwares installed on the server were accessible at the same time it would          be one happy mess. Therefore, we load the module everytime
     
     • To ```find``` and ```load``` our first module
     
@@ -90,12 +90,14 @@ spreadsheet or word processor. Examine the contents of the set of files in the t
        #The below command can help find any module
        module spider fastqc
                      
-       #The command should present you with some information about 
-       #the module that have a closely matching name.
-       #You can then load your module of interest, in our case FastQC
+      The command should present you with some information about 
+      the module that have a closely matching name.
+      You can then load your module of interest, in our case FastQC
                      
        module load FastQC # Be careful with the case
-    
+       module list # view your loaded modules
+     This list reset everytime you lofg off Mahiika.
+     
     • Use the ```--help``` of ```fastqc``` to run it on any single fastq file of your choice..
                          
     • List the content of your directory, what did fastqc create?
