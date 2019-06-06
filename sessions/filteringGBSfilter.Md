@@ -18,6 +18,11 @@ module load R
 ```
 When you are working on other projects on Mahuika/NeSI, you can see what other modules are available to support your analyses by `module avail`, but VCFtools, PLINK and R are all we need for GBS_SNP_filter.
 
+#### Getting together the files we need to run GBS_SNP_filter
+First up, we need the vcf file we want to filter! For this, we will use the `populations.snps.vcf` file we created for the stickleback data in our [2nd STACKS exercise](https://otagomohio.github.io/2019-06-11_GBS_EE/sessions/stacks_exerciseII_denovo.html). Let's copy that into the GBS_SNP_filter folder:
+```
+cp /path/to/populations.snps.vcf /path/to/GBS_SNP_filter
+```
 
 cs_1335.01, cs_1335.02, cs_1335.05, pcr_1211.04, pcr_1211.05,
             pcr_1211.06, stl_1274.33, stl_1274.35, stl_1274.37
