@@ -2,14 +2,18 @@
 **Developed by:** Alana Alexander
 
 ## Using GBS_SNP_filter  
----
+
+***
+
 #### Getting the scripts for GBS_SNP_filter
 [GBS_SNP_filter](https://github.com/laninsky/GBS_SNP_filter) is github repository. To get it on to the computer we will use `git clone`. First, make sure you are in your working directory: `/nesi/project/nesi02659/users/<yourusername>` then...
 ```
 git clone https://github.com/laninsky/GBS_SNP_filter.git
 ```
 If we run a `ls` we should now see a folder called `GBS_SNP_filter` - this folder has all the scripts from the GBS_SNP_filter github repository.  
----
+
+***
+
 #### Loading required modules
 [GBS_SNP_filter](https://github.com/laninsky/GBS_SNP_filter) requires some dependencies (other programs it needs to run), namely [VCFtools](https://vcftools.github.io/index.html), [PLINK](https://www.cog-genomics.org/plink/2.0/), and [R](https://www.r-project.org/). Luckily, these are installed on Mahuika already! We load them using the `modules` command:
 ```
@@ -18,7 +22,9 @@ module load PLINK
 module load R
 ```
 When you are working on other projects on Mahuika/NeSI, you can see what other modules are available to support your analyses by `module avail`, but VCFtools, PLINK and R are all we need for GBS_SNP_filter.  
----
+
+***
+
 #### Getting together the files we need to run GBS_SNP_filter
 **vcf file**:First up, we need the vcf file we want to filter! For this, we will use the `populations.snps.vcf` file we created for the stickleback data in our [2nd STACKS exercise](https://otagomohio.github.io/2019-06-11_GBS_EE/sessions/stacks_exerciseII_denovo.html). Let's copy that into the GBS_SNP_filter folder:
 ```
@@ -53,7 +59,8 @@ On the first line you need to give the name of your original vcf file that will 
 
 
 
----
+***
+
 #### Running GBS_SNP_filter
 
 
