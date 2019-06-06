@@ -2,6 +2,7 @@
 **Developed by:** Alana Alexander
 
 ## Using GBS_SNP_filter
+-
 #### Getting the scripts for GBS_SNP_filter
 [GBS_SNP_filter](https://github.com/laninsky/GBS_SNP_filter) is github repository. To get it on to the computer we will use `git clone`. First, make sure you are in your working directory: `/nesi/project/nesi02659/users/<yourusername>` then...
 ```
@@ -27,6 +28,8 @@ cp /path/to/populations.snps.vcf /path/to/GBS_SNP_filter
 **popmap.txt file**: The next thing we need is a popmap.txt file. This file (also described [here](https://github.com/laninsky/GBS_SNP_filter#popmaptxt)) has sample names (exactly the same as they appear in the populations.snps.vcf file) in the left hand column, and the population they map to on the right (separated by white space). We can create this file in nano:
 ```
 nano popmap.txt
+```
+```
 cs_1335.01 csl
 cs_1335.02 csl
 cs_1335.05 csl
