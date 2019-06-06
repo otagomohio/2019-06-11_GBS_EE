@@ -159,7 +159,7 @@ our samples.
         library.
    
    • Enter the following barcodes into a file called lane2_barcodes.txt in your working
-        directory (make sure you enter them in the[right format](http://catchenlab.life.illinois.edu/stacks/manual/#specbc)):
+        directory (make sure you enter them in the [right format](http://catchenlab.life.illinois.edu/stacks/manual/#specbc)):
             AACCA/ATCACG CATAT/ATCACG GAGAT/ATCACG
             TACCG/ATCACG AAGGA/CGATGT CAACC/CGATGT
             GACAC/CGATGT TACGT/CGATGT
@@ -187,12 +187,12 @@ our samples.
    
    • The process_radtags program will write a log file into the output directory.
         Examine the log and answer the following questions:
+        
+        -   What is the purpose of the four different output files for each set of barcodes?       
+        
+        -   How many raw reads were there?
                
-               -   What is the purpose of the four different output files for each set of barcodes?
-               
-               -   How many raw reads were there?
-               
-               -   How many were retained?
+        -   How many were retained?
                 
                 
 You reached the end of Exercise 1! Have a breathe, help your fellow attendees, grab a coffee, we will be back shortly for [Exercise II](https://github.com/otagomohio/2019-06-11_GBS_EE/blob/master/sessions/stacks_exerciseII_denovo.md).
