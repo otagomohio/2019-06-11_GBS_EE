@@ -14,14 +14,18 @@ If we run a `ls` we should now see a folder called `GBS_SNP_filter` - this folde
 
 ***
 
-### Loading required modules
-[GBS_SNP_filter](https://github.com/laninsky/GBS_SNP_filter) requires some dependencies (other programs it needs to run), namely [VCFtools](https://vcftools.github.io/index.html), [PLINK](https://www.cog-genomics.org/plink/2.0/), and [R](https://www.r-project.org/). Luckily, these are installed on Mahuika already! We load them using the `module load` command:
+### Loading required programs
+[GBS_SNP_filter](https://github.com/laninsky/GBS_SNP_filter) requires some dependencies (other programs it needs to run), namely [VCFtools](https://vcftools.github.io/index.html), [PLINK](https://www.cog-genomics.org/plink/2.0/), and [R](https://www.r-project.org/). Luckily, a working version of VCFtools and R are installed on Mahuika already! We load them using the `module load` command:
 ```
 module load VCFtools
-module load PLINK
 module load R
 ```
 When you are working on other projects on Mahuika/NeSI, you can see what other modules are available to support your analyses by `module avail`, but VCFtools, PLINK and R are all we need for GBS_SNP_filter.  
+
+The PLINK version on Mahuika has some conflicts with the other programs we are using, so I've downloaded a 'clean' version. For Mahuika to find it, we need to run the following code (your $PATH is where the computer looks for programs to run):
+```
+
+```
 
 ***
 
@@ -99,7 +103,8 @@ We can create this file by `nano GBS_SNP_filter.txt` (don't forget the blank lin
 ### Running GBS_SNP_filter
 Alright, we are pretty much ready to run GBS_SNP_filter.txt! Our final checklist:
 - [ ] We've used `git clone` to clone the GBS_SNP_filter github repository
-- [ ] We've loaded the modules we need (VCFtools, PLINK and R)
+- [ ] We've loaded the modules we need (VCFtools and R)
+- [ ] We've run the $PATH command so Mahuika can find PLINK
 - [ ] We've copied the vcf file into the GBS_SNP_filter folder
 - [ ] We've created a popmap.txt and GBS_SNP_filter.txt file and placed them in the GBS_SNP_filter folder
 
