@@ -70,8 +70,7 @@ populations.snps.vcf
 #CHROM
 
 ```
-
-
+We can create this file by `nano GBS_SNP_filter.txt`- don't forget the blank line on line 8!
 
 ***
 
