@@ -38,7 +38,7 @@ GAGAGCTATSTCGATATCTGAGGAGA
 4. Can you tell the total length of the genome? This command can take a little bit of time to run! [Hint](hints/bash_genomics_4.md)
 
 
-5. Since we are doing GBS we are interested in knowing how frequent restriction enzymesare . Can you tell me how many cut sites there are for :
+5. Since we are doing GBS we are interested in knowing how frequent restriction enzyme cut sites are. Can you tell me how many cut sites there are for:
 
 	* PstI CTGCAG
 	* ecoRI CTTAAG	
@@ -47,10 +47,10 @@ GAGAGCTATSTCGATATCTGAGGAGA
 	[Hint](hints/bash_genomics_5.md)
 	
 
-6. Bonus question: Take into account the reverse strand when calculateing the number of sites!
+6. Bonus question: Take into account the reverse strand when calculating the number of sites!
 
 
 
-In this challenging exercise you played around with some basics data using pre-existing programs and the available help you could find (i.e. the instructors, colleagues, --help and Google). This is very much like real-life genomics!
+In this challenging exercise you played around with some basic data using pre-existing programs and the available help you could find (i.e. the instructors, colleagues, `--help` and Google). This is very much like real-life genomics!
 
 
