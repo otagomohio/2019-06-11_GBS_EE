@@ -98,10 +98,12 @@ phylogenetic trees.
 ### Plan
 
 Throughout the day, we will work through two main exercises:
-    *   Mini-Lecture 1: 1. 10 minute mini-lecture on Phred scores and the *process_radtags* cleaning algorithm.
-    *   Exercise I. Data preparation. 
-    *   Exercise II: de novo assembly of RAD tags without a genome
-    *   Mini-Lecture 2: Stacks, primary/secondary reads, and parameters.
+    
+    *   Mini-Lecture 1: What is RAD?
+    *   Mini-Lecture 2: Phred scores and the *process_radtags* cleaning algorithm.
+    *   [Exercise I](stacks_exerciseI_dataprep.md): Data preparation.
+    *   Mini-Lecture 3: Stacks, primary/secondary reads, and parameters.
+    *   [Exercise II](Create stacks_exerciseII_denovo.md): de novo assembly of RAD tags without a genome
 
 
 
