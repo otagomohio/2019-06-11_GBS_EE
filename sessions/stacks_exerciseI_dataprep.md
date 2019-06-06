@@ -154,7 +154,7 @@ inline barcode on the first read, and an indexed barcode on both reads. These ar
 known as combinatorial barcodes as many unique combinations can be made from
 pairs of barcodes. 
     
-    • In ```working/dataprep1```, create a directory called ```lane2``` to contain the raw data for this
+    • In ```working/dataprep```, create a directory called ```lane2``` to contain the raw data for this
         exercise and create the directory ```ddsamples``` to contain the cleaned output.
     
     • Unarchive data set 2 (DS2):
