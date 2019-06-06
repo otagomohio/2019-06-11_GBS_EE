@@ -1,9 +1,11 @@
 # Exercise II: de novo assembly of RAD tags without a genome
 
-## Part 1: approach the parameter space**
+## Datasets
+
+## Part 1: Running Stacks Denovo
 
 1. In this first exercise, we will be working on a subset of data from threespine
-stickleback data from Oregon, on the
+stickleback data from Oregon(Catchen et al, [2013](https://onlinelibrary.wiley.com/doi/10.1111/mec.12330)), on the
 west coast of the United States.
 These stickleback can be found in a
 number of habitats from costal
@@ -26,35 +28,48 @@ parameters: m (the minimum read depth); M (the number of mismatches between
 alleles) and n (the number of mismatches between loci in the catalog). Here, we will
 optimize M for the stickleback data using a subset of the full dataset provided. After
 this, we can use the optimal value we have found for M in the de novo exercise below
-(part 3). We will be using the guidelines of parameter optimization as outlined in Paris
-et al. (2017), and will create a ‘hockey stick’ plot to assess which value for M recovers
+(part 2). We will be using the guidelines of parameter optimization as outlined in [Paris
+et al. (2017)](https://besjournals.onlinelibrary.wiley.com/doi/epdf/10.1111/2041-210X.12775), and will create a ‘hockey stick’ plot to assess which value for M recovers
 the highest number of new polymorphic loci (r80 loci).
-2. In your ./working workspace, create a directory called denovo to contain all the
-data for this exercise. Inside that directory, create two additional directories:
-samples, and opt. To save time, we have already cleaned and demultiplexed this
+
+1. Go to your  
+```/nesi/project/nesi02659/<yourusername>/working```
+workspace, create a directory called ```denovo``` to contain all the
+data for this exercise. *Inside* that directory, create two additional directories:
+```samples```, and ```opt```. 
+
+To save time, we have already cleaned and demultiplexed this
 data and will start from the cleaned samples stage. Inside the opt directory, create six
-additional directories: M2, M3, M4, M5, M6 and M7. We have already prepared
+additional directories: ```M2, M3, M4, M5, M6 and M7```. We have already prepared
 the clean samples for this exercise.
 
-    •   Unarchive dataset 2 (DS2):
-        ```/opt/data/denovo/oregon_stickleback.tar```
-        into the samples directory. The unarchived dataset contains 30 stickleback
+    • Copy the dataset below in the ```samples``` directory:
+    
+        ```/nesi/project/nesi02659/?/denovo/oregon_stickleback.tar```
+    
+    • Extract it. The unarchived dataset contains 30 stickleback
         samples, and we will use 9 of them in this exercise:
             cs_1335.01, cs_1335.02, cs_1335.05, pcr_1211.04, pcr_1211.05,
-            pcr_1211.06, stl_1274.33, stl_1274.35, stl_1274.37 Stickleback populations sampled from Oregon, USA in Catchen, et             al., 2013. Populations in red are sampled for this tutorial. ADRESS THE RED ISSUE
+            pcr_1211.06, stl_1274.33, stl_1274.35, stl_1274.37 Stickleback populations sampled from Oregon, USA.  It is a                 subet of Catchen, et al., [2013](https://onlinelibrary.wiley.com/doi/10.1111/mec.12330). 
 
-3. We will run the Stacks’ denovo_map.pl pipeline program, each time changing the value for
-M. This program will run ustacks, cstacks, and sstacks on the individuals in our
+2. We will run the Stacks’ ```denovo_map.pl``` pipeline program, each time changing the value for
+```M```. This program will run ustacks, cstacks, and sstacks on the individuals in our
 study as well as the populations program.
 *Once you get denovo_map.pl running, it will take approximately 10 minutes.*
     
-    • Information on denovo_map.pl and its parameters can be found online:
-        http://catchenlab.life.illnois.edu/stacks/comp/denovo_map.php
+    • Get back into the ```denovo``` folder
+    
+    • Load the Stacks module
+    
+    • Information on denovo_map.pl and its parameters can be found online[ http://catchenlab.life.illnois.edu/stacks/comp/denovo_map.php]
+       
     
     • We want Stacks to only use the nine individuals in our parameter optimization. To
-        specify this, create a file in the working directory called opt_popmap, using an editor.
+        specify this, create a file in the working directory called ```opt_popmap.txt```, using an editor.
         The file should be formatted like this:
             ```<sample file prefix><tab><population ID>```
+        
+        Note: do not include the extension ```.fq.gz``` in the sample name.
     
     • Include samples in this file and specify that all individuals belong to one
         population. You must supply the population map to denovo_map.pl when you
@@ -66,7 +81,7 @@ study as well as the populations program.
         samples) program. Run iterations for M=2, M=3, M=4, M=5, M=6 and M=7.
         Change the corresponding value for n so that we follow the n=M rule.
 
-4 . You should now see the denovo_map.pl output files in each directory (M2, M3,
+3. You should now see the denovo_map.pl output files in each directory (M2, M3,
 M4, M5, M6 and M7). To obtain how many r80 loci were assembled for each
 parameter run you will want to look at the populations.hapstats.tsv file.
 
@@ -85,7 +100,7 @@ parameter run you will want to look at the populations.hapstats.tsv file.
 
     • Which iteration of M provided the highest number of r80 loci?
 
-5. We now want to explore how many new r80 loci were found between each iteration
+4. We now want to explore how many new r80 loci were found between each iteration
 for M. Using the number of r80 loci from the populations.hapstats.tsv file, count
 how many new loci were assembled with each iteration of M and record them in a
 text file like so:
@@ -100,12 +115,12 @@ text file like so:
 
 Save this file as ```r80_loci.tsv.```
 
-6. Copy the Gnuplot script to the opt directory:
-    ```/opt/data/denovo/hockey_stick.gnuplot```
+5. Copy the Gnuplot script to the opt directory:
+    ```/nesi/project/nesi02659/source_data//denovo/hockey_stick.gnuplot```
 
     • Cat the file to see what it does.
 
-7. Put the r80_loci.tsv file in the same directory as the hockey_stick.gnuplot
+6. Put the r80_loci.tsv file in the same directory as the hockey_stick.gnuplot
 script.
     
     • Execute Gnuplot:
@@ -117,9 +132,9 @@ script.
         number of r80 loci, which value for M do you think is most appropriate for the
         Oregon stickleback data?
 
-## Part 3: Getting to opulation genetics analyses
+## Part 2: Getting to population genetics analyses
 
-1. In this third exercise we will now be working on the full set of threespine stickleback
+1. In this second exercise we will now be working on the full set of threespine stickleback
 data sampled from throughout Oregon, on the west coast of the United States. These
 data consist of three populations: a coastal marine population, a costal freshwater, and
 an inland river population.
@@ -131,11 +146,14 @@ the assembled data for this exercise.
 4. Run the Stacks’ denovo_map.pl pipeline program. This program will run ustacks,
 cstacks, and sstacks on the individuals in our study as well as the populations
 program.
+
+
+
+DO IT THROUGH SLURM
+
 *Once you get denovo_map.pl running, it will take approximately 30 minutes.*
     
-    • Information on denovo_map.pl and its parameters can be found online:
-    
-    • http://catchenlab.life.illnois.edu/stacks/comp/denovo_map.php
+    • Information on denovo_map.pl and its parameters can be found [online](http://catchenlab.life.illnois.edu/stacks/comp/denovo_map.php)
     
     •We want Stacks to understand which individuals in our study belong to which
         population. To specify this, create a file in the working directory called popmap, using
@@ -177,9 +195,13 @@ program.
     • populations.sumstats.tsv, populations.sumstats_summary.tsv
     
     • What is the mean value of nucleotide diversity (π) and FIS for each of the three
-        populations? [HINT: The less -S command may help you view these files easily.]
-  
-6. Our goal now is to export a subset of loci for analysis in Structure, which analyzes the
+        populations? [HINT: The less -S command may help you view these files easily by avoiding the wrapping]
+
+
+
+## Part 3: Populations genetics analyses from Stacks
+
+Our goal now is to export a subset of loci for analysis in Structure, which analyzes the
 distribution of multi-locus genotypes within and among populations in a Bayesian
 framework to make predictions about the most probable population of origin for each
 individual. The assignment of each individual to a population is quantified in terms of
@@ -252,6 +274,5 @@ menu and then “Show”.
         can you tell?*
 
 
-ADD PCA EXERCISE
 
 [Jump back to the main workshop schedule](https://otagomohio.github.io/2019-06-11_GBS_EE/)
