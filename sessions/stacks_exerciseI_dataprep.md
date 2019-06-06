@@ -25,7 +25,7 @@ Before doing anything, open a text file in your favorite text editor. You will w
     
     • If you have not done it yet, do not forget to log on our reserved machine
        
-       ```ssh -Y ga-vl01```
+       ssh -Y ga-vl01
     
     • For each exercise, you will set up a directory structure on the remote server that will hold your data and the different          steps of your analysis. We will start by making the directory ```working``` in your working space:
            ```/nesi/project/nesi02659/users/<yourusername>```
