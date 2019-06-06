@@ -96,7 +96,7 @@ spreadsheet or word processor. Examine the contents of the set of files in the t
                      
        module load FastQC # Be careful with the case
        module list # view your loaded modules
-     This list reset everytime you lofg off Mahiika.
+     This list reset everytime you lofg off Mahuika.
      
     • Use the ```--help``` of ```fastqc``` to run it on any single fastq file of your choice..
                          
