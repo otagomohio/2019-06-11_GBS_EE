@@ -1,6 +1,6 @@
 # Exercise II: de novo assembly of RAD tags without a genome
 
-## Part 1: Your first stacks run!**
+## Part 1: Your first stacks run
 
 
 2. In the first part of the second exercise we will be constructing stacks in two separate
@@ -10,32 +10,17 @@ analysis results in two quite different outcomes.
 3. In your ./working workspace, create a directory called ustacks to contain all the
 data for this exercise. 
 
-    *   Inside that directory, create two additional directories: ```samples```, and ```stacks```. To save time, we have                already cleaned and demultiplexed
-this data and will start from the cleaned samples stage.
+    *   Inside that directory, create two additional directories: ```samples```, and ```stacks```.  To save time, we have              already cleaned and demultiplexed
+         this data and will start from the cleaned samples stage.
 Copy data set 3 (DS3):
 /opt/data/denovo/lib01_samp01.fq.gz
 and
 /opt/data/denovo/lib02_samp01.fq.gz
-into the samples directory and decompress them.
-4. While these data are from the same biological population, they have very different
-characteristics when stacks are assembled from them. Your goal is to explore these two
-samples and understand how they are interacting with ustacks.
-5. First, using UNIX commands, determine how many reads are present in each sample
-and the length of those reads.
-6. Run ustacks on each sample, choosing the appropriate parameters for the length
-and number of reads.
-• Be sure to capture the output from ustacks in an external file. In the UNIX
-exercises we learned to use the “>” symbol to redirect stdout to a file. In this
-case you will need to redirect STDOUT and STDERR to a file, to do so, use
-“&>” as the redirect symbol in your command.
-Do not allow more than two mismatches between stacks for this exercise.
-7. Examine the output from ustacks. What characteristics are different between the two
-samples? What could potentially be causing these differences?
-```
 
-## Part 2: approach the parameter space**
 
-1. In this second exercise we will be working on a subset of data from threespine
+## Part 1: approach the parameter space**
+
+1. In this first exercise, we will be working on a subset of data from threespine
 stickleback data from Oregon, on the
 west coast of the United States.
 These stickleback can be found in a
