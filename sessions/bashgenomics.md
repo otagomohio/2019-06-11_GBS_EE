@@ -53,5 +53,8 @@ GAGAGCTATSTCGATATCTGAGGAGA
 
 In this challenging exercise you played around with some basic data using pre-existing programs and the available help you could find (i.e. the instructors, colleagues, `--help` and Google). This is very much like real-life genomics!
 
-[Jump back to Introduction to the command line)[https://otagomohio.github.io/2019-06-11_GBS_EE/sessions/Introcommandline.html]  
-[Jump back to main workshop schedule)[https://otagomohio.github.io/2019-06-11_GBS_EE/]
+
+
+
+[Jump back to Introduction to the command line](https://otagomohio.github.io/2019-06-11_GBS_EE/sessions/Introcommandline.html)  
+[Jump back to main workshop schedule](https://otagomohio.github.io/2019-06-11_GBS_EE/)
