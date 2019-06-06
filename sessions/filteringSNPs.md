@@ -25,9 +25,11 @@ cs_1335.01, cs_1335.02, cs_1335.05, pcr_1211.04, pcr_1211.05,
 
 
 ## Other filtering parameters
-There are a boat load of additional filters you could apply to your data set, and also a boatload of differing opinions on why and whether you should further filter your SNP set! Some filters you might consider:
+There are a boat load of additional filters/options you could apply to your data set, and also a boatload of differing opinions on why and whether you should further filter your SNP set! Some filters you might consider (credit to the creators of [ipyrad](https://ipyrad.readthedocs.io/faq.html#tuning-assembly-parameters) for references for these):
 * overall sequencing depth i.e. chucking out low depth loci. This might reduce the likelihood of calling the wrong genotype at a locus because of low depth (e.g. hard to call a heterozygote when you only have one read at a locus!), but also see [below](https://github.com/otagomohio/2019-06-11_GBS_EE/blob/master/sessions/filteringSNPs.md#do-i-even-need-to-filter-at-all).
-* throwing out loci missing for most samples. 
+* throwing out loci that have missing data for most samples. RADseq/GBS data sets can be characterized by a high level of "missingness", but loci with high levels of missingness might also be the faster ticking loci that have had restriction enzyme sites eroded by mutation (and therefore could be more informative about recent population events). Filtering missing data too stringently might negatively affect your results! (see: [Unforeseen Consequences of Excluding Missing Data from Next-Generation Sequences: Simulation Study of RAD Sequences](https://academic.oup.com/sysbio/article/65/3/357/2468879)
+
+* to reference genome or not to reference genome. For some folks, this will be an easy one to answer. If you don't have a reference genome for your organism, you won't be able to make use of it. However, evidence suggests if you do have a reference genome available, that will assist with yoru analysis (see: [Bioinformatic processing of RAD‐seq data dramatically impacts downstream population genetic inference](https://academic.oup.com/sysbio/article/65/3/357/2468879))
 
 If you are interested in any of these further filtering steps, I'd highly encourage you to check out the following tutorial, which walks through several of these steps:
 http://www.ddocent.com/filtering/
