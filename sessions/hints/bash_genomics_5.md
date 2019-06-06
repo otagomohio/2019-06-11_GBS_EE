@@ -4,4 +4,4 @@
 	* ecoRI CTTAAG	
 	* SbfI CCTGCAGG
   
-  **HINT:** We are still looking for particular patterns, ```grep``` seems appropriate, look at the help of grep to see if it can count.
+  **HINT:** We are still looking for particular patterns, ```grep``` seems appropriate, look at the `--help` of grep to see if it can count.
