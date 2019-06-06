@@ -2,10 +2,10 @@
 
 ## Datasets
 
-## Part 1: Running Stacks Denovo
+## Part 1: Running Stacks denovo
 
 1. In this first exercise, we will be working on a subset of data from threespine
-stickleback data from Oregon(Catchen et al, [2013](https://onlinelibrary.wiley.com/doi/10.1111/mec.12330)), on the
+stickleback data from Oregon (Catchen et al, [2013](https://onlinelibrary.wiley.com/doi/10.1111/mec.12330)), on the
 west coast of the United States.
 These stickleback can be found in a
 number of habitats from costal
@@ -125,8 +125,11 @@ script.
     
     • Execute Gnuplot:
     ```
-    % gnuplot < hockey_stick.gnuplot
+    gnuplot < hockey_stick.gnuplot
     ```
+    
+    • Copy the file on your local machine. To do so, open a new terminal window without closing the old one.
+        Use ```pwd``` to find your way around and the [NeSI guide](https://support.nesi.org.nz/hc/en-gb/articles/360000578455-File-Transfer-with-SCP) to copy files from Mahuika to your local computer
     
     • Open the PDF to examine the hockey stick plot. Based on the plot and the
         number of r80 loci, which value for M do you think is most appropriate for the
