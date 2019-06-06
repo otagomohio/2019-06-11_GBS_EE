@@ -3,12 +3,14 @@
 
 ## Getting on the supercomputer
 
-During this session, we will learn to be comfortable with the command line. First, we will log in to the server [Mahuika](https://support.nesi.org.nz/hc/en-gb/articles/360000163575-Mahuika), a computing resource maintained by the New Zealand eScience Infrastructure (NeSI). Next, we will hop across to the bit of Mahuika we are using for this workshop using:
+During this session, we will learn to be comfortable with the command line. First, we will log in to the server [Mahuika](https://support.nesi.org.nz/hc/en-gb/articles/360000163575-Mahuika), a computing resource maintained by the New Zealand eScience Infrastructure (NeSI). 
+
+You might have managed to log in to NeSI already. If you have not, please request help from one of us and we will assist you.
+
+Next, we will hop across to the bit of Mahuika we are using for this workshop using:
 ```
 ssh -Y ga-vl01
 ```
-
-You might have managed to log in to NeSI already. If you have not, please request help from one of us and we will assist you.
 
 Once you have jumped on to `ga-v101` using the commands above, get into the space created for you for this workshop by using the `cd` (change directory) command (don't worry - we are going to go through commands like `cd` in more detail in a sec!):
 
