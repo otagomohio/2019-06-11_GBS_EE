@@ -120,10 +120,30 @@ If you want more detail that's going on in each step, please check out the [deta
 ***
 
 #### How can a monitor how GBS_SNP_filter is going?
-Although GBS_SNP_filter will print out some messages to screen, the real detail of how it is going is written out to a log file in the GBS_SNP_filter folder. If we log in to Mahuika using a different terminal window, and then get to the bit of Mahuika we are running the analyses on by:
+Although GBS_SNP_filter will print out some messages to screen, the real detail of how it is going is written out to a log file in the GBS_SNP_filter folder. To monitor the log while GBS_SNP_filter is running, we need to log in to Mahuika using a different terminal window, and then get to the bit of Mahuika we are running the analyses on by:
 ```
+ssh -Y ga-vl01
+```
+After heading to our GBS_SNP_filter folder:
+```
+cd /nesi/project/nesi02659/users/<yourusername>/GBS_SNP_filter
+```
+We can peek into our log file by:
+```
+less *.log
+```
+If we type `Shift+F` after opening the file using `less`, the log file will update when GBS_SNP_filter adds more info.
 
+Alternatively, we can also monitor our job by using the `top` command. First, we have to get out of `less`. To do this we need to do `Ctrl+c` to interrupt `less` waiting for data, and then `q` to exit  `less`. To use top, we then simply type:
 ```
+top
+```
+Can you see your user name and a process using a good whack of %CPU? If so, cool!
+
+***
+
+#### Comparing different parameter choices
+After GBS_SNP_filter completes, have a go tweaking the parameters and rerun it to see how it affects the number of SNPs retained. 
 
 
 ## What if I want to filter on other stuff?
