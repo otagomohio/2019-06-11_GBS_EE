@@ -31,10 +31,7 @@ When you are working on other projects on Mahuika/NeSI, you can see what other m
 cp /path/to/populations.snps.vcf /path/to/GBS_SNP_filter
 ```
 
-**popmap.txt file**: The next thing we need is a popmap.txt file. This file (also described [here](https://github.com/laninsky/GBS_SNP_filter#popmaptxt)) has sample names (exactly the same as they appear in the populations.snps.vcf file) in the left hand column, and the population they map to on the right (separated by white space). We can create this file in nano:
-```
-nano popmap.txt
-```
+**popmap.txt file**: The next thing we need is a popmap.txt file. This file (also described [here](https://github.com/laninsky/GBS_SNP_filter#popmaptxt)) has sample names (exactly the same as they appear in the populations.snps.vcf file) in the left hand column, and the population they map to on the right (separated by white space) e.g.
 ```
 cs_1335.01 csl
 cs_1335.02 csl
@@ -45,6 +42,10 @@ pcr_1211.06 pcr
 stl_1274.33 stl
 stl_1274.35 stl
 stl_1274.37 stl
+```
+We can create this file in nano:
+```
+nano popmap.txt
 ```
 (remember to get out of nano use Ctrl+O to write the file, and then Ctrl+X to exit it)
 
