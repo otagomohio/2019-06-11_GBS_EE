@@ -27,12 +27,14 @@ The PLINK version on Mahuika has some conflicts with the other programs we are u
 export PATH=/nesi/project/nesi02659/source_data:$PATH
 ```
 
+*Note*: If you log out of ga-vl01 and log back again, you'll need to re-load these programs following the instructions above.
+
 ***
 
 ### Getting together the files we need to run GBS_SNP_filter
 **vcf file**: First up, we need the vcf file we want to filter! For this, we will use the `populations.snps.vcf` file we created for the stickleback data in our [2nd STACKS exercise](https://otagomohio.github.io/2019-06-11_GBS_EE/sessions/stacks_exerciseII_denovo.html). Let's copy that into the GBS_SNP_filter folder:
 ```
-cp /path/to/populations.snps.vcf /path/to/GBS_SNP_filter
+cp /nesi/project/nesi02659/source_data/filteringsnps/populations.snps.vcf GBS_SNP_filter
 ```
 
 **popmap.txt file**: The next thing we need is a popmap.txt file. This file (also described [here](https://github.com/laninsky/GBS_SNP_filter#popmaptxt)) has sample names (exactly the same as they appear in the populations.snps.vcf file) in the left hand column, and the population they map to on the right (separated by white space) e.g.
@@ -68,11 +70,11 @@ stl_1274.77 stl
 stl_1274.79 stl
 stl_1274.80 stl
 ```
-We can create this file in nano:
+We can create this file in nano, but first, let's `cd GBS_SNP_filter` because that's where we are going to run all these scripts:
 ```
 nano popmap.txt
 ```
-(remember to get out of nano use Ctrl+O to write the file, and then Ctrl+X to exit it)
+(remember to get out of nano use Ctrl+O to write the file, enter to confirm the name, and then Ctrl+X to exit it)
 
 **GBS_SNP_filter.txt**: The final file we need is GBS_SNP_filter.txt. This eight line long file contains the options that we want to use to filter our SNPs. The [GBS_SNP_filter](https://github.com/laninsky/GBS_SNP_filter#gbs_snp_filtertxt) repository has a lot of background on some of the options, but briefly:
 1. the name of the vcf file (in our case, populations.snps.vcf)
@@ -94,7 +96,6 @@ populations.snps.vcf
 3
 #CHROM
 
-
 ```
 We can create this file by `nano GBS_SNP_filter.txt` (don't forget the blank line on line 8!).
 
@@ -107,8 +108,9 @@ Alright, we are pretty much ready to run GBS_SNP_filter.txt! Our final checklist
 - [ ] We've run the $PATH command so Mahuika can find PLINK
 - [ ] We've copied the vcf file into the GBS_SNP_filter folder
 - [ ] We've created a popmap.txt and GBS_SNP_filter.txt file and placed them in the GBS_SNP_filter folder
+- [ ] We are inside the GBS_SNP_filter folder
 
-After doing all that, we are ready to run! `cd` into the GBS_SNP_filter folder and run the filter by:
+After doing all that, we are ready to run the filter by:
 ```
 bash GBS_SNP_filter.sh
 ```
