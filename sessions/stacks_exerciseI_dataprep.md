@@ -9,9 +9,7 @@ standard RAD data.
 double-digested with two restriction enzymes.
        You will use these first two data sets to become familiar with the structure of RAD
         sequences, as well as to become proficient with the pre-processing (i.e. cleaning
-        and de-multiplexing) of data before alignment or assembly. Dataset 1 (DS1) - This
-        dataset consists of two samples of single-end RAD data from the same set of
-        samples, but constructed in two different libraries and sequenced independently.
+        and de-multiplexing) of data before alignment or assembly. DS1 consists of two samples of single-end RAD data from the         same set of samples, but constructed in two different libraries and sequenced independently.
 
 ## Part 1: Single-end reads
 
