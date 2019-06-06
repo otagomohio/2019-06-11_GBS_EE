@@ -76,7 +76,20 @@ spreadsheet or word processor. Examine the contents of the set of files in the t
 
 3. Let's have a better look at this data. [FastQC] is a common software to quality-control a fastq file. 
 
-    • Run the ```fastqc``` on any one of the fastq files. To do so, you will need to load the fastqc module, then run it. 
+    • Run the ```fastqc``` on any one of the fastq files. To do so, you will first need to find fastqc. It is available on the          server but it is not *loaded*. If all the softwares installed on the server were accessible at the same time it would          be one happy mess.
+    
+    • To ```find``` and ```load``` our first module
+    
+                     ```                     
+                     #in our case
+                     module spider fastqc
+                     
+                     #The command should present you with some inforation about the module that have a closely matching name.
+                     #You can then load your module of interest, i our case fastqc
+                     
+                     module load FastQC # Be careful with the case
+                     
+                     ```l
     
     • list the content of your directory, what did fastqc create?
     
@@ -112,7 +125,7 @@ process_radtags](http://catchenlab.life.illinois.edu/stacks/manual/#procrad) on 
         individuals or populations.
     
     • Enter the following barcodes into a file called lane1_barcodes.txt in your working
-        directory (make sure you enter them in the [right format](http://catchenlab.life.illinois.edu/stacks/manual/#specbc).
+        directory. Make sure you enter them in the [right format](http://catchenlab.life.illinois.edu/stacks/manual/#specbc).
         Assign a sample name for each barcode below. Normally, these sample names would
         correspond to the individuals used in a particular experiment, but for this exercise, we
         could name the samples in a simple way, say indv_01, indv_02, etc.
@@ -171,24 +184,23 @@ pairs of barcodes.
 3. We will again use the Stacks’ program process_radtags to clean and demultiplex
 our samples.
    
+   • Get back into the ```dataprep``` folder
+   
    • You will need to specify the set of barcode pairs used in the construction of the RAD
         library.
    
-   • Enter the following barcodes into a file called lane2_barcodes.txt in your working
-        directory (make sure you enter them in the [right format for paired-end reads]                          (http://catchenlab.life.illinois.edu/stacks/manual/#specbc)). As
+   • Enter the following pairs of barcodes into a file called lane2_barcodes.txt in your working
+        directory (make sure you enter them in the [right format]                         (http://catchenlab.life.illinois.edu/stacks/manual/#specbc) ). As
         we saw in the previous exercise, the sample names would normally coincide with
         your particular experimental design. Here, for simplicity, we can just use ```indv_01```,
         ```indv_02```, etc.    
-   
             AACCA/ATCACG CATAT/ATCACG GAGAT/ATCACG
             TACCG/ATCACG AAGGA/CGATGT CAACC/CGATGT
             GACAC/CGATGT TACGT/CGATGT
+   
    • Copy the remaining barcodes for this lane of samples from the file:
         /nesi/project/nesi02659/source_data/lane2_barcodes.txt
         and append them to your barcodes file in your working directory.
-   
-   • You can concatenate this file onto the end of your file using the cat command and
-        the shell’s append operator: cat file1 >> file2, or you can cut+paste.   
    
    • How many samples were multiplexed together in this RAD library? (Hint: count the lines.) 
    
