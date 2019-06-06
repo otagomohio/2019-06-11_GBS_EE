@@ -90,8 +90,9 @@ spreadsheet or word processor. Examine the contents of the set of files in the t
        #The below command can help find any module
        module spider fastqc
                      
-       #The command should present you with some inforation about the module that have a closely matching name.
-       #You can then load your module of interest, i our case fastqc
+       #The command should present you with some information about 
+       #the module that have a closely matching name.
+       #You can then load your module of interest, in our case FastQC
                      
        module load FastQC # Be careful with the case
     
@@ -140,7 +141,7 @@ process_radtags](http://catchenlab.life.illinois.edu/stacks/manual/#procrad) on 
             ACATAC ACCATG ACCCCC ACTCTT
             ACTGGC AGCCAT AGCGCA
     
-    • Copy the remaining barcodes for this lane of samples from ``` /nesi/project/nesi02659/source_data/clean/lane1_barcodes.txt```
+    • Copy the remaining barcodes for this lane of samples from ```                        /nesi/project/nesi02659/source_data/clean/lane1_barcodes.txt```
     
     • Based on the barcode file, how many samples were multiplexed together in this
         RAD library? (Hint: count the lines.)
