@@ -143,8 +143,9 @@ Can you see your user name and a process using a good whack of %CPU? If so, cool
 ***
 
 #### Comparing different parameter choices
-After GBS_SNP_filter completes, have a go tweaking the parameters and rerun it to see how it affects the number of SNPs retained. 
+After GBS_SNP_filter completes, have a go tweaking the parameters and rerun it to see how it affects the number of SNPs retained. Keep line 1 (populations.snps.vcf), line 7 (#CHROM), and line 8 (blank line) the same, but play around with the other filters. How does this affect the number of SNPs left at the end? Are there any combinations that cause GBS_SNP_filter to fail? Why do you think that might be?
 
+***
 
 ## What if I want to filter on other stuff?
 https://otagomohio.github.io/2019-06-11_GBS_EE/sessions/furtherfiltering.html
