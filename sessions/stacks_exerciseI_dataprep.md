@@ -77,7 +77,7 @@ spreadsheet or word processor. However, we can examine the contents of the set o
     • How could you tell by eye which type of encoding your data are using (i.e. PHRED33 or PHRED64)?
     
 
-3. Let's have a closer look at this data. [FastQC] is a common software to quality-control a fastq file. 
+3. Let's have a closer look at this data. [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) is a common software to quality-control a fastq file. 
 
     • Let's run ```fastqc``` on one of our fastq files. To do so, you will first need to find fastqc. This program is available on the          server but it is not *loaded*. If all the softwares installed on the server were accessible at the same time it would          be one happy mess. Therefore, we load modules for specific programs when we actually need to use them.
     
@@ -96,7 +96,7 @@ spreadsheet or word processor. However, we can examine the contents of the set o
        
      This list resets every time you log off Mahuika, so you will need to remember to reload the module(s) you need when you log in again.
      
-    • Use the ```--help``` of ```fastqc``` to run it on any single fastq file of your choice..
+    • Use the ```--help``` of ```fastqc``` to run it on any single fastq file of your choice (note, the name of the executable `fastq` is all lower case...welcome to the club of frustration at capitalization of program names not matching up to their documentation!).
                          
     • Run `ls` in your lane1 directory: what outputs did fastqc create?
     
@@ -104,7 +104,7 @@ spreadsheet or word processor. However, we can examine the contents of the set o
        
     • Open a new terminal window **without closing the current one** and stay on your local computer (i.e. do **not** login to mahuika). 
     
-    • Check out [how to copy files](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/). To identify out your path,          use the ```pwd``` command.
+    • Check out [how to copy files](https://support.nesi.org.nz/hc/en-gb/articles/360000578455-File-Transfer-with-SCP). To identify the Mahuika path,          use the ```pwd``` command on the terminal window that is logged into Mahuika.
        
     • Once you have this file on your local computer, just double-click on it to open it with your favorite browser.
 
