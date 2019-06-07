@@ -163,7 +163,6 @@ the Bayesian computations, usually many fewer than are generated in a typical RA
 data set. We therefore want to randomly choose a random subset of loci that are well
 represented in our three populations. Nonetheless, this random subset contains more
 than enough information to define population structure:
-    
     • The final stage of the denovo_map.pl pipeline is to run the populations program to
         calculate population genetic statistics for our data. We want to execute this program by
         hand again, specifying filters that will give us only the most well represented loci. 
