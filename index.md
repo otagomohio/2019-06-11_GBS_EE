@@ -33,7 +33,7 @@ Time | Topic | Location |
 17:00- | *End of day 1 - Social* | |
  | | |
 **Day 2** | **June 12 2019** | |
-09:00-10:30 | [From raw reads to individual samples](stacks_exerciseI_dataprep.md)  | [Seminar Room, Marples Building](https://goo.gl/maps/62XWtwgqsKxKir4V9) |
+09:00-10:30 | [From raw reads to individual samples](sessions/stacks_exerciseI_dataprep.md)  | [Seminar Room, Marples Building](https://goo.gl/maps/62XWtwgqsKxKir4V9) |
 10:30-11:00 | *Break* | |
 11:00-12:30 | SNP calling in the absence of a genome part 1 | [Seminar Room, Marples Building](https://goo.gl/maps/62XWtwgqsKxKir4V9) |
 12:30-13:30 | *Lunch Break* | |
