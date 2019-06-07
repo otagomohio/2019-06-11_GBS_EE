@@ -41,10 +41,9 @@ Before doing anything, open a text file in your favorite plain text editor e.g. 
         correspond to each stage and that allow us to remember where they are. A well
         organized workspace makes analyses easier and prevents data from being overwritten.
     
-    • First let's make a few directories. In ```working```, create a directory called ```dataprep``` to contain all the data        for this exercise. Inside that directory create two additional directories: ```lane1``` and ```samples```. We will
-     refer to the clean directory as the working directory.
+    • First let's make a few directories. In ```working```, create a directory called ```dataprep``` to contain all the data        for this exercise. Inside that directory create two additional directories: ```lane1``` and ```samples```. 
     
-    • As a check, go back to your ```working``` directory and use the `ls command with the ```-R``` flag 
+    • As a check that we've set up our 'waterfall workspace' correctly, go back to your ```working``` directory (*hint*: `cd ..`) and use the `ls command with the ```-R``` flag 
         (i.e.recursive), it should show you sthe following:
     
     ```
