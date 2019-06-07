@@ -101,7 +101,7 @@ an inland river population.
 2. Now that we have optimized the assembly parameters, we will assemble loci and
 determine population structure using the Structure program. For more information on
 the study this data originated with, see Catchen, et al. 2013.
-3. In your ```./working/denovo workspace```, create a directory called stacks to contain
+3. In your ```./working/denovo``` workspace, create a directory called stacks to contain
 the assembled data for this exercise.
 4. Run the Stacks’ denovo_map.pl pipeline program according to the following set of instruction:
     
@@ -191,7 +191,7 @@ telist.txt. Create that command step by step:
 
     • First, use ``` cat``` to concatenante  ```stacks/populations.sumstats.tsv```.
     
-    • Then, use ```grep``` with ```-v`` to exclude all headers (i.e. including "#")
+    • Then, use ```grep``` with ```-v```  to exclude all headers (i.e. including "#")
     
     •  Select the first column with ```cut -f 1``` 
      
