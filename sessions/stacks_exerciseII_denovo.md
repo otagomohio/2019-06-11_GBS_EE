@@ -230,9 +230,9 @@ A common STRUCTURE error happens when your population output contains less
 than 1000 loci. You may need to adjust the number of loci in the mainparams file to
 match your exact Stacks output.
 
-11. You will need to download  [Structure from the graphical end](https://web.stanford.edu/group/pritchardlab/structure_software/release_versions/v2.3.4/html/structure.html) and
+11. You will need to download  [Structure with the graphical front end](https://web.stanford.edu/group/pritchardlab/structure_software/release_versions/v2.3.4/html/structure.html) and
 populations.structure.out [files from the cluster](https://support.nesi.org.nz/hc/en-gb/articles/360000578455-File-Transfer-with-SCP). You can then load them intothe graphical interface for Structure on your local computer. Select the ```File``` menu
-and then ```Load structure results``` to load the Structure output. Choose the “Barplot”
+and then ```Load structure results``` to load the Structure output. Choose the ```Barplot```
 menu and then ```Show```.
     
     • Are the three Oregon threespine stickleback populations related to one another? How
@@ -240,6 +240,6 @@ menu and then ```Show```.
         
 
 
-Congrats, you just finished our tutorial for denovo RAD-Seq. If you have plenty of times, you could try different parameters for populations or familiarise yourself with the idea of a reference based approach: [ref_map.pl](http://catchenlab.life.illinois.edu/stacks/comp/ref_map.php).
+Congrats, you just finished our tutorial for denovo RAD-Seq. If you have plenty of times, you could try different parameters for populations or familiarise yourself with the idea of a reference based approach: [ref_map.pl](http://catchenlab.life.illinois.edu/stacks/comp/ref_map.php). You could also play with your own data. Finally, you can use the vcf file to try to generate other interesting thing. Have a look at the R package adegenet for example! 
 
 [Jump back to the main workshop schedule](https://otagomohio.github.io/2019-06-11_GBS_EE/)
