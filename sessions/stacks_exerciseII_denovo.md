@@ -164,7 +164,7 @@ data set. We therefore want to randomly choose a random subset of loci that are 
 represented in our three populations. Nonetheless, this random subset contains more
 than enough information to define population structure:
 
-   • The final stage of the denovo_map.pl pipeline is to run the populations program to
+ The final stage of the denovo_map.pl pipeline is to run the populations program to
         calculate population genetic statistics for our data. We want to execute this program by
         hand again, specifying filters that will give us only the most well represented loci. 
 
@@ -178,7 +178,7 @@ than enough information to define population structure:
    • One final detail: Structure assumes that each SNP locus is independent, so we
         don’t want to output multiple SNPs from the same RAD locus, since they are not
         independent but are in linkage blocks within each RAD tag. We can achieve this
-        behavior by specifying the --write_single_snp parameter to populations.
+           behavior by specifying the --write_single_snp parameter to populations.
 
 7. Now we want to select 1,000 loci randomly from the results and save these loci into a
 file. We can easily do this using the shell given a list of catalog IDs output in the
