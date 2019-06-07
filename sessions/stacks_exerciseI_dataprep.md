@@ -113,19 +113,18 @@ spreadsheet or word processor. However, we can examine the contents of the set o
 You probably noticed that not all of the data is high quality. In general, you will want
 to remove the lowest quality sequences from your data set before you proceed.
 However, the stringency of the filtering will depend on the final application. In
-general, higher stringency is needed for de novo assemblies as compared to
-alignments to a reference genome. However, low quality data will almost always
-affect downstream analysis, producing false positives, such as errant SNP predictions.
+general, higher stringency is needed for *de novo* assemblies as compared to
+alignments to a reference genome. However, low quality data can
+affect downstream analysis for *de novo* and reference-based approaches, producing false positives, such as errant SNP predictions.
 
-4. We will use the Stacks’s program **process_radtags** to clean and demultiplex our
+4. We will use the Stacks’s program **process_radtags** to remove low quality sequences (also known as cleaning data) and to demultiplex our
 samples. Take advantage of the Stacks manual as well as the individual [manual page for
-process_radtags](http://catchenlab.life.illinois.edu/stacks/manual/#procrad) on the Stacks website to find information         and examples. Do not run it yet but follow through the points below:
+process_radtags](http://catchenlab.life.illinois.edu/stacks/manual/#procrad) on the Stacks website to find information         and examples. Do not run the commands you figure out just yet, but first follow through the points below:
     
     • Get back into your ```dataprep``` folder
     
     • It is time to load the ```stacks``` module to be able to access the ```process_radtags``` command. Find it, load it.
-     
-     
+          
     • You will need to specify the set of barcodes used in the construction of the RAD library.
         Remember, each P1 adaptor in RAD has a particular DNA sequence (an inline
         barcode) that gets sequenced first, allowing data to be associated with samples such as
