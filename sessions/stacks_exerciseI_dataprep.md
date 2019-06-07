@@ -70,16 +70,16 @@ spreadsheet or word processor. However, we can examine the contents of the set o
     
     • You should see multiple different lines in each file: some starting with @, lines that only have +, lines with nucleotides (e.g. A, C, G, T), and lines with weird combinations of other ascii characters.
     
-    • How does the FASTQ file format work?
+    • How does this FASTQ file format work? (*hint*: your friendly search engine may come in handy!)
     
-    • How are quality scores encoded?
+    • How are quality scores for the reads encoded?
     
     • How could you tell by eye which type of encoding your data are using (i.e. PHRED33 or PHRED64)?
     
 
-3. Let's have a better look at this data. [FastQC] is a common software to quality-control a fastq file. 
+3. Let's have a closer look at this data. [FastQC] is a common software to quality-control a fastq file. 
 
-    • Run the ```fastqc``` on any one of the fastq files. To do so, you will first need to find fastqc. It is available on the          server but it is not *loaded*. If all the softwares installed on the server were accessible at the same time it would          be one happy mess. Therefore, we load the module everytime
+    • Let's run ```fastqc``` on one of our fastq files. To do so, you will first need to find fastqc. This program is available on the          server but it is not *loaded*. If all the softwares installed on the server were accessible at the same time it would          be one happy mess. Therefore, we load modules for specific programs when we actually need to use them.
     
     • To ```find``` and ```load``` our first module
     
