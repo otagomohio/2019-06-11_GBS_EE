@@ -139,7 +139,7 @@ cd /nesi/project/nesi02659/users/<yourusername>/GBS_SNP_filter
 ```
 We can peek into our log file by:
 ```
-less *.log
+less populations.snps.log
 ```
 If we type `Shift+F` after opening the file using `less`, the log file will update when GBS_SNP_filter adds more info.
 
