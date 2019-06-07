@@ -208,7 +208,7 @@ generated. This will cause populations to only process the loci in the ```whitel
 Specify that a Structure output file be included this time and again insist that only a
 single SNP is output from each RAD locus. Finally, you will need to again specify the
 population map that you generated above to populations so that this information is
-passed into the Structure output file.
+passed into the Structure output file. You might also want to output a vcf file, that will prove handy for all kind of population genetics applications.
 
 9. Create a new directory called ```structure```e and copy the Structure output file that
 Stacks generated to this directory.
@@ -216,7 +216,7 @@ Stacks generated to this directory.
     • Edit the Structure output file to remove the comment line (first line in the file, starts with
         “#”).
     • You may need to edit your Structure output file to change the alphanumeric
-        population names to be numbers. !!!This can be done using sed.
+        population names to be numbers. 
     • The parameters to run Structure (including a value of k=3) have already been
         prepared, you can find them here:
             /nesi/project/nesi02659/source_data/denovo/mainparams
@@ -239,7 +239,6 @@ menu and then ```Show```.
         can you tell?
         
 
-
-Congrats, you just finished our tutorial for denovo RAD-Seq. If you have plenty of times, you could try different parameters for populations or familiarise yourself with the idea of a reference based approach: [ref_map.pl](http://catchenlab.life.illinois.edu/stacks/comp/ref_map.php). You could also play with your own data. Finally, you can use the vcf file to try to generate other interesting thing. Have a look at the R package adegenet for example! 
+Congrats, you just finished our tutorial for denovo RAD-Seq. If you have plenty of times, you could try different parameters for populations or familiarise yourself with the idea of a reference based approach: [ref_map.pl](http://catchenlab.life.illinois.edu/stacks/comp/ref_map.php). You could also play with your own data. Finally, you could use the ```vcf``` you generated into the ```stacks``` folder. You could gave a look at the package ```adegenet```. [Look at those visualisations](http://adegenet.r-forge.r-project.org/files/tutorial-basics.pdf) if you are comfortable with ```R```
 
 [Jump back to the main workshop schedule](https://otagomohio.github.io/2019-06-11_GBS_EE/)
