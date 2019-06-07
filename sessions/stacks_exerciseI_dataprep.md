@@ -110,12 +110,12 @@ spreadsheet or word processor. However, we can examine the contents of the set o
 
     • What is this weird thing in the base-pair content from base 7 to 12-13?
 
-You probably noticed that not all of the data is high quality. In general, you will want
-to remove the lowest quality sequences from your data set before you proceed.
-However, the stringency of the filtering will depend on the final application. In
-general, higher stringency is needed for *de novo* assemblies as compared to
-alignments to a reference genome. However, low quality data can
-affect downstream analysis for *de novo* and reference-based approaches, producing false positives, such as errant SNP predictions.
+      You probably noticed that not all of the data is high quality. In general, you will want
+      to remove the lowest quality sequences from your data set before you proceed.
+      However, the stringency of the filtering will depend on the final application. In
+      general, higher stringency is needed for *de novo* assemblies as compared to
+      alignments to a reference genome. However, low quality data can
+      affect downstream analysis for *de novo* and reference-based approaches, producing false positives, such as errant SNP predictions.
 
 4. We will use the Stacks’s program **process_radtags** to remove low quality sequences (also known as cleaning data) and to demultiplex our
 samples. Take advantage of the Stacks [manual](http://catchenlab.life.illinois.edu/stacks/manual/) as well as the specific [manual page for
