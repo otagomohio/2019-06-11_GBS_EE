@@ -98,11 +98,11 @@ spreadsheet or word processor. However, we can examine the contents of the set o
      
     • Use the ```--help``` of ```fastqc``` to run it on any single fastq file of your choice..
                          
-    • List the content of your directory, what did fastqc create?
+    • Run `ls` in your lane1 directory: what outputs did fastqc create?
     
-    • Let's try to copy this file to your local computer in order to visualise it
+    • Let's try to copy the html file to your local computer in order to visualise it
        
-    • Open a new terminal window **without closing the current one** and stay on your local computer, do not login to mahuika. 
+    • Open a new terminal window **without closing the current one** and stay on your local computer (i.e. do **not** login to mahuika). 
     
     • Check out [how to copy files](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/). To identify out your path,          use the ```pwd``` command.
        
