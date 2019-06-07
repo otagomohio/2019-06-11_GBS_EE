@@ -19,7 +19,7 @@ samples that were individually barcoded. This **‘de-multiplexing’** serves t
 reads with the different individuals or population samples from which they were
 derived.
 
-Before doing anything, open a text file in your favorite text editor. You will write your commands in there and then paste them into the terminal. You want to remember how and why you did things later today but also in the future.
+Before doing anything, open a text file in your favorite plain text editor e.g. Notepad on Windows/TextWrangler on Mac/Sublime on all platforms (avoid editors like MS Word that have fancy formatting, because they can format your text in a way that the command line can't understand). You will write your commands in your plain text editor and then paste them into the terminal. By saving these commands, you'll remember how and why you did things later today, but also in the future.
 
 1. Let's organise our space, get comfortable moving around and copy our data :
     
