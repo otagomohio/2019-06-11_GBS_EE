@@ -163,18 +163,19 @@ the Bayesian computations, usually many fewer than are generated in a typical RA
 data set. We therefore want to randomly choose a random subset of loci that are well
 represented in our three populations. Nonetheless, this random subset contains more
 than enough information to define population structure:
-    • The final stage of the denovo_map.pl pipeline is to run the populations program to
+
+   • The final stage of the denovo_map.pl pipeline is to run the populations program to
         calculate population genetic statistics for our data. We want to execute this program by
         hand again, specifying filters that will give us only the most well represented loci. 
 
-    • Since we won't be able to use all loci for our quick downstream analysis today, we might as well keep the best ones!Run           populations again, specifying that loci must be present in at least 80% of
+   • Since we won't be able to use all loci for our quick downstream analysis today, we might as well keep the best ones!Run           populations again, specifying that loci must be present in at least 80% of
         individuals in all three populations. You will have to tell populations where to
         find the output of the Stacks pipeline (this should be in the stacks output
         directory). 
     
-    • Make sure to output a structure file and a ```.vcf``` file as well. this will come in handy later.
+   • Make sure to output a structure file and a ```.vcf``` file as well. this will come in handy later.
     
-    • One final detail: Structure assumes that each SNP locus is independent, so we
+   • One final detail: Structure assumes that each SNP locus is independent, so we
         don’t want to output multiple SNPs from the same RAD locus, since they are not
         independent but are in linkage blocks within each RAD tag. We can achieve this
         behavior by specifying the --write_single_snp parameter to populations.
