@@ -30,8 +30,8 @@ Before doing anything, open a text file in your favorite plain text editor e.g. 
     • For each exercise, you will set up a directory structure on the remote server that will hold your data and the different          steps of your analysis. We will start by making the directory ```working``` in your working space, so let's `cd` (change directory) to this location:
            ```cd /nesi/project/nesi02659/users/<yourusername>```
     
-    • Once there, create the directory: ```/nesi/project/nesi02659/users/<yourusername>/working``` (by using `mkdir working` and then `cd` in there
-        so we can created more subdirectories to hold these analyses. Be careful that you are reading and writing files to the appropriate directories within
+    • Once there, create the directory: ```/nesi/project/nesi02659/users/<yourusername>/working``` (by using `mkdir working` and then `cd` into `working`
+        so we can create more subdirectories to hold these analyses. Be careful that you are reading and writing files to the appropriate directories within
         your hierarchy. You’ll be making many directories, so stay organized!
     
     •Each step of your analysis goes into the hierarchy of the workspace, and each step of  
