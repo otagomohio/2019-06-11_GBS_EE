@@ -29,8 +29,7 @@ alleles) and n (the number of mismatches between loci in the catalog). Here, we 
 optimize M for the stickleback data using a subset of the full dataset provided. After
 this, we can use the optimal value we have found for M in the de novo exercise below
 (part 2). We will be using the guidelines of parameter optimization as outlined in [Paris
-et al. (2017)](https://besjournals.onlinelibrary.wiley.com/doi/epdf/10.1111/2041-210X.12775), and will create a ‘hockey stick’ plot to assess which value for M recovers
-the highest number of new polymorphic loci (r80 loci).
+et al. (2017)](https://besjournals.onlinelibrary.wiley.com/doi/epdf/10.1111/2041-210X.12775), and will create a ‘hockey stick’ plot to assess which value for M recovers the highest number of new polymorphic loci found in 80% of the individuals (r80 loci).
 
 1. Go to your  
 ```/nesi/project/nesi02659/<yourusername>/working```
@@ -49,7 +48,7 @@ additional directories: ```M2```, ```M3```, ```M4``` and ```M5```.
     • Extract it. The unarchived dataset contains 30 stickleback
         samples, and we will use 3  of them in this first part of the exercise as we will run an optimisation:
             cs_1335.01,  pcr_1211.04,
-             stl_1274.33,  Stickleback populations sampled from Oregon, USA.  It is asubet of                  Catchen, et al., [2013](https://onlinelibrary.wiley.com/doi/10.1111/mec.12330). 
+             stl_1274.33,  Stickleback populations sampled from Oregon, USA.  It is asubet of Catchen, et al., [2013](https://onlinelibrary.wiley.com/doi/10.1111/mec.12330). 
 
 2. We will run the Stacks’ ```denovo_map.pl``` pipeline program, each time changing the value for
 ```M```. This program will run ustacks, cstacks, and sstacks on the individuals in our
@@ -63,17 +62,14 @@ study as well as the populations program. The set of instructions below should h
     
     • We want Stacks to only use the 3 individuals in our parameter optimization. To
         specify this, create a file in the working directory called ```opt_popmap.txt```, using an editor.
-        The file should be formatted like this:
-        
-            <sample file prefix><tab><population ID>
-        
+        The file should be formatted like [this](http://catchenlab.life.illinois.edu/stacks/manual/#popmap).        
        Note: do not include the extension ```.fa.gz``` in the sample name.
     
     • Include samples in this file and specify that all individuals belong to one
         population. You must supply the population map to denovo_map.pl when you
         execute it for each parameter run.
     
-    • To optimize for r80 loci you will need to tell denovo_map.pl to use the -r parameter to filter for loci in 80% of the
+    • To optimize for r80 loci you will need to tell denovo_map.pl to use the x parameter to filter for loci in 80% of the
         samples) program. We will keep ```m``` at 3. We will also follow the general rule of ```-M = -n``` and we will tell denovo_map.pl to output to the M2 folder.
         
     • You should be able to launch the M2 run now. It will take a couple of minutes.
@@ -81,9 +77,9 @@ study as well as the populations program. The set of instructions below should h
     
 3. Once done, you should now see the denovo_map.pl output files in the directory M2.
 
-    • copy the commands in ther terminal for M3 to M5 at once. Once you entered, keep following through the next points ( it should take around 10mn total).
+    • copy the commands in ther terminal for M3 to M5 at once. Once you entered, keep following through the next points ( it should take around 10mn total).    
     
-    • Open a *new command window* and go in your ```working/denovo``` so that you can keep working.
+    • Open a *new command window* and go in your ```working/denovo``` so that you can keep working. Don't forget to re-access       the reserved machine ```ssh -Y ga-vl01```
     
     • To see how many r80 loci were assembled for each parameter run you will want to start looking at the                        ```populations.sumstats.tsv``` using the [Stacks manual](http://catchenlab.life.illinois.edu/stacks/manual/#files
     manual to inform you on the data
@@ -93,9 +89,9 @@ study as well as the populations program. The set of instructions below should h
 
     • What is the number of the last locus assembled for M2?
 
-    • Use the tail command on the file ```denovo.log``` to find the information about    the number of variants that remained.
+    • Use the tail command on the file ```denovo.log``` to find the information about the number of variants that remained.
     
-    • Use this technique how many loci were assembled for M3 to M5 once it has finished to run  count the loci and save those numbers along in a text file ```r80_loci.tsv.```.            
+    • Using this technique, how many loci were assembled for M3 to M5 once it has finished to run  count the loci and save those numbers along in a text file ```r80_loci.tsv.```.            
     
     • Which iteration of M provided the highest number of r80 loci?
 
@@ -118,10 +114,8 @@ the assembled data for this exercise.
     
     •We want Stacks to understand which individuals in our study belong to which
         population. To specify this, create a file ```complete_popmap.txt``` in the working directory called popmap, using
-        an editor. The file should be formatted like this:
-        
-            <sample file prefix><tab><population ID>
-        
+        an editor. The file should be formatted in 2 columnas like [this](http://catchenlab.life.illinois.edu/stacks/manual/#popmap)
+                
         Include all 30 samples in this file and specify which individuals belong to which
         populations. You must supply the population map to denovo_map.pl when you
         execute it. You could for example use ```ls -1 *fa.gz``` to see all the samples in a list before adding the                   populations.
@@ -131,14 +125,15 @@ the assembled data for this exercise.
         between catalog loci. Use the values we determined for these parameters in the
         previous exercise.
     
-    • Also, you must set the stacks directory as the output, and use all the threads
+    • Also, you must set create the stacks directory as the output, and use all the threads
         available on your instance.
     
     • Finally, specify the path to the directory containing your sample files. The
         denovo_map.pl program will read the sample names out of the population map, and
         look for them in the samples directory you specify.
     
-    • Execute the Stacks pipeline.
+    • Execute the Stacks pipeline. That should take approximately 30mn, ideal time for a break!
+    
 
 5. Examine the Stacks log and output files when execution is complete.
     
@@ -154,8 +149,7 @@ the assembled data for this exercise.
     
     • Familiarize yourself with the population genetics statistics produced by the
         populations component of stacks:
-    
-    • populations.sumstats.tsv, populations.sumstats_summary.tsv
+            - populations.sumstats.tsv, populations.sumstats_summary.tsv
     
     • What is the mean value of nucleotide diversity (π) and FIS for each of the three
         populations? [HINT: The less -S command may help you view these files easily by avoiding the wrapping]
@@ -188,7 +182,7 @@ than enough information to define population structure.
     • Run populations again, specifying that loci must be present in at least 80% of
         individuals in all three populations. You will have to tell populations where to
         find the output of the Stacks pipeline (this should be in the stacks output
-        directory).
+        directory). Make sure to output a ```.vcf``` file as well. this will come in handy later.
 
     • One final detail: Structure assumes that each SNP locus is independent, so we
         don’t want to output multiple SNPs from the same RAD locus, since they are not
