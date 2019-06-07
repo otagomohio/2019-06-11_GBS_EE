@@ -118,7 +118,7 @@ alignments to a reference genome. However, low quality data can
 affect downstream analysis for *de novo* and reference-based approaches, producing false positives, such as errant SNP predictions.
 
 4. We will use the Stacks’s program **process_radtags** to remove low quality sequences (also known as cleaning data) and to demultiplex our
-samples. Take advantage of the Stacks manual as well as the individual [manual page for
+samples. Take advantage of the Stacks [manual](http://catchenlab.life.illinois.edu/stacks/manual/) as well as the specific [manual page for
 process_radtags](http://catchenlab.life.illinois.edu/stacks/manual/#procrad) on the Stacks website to find information         and examples. Do not run the commands you figure out just yet, but first follow through the points below:
     
     • Get back into your ```dataprep``` folder
