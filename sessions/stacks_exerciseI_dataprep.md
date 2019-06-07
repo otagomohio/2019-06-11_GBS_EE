@@ -91,7 +91,7 @@ spreadsheet or word processor. However, we can examine the contents of the set o
       modules that have a closely matching name.
       You can then load your module of interest, in our case FastQC
                      
-       module load FastQC # Case-sensitive, so get the capitalisation right!
+       module load FastQC # Case-sensitive, so get the capitalization right!
        module list # View your loaded modules
        
      This list resets every time you log off Mahuika, so you will need to remember to reload the module(s) you need when you log in again.
@@ -100,11 +100,11 @@ spreadsheet or word processor. However, we can examine the contents of the set o
                          
     • Run `ls` in your lane1 directory: what outputs did fastqc create?
     
-    • Let's try to copy the html file to your local computer in order to visualise it
+    • Let's try to copy the html file that fastq created to your local computer in order to visualise it
        
     • Open a new terminal window **without closing the current one** and stay on your local computer (i.e. do **not** login to mahuika). 
     
-    • Check out [how to copy files](https://support.nesi.org.nz/hc/en-gb/articles/360000578455-File-Transfer-with-SCP). To identify the Mahuika path,          use the ```pwd``` command on the terminal window that is logged into Mahuika.
+    • Check out [how to copy files](https://support.nesi.org.nz/hc/en-gb/articles/360000578455-File-Transfer-with-SCP). To identify the path to the file on Mahuika,          use the ```pwd``` command in the lane1 directory on the terminal window that is logged into Mahuika (don't forget to add the name of the file you want to copy to the end of this path).
        
     • Once you have this file on your local computer, just double-click on it to open it with your favorite browser.
 
