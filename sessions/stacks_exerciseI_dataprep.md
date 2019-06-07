@@ -43,8 +43,7 @@ Before doing anything, open a text file in your favorite plain text editor e.g. 
     
     • First let's make a few directories. In ```working```, create a directory called ```dataprep``` to contain all the data        for this exercise. Inside that directory create two additional directories: ```lane1``` and ```samples```. 
     
-    • As a check that we've set up our 'waterfall workspace' correctly, go back to your ```working``` directory (*hint*: `cd ..`) and use the `ls command with the ```-R``` flag 
-        (i.e.recursive), it should show you sthe following:
+    • As a check that we've set up our 'waterfall workspace' correctly, go back to your ```working``` directory (*hint*: `cd ..`) and use the `ls -R` (the `ls` command with the recursive flag). It should show you the following:
     
     ```
     working/:
