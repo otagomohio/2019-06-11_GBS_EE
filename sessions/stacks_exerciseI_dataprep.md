@@ -88,12 +88,12 @@ spreadsheet or word processor. However, we can examine the contents of the set o
        module spider fastqc
                      
       The command should present you with some information about 
-      the module that have a closely matching name.
+      modules that have a closely matching name.
       You can then load your module of interest, in our case FastQC
                      
        module load FastQC # Be careful with the case
        module list # view your loaded modules
-     This list reset everytime you lofg off Mahuika.
+     This list resets every time you log off Mahuika, so you will need to remember to reload the module(s) you need when you log in again.
      
     • Use the ```--help``` of ```fastqc``` to run it on any single fastq file of your choice..
                          
