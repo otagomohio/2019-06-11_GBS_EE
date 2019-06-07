@@ -119,7 +119,7 @@ bash GBS_SNP_filter.sh
 The script is going to go through the following steps:
 * Filtering for bi-allelic variants 
 * Filtering down to one SNP per locus
-* Filtering out SNPs that have don't pass the missingness filter
+* Filtering out SNPs that don't pass the missingness filter
 * Filtering out individuals with too much missing data
 * Filtering out SNPs that are out of HWE in too many populations
 * Filtering out SNPs that are in linkage across too many populations 
