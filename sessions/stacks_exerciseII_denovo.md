@@ -41,9 +41,7 @@ To save time, we have already cleaned and demultiplexed this
 data and will start from the cleaned samples stage. Inside the opt directory, create six
 additional directories: ```M2```, ```M3```, ```M4``` and ```M5```. 
 
-    • Copy the dataset below in the ```samples``` directory:
-    
-        ```/nesi/project/nesi02659/source_data/denovo/oregon_stickleback.tar```
+    • Copy the dataset below in the ```samples``` directory: ```/nesi/project/nesi02659/source_data/denovo/oregon_stickleback.tar```
     
     • Extract it. The unarchived dataset contains 30 stickleback
         samples, and we will use 3  of them in this first part of the exercise as we will run an optimisation:
@@ -81,7 +79,7 @@ study as well as the populations program. The set of instructions below should h
     
     • Open a *new command window* and go in your ```working/denovo``` so that you can keep working. Don't forget to re-access       the reserved machine ```ssh -Y ga-vl01```
     
-    • To see how many r80 loci were assembled for each parameter run you will want to start looking at the                        ```populations.sumstats.tsv``` using the [Stacks manual](http://catchenlab.life.illinois.edu/stacks/manual/#files
+    • To see how many r80 loci were assembled for each parameter run you will want to start looking at the                        ```populations.markers    .tsv``` using the [Stacks manual](http://catchenlab.life.illinois.edu/stacks/manual/#files
     manual to inform you on the data
     contained in each of the columns. 
 
@@ -137,8 +135,7 @@ the assembled data for this exercise.
 
 5. Examine the Stacks log and output files when execution is complete.
     
-    • After processing all the individual samples, denovo_map.pl will print a table
-        containing the depth of coverage of each sample. Find this table in the log, what were
+    • After processing all the individual samples through ustacks and before creating the catalog with cstacks, denovo_map.pl            will print a [table containing the depth of coverage](http://catchenlab.life.illinois.edu/stacks/manual/#cov) of       each sample. Find this table in the log, what were
         the depths of coverage?
     
     • Examine the output of the populations program in the log.
@@ -148,8 +145,7 @@ the assembled data for this exercise.
     • How many were filtered and for what reasons?
     
     • Familiarize yourself with the population genetics statistics produced by the
-        populations component of stacks:
-            - populations.sumstats.tsv, populations.sumstats_summary.tsv
+        populations component of stacks populations.sumstats_summary.tsv
     
     • What is the mean value of nucleotide diversity (π) and FIS for each of the three
         populations? [HINT: The less -S command may help you view these files easily by avoiding the wrapping]
