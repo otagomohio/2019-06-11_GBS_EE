@@ -62,7 +62,7 @@ Before doing anything, open a text file in your favorite plain text editor e.g. 
        `/nesi/project/nesi02659/source_data/clean/lane1.tar` 
        (*hint*: `cp /path/to/what/you/want/to/copy /destinaion/you/want/it/to/go)          
     
-    • From your ```lane1``` folder to extract the content of this ```tar``` archive. We realise that we have not told you how         to do so! But a quick look to a friendly search engine will show you how easy it is to find this kind of information           on basic bash commands. 
+    • `cd` to your ```lane1``` folder to extract/unzip the content of this ```tar``` archive. We realise that we have not told you how         to do so! But a quick look to a friendly search engine will show you how easy it is to find this kind of information           on basic bash commands (your instructors *still* spend a lot of time doing this themselves!). 
     
     • Get back in your ```dataprep``` directory
     
