@@ -109,7 +109,7 @@ the assembled data for this exercise.
     
     •We want Stacks to understand which individuals in our study belong to which
         population. To specify this, create a file ```complete_popmap.txt``` in the working directory called popmap, using
-        an editor. The file should be formatted in 2 columns like [this](http://catchenlab.life.illinois.edu/stacks/manual/#popmap)Include all 30 samples in this file and specify which individuals            belong to which populations. You must supply the population map to denovo_map.pl when you execute it. You could for             example use ```ls -1 *fa.gz``` to see all the samples in a list before adding the populations.
+        an editor. The file should be formatted in 2 columns like [this](http://catchenlab.life.illinois.edu/stacks/manual/#popmap)Include all 30 samples in this file and specify which individuals            belong to which populations. You must supply the population map to denovo_map.pl when you execute it. You could for             example use ```ls -1 *fa.gz``` to see all the samples in a list before adding the populations. Add the populations as simple integers (i.e. 1, 2 and 3). That will be easier for the program structure that we will run downstream.
     
     • There are three important parameters that must be specified to denovo_map.pl, the
         minimum stack depth, the distance allowed between stacks, and the distance allowed
@@ -187,7 +187,7 @@ loci. Use the ```cat, grep, cut, sort, uniq, shuf, and head``` commands to gener
 list of 1000 random loci. Save this list of loci as  ```whitelist.txt```, that we can feed back into
 populations. This operation can be done in a single shell command. That sounds challenging, but the instruction
 below should help you create one command with several pipes to create that whi
-telist.txt. Create that command step by step.
+telist.txt. Create that command step by step:
 
     • First, use ``` cat``` to concatenante  ```stacks/populations.sumstats.tsv```.
     
@@ -204,38 +204,39 @@ telist.txt. Create that command step by step.
     •  You got this! If you are new to bash, I am sure that seemed impossible yesterday, so take a minute to congratulate               yourself on the progress made even if you required a little help!
 
 8. Now execute populations again, this time feeding back in the whitelist you just
-generated. This will cause populations to only process the loci in the *whitelist*.
+generated. This will cause populations to only process the loci in the ```whitelist.txt```.
 Specify that a Structure output file be included this time and again insist that only a
 single SNP is output from each RAD locus. Finally, you will need to again specify the
 population map that you generated above to populations so that this information is
 passed into the Structure output file.
-9. Create a new directory called structure and copy the Structure output file that
+
+9. Create a new directory called ```structure```e and copy the Structure output file that
 Stacks generated to this directory.
     
-    • Edit the Structure output file to remove the comment (first line in the file, starts with
+    • Edit the Structure output file to remove the comment line (first line in the file, starts with
         “#”).
     • You may need to edit your Structure output file to change the alphanumeric
         population names to be numbers. !!!This can be done using sed.
     • The parameters to run Structure (including a value of k=3) have already been
         prepared, you can find them here:
-            /opt/data/denovo/mainparams
+            /nesi/project/nesi02659/source_data/denovo/mainparams
         and
-            /opt/data/denovo/extraparams
+            //nesi/project/nesi02659/source_data/denovo/extraparams
      • Copy them into your structure directory as well.
-10. Execute Structure, saving the data into this new directory:
-    ```structure > populations.structure.console```
-[A common STRUCTURE error happens when your population output contains less
+     
+10. Execute Structure, saving the data into this new directory.
+    ```/structure > populations.structure.console```
+A common STRUCTURE error happens when your population output contains less
 than 1000 loci. You may need to adjust the number of loci in the mainparams file to
-match your exact Stacks output.]
+match your exact Stacks output.
 
-11. You will need to download the populations.structure.console and
-populations.structure.out_f files from the cluster. You can then load them into
-the graphical interface for Structure on your local computer. Select the “File” menu
-and then “Load structure results…” to load the Structure output. Choose the “Barplot”
-menu and then “Show”.
+11. You will need to download  [Structure from the graphical end](https://web.stanford.edu/group/pritchardlab/structure_software/release_versions/v2.3.4/html/structure.html) and
+populations.structure.out [files from the cluster](https://support.nesi.org.nz/hc/en-gb/articles/360000578455-File-Transfer-with-SCP). You can then load them intothe graphical interface for Structure on your local computer. Select the ```File``` menu
+and then ```Load structure results``` to load the Structure output. Choose the “Barplot”
+menu and then ```Show```.
     
-    • *Are the three Oregon threespine stickleback populations related to one another? How
-        can you tell?*
+    • Are the three Oregon threespine stickleback populations related to one another? How
+        can you tell?
         
 
 
