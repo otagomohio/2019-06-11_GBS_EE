@@ -32,7 +32,7 @@ Before doing anything, open a text file in your favorite plain text editor e.g. 
            cd /nesi/project/nesi02659/users/<yourusername>
 
     • Once there, create the directory: ```/nesi/project/nesi02659/users/<yourusername>/working``` (by using `mkdir working` and then `cd` into `working`
-        so we can create more subdirectories to hold these analyses. Be careful that you are reading and writing files to the appropriate directories within
+        so we can create more subdirectories to hold our analyses. Be careful that you are reading and writing files to the appropriate directories within
         your hierarchy. You’ll be making many directories, so stay organized!
     
     •Each step of your analysis goes into the hierarchy of the workspace, and each step of  
