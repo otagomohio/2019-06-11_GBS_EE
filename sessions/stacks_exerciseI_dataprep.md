@@ -62,13 +62,10 @@ Before doing anything, open a text file in your favorite plain text editor e.g. 
        `/nesi/project/nesi02659/source_data/clean/lane1.tar` 
        (*hint*: `cp /path/to/what/you/want/to/copy /destinaion/you/want/it/to/go`)          
     
-    • `cd` to your ```lane1``` folder to extract/unzip the content of this ```tar``` archive. We realise that we have not told you how         to do so! But a quick look to a friendly search engine will show you how easy it is to find this kind of information           on basic bash commands (your instructors *still* spend a lot of time doing this themselves!). 
-    
-    • Get back in your ```dataprep``` directory
-    
+    • `cd` to your ```lane1``` folder to extract/unzip the content of this ```tar``` archive. We realise that we have not told you how         to do so! But a quick look to a friendly search engine will show you how easy it is to find this kind of information           on basic bash commands (your instructors *still* spend a lot of time doing this themselves!).     
 
-2. Have a look at what is there now. Your decompressed files have millions of reads in it, too many for you to examine in a
-spreadsheet or word processor. Examine the contents of the set of files in the terminal
+2. Have a look at what is there now. These gz-compressed fastq files have millions of reads in it, too many for you to examine in a
+spreadsheet or word processor. However, we can examine the contents of the set of files in the terminal
 (the ```less``` command may be of use).
     
     • You should see multiple different lines with different encodings.
