@@ -1,7 +1,5 @@
 # Exercise II: de novo assembly of RAD tags without a genome
 
-## Datasets
-
 ## Part 1: Running Stacks denovo
 
 In this first exercise, we will be working on a subset of data from threespine
@@ -41,12 +39,11 @@ To save time, we have already cleaned and demultiplexed this
 data and will start from the cleaned samples stage. Inside the opt directory, create six
 additional directories: ```M2```, ```M3```, ```M4``` and ```M5```. 
 
-    • Copy the dataset below in the ```samples``` directory: ```/nesi/project/nesi02659/source_data/denovo/oregon_stickleback.tar```
+   • Copy the dataset below in the ```samples``` directory: ```/nesi/project/nesi02659/source_data/denovo/oregon_stickleback.tar```
     
-    • Extract it. The unarchived dataset contains 30 stickleback
-        samples, and we will use 3  of them in this first part of the exercise as we will run an optimisation:
-            cs_1335.01,  pcr_1211.04,
-             stl_1274.33,  Stickleback populations sampled from Oregon, USA.  It is asubet of Catchen, et al., [2013](https://onlinelibrary.wiley.com/doi/10.1111/mec.12330). 
+   • Extract it. The unarchived dataset contains 30 stickleback
+     samples, and we will use 3  of them in this first part of the exercise as we will run an optimisation:
+     cs_1335.01,  pcr_1211.04, stl_1274.33. It is asubet of Catchen, et al., [2013](https://onlinelibrary.wiley.com/doi/10.1111/mec.12330). 
 
 2. We will run the Stacks’ ```denovo_map.pl``` pipeline program, each time changing the value for
 ```M```. This program will run ustacks, cstacks, and sstacks on the individuals in our
@@ -112,11 +109,7 @@ the assembled data for this exercise.
     
     •We want Stacks to understand which individuals in our study belong to which
         population. To specify this, create a file ```complete_popmap.txt``` in the working directory called popmap, using
-        an editor. The file should be formatted in 2 columnas like [this](http://catchenlab.life.illinois.edu/stacks/manual/#popmap)
-                
-        Include all 30 samples in this file and specify which individuals belong to which
-        populations. You must supply the population map to denovo_map.pl when you
-        execute it. You could for example use ```ls -1 *fa.gz``` to see all the samples in a list before adding the                   populations.
+        an editor. The file should be formatted in 2 columns like [this](http://catchenlab.life.illinois.edu/stacks/manual/#popmap)Include all 30 samples in this file and specify which individuals            belong to which populations. You must supply the population map to denovo_map.pl when you execute it. You could for             example use ```ls -1 *fa.gz``` to see all the samples in a list before adding the populations.
     
     • There are three important parameters that must be specified to denovo_map.pl, the
         minimum stack depth, the distance allowed between stacks, and the distance allowed
@@ -169,17 +162,18 @@ can only handle a small number of loci because of the MCMC algorithms involved i
 the Bayesian computations, usually many fewer than are generated in a typical RAD
 data set. We therefore want to randomly choose a random subset of loci that are well
 represented in our three populations. Nonetheless, this random subset contains more
-than enough information to define population structure.
-
+than enough information to define population structure:
     • The final stage of the denovo_map.pl pipeline is to run the populations program to
         calculate population genetic statistics for our data. We want to execute this program by
-        hand again, specifying filters that will give us only the most well represented loci.
+        hand again, specifying filters that will give us only the most well represented loci. 
 
-    • Run populations again, specifying that loci must be present in at least 80% of
+    • Since we won't be able to use all loci for our quick downstream analysis today, we might as well keep the best ones!Run           populations again, specifying that loci must be present in at least 80% of
         individuals in all three populations. You will have to tell populations where to
         find the output of the Stacks pipeline (this should be in the stacks output
-        directory). Make sure to output a ```.vcf``` file as well. this will come in handy later.
-
+        directory). 
+    
+    • Make sure to output a structure file and a ```.vcf``` file as well. this will come in handy later.
+    
     • One final detail: Structure assumes that each SNP locus is independent, so we
         don’t want to output multiple SNPs from the same RAD locus, since they are not
         independent but are in linkage blocks within each RAD tag. We can achieve this
@@ -188,12 +182,29 @@ than enough information to define population structure.
 7. Now we want to select 1,000 loci randomly from the results and save these loci into a
 file. We can easily do this using the shell given a list of catalog IDs output in the
 previous step. The populations.sumstats.tsv file gives a list of all polymorphic
-loci. Use the ```zcat, grep, cut, sort, uniq, shuf, and head``` commands to generate a
-list of 1000 random loci. Save this list of loci as a whitelist, that we can feed back into
-populations. This operation can be done in a single shell command. ADD  A LINK TO DESCRIPTION OF THOSE COMMANDS
+loci. Use the ```cat, grep, cut, sort, uniq, shuf, and head``` commands to generate a
+list of 1000 random loci. Save this list of loci as  ```whitelist.txt```, that we can feed back into
+populations. This operation can be done in a single shell command. That sounds challenging, but the instruction
+below should help you create one command with several pipes to create that whi
+telist.txt. Create that command step by step.
+
+    • First, use ``` cat``` to concatenante  ```stacks/populations.sumstats.tsv```.
+    
+    • Then, use ```grep``` with ```-v`` to exclude all headers (i.e. including "#")
+    
+    •  Select the first column with ```cut -f 1``` 
+     
+    •  Then use sort before using uniq. uniq will collapse succesive identical lines into single lines, so that you have one            line per locus. Lucky us, those two commands won't require any argument.
+   
+    • Now try adding ```shuf``` which will mix all these lines all over.
+    
+    • Select the first one thousands with  head and put it all into whitelist.txt.
+    
+    •  You got this! If you are new to bash, I am sure that seemed impossible yesterday, so take a minute to congratulate               yourself on the progress made even if you required a little help!
+    z
 
 8. Now execute populations again, this time feeding back in the whitelist you just
-generated. This will cause populations to only process the loci in the whitelist.
+generated. This will cause populations to only process the loci in the *whitelist*.
 Specify that a Structure output file be included this time and again insist that only a
 single SNP is output from each RAD locus. Finally, you will need to again specify the
 population map that you generated above to populations so that this information is
@@ -204,7 +215,7 @@ Stacks generated to this directory.
     • Edit the Structure output file to remove the comment (first line in the file, starts with
         “#”).
     • You may need to edit your Structure output file to change the alphanumeric
-        population names to be numbers. This can be done using sed.
+        population names to be numbers. !!!This can be done using sed.
     • The parameters to run Structure (including a value of k=3) have already been
         prepared, you can find them here:
             /opt/data/denovo/mainparams
@@ -218,14 +229,15 @@ than 1000 loci. You may need to adjust the number of loci in the mainparams file
 match your exact Stacks output.]
 
 11. You will need to download the populations.structure.console and
-populations.structure.out_f files from the cluster!!!. You can then load them into
+populations.structure.out_f files from the cluster. You can then load them into
 the graphical interface for Structure on your local computer. Select the “File” menu
 and then “Load structure results…” to load the Structure output. Choose the “Barplot”
 menu and then “Show”.
     
     • *Are the three Oregon threespine stickleback populations related to one another? How
         can you tell?*
+        
 
 
-
+Congrats, you just finished our tutorial for denovo RAD-Seq. If you have plenty of times, you could try different parameters for populations or have a play with ref_map.pl, the stickleback reference genome is at ...
 [Jump back to the main workshop schedule](https://otagomohio.github.io/2019-06-11_GBS_EE/)
