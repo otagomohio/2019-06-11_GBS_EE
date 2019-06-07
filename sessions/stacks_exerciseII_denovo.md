@@ -163,6 +163,7 @@ the Bayesian computations, usually many fewer than are generated in a typical RA
 data set. We therefore want to randomly choose a random subset of loci that are well
 represented in our three populations. Nonetheless, this random subset contains more
 than enough information to define population structure:
+    
     • The final stage of the denovo_map.pl pipeline is to run the populations program to
         calculate population genetic statistics for our data. We want to execute this program by
         hand again, specifying filters that will give us only the most well represented loci. 
@@ -201,7 +202,6 @@ telist.txt. Create that command step by step.
     • Select the first one thousands with  head and put it all into whitelist.txt.
     
     •  You got this! If you are new to bash, I am sure that seemed impossible yesterday, so take a minute to congratulate               yourself on the progress made even if you required a little help!
-    z
 
 8. Now execute populations again, this time feeding back in the whitelist you just
 generated. This will cause populations to only process the loci in the *whitelist*.
@@ -239,5 +239,6 @@ menu and then “Show”.
         
 
 
-Congrats, you just finished our tutorial for denovo RAD-Seq. If you have plenty of times, you could try different parameters for populations or have a play with ref_map.pl, the stickleback reference genome is at ...
+Congrats, you just finished our tutorial for denovo RAD-Seq. If you have plenty of times, you could try different parameters for populations or familiarise yourself with the idea of a reference based approach: [ref_map.pl](http://catchenlab.life.illinois.edu/stacks/comp/ref_map.php).
+
 [Jump back to the main workshop schedule](https://otagomohio.github.io/2019-06-11_GBS_EE/)
