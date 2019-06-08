@@ -85,11 +85,13 @@ study as well as the ```population``` program. The set of instructions below sho
     
     • How many SNPs in total? (*Hint:* count the lines)
     
-    • Using this technique, how many SNPs were assembled for M5 to M7 once they finish running?
+    • How many loci in total? (*Hint:* using pipes, combine the file name of interest, `cat`,`cut -f 1` - this selects the first column that happens to contain the locus IDs, `uniq`, and `wc -l`)
+    
+    • Using this technique, how many loci were assembled for M5 to M7 once they finish running?
     
     • Which iteration of M provided the highest number of r80 loci?    
 
-You should now be able to choose your optimised parameters according to the Paris et al. (2017) method!
+You should now be able to choose your optimised parameters according to the Paris et al. (2017) method! ("select those values which maximize the number of polymorphic loci found in 80% of the individuals in your study")
 
 ## Part 2: Getting to population genetics analyses
 
