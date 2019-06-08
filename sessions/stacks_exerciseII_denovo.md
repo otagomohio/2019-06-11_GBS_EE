@@ -114,7 +114,7 @@ the assembled data for this exercise.
     
     •We want Stacks to understand which individuals in our study belong to which
         population. To specify this, create a file ```complete_popmap.txt``` in the working directory called popmap, using
-        an editor. The file should be formatted in 2 columns like [this](http://catchenlab.life.illinois.edu/stacks/manual/#popmap)Include all 30 samples in this file and specify which individuals            belong to which populations. You must supply the population map to denovo_map.pl when you execute it. You could for             example use ```ls -1 *fa.gz``` to see all the samples in a list before adding the populations. Add the populations as simple integers (i.e. 1, 2 and 3). That will be easier for the program structure that we will run downstream.
+        an editor. The file should be formatted in 2 columns like [this](http://catchenlab.life.illinois.edu/stacks/manual/#popmap)Include all 30 samples in this file and specify which individuals            belong to which populations. You must supply the population map to denovo_map.pl when you execute it. You could for             example use ```ls -1 *fa.gz``` to see all the samples in a list before adding the populations. Add the populations as simple integers (i.e. 1, 2 and 3). That will be easier for the program ```Structure``` that we will run downstream.
     
     • There are three important parameters that must be specified to denovo_map.pl, the
         minimum stack depth, the distance allowed between stacks, and the distance allowed
