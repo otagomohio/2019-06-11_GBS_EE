@@ -171,7 +171,7 @@ than enough information to define population structure:
         find the output of the Stacks pipeline (this should be in the stacks output
         directory). 
     
-   • Make sure to output a structure file! Output a ```.vcf``` file as well. The `.vcf` file will come in handy [later]((https://otagomohio.github.io/2019-06-11_GBS_EE/sessions/filteringSNPs.html).
+   • Make sure to output a structure file! Output a ```.vcf``` file as well. The `.vcf` file will come in handy [later](https://otagomohio.github.io/2019-06-11_GBS_EE/sessions/filteringSNPs.html).
 
    • One final detail: Structure assumes that each SNP locus is independent, so we
         don’t want to output multiple SNPs from the same RAD locus, since they are not
@@ -186,19 +186,19 @@ list of 1000 random loci. Save this list of loci as  ```whitelist.txt```, that w
 populations. This operation can be done in a single shell command. That sounds challenging, but the instructions
 below should help you create one command with several pipes to create that whitelist.txt. Create that command step by step:
 
-    • First, use ``` cat``` to concatenante  ```stacks/populations.sumstats.tsv```.
+   • First, use ``` cat``` to concatenante  ```stacks/populations.sumstats.tsv```.
     
-    • Then, use ```grep``` with ```-v```  to exclude all headers (i.e. including "#")
+   • Then, use ```grep``` with ```-v```  to exclude all headers (i.e. excluding "#")
     
-    •  Select the first column with ```cut -f 1``` 
+   •  Select the first column with ```cut -f 1``` 
      
-    •  Then use sort before using uniq. uniq will collapse succesive identical lines into single lines, so that you have one            line per locus. Lucky us, those two commands won't require any argument.
+   •  Then use `sort` before using `uniq`. `uniq` will collapse succesive identical lines into single lines, so that you have one            line per locus. Lucky us, those two commands don't require any arguments.
    
-    • Now try adding ```shuf``` which will mix all these lines all over.
+   • Now try adding ```shuf``` which will mix all these lines all over.
     
-    • Select the first one thousands with  head and put it all into whitelist.txt.
+   • Select the first one thousand lines with head and put it all into whitelist.txt.
     
-    •  You got this! If you are new to bash, I am sure that seemed impossible yesterday, so take a minute to congratulate               yourself on the progress made even if you required a little help!
+   •  You got this! If you are new to bash, I am sure that seemed impossible yesterday, so take a minute to congratulate               yourself on the progress made even if you required a little help!
 
 8. Now execute populations again, this time feeding back in the whitelist you just
 generated. This will cause populations to only process the loci in the ```whitelist.txt```.
