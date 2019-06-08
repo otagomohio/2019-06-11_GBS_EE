@@ -246,4 +246,8 @@ menu and then ```Show```.
 
 Congrats, you just finished our tutorial for denovo RAD-Seq. If you have plenty of times, you could try different parameters for populations or familiarise yourself with the idea of a reference based approach: [ref_map.pl](http://catchenlab.life.illinois.edu/stacks/comp/ref_map.php). You could also play with your own data. Finally, you could use the ```vcf``` you generated into the ```stacks``` folder. You could gave a look at the package ```adegenet```. [Look at those visualisations](http://adegenet.r-forge.r-project.org/files/tutorial-basics.pdf) if you are comfortable with ```R```
 
-[Jump back to the main workshop schedule](https://otagomohio.github.io/2019-06-11_GBS_EE/)
+***
+
+[Jump back to Exercise I](sessions/stacks_exerciseI_dataprep)
+[Jump to filtering SNPs intro](https://otagomohio.github.io/2019-06-11_GBS_EE/sessions/filteringSNPs.html)  
+[Jump back to main workshop schedule](https://otagomohio.github.io/2019-06-11_GBS_EE/)
