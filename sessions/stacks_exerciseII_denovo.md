@@ -85,7 +85,7 @@ study as well as the ```population``` program. The set of instructions below sho
     
     • How many SNPs in total? (*Hint:* count the lines)
     
-    • How many loci in total? (*Hint:* using pipes, combine the file name of interest, `cat`, `cut -f 1` - this selects the first column that happens to contain the locus IDs, `uniq`, and `wc -l`)
+    • How many loci in total? (*Hint:* using pipes, combine `cat`, the file name of interest, select the first column that contains the locus IDs using `cut -f 1`, `sort`, `uniq`, and `wc -l`)
     
     • Using this technique, how many loci were assembled for M5 to M7 once they finish running?
     
