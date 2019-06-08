@@ -29,47 +29,48 @@ such as constructing genetic maps and phylogeography, however, here we'll be foc
 
 ### Introduction
 The advent of short-read sequencing technologies has revolutionized the study of genomic
-variation with complete genomes of model organisms such as nematode worms, fruit
+variation leading to complete genomes of model organisms such as nematode worms, fruit
 flies, zebrafish, mice and humans. In addition, the long-standing dream of biologists of
 having complete genomic information from numerous individuals from different
-populations in the lab and wild, the field of population genomics, is becoming a
-possibility for a variety of ecological and evolutionary studies.
+populations - both in the lab and wild, has become a
+possibility for a variety of ecological and evolutionary studies, leading to the field of population genomics.
+
 Until just a few years ago the goal of acquiring complete genomic information from
-numerous individuals in many populations was out of reach for all but a small number of
+numerous individuals across many populations was out of reach for all but a small number of
 model organisms. For example, producing a high density genetic map for an organism
 required an immense investment of resources to first produce and then type the large
 number of genetic markers needed to adequately cover the genome. Furthermore,
 identifying genomic regions associated with phenotypic variation, or involved in the
 adaptation of organisms to novel conditions, was restricted to organisms for which resequencing
 projects produced a dense battery of genetic markers at a significant cost.
-The limits to population genomic studies will gradually fade as the costs of second
-generation sequencing continue to drop. However, many studies using complete genome
-re-sequencing will not be feasible for a while because costs are still significant, high
-quality read lengths are still too short, and analysis remains challenging. Luckily, many
-population genomic studies can now efficiently be performed by using an alternative
+
+The limits to using whole genome sequencing for population genomic studies will gradually fade as the costs of second
+generation sequencing continue to drop. However, currently using complete genome
+re-sequencing will not be feasible for many studies because costs are still significant and analysis remains challenging. Luckily, many
+population genomic studies can use an alternative
 approach called genotype-by-sequencing that occurs by the sequencing of reduced
 representation libraries (RRL), and subsequent identification and scoring of SNPs and
 inference of haplotypes. Although they do not provide complete genomic information,
 these approaches provide a sufficient picture via data on hundreds of thousands of SNPs
 and haplotypes spread across a genome at a fraction of the cost of complete resequencing.
-We developed one such approach called Restriction-site Associated DNA sequencing
+
+One such approach is called Restriction-site Associated DNA sequencing
 (RAD-seq), which has been used to identify signatures of selection, produce high density
 genetic maps, help assemble genomes, and be useful for studies of allelic specific
-transcriptional profiling. Because these data are so new, and the sample sizes of sequences
+transcriptional profiling. Because these data are relatively new, and the sample sizes of sequences
 often so massive, a critical related breakthrough has been the development of algorithms
-and software pipelines for the analysis of such data. We have produced Stacks for the
-analysis of RAD-seq data. You will learn how to analyze RAD data with and without the
-use of a reference genome with the goal of identifying population structure in one case
-and identifying signatures of selection in a second case. Through the completion of these
-tasks you will learn how to process RAD-seq data and use the software programs ```Stacks,
-BWA and Structure.```
+and software pipelines for the analysis of such data. 
+
+Catchen et al. have produced Stacks for the
+analysis of RAD-seq data. Today you will learn how to analyze RAD data with Stacks (without a
+use of a reference genome, although this program can also make use of a reference genome if you have one available for your study organism) with the goal of identifying population structure. Through the completion of these
+tasks you will learn how to process RAD-seq data and use the software programs `Stacks`
+and `Structure.`
 
 For more information on RAD genotyping and related methods, in particular conceptual
 and statistical issues, see the papers listed at the end of this document. These papers will
 help you better understand both the molecular biology, computational analyses, and
 conceptual framework for the analysis of RRL data such as RAD.
-
-
 
 ### Software 
 **All are open source software**
