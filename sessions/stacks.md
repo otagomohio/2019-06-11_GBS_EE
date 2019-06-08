@@ -73,17 +73,16 @@ conceptual framework for the analysis of RRL data such as RAD.
 **All are open source software**
 
 • [Stacks](http://catchenlab.life.illinois.edu/stacks/) - A set of interconnected open
-source programs designed initially for the de novo assembly of RAD sequences into
+source programs designed initially for the *de novo* assembly of RAD sequences into
 loci for genetic maps, and extended to be used more flexibly in studies of organisms
 with and without a reference genome. The pipeline has a Perl wrapper allowing sets
 of programs to be run. However, the software is modular, allowing it to be applied to
-many scenarios. You will use the Perl wrapper in class and the modules on your own.
+many scenarios.
 
 • [Structure](http://pritch.bsd.uchicago.edu/structure.html) - A software program
 originally written by Jonathan Pritchard and colleagues that uses Bayesian stochastic
 models of multi-locus genotype data. The package was written to estimate the
-distribution and abundance of genetic variation within and among populations,
-patterns that are now commonly called the genetic structure of populations.
+distribution and abundance of genetic variation within and among populations.
 
 ### Citations and Readings
 **Protocols for running a Stacks analysis**
@@ -104,7 +103,7 @@ Molecular Ecology, 22:2864–2883.
 adaptation in young stickleback populations. Evolution Letters, 2: 9-21.
 
 •McCluskey, B. M., & Postlethwait, J. H. (2015). Phylogeny of zebrafish, a "model species," within
-Danio, a "model genus". Molecular Biology and Evolution, 32(3), 635–652.
+*Danio*, a "model genus". Molecular Biology and Evolution, 32(3), 635–652.
 
 **Core readings**
 
@@ -118,7 +117,7 @@ the power of RADseq for ecological and evolutionary genomics. Nature Reviews Gen
 •Arnold, B. et al. 2013. RADseq underestimates diversity and introduces genealogical biases due
 to nonrandom haplotype sampling. Molecular Ecology 22: 3179–3190.
 
-•Catchen, J. et al. 2011. Stacks: building and genotyping loci de novo from short-read sequences.
+•Catchen, J. et al. 2011. Stacks: building and genotyping loci *de novo* from short-read sequences.
 G3: Genes, Genomes and Genetics 1:171-182.
 
 •Catchen, J. et al. 2013b. Stacks: an analysis tool set for population genomics. Molecular Ecology
@@ -145,7 +144,7 @@ Cresko, W. A. (2015). Evolution of stickleback in 50 years on earthquake-uplifte
 Proceedings of the National Academy of Sciences 112(52), E7204–12.
 Population genomics background, concepts and statistical considerations
 
-•Cariou, M. et al. 2013. Is RAD-seq suitable for phylogenetic inference? An in silico assessment
+•Cariou, M. et al. 2013. Is RAD-seq suitable for phylogenetic inference? An *in silico* assessment
 and optimization. Ecol Evol 3, 846–852.
 
 •Gompert, Z., and C. A. Buerkle. 2011a. A hierarchical Bayesian model for next-generation
