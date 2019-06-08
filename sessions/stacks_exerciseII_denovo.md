@@ -73,7 +73,7 @@ study as well as the ```population``` program. The set of instructions below sho
 
     • After M4 is completed, do the same process for M = 5 through M = 7 (this should take around 10min total).    
     
-    • While you are running M5 through m7, open a *new command window* and go in your ```working/denovo``` so that you can keep working. Don't forget to re-access       the reserved machine ```ssh -Y ga-vl01```.
+    • While you are running M5 through m7, open a *new command window*, login to Mahuika and re-access       the reserved machine ```ssh -Y ga-vl01```. Then go to your ```working/denovo``` folder so that you can keep working while M5 through M7 are running.
     
     • To see how many r80 loci were assembled for each parameter run you will want to start looking at the                        ```populations.hapstats.tsv``` using the [Stacks manual](http://catchenlab.life.illinois.edu/stacks/manual/#files
     manual to inform you on the data
