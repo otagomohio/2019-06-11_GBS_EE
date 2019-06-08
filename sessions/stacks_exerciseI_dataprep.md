@@ -201,8 +201,8 @@ our samples.
    • You will need to specify the set of barcode pairs used in the construction of the RAD
         library.
    
-   • Enter the following pairs of barcodes into a file called *lane2_barcodes.txt* in your dataprep
-        directory (make sure you enter them in the [right format]                         (http://catchenlab.life.illinois.edu/stacks/manual/#specbc) ). 
+   • Enter the following pairs of barcodes into a file called `lane2_barcodes.txt` in your dataprep
+        directory (make sure you enter them in the [right format](http://catchenlab.life.illinois.edu/stacks/manual/#specbc) ). 
         
             AACCA    ATCACG 
             CATAT    ATCACG 
