@@ -117,7 +117,7 @@ the assembled data for this exercise.
         between catalog loci (`n`). Use the values we determined for these parameters in the
         previous exercise, but do not restrict the loci to just those found in 80% like we did in the opt runs.
     
-    • Also, you must set the stacks directory as the output, and use XX threads.
+    • Also, you must set the stacks directory as the output, and use 6 threads (6 CPUs so your analysis finishes faster than 1!).
     
     • Finally, specify the path to the directory containing your sample files. The
         denovo_map.pl program will read the sample names out of the population map, and
