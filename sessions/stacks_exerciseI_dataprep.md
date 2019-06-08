@@ -138,7 +138,7 @@ process_radtags](http://catchenlab.life.illinois.edu/stacks/manual/#procrad) on 
         ACATAC ACCATG ACCCCC ACTCTT
         ACTGGC AGCCAT AGCGCA
         
-   Make sure you enter them in the [right format](http://catchenlab.life.illinois.edu/stacks/manual/#specbc) (e.g. one per line)
+   Make sure you enter them in the [right format](http://catchenlab.life.illinois.edu/stacks/manual/#specbc) (e.g. one per line).
         Assign a sample name for each barcode. Normally, these sample names would
         correspond to the individuals used in a particular experiment (e.g. individual ID etc), but for this exercise, we
         will name the samples in a simple way, say indv_01, indv_02, etc. e.g.
