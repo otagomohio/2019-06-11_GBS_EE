@@ -46,8 +46,8 @@ data for this exercise. *Inside* that directory, create two additional directori
      samples (Catchen, et al., [2013](https://onlinelibrary.wiley.com/doi/10.1111/mec.12330)), but we will use only 3 of them (`cs_1335.01`,  `pcr_1211.04`, `stl_1274.33`) in this first part of the exercise as we will run denovo_map.pl just a few times for optimisation. 
      
 2. We will run the Stacks’ ```denovo_map.pl``` pipeline program, each time changing the value for
-```M```. This program will run ustacks, cstacks, and sstacks on the individuals in our
-study as well as the ```population```s program. The set of instructions below should help you build your command.
+```M```. `denovo_map.pl` will run ustacks, cstacks, and sstacks on the individuals in our
+study as well as the ```population``` program. The set of instructions below should help you build your command.
     
     • Get back into the ```denovo``` folder
     
