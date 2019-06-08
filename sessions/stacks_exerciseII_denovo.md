@@ -118,9 +118,7 @@ the assembled data for this exercise.
         previous exercise, but do not restrict the loci to just those found in 80% like we did in the opt runs.
     
     • Also, you must set the stacks directory as the output, and use 6 threads (6 CPUs so your analysis finishes faster than 1!).
-    
-    • Output a ```.vcf``` file as well. The `.vcf` file will come in handy later.
-    
+        
     • Finally, specify the path to the directory containing your sample files. The
         denovo_map.pl program will read the sample names out of the population map, and
         look for them in the samples directory you specify.
@@ -173,8 +171,8 @@ than enough information to define population structure:
         find the output of the Stacks pipeline (this should be in the stacks output
         directory). 
     
-   • Make sure to output a structure file!
-    
+   • Make sure to output a structure file! Output a ```.vcf``` file as well. The `.vcf` file will come in handy [later]((https://otagomohio.github.io/2019-06-11_GBS_EE/sessions/filteringSNPs.html).
+
    • One final detail: Structure assumes that each SNP locus is independent, so we
         don’t want to output multiple SNPs from the same RAD locus, since they are not
         independent but are in linkage blocks within each RAD tag. We can achieve this
