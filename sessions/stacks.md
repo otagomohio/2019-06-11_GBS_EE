@@ -7,7 +7,7 @@
 
 ### Plan
 
-Throughout the day, we will work through two main exercises:
+Throughout the day, we will work through the following plan:
 
 •   Mini-Lecture 1: What is RAD?
 
