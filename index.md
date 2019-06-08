@@ -35,9 +35,9 @@ Time | Topic | Location |
 **Day 2** | **June 12 2019** | |
 09:00-10:30 | [From raw reads to individual samples](sessions/stacks.md)  | [Seminar Room, Marples Building](https://goo.gl/maps/62XWtwgqsKxKir4V9) |
 10:30-11:00 | *Break* | |
-11:00-12:30 | [SNP calling in the absence of a genome part 1]((sessions/stacks.md) | [Seminar Room, Marples Building](https://goo.gl/maps/62XWtwgqsKxKir4V9) |
+11:00-12:30 | [SNP calling in the absence of a genome part 1](sessions/stacks.md) | [Seminar Room, Marples Building](https://goo.gl/maps/62XWtwgqsKxKir4V9) |
 12:30-13:30 | *Lunch Break* | |
-13:30-15:00 | [SNP calling in the absence of a genome part 2](sessions/stacks.md)) | [Seminar Room, Marples Building](https://goo.gl/maps/62XWtwgqsKxKir4V9) |
+13:30-15:00 | [SNP calling in the absence of a genome part 2](sessions/stacks.md) | [Seminar Room, Marples Building](https://goo.gl/maps/62XWtwgqsKxKir4V9) |
 15:00-15:30 | *Break* | |
 15:30-17:00 | [Filtering your SNPs](sessions/filteringSNPs.md) | [Seminar Room, Marples Building](https://goo.gl/maps/62XWtwgqsKxKir4V9) |
 17:00 | End of the workshop | |
