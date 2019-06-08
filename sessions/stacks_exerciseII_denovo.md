@@ -56,7 +56,7 @@ study as well as the ```population``` program. The set of instructions below sho
     • Information on denovo_map.pl and its parameters can be found [online]( http://catchenlab.life.illinois.edu/stacks/comp/denovo_map.php)
     
     • We want Stacks to only use the 3 individuals in our parameter optimization. To
-        specify this, create a file in the denovo directory called ```opt_popmap.txt```, using an editor.
+        specify this, create a file in the opt directory called ```opt_popmap.txt```, using an editor.
         The file should be formatted like [indicated in the manual](http://catchenlab.life.illinois.edu/stacks/manual/#popmap).        
          Note: do not include the extension ```.fa.gz``` in the sample name.
     
@@ -65,15 +65,15 @@ study as well as the ```population``` program. The set of instructions below sho
         execute it for each parameter run.
     
     • To optimize for r80 loci you will need to tell denovo_map.pl to use the x parameter to filter for loci in 80% of the
-        samples) program. We will keep ```m``` at 3. Initially, we will set M to 4. We will also follow the general rule of ```-M =  -n``` and we will tell denovo_map.pl to output to the M4 folder.
+        samples) program. We will keep ```m``` at 3. Initially, we will set M to 4. We will also follow the general rule of ```M = n``` and we will tell denovo_map.pl to output to the M4 folder.
         
     • With this information, you should be able to launch the M4 run now. It will take a couple of minutes.
        
 3. Once done, you should now see the denovo_map.pl output files in the directory M4.
 
-    • copy the commands in ther terminal for M5 to M7 at once. Once you entered, keep following through the next points ( it should take around 10mn total).    
+    • After M4 is completed, do the same process for M = 5 through M = 7 (this should take around 10min total).    
     
-    • Open a *new command window* and go in your ```working/denovo``` so that you can keep working. Don't forget to re-access       the reserved machine ```ssh -Y ga-vl01```.
+    • While you are running M5 through m7, open a *new command window* and go in your ```working/denovo``` so that you can keep working. Don't forget to re-access       the reserved machine ```ssh -Y ga-vl01```.
     
     • To see how many r80 loci were assembled for each parameter run you will want to start looking at the                        ```populations.hapstats.tsv``` using the [Stacks manual](http://catchenlab.life.illinois.edu/stacks/manual/#files
     manual to inform you on the data
