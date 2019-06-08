@@ -167,7 +167,7 @@ process_radtags](http://catchenlab.life.illinois.edu/stacks/manual/#procrad) on 
     
     -   Of those discarded, what were the reasons? 
     
-    -   In the process_radtags log file what can the list of “sequences not recorded” tell
+    -   In the process_radtags log file, what can the list of “sequences not recorded” tell
                 you about the barcodes analyzed and about the sequencing quality in general?
 
 ##  Part 2: Paired-end reads
@@ -201,7 +201,7 @@ our samples.
    • You will need to specify the set of barcode pairs used in the construction of the RAD
         library.
    
-   • Enter the following pairs of barcodes into a file called *lane2_barcodes.txt* in your working
+   • Enter the following pairs of barcodes into a file called *lane2_barcodes.txt* in your dataprep
         directory (make sure you enter them in the [right format]                         (http://catchenlab.life.illinois.edu/stacks/manual/#specbc) ). 
         
             AACCA    ATCACG 
@@ -215,12 +215,12 @@ our samples.
         
    As we saw in the previous exercise, the sample names would normally coincide with your particular experimental design. Here, for simplicity, we can just use indv_01, indv_02, etc.
         
-            AACCA    ATCACG indiv_01 
-            CATAT    ATCACG indiv_02
+            AACCA    ATCACG indv_01 
+            CATAT    ATCACG indv_02
            
    • Append the remaining barcodes for this lane of samples from the file:
         ```/nesi/project/nesi02659/source_data/clean/lane2_barcodes.txt```
-        to your barcodes file in your working directory 
+        to your barcodes file in your dataprep directory 
    
    • How many samples were multiplexed together in this RAD library? (*Hint:* count the lines.) 
    
