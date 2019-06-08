@@ -100,7 +100,7 @@ spreadsheet or word processor. However, we can examine the contents of the set o
                          
     • Run `ls` in your lane1 directory: what outputs did fastqc create?
     
-    • Let's try to copy the html file that fastq created to your local computer in order to visualise it
+    • Let's try to copy the html file that fastqc created to your local computer in order to visualise it.
        
     • Open a new terminal window **without closing the current one** and stay on your local computer (i.e. do **not** login to mahuika). 
     
