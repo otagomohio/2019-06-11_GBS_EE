@@ -43,9 +43,7 @@ data for this exercise. *Inside* that directory, create two additional directori
    • Copy the dataset below in the ```samples``` directory: ```/nesi/project/nesi02659/source_data/denovo/oregon_stickleback.tar```
     
    • Extract it. The unarchived dataset contains 30 stickleback
-     samples ( Catchen, et al., [2013](https://onlinelibrary.wiley.com/doi/10.1111/mec.12330)). 
-, and we will use only 3  of them in this first part of the exercise as we will run debovo_map.pl a few times for an optimisation:
-     cs_1335.01,  pcr_1211.04, stl_1274.33. 
+     samples (Catchen, et al., [2013](https://onlinelibrary.wiley.com/doi/10.1111/mec.12330)), but we will use only 3 of them (`cs_1335.01`,  `pcr_1211.04`, `stl_1274.33`) in this first part of the exercise as we will run denovo_map.pl just a few times for optimisation. 
      
 2. We will run the Stacks’ ```denovo_map.pl``` pipeline program, each time changing the value for
 ```M```. This program will run ustacks, cstacks, and sstacks on the individuals in our
