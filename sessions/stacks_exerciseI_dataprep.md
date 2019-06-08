@@ -96,7 +96,7 @@ spreadsheet or word processor. However, we can examine the contents of the set o
        
      This list resets every time you log off Mahuika, so you will need to remember to reload the module(s) you need when you log in again.
      
-    • Use the ```--help``` of ```fastqc``` to run it on any single fastq file of your choice (note, the name of the executable `fastq` is all lower case...welcome to the club of frustration at capitalization of program names not matching up to their documentation!).
+    • Use the ```--help``` of ```fastqc``` to run it on any single fastq file of your choice (note, the name of the executable `fastqc` is all lower case...welcome to the club of frustration at capitalization of program names not matching up to their documentation!).
                          
     • Run `ls` in your lane1 directory: what outputs did fastqc create?
     
