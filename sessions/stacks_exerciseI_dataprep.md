@@ -133,10 +133,10 @@ process_radtags](http://catchenlab.life.illinois.edu/stacks/manual/#procrad) on 
    • Enter the following barcodes into a file called lane1_barcodes.txt in your dataprep
         directory (*Hint:* `nano`). 
         
-            AAACGG AACGTT AACTGA AAGACG
-            AAGCTA AATGAG ACAAGA ACAGCG
-            ACATAC ACCATG ACCCCC ACTCTT
-            ACTGGC AGCCAT AGCGCA
+        AAACGG AACGTT AACTGA AAGACG
+        AAGCTA AATGAG ACAAGA ACAGCG
+        ACATAC ACCATG ACCCCC ACTCTT
+        ACTGGC AGCCAT AGCGCA
         
    Make sure you enter them in the [right format](http://catchenlab.life.illinois.edu/stacks/manual/#specbc) (e.g. one per line)
         Assign a sample name for each barcode. Normally, these sample names would
