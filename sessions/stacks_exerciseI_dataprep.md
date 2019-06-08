@@ -23,7 +23,7 @@ Before doing anything, open a text file in your favorite plain text editor e.g. 
 
 1. Let's organise our space, get comfortable moving around and copy our data :
     
-    • If you have not done it yet, do not forget to log in to our reserved machine
+    • Log in to NeSI/Mahuika, and from there, log in to our reserved machine by:
        
        ssh -Y ga-vl01
     
