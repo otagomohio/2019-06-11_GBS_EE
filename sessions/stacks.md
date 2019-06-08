@@ -7,7 +7,7 @@
 
 ### Plan
 
-Throughout the day, we will work through the following plan:
+Throughout the day, we will work through the following plan:  
 •   Mini-Lecture 1: What is RAD?  
 •   Mini-Lecture 2: Phred scores and the *process_radtags* cleaning algorithm.  
 •   [Exercise I](stacks_exerciseI_dataprep.md): Data preparation.  
