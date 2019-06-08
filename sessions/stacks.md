@@ -23,14 +23,13 @@ by sequencing, and can provide a dense set of single nucleotide polymorphism (SN
 markers that are spread evenly across a genome. These markers are useful for a variety of
 genetic and genomic analyses in model and non-model organisms. Students will gain
 experience with a computational pipeline called Stacks that was designed for the analysis
-of such data. Data will be analyzed de novo to perform a population analysis without the
-aid of a reference genome. Stacks can be used with a reference genome as well as for many other analyses of RAD-seq data
-such as constructing genetic maps and phylogeography, although those are beyond the
-scope of this exercise.
+of such data. Data will be analyzed *de novo* to perform a population analysis without the
+aid of a reference genome. Stacks can also be used with a reference genome, as well as for many other analyses of RAD-seq data
+such as constructing genetic maps and phylogeography, however, here we'll be focussing on population genomics.
 
 ### Introduction
 The advent of short-read sequencing technologies has revolutionized the study of genomic
-variation from complete sequences in model organisms such as nematode worms, fruit
+variation with complete genomes of model organisms such as nematode worms, fruit
 flies, zebrafish, mice and humans. In addition, the long-standing dream of biologists of
 having complete genomic information from numerous individuals from different
 populations in the lab and wild, the field of population genomics, is becoming a
