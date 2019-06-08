@@ -57,7 +57,7 @@ study as well as the ```population``` program. The set of instructions below sho
     
     • We want Stacks to only use the 3 individuals in our parameter optimization. To
         specify this, create a file in the working directory called ```opt_popmap.txt```, using an editor.
-        The file should be formatted like [indicarted in the manual](http://catchenlab.life.illinois.edu/stacks/manual/#popmap).        
+        The file should be formatted like [indicated in the manual](http://catchenlab.life.illinois.edu/stacks/manual/#popmap).        
          Note: do not include the extension ```.fa.gz``` in the sample name.
     
     • Include samples in this file and specify that all individuals belong to one
