@@ -22,4 +22,5 @@ The solution is splitting out our vcf file into populations and only getting rid
 Let's head over [here](https://otagomohio.github.io/2019-06-11_GBS_EE/sessions/filteringGBSfilter.html) to start playing around with [GBS_SNP_filter](https://github.com/laninsky/GBS_SNP_filter)
 
 ---
+[Jump back to Stacks exercise II](stacks_exerciseII_denovo)  
 [Jump back to main workshop schedule](https://otagomohio.github.io/2019-06-11_GBS_EE/)
