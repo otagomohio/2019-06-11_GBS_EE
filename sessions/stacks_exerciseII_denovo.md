@@ -213,15 +213,15 @@ passed into the Structure output file. You might also want to output a vcf file:
 Stacks generated to this directory. `cd` into your new structure directory.
     
    • Edit the Structure output file to remove the comment line (first line in the file, starts with
-        “#”).
+        “#”).  
    • You may need to edit your Structure output file to change the alphanumeric
-        population names to be numbers. 
+        population names to be numbers.  
    • The parameters to run Structure (including a value of k=3) have already been
         prepared, you can find them here:
-            /nesi/project/nesi02659/source_data/denovo/mainparams
+            `/nesi/project/nesi02659/source_data/denovo/mainparams`
         and
-            //nesi/project/nesi02659/source_data/denovo/extraparams
-     • Copy them into your structure directory as well.
+            `/nesi/project/nesi02659/source_data/denovo/extraparams`
+     • Copy them into your structure directory as well.  
      
 10. Execute Structure, saving the data into this new directory.
     ```/structure > populations.structure.console```
