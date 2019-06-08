@@ -182,10 +182,10 @@ pairs of barcodes.
         exercise and create the directory ```ddsamples``` to contain the cleaned output.
     
    •  Copy the dataset 2 (DS2):
-        /nesi/project/nesi02659/source_data/clean/lane2.tar
+        `/nesi/project/nesi02659/source_data/clean/lane2.tar`
         into the ```lane2``` directory.
         
-   •  Extract the lane2.tar
+   •  Extract the lane2.tar file
     
 2. Examine the contents of the pairs of files in the terminal again.
    
