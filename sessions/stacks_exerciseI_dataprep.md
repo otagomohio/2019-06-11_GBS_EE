@@ -156,7 +156,10 @@ process_radtags](http://catchenlab.life.illinois.edu/stacks/manual/#procrad) on 
         (```samples```), and specify that process_radtags ```clean, discard, and rescue reads.```
     
    • You should now be able to run the command from the ```dataprep``` directory. It will take a couple of minutes to run. 
-    
+   
+      -   If you find that something is possibly missing from your process_radtags
+                input, correct the error and give running process_radtags another try.
+
    • The process_radtags program will write a log file into the output directory. Have a look in there.
         Examine the log and answer the following questions:
     
@@ -164,12 +167,8 @@ process_radtags](http://catchenlab.life.illinois.edu/stacks/manual/#procrad) on 
     
     -   Of those discarded, what were the reasons? 
     
-    -   In the process_radtags log file what can the list of “sequences not recorded” tel
+    -   In the process_radtags log file what can the list of “sequences not recorded” tell
                 you about the barcodes analyzed and about the sequencing quality in general?
-    
-    -   If you found that something is possibly missing from your process_radtags
-                input, correct the error and re-run the process_radtags.
-
 
 ##  Part 2: Paired-end reads
 
