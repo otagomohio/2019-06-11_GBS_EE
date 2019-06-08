@@ -105,6 +105,7 @@ the background of this study, see Catchen, et al. 2013.
 3. In your ```./working/denovo``` workspace, create a directory called stacks to contain
 the assembled data for this exercise.
 4. Run Stacks’ denovo_map.pl pipeline program according to the following set of instructions:
+
     • As for the previous exercise, information on denovo_map.pl and its parameters can be found [online](http://catchenlab.life.illinois.edu/stacks/comp/denovo_map.php)
     
     •We want Stacks to understand which individuals in our study belong to which
@@ -114,7 +115,7 @@ the assembled data for this exercise.
     • There are three important parameters that must be specified to denovo_map.pl, the
         minimum stack depth (`m`), the distance allowed between stacks (`M`), and the distance allowed
         between catalog loci (`n`). Use the values we determined for these parameters in the
-        previous exercise, but do not restrict the loci to just those found in 80%
+        previous exercise, but do not restrict the loci to just those found in 80% like we did in the opt runs.
     
     • Also, you must set the stacks directory as the output, and use XX threads.
     
@@ -122,7 +123,7 @@ the assembled data for this exercise.
         denovo_map.pl program will read the sample names out of the population map, and
         look for them in the samples directory you specify.
     
-    • Execute the Stacks pipeline. That should take approximately 30mn, ideal time for a break!
+    • Execute the Stacks pipeline. That should take approximately 30min, ideal time for a break!
     
 5. Examine the Stacks log and output files when execution is complete.
     
