@@ -17,16 +17,17 @@ examine three of these populations:
 a coastal marine population, a costal
 freshwater, and an inland river
 population.
-Without a reference genome, we
+
+Without access to a reference genome, we
 want to assemble the RAD loci and
 examine population structure. However, before we can do that, we want to explore
-the de novo parameter space in order to be confident that we are assembling our data
-in an optimal way. As you have seen, stack formation is controlled by three main
+the *de novo* parameter space in order to be confident that we are assembling our data
+in an optimal way. Stack formation is controlled by three main
 parameters: m (the minimum read depth); M (the number of mismatches between
 alleles) and n (the number of mismatches between loci in the catalog). Here, we will
 optimize M for the stickleback data using a subset of the full dataset provided. After
-this, we can use the optimal value we have found for M in the de novo exercise below. We will be using the guidelines of parameter optimization as outlined in [Paris
-et al. (2017)](https://besjournals.onlinelibrary.wiley.com/doi/epdf/10.1111/2041-210X.12775), and will create a ‘hockey stick’ plot to assess which value for M recovers the highest number of new polymorphic loci found in 80% of the individuals (r80 loci).
+this, we can use the optimal value we have found for M in the *de novo* exercise below. We will be using the guidelines of parameter optimization as outlined in [Paris
+et al. (2017)](https://besjournals.onlinelibrary.wiley.com/doi/epdf/10.1111/2041-210X.12775), and will create a ‘hockey stick’ plot to assess which value for M recovers the highest number of polymorphic loci found across 80% of the individuals (r80 loci).
 
 From Paris et al. (2017)](https://besjournals.onlinelibrary.wiley.com/doi/epdf/10.1111/2041-210X.12775):
 *"After putative alleles are formed, stacks performs a search to match alleles together into putative loci. This search is governed by the M parameter, which controls for the maximum number of mismatches allowed between putative alleles[;...] Correctly setting **M** requires a balance – set it too low and alleles from the same locus will not collapse, set it too high and paralogous or repetitive loci will incorrectly merge together."*
