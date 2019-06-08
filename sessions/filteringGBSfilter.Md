@@ -168,5 +168,6 @@ The [readme](https://github.com/laninsky/GBS_SNP_filter) for GBS_SNP_filter prov
 In addition, there are yet more potential filters you can use on your data, and other useful programs for further filtering of data that you should check out [here](https://otagomohio.github.io/2019-06-11_GBS_EE/sessions/furtherfiltering.html).
 
 ---
-[Jump back to filtering SNPs intro](https://otagomohio.github.io/2019-06-11_GBS_EE/sessions/filteringSNPs.html)  
+
+[Jump to Exercise II](sessions/stacks_exerciseI_dataprep)  
 [Jump back to main workshop schedule](https://otagomohio.github.io/2019-06-11_GBS_EE/)
