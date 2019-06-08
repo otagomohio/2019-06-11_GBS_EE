@@ -39,7 +39,7 @@ data for this exercise. *Inside* that directory, create two additional directori
 
 To save time, we have already cleaned and demultiplexed this
 data and will start from the cleaned samples stage. Inside the opt directory, create six
-additional directories: ```M4```, ```M5```, ```M6``` and ```M7```. 
+additional directories: ```M4```, ```M5```, ```M6```   and ```M7```. 
 
    • Copy the dataset below in the ```samples``` directory: ```/nesi/project/nesi02659/source_data/denovo/oregon_stickleback.tar```
     
@@ -93,27 +93,6 @@ study as well as the ```population```s program. The set of instructions below sh
     • Which iteration of M provided the highest number of r80 loci?
 
 
-4. We now want to explore how many new r80 loci were found between each iteration
-for M. Using the number of r80 loci from the populations.hapstats.tsv file, count
-how many new loci were assembled with each iteration of M and record them in a
-text file like so. For example, for M4/M5, use r80_M5 - r80_M4.
-
-```
-M2/M3<tab>xxx
-M3/M4<tab>xxx
-M4/M5<tab>xxx
-11
-M5/M6<tab>xxx
-M6/M7<tab>xxx
-```
-
-Save this file as ```r80_loci.tsv```.
-
-6. Copy ``` ```  to this ```denovo``` directory:
-    • Look at the file content, can you guess what it does?
-    • Run it ...
-    
-    • scp
     
 
 You should now be able to choose your optimised parameters according to the Paris et al., 2017 method!
