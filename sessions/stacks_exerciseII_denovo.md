@@ -166,7 +166,7 @@ than enough information to define population structure:
 
  The final stage of the denovo_map.pl pipeline is to run the populations program. We want to execute just populations, rather than the full denovo_map.pl pipeline, to specify filters that will give us only the most well represented loci. 
 
-   • Since we won't be able to use all loci for our quick downstream analysis today, we will run           populations again, specifying that loci must be present in at least 80% of
+   • Since we won't be able to use all loci for our quick downstream analysis today, we will run           [populations](http://catchenlab.life.illinois.edu/stacks/comp/populations.php) again, specifying that loci must be present in at least 80% of
         individuals in all three populations to cut down on the total number of loci. You will have to tell populations where to
         find the output of the Stacks pipeline (this should be in the stacks output
         directory). 
