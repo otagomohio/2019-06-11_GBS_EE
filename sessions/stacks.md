@@ -3,6 +3,23 @@
 **Developed by:** Julian Catchen, Nicolas Rochette   
 **Adapted by:** Ludovic Dutoit
 
+
+
+### Plan
+
+Throughout the day, we will work through two main exercises:
+
+•   Mini-Lecture 1: What is RAD?
+
+•   Mini-Lecture 2: Phred scores and the *process_radtags* cleaning algorithm.
+
+•   [Exercise I](stacks_exerciseI_dataprep.md): Data preparation.
+
+•   Mini-Lecture 3: Stacks, primary/secondary reads, and parameters.
+
+•  [Exercise II](stacks_exerciseII_denovo.md): de novo assembly of RAD tags without a genome
+
+
 ## Objectives
 The goal of this exercise is to familiarize ourselves with the use of next generation sequence
 data produced from Reduced Representation Libraries (RRL) approaches such as
@@ -91,19 +108,7 @@ program written by the Exelixis Lab for the construction of maximum likelihood
 phylogenetic trees.
 
 
-### Plan
 
-Throughout the day, we will work through two main exercises:
-
-•   Mini-Lecture 1: What is RAD?
-
-•   Mini-Lecture 2: Phred scores and the *process_radtags* cleaning algorithm.
-
-•   [Exercise I](stacks_exerciseI_dataprep.md): Data preparation.
-
-•   Mini-Lecture 3: Stacks, primary/secondary reads, and parameters.
-
-•  [Exercise II](stacks_exerciseII_denovo.md): de novo assembly of RAD tags without a genome
 
 ### Citations and Readings
 **Protocols for running a Stacks analysis**
