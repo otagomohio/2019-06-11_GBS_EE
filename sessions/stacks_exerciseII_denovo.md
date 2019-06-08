@@ -113,11 +113,11 @@ the assembled data for this exercise.
         an editor. The file should be formatted in 2 columns like [this](http://catchenlab.life.illinois.edu/stacks/manual/#popmap). Include all 30 samples in this file and specify which individuals            belong to which populations. You must supply the population map to denovo_map.pl when you execute it. You could for             example use ```ls -1 *fa.gz``` to see all the samples in a list before adding the populations. Add the populations as simple integers (i.e. 1, 2 and 3) to make it easier to use the program ```Structure``` that we will run downstream.
     
     • There are three important parameters that must be specified to denovo_map.pl, the
-        minimum stack depth, the distance allowed between stacks, and the distance allowed
-        between catalog loci. Use the values we determined for these parameters in the
+        minimum stack depth (`m`), the distance allowed between stacks (`M`), and the distance allowed
+        between catalog loci (`n`). Use the values we determined for these parameters in the
         previous exercise.
     
-    • Also, you must set create the stacks directory as the output, and use all the threads
+    • Also, you must set the stacks directory as the output, and use all the threads
         available on your instance.
     
     • Finally, specify the path to the directory containing your sample files. The
@@ -126,7 +126,6 @@ the assembled data for this exercise.
     
     • Execute the Stacks pipeline. That should take approximately 30mn, ideal time for a break!
     
-
 5. Examine the Stacks log and output files when execution is complete.
     
     • After processing all the individual samples through ustacks and before creating the catalog with cstacks, denovo_map.pl            will print a [table containing the depth of coverage](http://catchenlab.life.illinois.edu/stacks/manual/#cov) of       each sample. Find this table in the log, what were
