@@ -151,21 +151,20 @@ distribution of multi-locus genotypes within and among populations in a Bayesian
 framework to make predictions about the most probable population of origin for each
 individual. The assignment of each individual to a population is quantified in terms of
 Bayesian posterior probabilities, and visualized via a plot of posterior probabilities for
-each individual and population. A key user defined parameter is the hypothesized
-number of populations of origin which is represented by k. Sometimes the value of k is
-clear from from the biology, but more often a range of potential k-values must be
+each individual and population.
+
+A key user defined parameter is the hypothesized
+number of populations of origin which is represented by *K*. Sometimes the value of *K* is
+clear from from the biology, but more often a range of potential *K*-values must be
 explored and evaluated using a variety of likelihood based approaches to decide upon
-the ultimate k. In the interest of time we won’t be exploring different values of k here,
-but this will be a key step in any data analysis. In addition, at the moment Structure
-can only handle a small number of loci because of the MCMC algorithms involved in
-the Bayesian computations, usually many fewer than are generated in a typical RAD
-data set. We therefore want to randomly choose a random subset of loci that are well
+the ultimate *K*. In the interest of time we won’t be exploring different values of *K* here,
+but this will be a key step for your own data sets. In addition, at the moment Structure
+will take a long time to run on the number of loci generated in a typical RAD data set because of the MCMC algorithms involved in
+the Bayesian computations. We therefore want to randomly choose a random subset of loci that are well
 represented in our three populations. Nonetheless, this random subset contains more
 than enough information to define population structure:
 
- The final stage of the denovo_map.pl pipeline is to run the populations program to
-        calculate population genetic statistics for our data. We want to execute this program by
-        hand again, specifying filters that will give us only the most well represented loci. 
+ The final stage of the denovo_map.pl pipeline is to run the populations program. We want to execute just populations, rather than the full denovo_map.pl pipeline, to specify filters that will give us only the most well represented loci. 
 
    • Since we won't be able to use all loci for our quick downstream analysis today, we will run           populations again, specifying that loci must be present in at least 80% of
         individuals in all three populations to cut down on the total number of loci. You will have to tell populations where to
@@ -184,9 +183,8 @@ file. We can easily do this using the shell given a list of catalog IDs output i
 previous step. The populations.sumstats.tsv file gives a list of all polymorphic
 loci. Use the ```cat, grep, cut, sort, uniq, shuf, and head``` commands to generate a
 list of 1000 random loci. Save this list of loci as  ```whitelist.txt```, that we can feed back into
-populations. This operation can be done in a single shell command. That sounds challenging, but the instruction
-below should help you create one command with several pipes to create that whi
-telist.txt. Create that command step by step:
+populations. This operation can be done in a single shell command. That sounds challenging, but the instructions
+below should help you create one command with several pipes to create that whitelist.txt. Create that command step by step:
 
     • First, use ``` cat``` to concatenante  ```stacks/populations.sumstats.tsv```.
     
