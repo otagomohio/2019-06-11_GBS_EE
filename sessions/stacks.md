@@ -35,7 +35,7 @@ having complete genomic information from numerous individuals from different
 populations - both in the lab and wild - has become a
 possibility for a variety of ecological and evolutionary studies, leading to the field of population genomics.
 
-Until just a few years ago the goal of acquiring complete genomic information from
+Until just a few years ago acquiring complete genomic information from
 numerous individuals across many populations was out of reach for all but a small number of
 model organisms. For example, producing a high density genetic map for an organism
 required an immense investment of resources to first produce and then type the large
