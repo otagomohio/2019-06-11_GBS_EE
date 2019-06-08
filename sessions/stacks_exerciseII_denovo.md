@@ -83,9 +83,9 @@ study as well as the ```population``` program. The set of instructions below sho
 
     • What is the number of the last locus assembled for M4?
     
-    • How many loci in total? (*Hint:* count the lines)
+    • How many SNPs in total? (*Hint:* count the lines)
     
-    • Using this technique, how many loci were assembled for M5 to M7 once they finish running?
+    • Using this technique, how many SNPs were assembled for M5 to M7 once they finish running?
     
     • Which iteration of M provided the highest number of r80 loci?    
 
