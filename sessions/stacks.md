@@ -88,20 +88,6 @@ models of multi-locus genotype data. The package was written to estimate the
 distribution and abundance of genetic variation within and among populations,
 patterns that are now commonly called the genetic structure of populations.
 
-• [BWA](bio-bwa.sourceforge.net/) - BWA is a very fast and efficient software package
-used for aligning sequences against a reference genome. We will use BWA to align
-RAD reads against the stickleback reference genome, and then analyze these reads
-within the Stacks pipeline. Although we will use BWA for this exercise, many other
-algorithms and software exist for aligning against a reference genome, and these
-could be used in conjunction with Stacks as well.
-
-• [Samtools](www.htslib.org/) - A program that manipulates SAM and BAM files (the
-primary file format that read alignments are stored) in very useful ways.
-
-• [RAxML](http://sco.h-its.org/exelixis/web/software/raxml/index.html) - A software
-program written by the Exelixis Lab for the construction of maximum likelihood
-phylogenetic trees.
-
 ### Citations and Readings
 **Protocols for running a Stacks analysis**
 
