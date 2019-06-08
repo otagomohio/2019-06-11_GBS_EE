@@ -32,15 +32,13 @@ et al. (2017)](https://besjournals.onlinelibrary.wiley.com/doi/epdf/10.1111/2041
 This approach is described more in [Paris et al. (2017)](https://besjournals.onlinelibrary.wiley.com/doi/epdf/10.1111/2041-210X.12775):
 *"After putative alleles are formed, stacks performs a search to match alleles together into putative loci. This search is governed by the M parameter, which controls for the maximum number of mismatches allowed between putative alleles [...] Correctly setting **M** requires a balance – set it too low and alleles from the same locus will not collapse, set it too high and paralogous or repetitive loci will incorrectly merge together."*
 
-1. Go to your  
-```/nesi/project/nesi02659/<yourusername>/working```
-workspace, create a directory called ```denovo``` to contain all the
+1. Go to your ```/nesi/project/nesi02659/<yourusername>/working``` workspace, create a directory called ```denovo``` to contain all the
 data for this exercise. *Inside* that directory, create two additional directories:
 ```samples```, and ```opt```. 
 
-To save time, we have already cleaned and demultiplexed this
-data and will start from the cleaned samples stage. Inside the opt directory, create six
-additional directories: ```M4```, ```M5```, ```M6```   and ```M7```. 
+   To save time, we have already cleaned and demultiplexed this
+   data and will start from the cleaned samples stage. Inside the opt directory, create six
+   additional directories: ```M4```, ```M5```, ```M6```   and ```M7```. 
 
    • Copy the dataset below in the ```samples``` directory: ```/nesi/project/nesi02659/source_data/denovo/oregon_stickleback.tar```
     
