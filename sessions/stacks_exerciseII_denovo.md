@@ -214,8 +214,6 @@ Stacks generated to this directory. `cd` into your new structure directory.
     
    • Edit the Structure output file to remove the comment line (first line in the file, starts with
         “#”).  
-   • You may need to edit your Structure output file to change the alphanumeric
-        population names to be numbers.  
    • The parameters to run Structure (including a value of k=3) have already been
         prepared, you can find them here:
             `/nesi/project/nesi02659/source_data/denovo/mainparams`
