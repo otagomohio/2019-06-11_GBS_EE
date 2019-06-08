@@ -58,9 +58,7 @@ One such RRL approach is Restriction-site Associated DNA sequencing
 genetic maps, help assemble genomes, and be useful for studies of allelic specific
 transcriptional profiling. Because these data are relatively new, and the sample sizes of sequences
 often so massive, a critical related breakthrough has been the development of algorithms
-and software pipelines for the analysis of such data. 
-
-Catchen et al. have produced Stacks for the
+and software pipelines for the analysis of such data. Catchen et al. have produced Stacks for the
 analysis of RAD-seq data. Today you will learn how to analyze RAD data with Stacks (without a
 use of a reference genome, although this program can also make use of a reference genome if you have one available for your study organism) with the goal of identifying population structure. Through the completion of these
 tasks you will learn how to process RAD-seq data and use the software programs `Stacks`
