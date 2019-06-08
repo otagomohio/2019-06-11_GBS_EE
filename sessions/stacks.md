@@ -70,7 +70,7 @@ help you better understand both the molecular biology, computational analyses, a
 conceptual framework for the analysis of RRL data such as RAD.
 
 ### Software 
-**All are open source software**
+**Everything isopen source software**
 
 • [Stacks](http://catchenlab.life.illinois.edu/stacks/) - A set of interconnected open
 source programs designed initially for the *de novo* assembly of RAD sequences into
@@ -83,6 +83,8 @@ many scenarios.
 originally written by Jonathan Pritchard and colleagues that uses Bayesian stochastic
 models of multi-locus genotype data. The package was written to estimate the
 distribution and abundance of genetic variation within and among populations.
+
+• [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) - FastQC aims to provide a simple way to do some quality control checks on raw sequence data coming from high throughput sequencing pipelines. It provides a modular set of analyses which you can use to give a quick impression of whether your data has any problems of which you should be aware before doing any further analysis.
 
 ### Citations and Readings
 **Protocols for running a Stacks analysis**
