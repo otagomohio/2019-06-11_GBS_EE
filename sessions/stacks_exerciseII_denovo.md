@@ -104,8 +104,7 @@ determine population structure using the Structure program. For more information
 the background of this study, see Catchen, et al. 2013.
 3. In your ```./working/denovo``` workspace, create a directory called stacks to contain
 the assembled data for this exercise.
-4. Run the Stacks’ denovo_map.pl pipeline program according to the following set of instructiona:
-    
+4. Run Stacks’ denovo_map.pl pipeline program according to the following set of instructions:
     • As for the previous exercise, information on denovo_map.pl and its parameters can be found [online](http://catchenlab.life.illinois.edu/stacks/comp/denovo_map.php)
     
     •We want Stacks to understand which individuals in our study belong to which
