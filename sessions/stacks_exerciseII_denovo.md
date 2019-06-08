@@ -65,9 +65,9 @@ study as well as the ```population``` program. The set of instructions below sho
         execute it for each parameter run.
     
     • To optimize for r80 loci you will need to tell denovo_map.pl to use the x parameter to filter for loci in 80% of the
-        samples) program.We will keep ```m``` at 3. Initially setting M to 4. We will also follow the general rule of ```-M =  -n``` and we will tell denovo_map.pl to output to the M4 folder.
+        samples) program. We will keep ```m``` at 3. Initially, we will set M to 4. We will also follow the general rule of ```-M =  -n``` and we will tell denovo_map.pl to output to the M4 folder.
         
-    • You should be able to launch the M4 run now. It will take a couple of minutes.
+    • With this information, you should be able to launch the M4 run now. It will take a couple of minutes.
        
 3. Once done, you should now see the denovo_map.pl output files in the directory M4.
 
