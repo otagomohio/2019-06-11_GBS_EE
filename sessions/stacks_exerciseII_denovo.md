@@ -248,6 +248,6 @@ Congrats, you just finished our tutorial for denovo RAD-Seq. If you have plenty 
 
 ***
 
-[Jump back to Exercise I](sessions/stacks_exerciseI_dataprep)
+[Jump back to Exercise I](sessions/stacks_exerciseI_dataprep)  
 [Jump to filtering SNPs intro](https://otagomohio.github.io/2019-06-11_GBS_EE/sessions/filteringSNPs.html)  
 [Jump back to main workshop schedule](https://otagomohio.github.io/2019-06-11_GBS_EE/)
