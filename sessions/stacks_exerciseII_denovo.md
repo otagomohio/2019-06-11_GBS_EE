@@ -106,7 +106,7 @@ the background of this study, see Catchen, et al. 2013.
 the assembled data for this exercise.
 4. Run the Stacks’ denovo_map.pl pipeline program according to the following set of instructiona:
     
-    • Information on denovo_map.pl and its parameters still can be found [online](http://catchenlab.life.illinois.edu/stacks/comp/denovo_map.php)
+    • As for the previous exercise, information on denovo_map.pl and its parameters can be found [online](http://catchenlab.life.illinois.edu/stacks/comp/denovo_map.php)
     
     •We want Stacks to understand which individuals in our study belong to which
         population. To specify this, create a file ```complete_popmap.txt``` in the denovo directory called popmap, using
