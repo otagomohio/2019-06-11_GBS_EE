@@ -44,17 +44,16 @@ identifying genomic regions associated with phenotypic variation, or involved in
 adaptation of organisms to novel conditions, was restricted to organisms for which resequencing
 projects produced a dense battery of genetic markers at a significant cost.
 
-The limits to using whole genome sequencing for population genomic studies will gradually fade as the costs of second
-generation sequencing continue to drop. However, currently using complete genome
-re-sequencing will not be feasible for many studies because costs are still significant and analysis remains challenging. Luckily, many
+The limits to using whole genome sequencing for population genomic studies will gradually fade as the costs of sequencing continue to drop. However, using complete genome
+re-sequencing is currently not feasible for many studies because costs are still significant and analysis remains challenging. Luckily, many
 population genomic studies can use an alternative
 approach called genotype-by-sequencing that occurs by the sequencing of reduced
 representation libraries (RRL), and subsequent identification and scoring of SNPs and
 inference of haplotypes. Although they do not provide complete genomic information,
-these approaches provide a sufficient picture via data on hundreds of thousands of SNPs
+these approaches provide data on hundreds of thousands of SNPs
 and haplotypes spread across a genome at a fraction of the cost of complete resequencing.
 
-One such approach is called Restriction-site Associated DNA sequencing
+One such RRL approach is Restriction-site Associated DNA sequencing
 (RAD-seq), which has been used to identify signatures of selection, produce high density
 genetic maps, help assemble genomes, and be useful for studies of allelic specific
 transcriptional profiling. Because these data are relatively new, and the sample sizes of sequences
