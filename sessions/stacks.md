@@ -102,9 +102,6 @@ primary file format that read alignments are stored) in very useful ways.
 program written by the Exelixis Lab for the construction of maximum likelihood
 phylogenetic trees.
 
-
-
-
 ### Citations and Readings
 **Protocols for running a Stacks analysis**
 
@@ -256,5 +253,5 @@ Nature Methods 9, 808–810.
 
 ***
 
-[Jump to Exercise I](sessions/stacks_exerciseI_dataprep)  
+[Jump to Exercise I](stacks_exerciseI_dataprep)  
 [Jump back to main workshop schedule](https://otagomohio.github.io/2019-06-11_GBS_EE/)
