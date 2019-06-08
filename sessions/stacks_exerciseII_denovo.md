@@ -171,7 +171,7 @@ than enough information to define population structure:
         find the output of the Stacks pipeline (this should be in the stacks output
         directory). 
     
-   • Make sure to output a structure file! Output a ```.vcf``` file as well. The `.vcf` file will come in handy [later](https://otagomohio.github.io/2019-06-11_GBS_EE/sessions/filteringSNPs.html).
+   • Make sure to output a structure file! Output a ```.vcf``` file as well. We will be using a `.vcf` file later today [later](https://otagomohio.github.io/2019-06-11_GBS_EE/sessions/filteringSNPs.html).
 
    • One final detail: Structure assumes that each SNP locus is independent, so we
         don’t want to output multiple SNPs from the same RAD locus, since they are not
@@ -205,18 +205,18 @@ generated. This will cause populations to only process the loci in the ```whitel
 Specify that a Structure output file be included this time and again insist that only a
 single SNP is output from each RAD locus. Finally, you will need to again specify the
 population map that you generated above to populations so that this information is
-passed into the Structure output file. You might also want to output a vcf file, that will prove handy for all kind of population genetics applications.
+passed into the Structure output file. You might also want to output a vcf file: this format is handy for all kind of population genetics applications.
 
    •  We've run commands to generate structure and vcf files several times, but how many structure and vcf files are there in the stacks directory? If you wanted to save several different vcf and structure files generated using different `populations` options, what would you have to do?
 
-9. Create a new directory called ```structure``` and copy the Structure output file that
-Stacks generated to this directory.
+9. Create a new directory called ```structure``` within the denovo folder and copy the Structure output file that
+Stacks generated to this directory. `cd` into your new structure directory.
     
-    • Edit the Structure output file to remove the comment line (first line in the file, starts with
+   • Edit the Structure output file to remove the comment line (first line in the file, starts with
         “#”).
-    • You may need to edit your Structure output file to change the alphanumeric
+   • You may need to edit your Structure output file to change the alphanumeric
         population names to be numbers. 
-    • The parameters to run Structure (including a value of k=3) have already been
+   • The parameters to run Structure (including a value of k=3) have already been
         prepared, you can find them here:
             /nesi/project/nesi02659/source_data/denovo/mainparams
         and
