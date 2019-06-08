@@ -75,24 +75,21 @@ study as well as the ```population``` program. The set of instructions below sho
     
     • While you are running M5 through m7, open a *new command window*, login to Mahuika and re-access       the reserved machine ```ssh -Y ga-vl01```. Then go to your ```working/denovo``` folder so that you can keep working while M5 through M7 are running.
     
-    • To see how many r80 loci were assembled for each parameter run you will want to start looking at the                        ```populations.hapstats.tsv``` using the [Stacks manual](http://catchenlab.life.illinois.edu/stacks/manual/#files
-    manual to inform you on the data
+    • To see how many r80 loci were assembled for each parameter run you will want to start looking at the                        ```populations.hapstats.tsv``` file using the [Stacks manual](http://catchenlab.life.illinois.edu/stacks/manual/#files)
+    to inform you on the data
     contained in each of the columns. 
 
     • What is the number of the first locus assembled for M4?
 
     • What is the number of the last locus assembled for M4?
     
-    • How many loci in total? (Hint: count the lines.)
+    • How many loci in total? (*Hint:* count the lines)
     
-    • Using this technique, how many loci were assembled for M5 to M7 once it has finished to run.
+    • Using this technique, how many loci were assembled for M5 to M7 once they finish running?
     
-    • Which iteration of M provided the highest number of r80 loci?
+    • Which iteration of M provided the highest number of r80 loci?    
 
-
-    
-
-You should now be able to choose your optimised parameters according to the Paris et al., 2017 method!
+You should now be able to choose your optimised parameters according to the Paris et al. (2017) method!
 
 ## Part 2: Getting to population genetics analyses
 
