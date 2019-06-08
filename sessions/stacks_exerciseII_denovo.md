@@ -37,7 +37,7 @@ data for this exercise. *Inside* that directory, create two additional directori
 ```samples```, and ```opt```. 
 
    To save time, we have already cleaned and demultiplexed this
-   data and will start from the cleaned samples stage. Inside the opt directory, create six
+   data and will start from the cleaned samples stage. Inside the opt directory, create four
    additional directories: ```M4```, ```M5```, ```M6```   and ```M7```. 
 
    • Copy the dataset below in the ```samples``` directory: ```/nesi/project/nesi02659/source_data/denovo/oregon_stickleback.tar```
@@ -49,25 +49,25 @@ data for this exercise. *Inside* that directory, create two additional directori
 ```M```. `denovo_map.pl` will run ustacks, cstacks, and sstacks on the individuals in our
 study as well as the ```population``` program. The set of instructions below should help you build your command.
     
-    • Get back into the ```denovo``` folder
+   • Get back into the ```denovo``` folder
     
-    • Load the ```Stacks``` module
+   • Load the ```Stacks``` module
     
-    • Information on denovo_map.pl and its parameters can be found [online]( http://catchenlab.life.illinois.edu/stacks/comp/denovo_map.php)
+   • Information on denovo_map.pl and its parameters can be found [online]( http://catchenlab.life.illinois.edu/stacks/comp/denovo_map.php)
     
-    • We want Stacks to only use the 3 individuals in our parameter optimization. To
+   • We want Stacks to only use the 3 individuals in our parameter optimization. To
         specify this, create a file in the opt directory called ```opt_popmap.txt```, using an editor.
         The file should be formatted like [indicated in the manual](http://catchenlab.life.illinois.edu/stacks/manual/#popmap).        
          Note: do not include the extension ```.fa.gz``` in the sample name.
     
-    • Include samples in this file and specify that all individuals belong to one
+   • Include samples in this file and specify that all individuals belong to one
         single population. You will need to supply the population map to denovo_map.pl when you
         execute it for each parameter run.
     
-    • To optimize for r80 loci you will need to tell denovo_map.pl to use the x parameter to filter for loci in 80% of the
+   • To optimize for r80 loci you will need to tell denovo_map.pl to use the x parameter to filter for loci in 80% of the
         samples) program. We will keep ```m``` at 3. Initially, we will set M to 4. We will also follow the general rule of ```M = n``` and we will tell denovo_map.pl to output to the M4 folder.
         
-    • With this information, you should be able to launch the M4 run now. It will take a couple of minutes.
+   • With this information, you should be able to launch the M4 run now. It will take a couple of minutes.
        
 3. Once done, you should now see the denovo_map.pl output files in the directory M4.
 
