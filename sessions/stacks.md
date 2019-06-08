@@ -32,7 +32,7 @@ such as constructing genetic maps and phylogeography, however, here we'll be foc
 The advent of short-read sequencing technologies has revolutionized the study of genomic
 variation, leading to complete genomes of both model and non-model organisms. In addition, the long-standing dream of biologists of
 having complete genomic information from numerous individuals from different
-populations - both in the lab and wild, has become a
+populations - both in the lab and wild - has become a
 possibility for a variety of ecological and evolutionary studies, leading to the field of population genomics.
 
 Until just a few years ago the goal of acquiring complete genomic information from
