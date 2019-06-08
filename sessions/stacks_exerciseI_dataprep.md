@@ -224,7 +224,7 @@ our samples.
    
    • How many samples were multiplexed together in this RAD library? (*Hint:* count the lines.) 
    
-   • Similarly to what we saw aboveou will need to specify the two restriction enzymes used to construct the library
+   • Similarly to what we saw above, you will need to specify the two restriction enzymes used to construct the library
         (```NlaIII``` and ```MluCI```), the directory of input files (the lane2 directory), the list of
         barcodes, the output directory (ddsamples) and specify that process_radtags
         clean, discard, and rescue reads. Do not forget to specify the inline index and the fact that you are providing               paired-end reads.
