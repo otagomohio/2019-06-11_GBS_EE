@@ -104,7 +104,7 @@ spreadsheet or word processor. However, we can examine the contents of the set o
        
     • Open a new terminal window **without closing the current one** and stay on your local computer (i.e. do **not** login to mahuika). 
     
-    • Check out [how to copy files](https://support.nesi.org.nz/hc/en-gb/articles/360000578455-File-Transfer-with-SCP). To identify the path to the file on Mahuika,          use the ```pwd``` command in the lane1 directory on the terminal window that is logged into Mahuika (don't forget to add the name of the file you want to copy to the end of this path).
+    • Check out [how to copy files](https://support.nesi.org.nz/hc/en-gb/articles/360000578455-File-Transfer-with-SCP). (*Hint:* To identify the path to the file on Mahuika,          use the ```pwd``` command in the lane1 directory on the terminal window that is logged into Mahuika...but don't forget to add the name of the file you want to copy to the end of this path).
        
     • Once you have this file on your local computer, just double-click on it to open it with your favorite browser.
 
