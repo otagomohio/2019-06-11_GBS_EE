@@ -241,6 +241,6 @@ our samples.
 
 *Congratulations, you reached the end of Exercise 1. Have a breathe, help your fellow attendees, grab a coffee and we will be back shortly*
 
-[Jump to exercise II](stacks_exerciseII_denovo)
-[Jump back to Stacks intro](stacks.md)
+[Jump to exercise II](stacks_exerciseII_denovo)  
+[Jump back to Stacks intro](stacks.md)  
 [Jump back to the main workshop schedule](https://otagomohio.github.io/2019-06-11_GBS_EE/)
