@@ -114,10 +114,9 @@ the assembled data for this exercise.
     • There are three important parameters that must be specified to denovo_map.pl, the
         minimum stack depth (`m`), the distance allowed between stacks (`M`), and the distance allowed
         between catalog loci (`n`). Use the values we determined for these parameters in the
-        previous exercise.
+        previous exercise, but do not restrict the loci to just those found in 80%
     
-    • Also, you must set the stacks directory as the output, and use all the threads
-        available on your instance.
+    • Also, you must set the stacks directory as the output, and use XX threads.
     
     • Finally, specify the path to the directory containing your sample files. The
         denovo_map.pl program will read the sample names out of the population map, and
@@ -167,12 +166,12 @@ than enough information to define population structure:
         calculate population genetic statistics for our data. We want to execute this program by
         hand again, specifying filters that will give us only the most well represented loci. 
 
-   • Since we won't be able to use all loci for our quick downstream analysis today, we might as well keep the best ones!Run           populations again, specifying that loci must be present in at least 80% of
-        individuals in all three populations. You will have to tell populations where to
+   • Since we won't be able to use all loci for our quick downstream analysis today, we will run           populations again, specifying that loci must be present in at least 80% of
+        individuals in all three populations to cut down on the total number of loci. You will have to tell populations where to
         find the output of the Stacks pipeline (this should be in the stacks output
         directory). 
     
-   • Make sure to output a structure file and a ```.vcf``` file as well. this will come in handy later.
+   • Make sure to output a structure file and a ```.vcf``` file as well. The `.vcf` file will come in handy later.
     
    • One final detail: Structure assumes that each SNP locus is independent, so we
         don’t want to output multiple SNPs from the same RAD locus, since they are not
@@ -209,7 +208,7 @@ single SNP is output from each RAD locus. Finally, you will need to again specif
 population map that you generated above to populations so that this information is
 passed into the Structure output file. You might also want to output a vcf file, that will prove handy for all kind of population genetics applications.
 
-9. Create a new directory called ```structure```e and copy the Structure output file that
+9. Create a new directory called ```structure``` and copy the Structure output file that
 Stacks generated to this directory.
     
     • Edit the Structure output file to remove the comment line (first line in the file, starts with
