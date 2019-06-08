@@ -214,11 +214,11 @@ Stacks generated to this directory. `cd` into your new structure directory.
     
    • Edit the Structure output file to remove the comment line (first line in the file, starts with
         “#”).  
-   • The parameters to run Structure (including a value of k=3) have already been
+   • The parameters to run Structure (with value of *K*=3) have already been
         prepared, you can find them here:
             `/nesi/project/nesi02659/source_data/denovo/mainparams`
         and
-            `/nesi/project/nesi02659/source_data/denovo/extraparams`
+            `/nesi/project/nesi02659/source_data/denovo/extraparams`  
      • Copy them into your structure directory as well.  
      
 10. Execute Structure, saving the data into this new directory.
