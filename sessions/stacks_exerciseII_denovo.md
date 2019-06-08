@@ -74,7 +74,7 @@ study as well as the ```population```s program. The set of instructions below sh
        
 3. Once done, you should now see the denovo_map.pl output files in the directory M4.
 
-    • copy the commands in ther terminal for M5 to M8 at once. Once you entered, keep following through the next points ( it should take around 10mn total).    
+    • copy the commands in ther terminal for M5 to M7 at once. Once you entered, keep following through the next points ( it should take around 10mn total).    
     
     • Open a *new command window* and go in your ```working/denovo``` so that you can keep working. Don't forget to re-access       the reserved machine ```ssh -Y ga-vl01```.
     
@@ -88,7 +88,7 @@ study as well as the ```population```s program. The set of instructions below sh
     
     • How many loci in total? (Hint: count the lines.)
     
-    • Using this technique, how many loci were assembled for M5 to M8 once it has finished to run.
+    • Using this technique, how many loci were assembled for M5 to M7 once it has finished to run.
     
     • Which iteration of M provided the highest number of r80 loci?
 
