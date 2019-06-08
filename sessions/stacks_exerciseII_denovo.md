@@ -56,7 +56,7 @@ study as well as the ```population``` program. The set of instructions below sho
     • Information on denovo_map.pl and its parameters can be found [online]( http://catchenlab.life.illinois.edu/stacks/comp/denovo_map.php)
     
     • We want Stacks to only use the 3 individuals in our parameter optimization. To
-        specify this, create a file in the working directory called ```opt_popmap.txt```, using an editor.
+        specify this, create a file in the denovo directory called ```opt_popmap.txt```, using an editor.
         The file should be formatted like [indicated in the manual](http://catchenlab.life.illinois.edu/stacks/manual/#popmap).        
          Note: do not include the extension ```.fa.gz``` in the sample name.
     
