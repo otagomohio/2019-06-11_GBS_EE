@@ -8,19 +8,14 @@
 ### Plan
 
 Throughout the day, we will work through the following plan:
-
 •   Mini-Lecture 1: What is RAD?
-
 •   Mini-Lecture 2: Phred scores and the *process_radtags* cleaning algorithm.
-
 •   [Exercise I](stacks_exerciseI_dataprep.md): Data preparation.
-
 •   Mini-Lecture 3: Stacks, primary/secondary reads, and parameters.
+•   [Exercise II](stacks_exerciseII_denovo.md): *de novo* assembly of RAD tags without a genome
+•   [Further filtering](filteringSNPs.md): further filtering of the SNPs we obtain from the Stacks pipeline.
 
-•  [Exercise II](stacks_exerciseII_denovo.md): de novo assembly of RAD tags without a genome
-
-
-## Objectives
+### Objectives
 The goal of this exercise is to familiarize ourselves with the use of next generation sequence
 data produced from Reduced Representation Libraries (RRL) approaches such as
 Restriction site Associated DNA (RAD-tags). These libraries are often used for genotyping
@@ -33,7 +28,7 @@ aid of a reference genome. Stacks can be used with a reference genome as well as
 such as constructing genetic maps and phylogeography, although those are beyond the
 scope of this exercise.
 
-## Introduction
+### Introduction
 The advent of short-read sequencing technologies has revolutionized the study of genomic
 variation from complete sequences in model organisms such as nematode worms, fruit
 flies, zebrafish, mice and humans. In addition, the long-standing dream of biologists of
@@ -77,7 +72,7 @@ conceptual framework for the analysis of RRL data such as RAD.
 
 
 
-## Software 
+### Software 
 **All are open source software**
 
 • [Stacks](http://catchenlab.life.illinois.edu/stacks/) - A set of interconnected open
@@ -258,3 +253,8 @@ of reduced representation libraries. Nature Methods 5:247-252
 
 •Wang, S. et al. 2012. 2b-RAD: a simple and flexible method for genome-wide genotyping.
 Nature Methods 9, 808–810.
+
+***
+
+[Jump back to Exercise I](sessions/stacks_exerciseI_dataprep)
+[Jump back to main workshop schedule](https://otagomohio.github.io/2019-06-11_GBS_EE/)
