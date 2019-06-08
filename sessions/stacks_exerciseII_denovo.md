@@ -207,6 +207,8 @@ single SNP is output from each RAD locus. Finally, you will need to again specif
 population map that you generated above to populations so that this information is
 passed into the Structure output file. You might also want to output a vcf file, that will prove handy for all kind of population genetics applications.
 
+   •  We've run commands to generate structure and vcf files several times, but how many structure and vcf files are there in the stacks directory? If you wanted to save several different vcf and structure files generated using different `populations` options, what would you have to do?
+
 9. Create a new directory called ```structure``` and copy the Structure output file that
 Stacks generated to this directory.
     
