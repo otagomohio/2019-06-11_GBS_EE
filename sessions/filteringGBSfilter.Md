@@ -169,5 +169,5 @@ In addition, there are yet more potential filters you can use on your data, and 
 
 ---
 
-[Jump to Exercise II](sessions/stacks_exerciseI_dataprep)  
+
 [Jump back to main workshop schedule](https://otagomohio.github.io/2019-06-11_GBS_EE/)
