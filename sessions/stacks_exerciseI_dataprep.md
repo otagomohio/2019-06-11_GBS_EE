@@ -143,8 +143,8 @@ process_radtags](http://catchenlab.life.illinois.edu/stacks/manual/#procrad) on 
         correspond to the individuals used in a particular experiment (e.g. individual ID etc), but for this exercise, we
         will name the samples in a simple way, say indv_01, indv_02, etc. e.g.
         
-        AAACGG       indiv_01
-        AACGTT       indiv_02
+        AAACGG       indv_01
+        AACGTT       indv_02
     
    • Append the remaining barcodes for this lane of samples from `/nesi/project/nesi02659/source_data/clean/lane1_barcodes.txt` (*Hint:* `cat` and `>>`)
     
