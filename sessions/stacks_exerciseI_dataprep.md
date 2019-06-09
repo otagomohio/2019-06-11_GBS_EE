@@ -238,7 +238,7 @@ our samples.
         
         
 
-4.Running the commands directly on the screen is not common practice. You now are on ```ga-vl01``` which is a reserved amount of resources for this workshop and this iallows us to run pur command directly. On a day to day basis, you would be evolving on the *logi*n node (i.e. The place you reach when you login). All the resources are tucked away from the login node. You generally run your commands as jobs that are *sent* to this resources, not on the login node itself. We will use this process_radtags command as a perfect example to run our first job.
+4.Running the commands directly on the screen is not common practice. You now are on ```ga-vl01``` which is a reserved amount of resources for this workshop and this iallows us to run pur command directly. On a day to day basis, you would be evolving on the *logi*n node (i.e. The place you reach when you login). All the [resources](https://support.nesi.org.nz/hc/en-gb/articles/360000204076-Mahuika-Slurm-Partitions) are tucked away from the login node. You generally run your commands as jobs that are *sent* to this [resources](https://support.nesi.org.nz/hc/en-gb/articles/360000204076-Mahuika-Slurm-Partitions), not on the login node itself. We will use this process_radtags command as a perfect example to run our first job.
 
    • copy an example jobfile into this directory. The example is at : '''/nesi/project/nesi02659/source_data/example_job.sh'''
 
