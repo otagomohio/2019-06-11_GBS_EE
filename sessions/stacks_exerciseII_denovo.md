@@ -27,7 +27,7 @@ parameters: m (the minimum read depth); M (the number of mismatches between
 alleles) and n (the number of mismatches between loci in the catalog). Here, we will
 optimize M for the stickleback data using a subset of the full dataset provided. After
 this, we can use the optimal value we have found for M in the *de novo* exercise below. We will be using the guidelines of parameter optimization as outlined in [Paris
-et al. (2017)](https://besjournals.onlinelibrary.wiley.com/doi/epdf/10.1111/2041-210X.12775), and will create a ‘hockey stick’ plot to assess which value for M recovers the highest number of new polymorphic loci found across 80% of the individuals (r80 loci).
+et al. (2017)](https://besjournals.onlinelibrary.wiley.com/doi/epdf/10.1111/2041-210X.12775) to assess which value for M recovers the highest number of new polymorphic loci found across 80% of the individuals (r80 loci).
 
 This approach is described more in [Paris et al. (2017)](https://besjournals.onlinelibrary.wiley.com/doi/epdf/10.1111/2041-210X.12775):
 *"After putative alleles are formed, stacks performs a search to match alleles together into putative loci. This search is governed by the M parameter, which controls for the maximum number of mismatches allowed between putative alleles [...] Correctly setting **M** requires a balance – set it too low and alleles from the same locus will not collapse, set it too high and paralogous or repetitive loci will incorrectly merge together."*
@@ -40,7 +40,7 @@ data for this exercise. *Inside* that directory, create two additional directori
    data and will start from the cleaned samples stage. Inside the opt directory, create four
    additional directories: ```M4```, ```M5```, ```M6```   and ```M7```. 
 
-   • Copy the dataset below in the ```samples``` directory: ```/nesi/project/nesi02659/source_data/denovo/oregon_stickleback.tar```
+   • Go to ```samples``` directory. Copy the dataset below in the ```samples``` directory: ```/nesi/project/nesi02659/source_data/denovo/oregon_stickleback.tar```
     
    • Extract it. The unarchived dataset contains 30 stickleback
      samples (Catchen, et al., [2013](https://onlinelibrary.wiley.com/doi/10.1111/mec.12330)), but we will use only 3 of them (`cs_1335.01`,  `pcr_1211.04`, `stl_1274.33`) in this first part of the exercise as we will run denovo_map.pl just a few times for optimisation. 
@@ -49,19 +49,18 @@ data for this exercise. *Inside* that directory, create two additional directori
 ```M```. `denovo_map.pl` will run ustacks, cstacks, and sstacks on the individuals in our
 study as well as the ```population``` program. The set of instructions below should help you build your command.
     
-   • Get back into the ```denovo``` folder
+   • Get back into the ```opt``` folder. (*Hint*:  Use```pwd``` if you don't know where you are anymore.
     
    • Load the ```Stacks``` module
     
    • Information on denovo_map.pl and its parameters can be found [online]( http://catchenlab.life.illinois.edu/stacks/comp/denovo_map.php)
     
-   • We want Stacks to only use the 3 individuals in our parameter optimization. To
-        specify this, create a file in the opt directory called ```opt_popmap.txt```, using an editor.
+   • We want Stacks to only use the 3 individuals in our parameter optimization (`cs_1335.01`,  `pcr_1211.04`, `stl_1274.33).       To specify this, create a file in the opt directory called ```opt_popmap.txt```, using an editor.
         The file should be formatted like [indicated in the manual](http://catchenlab.life.illinois.edu/stacks/manual/#popmap).        
          Note: do not include the extension ```.fa.gz``` in the sample name.
     
-   • Include samples in this file and specify that all individuals belong to one
-        single population (e.g. give them all the same population code). You will need to supply the population map to denovo_map.pl when you
+   • Include samples in this file and **specify that all individuals belong to one
+        single population** (e.g. give them all the same population code). You will need to supply this        ```opt_popmap.txt```population map to ddenovo_map.pl when you
         execute it for each parameter run.
     
    • To optimize for r80 loci you will need to tell denovo_map.pl to use the x parameter to filter for loci in 80% of the
@@ -89,7 +88,7 @@ study as well as the ```population``` program. The set of instructions below sho
     
     • Using this technique, how many loci were assembled for M5 to M7 once they finish running?
     
-    • Which iteration of M provided the highest number of r80 loci? (this would be the "hockey stick" plot if we were to plot these values).   
+    • Which iteration of M provided the highest number of r80 loci?   
 
 You should now be able to choose your optimised parameters according to the Paris et al. (2017) method! ("select those values which maximize the number of polymorphic loci found in 80% of the individuals in your study")
 
