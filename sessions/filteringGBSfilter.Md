@@ -160,7 +160,7 @@ Once GBS_SNP_filter completes, a large number of files will be present. The fina
 ***
 
 ### Comparing different parameter choices
-After GBS_SNP_filter completes, have a go tweaking the parameters and rerun it to see how it affects the number of SNPs retained. Keep line 1 (populations.snps.vcf), line 7 (#CHROM), and line 8 (blank line) the same, but play around with the other filters. How does this affect the number of SNPs left at the end? Are there any combinations that cause GBS_SNP_filter to fail? Why do you think that might be? The log can get a bit unwieldy after multiple runs, so it might be a good idea to note down the number of SNPs on your desktop.
+After GBS_SNP_filter completes, have a go tweaking the parameters and rerun it to see how it affects the number of SNPs retained. Keep line 1 (populations.snps.vcf), line 7 (#CHROM), and line 8 (blank line) the same, but play around with the other filters. How does this affect the number of SNPs left at the end? Are there any combinations that cause GBS_SNP_filter to fail? Why do you think that might be? The log can get a bit unwieldy after multiple runs, so it might be a good idea to note down the number of SNPs for each parameter combination on your desktop.
 
 **Some known ways to make GBS_SNP_filter fail**:
 * setting line 3 to extremely low values (i.e. allowing hardly any missing data for any individuals) - this causes the code to fail because no samples are left in the data set!
@@ -175,5 +175,5 @@ In addition, there are yet more potential filters you can use on your data, and 
 
 ---
 
-
+[Jump back to filtering SNPs intro](https://otagomohio.github.io/2019-06-11_GBS_EE/sessions/filteringSNPs.html)  
 [Jump back to main workshop schedule](https://otagomohio.github.io/2019-06-11_GBS_EE/)
