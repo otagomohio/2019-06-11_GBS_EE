@@ -1,5 +1,10 @@
 # Exercise I. Data preparation    
 
+**Developed by:** Julian Catchen, Nicolas Rochette
+
+**Adapted by:** Ludovic Dutoit
+
+
 ## Datasets
 
 • Dataset 1 (DS1) - This data set comprises just a small proportion of a lane of single-end
@@ -82,12 +87,14 @@ spreadsheet or word processor. However, we can examine the contents of the set o
     • Let's run ```fastqc``` on one of our fastq files. To do so, you will first need to find fastqc. This program is available on the          server but it is not *loaded*. If all the softwares installed on the server were accessible at the same time it would          be one happy mess. Therefore, we load modules for specific programs when we actually need to use them.
     
     • To ```find``` and ```load``` our first module
-    
+       
+       #To see all the modules:
+       module avail
                                        
-       #The below command can help find any module
+       #The below command can help find a module
        module spider fastqc
                      
-      The command should present you with some information about 
+      That command should present you with some information about 
       modules that have a closely matching name.
       You can then load your module of interest, in our case FastQC
                      
