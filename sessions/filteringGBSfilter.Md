@@ -65,9 +65,9 @@ Have a look at the ```vcf``` file  using ```less``` and try to understand its st
 sample_name  population_code
 ```
 
-Luckily we already created a popmap file recently! Copy it into the GBS_SNP_filter directly and name it popmap.txt (you can use ```mv``` or ```cp``` to rename it).
+Luckily we already created a popmap file recently! Copy it into the GBS_SNP_filter folder and name it popmap.txt (you can use ```mv``` or ```cp``` to rename it).
 
-No matter what directory you are currently located in, it is time to get into the ```GBS_SNP_filter``` folder.
+No matter what directory you are currently located in, it is now time to get into the ```GBS_SNP_filter``` folder.
 
 ```
 cd GBS_SNP_filter
