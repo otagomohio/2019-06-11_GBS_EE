@@ -14,7 +14,7 @@ First, make sure you are in your working directory: `/nesi/project/nesi02659/use
 git clone https://github.com/laninsky/GBS_SNP_filter.git
 ```
 
-List the content of your directory,  You should now see a folder called `GBS_SNP_filter` - this folder has all the scripts from the ```GBS_SNP_filter``` github repository.  
+List the contents of your directory. You should now see a folder called `GBS_SNP_filter` - this folder has all the scripts from the ```GBS_SNP_filter``` github repository.  
 
 ***
 
