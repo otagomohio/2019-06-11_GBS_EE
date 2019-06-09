@@ -224,7 +224,9 @@ Stacks generated to this directory. `cd` into your new structure directory.
 export PATH=/nesi/project/nesi02659/source_data:$PATH
 ```     
 11. Now Mahuika knows where to find the structure program, run it, saving the output into a new file.
-    ```structure > populations.structure.console```  
+```
+structure > populations.structure.console
+```  
 If the program immediately finishes, something has gone wrong! Do a `less` on populations.structure.console. Do you see `WARNING! Probable error in the input file.`? In our mainparams file it says that we have 1000 loci, but due to filters, it is possible that the populations module of Stacks actually output less than the 1000 loci we requested in whitelist.txt. In the output of populations.log in your stacks directory, how many variant sites remained after filtering? This is the number of loci actually contained in your structure file. You will need to adjust the number of loci in the mainparams file to
 match this exact Stacks output.
 
