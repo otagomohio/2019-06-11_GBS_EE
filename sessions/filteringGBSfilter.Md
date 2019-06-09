@@ -123,7 +123,7 @@ The script is going to go through the following steps:
 
 If you want more detail that's going on in each step, please check out the [detailed workflow](https://github.com/laninsky/GBS_SNP_filter#detailed-workflow).
 
-Note: The following message is safe to ignore:
+Note: The following message is [safe to ignore](https://github.com/laninsky/GBS_SNP_filter#troubleshooting):
 ```
 Warning message:
 Missing column names filled in: 'X8' [8] 
