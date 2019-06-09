@@ -234,9 +234,33 @@ our samples.
    • Similarly to what we saw above, you will need to specify the two restriction enzymes used to construct the library
         (```NlaIII``` and ```MluCI```), the directory of input files (the lane2 directory), the list of
         barcodes, the output directory (ddsamples) and specify that process_radtags
-        clean, discard, and rescue reads. Do not forget to specify the inline index and the fact that you are providing               paired-end reads.
+        clean, discard, and rescue reads. Do not forget to specify the inline index and the fact that you are providing               paired-end reads. Your command should now be ready but don't run it just yet!
+        
+        
+
+4,Running the commands directly on the screen is not common practice. You now are on ```ga-vl01``` which is a reserved amount of resources for this workshop and this iallows us to run pur command directly. On a day to day basis, you would be evolving on the *logi*n node (i.e. The place you reach when you login). All the resources are tucked away from the login node. You generally run your commands as jobs that are *sent* to this resources, not on the login node itself. We will use this process_radtags command as a perfect example to run our first job.
+
+   • copy an example jobfile into this directory. The example is at : '''/nesi/project/nesi02659/source_data/example_job.sh'''
+
+    • Open it with nano, have a look at what is there. As you can see, the first bit is parameters for the *job . system*            informing on who you are, which type of ressources you need and for how long
+
+     •  Once you are done, save it and run it using 
+
+       ```
+       sbatch examplejob.sh
+       ```
+
+     • You can check what is the status of your job using 
+
+       ```
+       squeue -u <yourusername>
+       ```
+
+     • Once this place is empty, your job ran and what would have printed to your screen is into *prcoessrads.out*
+
+       
    
-   • The process_radtags program will write a log file into the output directory.
+5. The process_radtags program has written a log file into the output directory.
         Examine the log and answer the following questions:
     
     -   What is the purpose of the four different output files for each set of barcodes?
