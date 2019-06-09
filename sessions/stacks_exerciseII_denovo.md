@@ -157,19 +157,18 @@ clear from from the biology, but more often a range of potential *K*-values must
 explored and evaluated using a variety of likelihood based approaches to decide upon
 the ultimate *K*. In the interest of time we won’t be exploring different values of *K* here,
 but this will be a key step for your own data sets. In addition, at the moment Structure
-will take a long time to run on the number of loci generated in a typical RAD data set because of the MCMC algorithms involved in
-the Bayesian computations. We therefore want to randomly choose a random subset of loci that are well
+will take a long time to run on the number of loci generated in a typical RAD data set because of the MCMC algorithms involved in the Bayesian computations. We therefore want to randomly choose a random subset of loci that are well
 represented in our three populations. Nonetheless, this random subset contains more
 than enough information to define population structure:
 
- The final stage of the denovo_map.pl pipeline is to run the populations program. We want to execute just populations, rather than the full denovo_map.pl pipeline, to specify filters that will give us only the most well represented loci. 
+ The final stage of the denovo_map.pl pipeline is to run the populations program. We want to execute just populations, rather than the full denovo_map.pl pipeline, to specify filters that will give us only the most well represented loci. [Populations](http://catchenlab.life.illinois.edu/stacks/comp/populations.php) is a very useful pice of software both for filtering and for outputting population genetics. It can work with non-stacks generated data too.
 
-   • Since we won't be able to use all loci for our quick downstream analysis today, we will run           [populations](http://catchenlab.life.illinois.edu/stacks/comp/populations.php) again, specifying that loci must be present in at least 80% of
+   • Since we won't be able to use all loci for our quick downstream analysis today, we will run [populations](http://catchenlab.life.illinois.edu/stacks/comp/populations.php) again, specifying that loci must be present in at least 80% of
         individuals in all three populations to cut down on the total number of loci. You will have to tell populations where to
         find the output of the Stacks pipeline (this should be in the stacks output
         directory). 
     
-   • Make sure to output a structure file! Output a ```.vcf``` file as well. We will be using a `.vcf` file later today [later](https://otagomohio.github.io/2019-06-11_GBS_EE/sessions/filteringSNPs.html).
+   • Make sure to output a structure file! Output a ```.vcf``` file as well. We will be combing back that `.vcf` file later today [later](https://otagomohio.github.io/2019-06-11_GBS_EE/sessions/filteringSNPs.html).
 
    • One final detail: Structure assumes that each SNP locus is independent, so we
         don’t want to output multiple SNPs from the same RAD locus, since they are not
