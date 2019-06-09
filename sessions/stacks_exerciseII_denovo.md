@@ -230,16 +230,14 @@ structure > populations.structure.console
 If the program immediately finishes, something has gone wrong! Do a `less` on populations.structure.console. Do you see `WARNING! Probable error in the input file.`? In our mainparams file it says that we have 1000 loci, but due to filters, it is possible that the populations module of Stacks actually output less than the 1000 loci we requested in whitelist.txt. In the output of populations.log in your stacks directory, how many variant sites remained after filtering? This is the number of loci actually contained in your structure file. You will need to adjust the number of loci in the mainparams file to
 match this exact Stacks output.
 
-12. You will need to download  [Structure with the graphical front end](https://web.stanford.edu/group/pritchardlab/structure_software/release_versions/v2.3.4/html/structure.html) and
-populations.structure.out [files from the cluster](https://support.nesi.org.nz/hc/en-gb/articles/360000578455-File-Transfer-with-SCP). You can then load them intothe graphical interface for Structure on your local computer. Select the ```File``` menu
+12. You will need to download  [Structure with the graphical front end](https://web.stanford.edu/group/pritchardlab/structure_software/release_versions/v2.3.4/html/structure.html) and use `scp` to download the populations.structure.out_f [file from the cluster](https://support.nesi.org.nz/hc/en-gb/articles/360000578455-File-Transfer-with-SCP). You can then load this file into the graphical interface for Structure on your local computer. Select the ```File``` menu
 and then ```Load structure results``` to load the Structure output. Choose the ```Barplot```
 menu and then ```Show```.
     
     • Are the three Oregon threespine stickleback populations related to one another? How
         can you tell?
         
-
-Congrats, you just finished our tutorial for denovo RAD-Seq. If you have plenty of times, you could try different parameters for populations or familiarise yourself with the idea of a reference based approach: [ref_map.pl](http://catchenlab.life.illinois.edu/stacks/comp/ref_map.php). You could also play with your own data. Finally, you could use the ```vcf``` you generated into the ```stacks``` folder. You could gave a look at the package ```adegenet```. [Look at those visualisations](http://adegenet.r-forge.r-project.org/files/tutorial-basics.pdf) if you are comfortable with ```R```
+Congrats, you just finished our tutorial for denovo RAD-Seq. If you have plenty of time, you could try different parameters for the populations module of Stacks or familiarise yourself with the idea of a reference based approach: [ref_map.pl](http://catchenlab.life.illinois.edu/stacks/comp/ref_map.php). You could also play with your own data. Finally, you could use the ```vcf``` you generated into the ```stacks``` folder in the R package ```adegenet``` to create [other visualisations](http://adegenet.r-forge.r-project.org/files/tutorial-basics.pdf) if you are comfortable with ```R```
 
 ***
 
