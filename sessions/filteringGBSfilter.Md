@@ -58,7 +58,7 @@ Let's copy that into the GBS_SNP_filter folder:
 cp /nesi/project/nesi02659/source_data/filteringsnps/populations.snps.vcf GBS_SNP_filter
 ```
 
-Have a look at the ```vcf``` file  using ```less``` and try to undertand its structure. You can use [this](https://en.wikipedia.org/wiki/Variant_Call_Format) to help. VCF is by far the most common way to store variability information in population genetics, so take a bit of time to familiarise yourself with it.
+Have a look at the ```vcf``` file  using ```less``` and try to understand its structure. You can use [this](https://en.wikipedia.org/wiki/Variant_Call_Format) to help. VCF is by far the most common way to store variant calls in population genetics, so take a bit of time to familiarise yourself with it.
 
 **popmap.txt file**: The next thing we need is a ```popmap.txt``` file with one individual per line: 
 ```
