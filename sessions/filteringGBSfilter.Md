@@ -33,11 +33,11 @@ The PLINK version on Mahuika has some conflicts with the other programs we are u
 echo $PATH
 ```
 
-When you run any piece of software, the computer looks into all these places mentionned in the $PATH. Even the '''ls''' command that you just ran is somewhere on your computer. You can find it by typing:
+When you run any piece of software, the computer looks into all the places mentioned in your $PATH. Even the `ls` command that you just ran is somewhere on your computer. You can find it by typing:
 
 ``` which ls ```
 
-The ```plink``` executable is located in the `source_data` folder, so we are adding this location on to the beginning of our $PATH):
+The ```plink``` executable is located in the `source_data` folder, so we are adding this location on to the beginning of our $PATH:
 
 ```
 export PATH=/nesi/project/nesi02659/source_data:$PATH
@@ -60,19 +60,21 @@ cp /nesi/project/nesi02659/source_data/filteringsnps/populations.snps.vcf GBS_SN
 
 Have a look at the ```vcf``` file  using ```less``` and try to undertand its structure. You can use [this](https://en.wikipedia.org/wiki/Variant_Call_Format) to help. VCF is by far the most common way to store variability information in population genetics, so take a bit of time to familiarise yourself with it.
 
-**popmap.txt file**: The next thing we need is a ```popmap.txt``` file with one individual per line. Luckily we created one recently! copy it into the GBS_SNP_filter directly and name it popmap.txt (you can use ```mv``` or ```cp``` to rename it.
+**popmap.txt file**: The next thing we need is a ```popmap.txt``` file with one individual per line: 
 ```
-sample  popcode
+sample_name  population_code
 ```
 
-Wherever you have been going, it is time to get into the ```GBS_SNP_filter``` folder
+Luckily we created one recently! Copy it into the GBS_SNP_filter directly and name it popmap.txt (you can use ```mv``` or ```cp``` to rename it).
+
+No matter what directory you are currently located in, it is time to get into the ```GBS_SNP_filter``` folder.
 
 ```
 cd GBS_SNP_filter
 ```
 
 
-**GBS_SNP_filter.txt**: We have now put our ```vcf``` and our ```popmap``` file in the GBS_SNP_filter folder. The final file we need is ```GBS_SNP_filter.txt```. This eight line long file contains the options that we want to use to filter our SNPs. The [GBS_SNP_filter](https://github.com/laninsky/GBS_SNP_filter#gbs_snp_filtertxt) repository has a lot of background on some of the options, but briefly the lines should be as follow:
+**GBS_SNP_filter.txt**: We have now put our ```vcf``` and our ```popmap``` file into the GBS_SNP_filter folder. The final file we need is ```GBS_SNP_filter.txt```. This eight line long file contains the options that we want to use to filter our SNPs. The [GBS_SNP_filter](https://github.com/laninsky/GBS_SNP_filter#gbs_snp_filtertxt) repository has a lot of background on some of the options, but briefly the lines should be as follows:
 1. the name of the vcf file (in our case, populations.snps.vcf)
 2. the SNP missingness threshold (e.g. 0.85 = SNP needs to be found in 85% or more of samples) 
 3. the sample missingness threshold (e.g. 0.9 = a sample can have up to 90% missing data before it is removed from the dataset)
@@ -101,7 +103,7 @@ We can create this file by `nano GBS_SNP_filter.txt` (don't forget the blank lin
 Alright, we are pretty much ready to run GBS_SNP_filter.txt! Our final checklist:
 - [ ] We've used `git clone` to clone the GBS_SNP_filter github repository
 - [ ] We've loaded the modules we need (VCFtools and R)
-- [ ] We've edite the $PATH variable so Mahuika can find PLINK
+- [ ] We've edited the $PATH variable so Mahuika can find PLINK
 - [ ] We've copied the vcf file into the GBS_SNP_filter folder
 - [ ] We've created a popmap.txt and GBS_SNP_filter.txt file and placed them in the GBS_SNP_filter folder
 - [ ] We are inside the GBS_SNP_filter folder
