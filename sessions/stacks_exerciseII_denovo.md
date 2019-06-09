@@ -104,7 +104,9 @@ the background of this study, see Catchen, et al. 2013.
 3. In your ```./working/denovo``` workspace, create a directory called stacks to contain
 the assembled data for this exercise.
 4. Run Stacks’ denovo_map.pl pipeline program according to the following set of instructions:
-
+    
+    • Get back in the ```working/denovo``` folder.
+    
     • As for the previous exercise, information on denovo_map.pl and its parameters can be found [online](http://catchenlab.life.illinois.edu/stacks/comp/denovo_map.php)
     
     •We want Stacks to understand which individuals in our study belong to which
@@ -203,7 +205,7 @@ single SNP is output from each RAD locus. Finally, you will need to again specif
 population map that you generated above to populations so that this information is
 passed into the Structure output file. You might also want to output a vcf file: this format is handy for all kind of population genetics applications.
 
-   •  We've run commands to generate structure and vcf files several times, but how many structure and vcf files are there in the stacks directory? If you wanted to save several different vcf and structure files generated using different `populations` options, what would you have to do?
+   •  We've run commands to generate the structure file several times, but how many structure files are there in the stacks directory? If you wanted to save several different vcf and structure files generated using different `populations` options, what would you have to do?
 
 9. Create a new directory called ```structure``` within the denovo folder and copy the Structure output file that
 Stacks generated to this directory. `cd` into your new structure directory.
