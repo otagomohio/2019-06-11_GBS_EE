@@ -61,7 +61,7 @@ study as well as the ```population``` program. The set of instructions below sho
          Note: do not include the extension ```.fa.gz``` in the sample name.
     
    • Include samples in this file and specify that all individuals belong to one
-        single population. You will need to supply the population map to denovo_map.pl when you
+        single population (e.g. give them all the same population code). You will need to supply the population map to denovo_map.pl when you
         execute it for each parameter run.
     
    • To optimize for r80 loci you will need to tell denovo_map.pl to use the x parameter to filter for loci in 80% of the
@@ -85,7 +85,7 @@ study as well as the ```population``` program. The set of instructions below sho
     
     • How many SNPs in total? (*Hint:* count the lines)
     
-    • How many loci in total? (*Hint:* using pipes, combine `cat`, the file name of interest, select the first column that contains the locus IDs using `cut -f 1`, `sort`, `uniq`, and `wc -l`)
+    • How many loci in total? (*Hint:* using pipes, combine `cat`, the file name of interest, select the first column that contains the locus IDs using `cut -f 1`, and `wc -l`)
     
     • Using this technique, how many loci were assembled for M5 to M7 once they finish running?
     
@@ -141,8 +141,6 @@ the assembled data for this exercise.
     
     • What is the mean value of nucleotide diversity (π) and FIS for each of the three
         populations? [HINT: The less -S command may help you view these files easily by avoiding the wrapping]
-
-
 
 ## Part 3: Populations genetics analyses from Stacks
 
@@ -226,10 +224,9 @@ Stacks generated to this directory. `cd` into your new structure directory.
 export PATH=/nesi/project/nesi02659/source_data:$PATH
 ```     
 11. Now Mahuika knows where to find the structure program, run it, saving the output into a new file.
-    ```structure > populations.structure.console```
-A common STRUCTURE error happens when your population output contains less
-than 1000 loci. You may need to adjust the number of loci in the mainparams file to
-match your exact Stacks output.
+    ```structure > populations.structure.console```  
+If the program immediately finishes, something has gone wrong! Do a `less` on populations.structure.console. Do you see `WARNING! Probable error in the input file.`? In our mainparams file it says that we have 1000 loci, but due to filters, it is possible that the populations module of Stacks actually output less than the 1000 loci we requested in whitelist.txt. In the output of populations.log in your stacks directory, how many variant sites remained after filtering? This is the number of loci actually contained in your structure file. You will need to adjust the number of loci in the mainparams file to
+match this exact Stacks output.
 
 12. You will need to download  [Structure with the graphical front end](https://web.stanford.edu/group/pritchardlab/structure_software/release_versions/v2.3.4/html/structure.html) and
 populations.structure.out [files from the cluster](https://support.nesi.org.nz/hc/en-gb/articles/360000578455-File-Transfer-with-SCP). You can then load them intothe graphical interface for Structure on your local computer. Select the ```File``` menu
