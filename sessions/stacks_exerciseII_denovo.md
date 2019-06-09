@@ -1,5 +1,8 @@
 # Exercise II: de novo assembly of RAD tags without a genome
 
+**Developed by:** Julian Catchen, Nicolas Rochette
+**Adapted by:** Ludovic Dutoit
+
 ## Part 1: Running Stacks denovo
 
 In this first exercise, we will be working on a subset of data from threespine
