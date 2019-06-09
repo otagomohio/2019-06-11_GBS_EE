@@ -123,7 +123,7 @@ The script is going to go through the following steps:
 
 If you want more detail that's going on in each step, please check out the [detailed workflow](https://github.com/laninsky/GBS_SNP_filter#detailed-workflow).
 
-Note: The following message is [safe to ignore](https://github.com/laninsky/GBS_SNP_filter#troubleshooting):
+Note: If you get the following message, it is [safe to ignore](https://github.com/laninsky/GBS_SNP_filter#troubleshooting):
 ```
 Warning message:
 Missing column names filled in: 'X8' [8] 
@@ -153,6 +153,9 @@ top
 Can you see your user name and a process using a good whack of %CPU? If so, cool!
 
 Once GBS_SNP_filter completes, a large number of files will be present. The final output vcf file will have ".ld.vcf" as a suffix, and the rest of the files are described [here](https://github.com/laninsky/GBS_SNP_filter#detailed-workflow). The log file will detail how many SNPs were filtered out at each step.
+* How many SNPs were present in the final data set? 
+* How many were filtered out at each step? 
+* If some of the filters did not remove any SNPs, why do you think this might be?  
 
 ***
 
