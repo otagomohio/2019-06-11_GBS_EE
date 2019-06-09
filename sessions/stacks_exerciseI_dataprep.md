@@ -124,13 +124,13 @@ spreadsheet or word processor. However, we can examine the contents of the set o
       alignments to a reference genome. However, low quality data can
       affect downstream analysis for *de novo* and reference-based approaches, producing false positives, such as errant SNP predictions.
 
-4. We will use the Stacks’s program **process_radtags** to remove low quality sequences (also known as cleaning data) and to demultiplex our
+4.We will use the Stacks’s program **process_radtags** to remove low quality sequences (also known as cleaning data) and to demultiplex our
 samples. Take advantage of the Stacks [manual](http://catchenlab.life.illinois.edu/stacks/manual/) as well as the specific [manual page for
 process_radtags](http://catchenlab.life.illinois.edu/stacks/manual/#procrad) on the Stacks website to find information         and examples. Do not run the commands you figure out just yet, but first follow through the points below:
     
-   • Get back into your ```dataprep``` folder
+  • Get back into your ```dataprep``` folder
     
-   • It is time to load the ```stacks``` module to be able to access the ```process_radtags``` command. Find it, load it.
+  • It is time to load the ```stacks``` module to be able to access the ```process_radtags``` command. Find it, load it.
           
    • You will need to specify the set of barcodes used in the construction of the RAD library.
         Remember, each P1 adaptor in RAD has a particular DNA sequence (an inline
@@ -238,25 +238,25 @@ our samples.
         
         
 
-4,Running the commands directly on the screen is not common practice. You now are on ```ga-vl01``` which is a reserved amount of resources for this workshop and this iallows us to run pur command directly. On a day to day basis, you would be evolving on the *logi*n node (i.e. The place you reach when you login). All the resources are tucked away from the login node. You generally run your commands as jobs that are *sent* to this resources, not on the login node itself. We will use this process_radtags command as a perfect example to run our first job.
+4.Running the commands directly on the screen is not common practice. You now are on ```ga-vl01``` which is a reserved amount of resources for this workshop and this iallows us to run pur command directly. On a day to day basis, you would be evolving on the *logi*n node (i.e. The place you reach when you login). All the resources are tucked away from the login node. You generally run your commands as jobs that are *sent* to this resources, not on the login node itself. We will use this process_radtags command as a perfect example to run our first job.
 
    • copy an example jobfile into this directory. The example is at : '''/nesi/project/nesi02659/source_data/example_job.sh'''
 
-    • Open it with nano, have a look at what is there. As you can see, the first bit is parameters for the *job . system*            informing on who you are, which type of ressources you need and for how long
+   • Open it with nano, have a look at what is there. As you can see, the first bit is parameters for the *job . system*            informing on who you are, which type of ressources you need and for how long
 
-     •  Once you are done, save it and run it using 
+   •  Once you are done, save it and run it using 
 
        ```
        sbatch examplejob.sh
        ```
 
-     • You can check what is the status of your job using 
+   • You can check what is the status of your job using 
 
        ```
        squeue -u <yourusername>
        ```
 
-     • Once this place is empty, your job ran and what would have printed to your screen is into *prcoessrads.out*
+   • Once this place is empty, your job ran and what would have printed to your screen is into *prcoessrads.out*. You should also have recieved an email!
 
        
    
