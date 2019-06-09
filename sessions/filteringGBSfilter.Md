@@ -50,13 +50,15 @@ You will now be able to access ```plink```
 ***
 
 ### Getting together the files we need to run GBS_SNP_filter
-**vcf file**: First up, we need the vcf file we want to filter! For this, we will use the `populations.snps.vcf` file we created for the stickleback data in our [2nd STACKS exercise](https://otagomohio.github.io/2019-06-11_GBS_EE/sessions/stacks_exerciseII_denovo.html). Re
+**vcf file**: First up, we need the vcf file we want to filter! For this, we will use the `populations.snps.vcf` file we created for the stickleback data in our [2nd STACKS exercise](https://otagomohio.github.io/2019-06-11_GBS_EE/sessions/stacks_exerciseII_denovo.html).
 
 Let's copy that into the GBS_SNP_filter folder:
 
 ```
 cp /nesi/project/nesi02659/source_data/filteringsnps/populations.snps.vcf GBS_SNP_filter
 ```
+
+Have a look at the **.vcf**(i.e.  ile using ```less``` and try to undertand its structure. You can use [this](https://en.wikipedia.org/wiki/Variant_Call_Format) to help. VCF is by far the most common way to store variability information in population genetics, so take a bit of time to familiarise yourself with it.
 
 **popmap.txt file**: The next thing we need is a ```popmap.txt``` file with one individual per line. Luckily we created one recently! copy it into the GBS_SNP_filter directly and name it popmap.txt (you can use ```mv``` or ```cp``` to rename it.
 ```
