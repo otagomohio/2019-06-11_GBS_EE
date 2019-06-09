@@ -88,7 +88,7 @@ spreadsheet or word processor. However, we can examine the contents of the set o
     
     • To ```find``` and ```load``` our first module
        
-       #To see all the modules:
+       #To see all the modules
        module avail
                                        
        #The below command can help find a module
