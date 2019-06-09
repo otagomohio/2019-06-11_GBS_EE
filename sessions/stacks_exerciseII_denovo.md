@@ -223,18 +223,16 @@ Stacks generated to this directory. `cd` into your new structure directory.
             `/nesi/project/nesi02659/source_data/denovo/extraparams`  
    • Copy them into your structure directory as well.  
      
-10. So far, when we've gone to run programs, we've been able to use `module spider` to figure out the program name, and then `module load program_name` to get access to the program and run it. However, structure is not an available module on Mahuika. Instead, we've done a local installation of the progam into /nesi/project/nesi02659/source_data. For Mahuika to be able to find the program, we need to run the following code (your $PATH is where the computer looks for programs to run, and as the structure executable is located in the source_data folder, we are tacking this location on to the beginning of our $PATH):
-```
-export PATH=/nesi/project/nesi02659/source_data:$PATH
+10. So far, when we've gone to run programs, we've been able to use `module spider` to figure out the program name, and then `module load program_name` to get access to the program and run it. However, structure is not an available module on Mahuika. Instead, we've done a local installation of the progam into /```nesi/project/nesi02659/source_data/structure```.  Run Structure:
+
 ```     
-11. Now Mahuika knows where to find the structure program, run it, saving the output into a new file.
-```
-structure > populations.structure.console
+ /nesi/project/nesi02659/source_data/structure
 ```  
-If the program immediately finishes, something has gone wrong! Do a `less` on populations.structure.console. Do you see `WARNING! Probable error in the input file.`? In our mainparams file it says that we have 1000 loci, but due to filters, it is possible that the populations module of Stacks actually output less than the 1000 loci we requested in whitelist.txt. In the output of populations.log in your stacks directory, how many variant sites remained after filtering? This is the number of loci actually contained in your structure file. You will need to adjust the number of loci in the mainparams file to
+
+The program should ive you some information as it runs. If the program immediately finishes, something has gone wrong!  Do a `less` on populations.structure.console. Do you see `WARNING! Probable error in the input file.`? In our mainparams file it says that we have 1000 loci, but due to filters, it is possible that the populations module of Stacks actually output less than the 1000 loci we requested in ```whitelist.txt```. In the output of ```populations.log``` in your stacks directory, how many variant sites remained after filtering? This is the number of loci actually contained in your structure file. You will need to adjust the number of loci in the mainparams file to
 match this exact Stacks output.
 
-12. You will need to download  [Structure with the graphical front end](https://web.stanford.edu/group/pritchardlab/structure_software/release_versions/v2.3.4/html/structure.html) and use `scp` to download the populations.structure.out_f [file from the cluster](https://support.nesi.org.nz/hc/en-gb/articles/360000578455-File-Transfer-with-SCP). You can then load this file into the graphical interface for Structure on your local computer. Select the ```File``` menu
+11. You will need to download  [Structure with the graphical front end](https://web.stanford.edu/group/pritchardlab/structure_software/release_versions/v2.3.4/html/structure.html) and use `scp` to download the populations.structure.out_f [file from the cluster](https://support.nesi.org.nz/hc/en-gb/articles/360000578455-File-Transfer-with-SCP). You can then load this file into the graphical interface for Structure on your local computer. Select the ```File``` menu
 and then ```Load structure results``` to load the Structure output. Choose the ```Barplot```
 menu and then ```Show```.
     
