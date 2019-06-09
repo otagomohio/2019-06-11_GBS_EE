@@ -19,7 +19,7 @@ List the content of your directory,  You should now see a folder called `GBS_SNP
 ***
 
 ### Loading required programs
-[GBS_SNP_filter](https://github.com/laninsky/GBS_SNP_filter) requires some dependencies (other programs it needs to run), namely [VCFtools](https://vcftools.github.io/index.html), [PLINK](https://www.cog-genomics.org/plink/2.0/), and [R](https://www.r-project.org/). Luckily, a working version of VCFtools and R are installed on Mahuika already! We load them using the `module load` command:
+[GBS_SNP_filter](https://github.com/laninsky/GBS_SNP_filter) requires some dependencies (other programs it needs to run), namely [VCFtools](http://vcftools.sourceforge.net/man_latest.html), [PLINK](https://www.cog-genomics.org/plink/2.0/), and [R](https://www.r-project.org/). Luckily, a working version of VCFtools and R are installed on Mahuika already! We load them using the `module load` command:
 ```
 module load VCFtools
 module load R
@@ -58,7 +58,7 @@ Let's copy that into the GBS_SNP_filter folder:
 cp /nesi/project/nesi02659/source_data/filteringsnps/populations.snps.vcf GBS_SNP_filter
 ```
 
-Have a look at the **.vcf**(i.e.  ile using ```less``` and try to undertand its structure. You can use [this](https://en.wikipedia.org/wiki/Variant_Call_Format) to help. VCF is by far the most common way to store variability information in population genetics, so take a bit of time to familiarise yourself with it.
+Have a look at the ```vcf``` file  using ```less``` and try to undertand its structure. You can use [this](https://en.wikipedia.org/wiki/Variant_Call_Format) to help. VCF is by far the most common way to store variability information in population genetics, so take a bit of time to familiarise yourself with it.
 
 **popmap.txt file**: The next thing we need is a ```popmap.txt``` file with one individual per line. Luckily we created one recently! copy it into the GBS_SNP_filter directly and name it popmap.txt (you can use ```mv``` or ```cp``` to rename it.
 ```
@@ -120,6 +120,12 @@ The script is going to go through the following steps:
 * Filtering out SNPs that are in linkage across too many populations 
 
 If you want more detail that's going on in each step, please check out the [detailed workflow](https://github.com/laninsky/GBS_SNP_filter#detailed-workflow).
+
+Note: The following message is safe to ignore:
+```
+Warning message:
+Missing column names filled in: 'X8' [8] 
+```
 
 ***
 
