@@ -30,7 +30,7 @@ Time | Topic | Location |
 13:45-15:00 | [Introduction to the command line, part 1](sessions/Introcommandline.md) | [Seminar Room, Marples Building](https://goo.gl/maps/62XWtwgqsKxKir4V9) |
 15:00-15:30 | *Break* | |
 15:30-17:00 | [Introduction to the command line, part 2](sessions/Introcommandline.md) | [Seminar Room, Marples Building](https://goo.gl/maps/62XWtwgqsKxKir4V9) |
-17:00- | *End of day 1 - Social* | |
+17:00- | *End of day 1 - Social* | [The captain Cook hotel](https://goo.gl/maps/NjKa1BaWLUEhYv93A)|
  | | |
 **Day 2** | **June 12 2019** | |
 09:00-10:30 | [From raw reads to individual samples](sessions/stacks.md)  | [Seminar Room, Marples Building](https://goo.gl/maps/62XWtwgqsKxKir4V9) |
