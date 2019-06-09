@@ -154,7 +154,7 @@ Can you see your user name and a process using a good whack of %CPU? If so, cool
 
 Once GBS_SNP_filter completes, a large number of files will be present. The final output vcf file will have ".ld.vcf" as a suffix, and the rest of the files are described [here](https://github.com/laninsky/GBS_SNP_filter#detailed-workflow). The log file will detail how many SNPs were filtered out at each step.
 * How many SNPs were present in the final data set? 
-* How many were filtered out at each step? 
+* How many SNPs were filtered out at each step? 
 * If some of the filters did not remove any SNPs, why do you think this might be?  
 
 ***
