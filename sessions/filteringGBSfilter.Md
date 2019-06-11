@@ -8,7 +8,7 @@
 ### Getting the scripts for GBS_SNP_filter
 [GBS_SNP_filter](https://github.com/laninsky/GBS_SNP_filter) is a github repository. To get it on to the computer we will use `git clone`. 
 
-First, make sure you are in your working directory: `/nesi/project/nesi02659/users/<yourusername>`. To clone the folder as it is on github, use:
+First, make sure you are in your working directory: `/nesi/nobackup/nesi02659/users/<yourusername>`. To clone the folder as it is on github, use:
 
 ```
 git clone https://github.com/laninsky/GBS_SNP_filter.git
@@ -40,7 +40,7 @@ When you run any piece of software, the computer looks into all the places menti
 The ```plink``` executable is located in the `source_data` folder, so we are adding this location on to the beginning of our $PATH:
 
 ```
-export PATH=/nesi/project/nesi02659/source_data:$PATH
+export PATH=/nesi/nobackup/nesi02659/source_data:$PATH
 ```
 
 You will now be able to access ```plink```
@@ -138,7 +138,7 @@ ssh -Y ga-vl01
 ```
 After heading to our GBS_SNP_filter folder:
 ```
-cd /nesi/project/nesi02659/users/<yourusername>/GBS_SNP_filter
+cd /nesi/nobackup/nesi02659/users/<yourusername>/GBS_SNP_filter
 ```
 We can peek into our log file by:
 ```
