@@ -8,11 +8,11 @@
 ### Plan
 
 Throughout the day, we will work through the following plan:  
-
-•   Mini-Lecture 1: What is RAD?  
-•   Mini-Lecture 2: Phred scores and the *process_radtags* cleaning algorithm.  
+•   [A small bash fior genomics exercise](bash_genomics.md)
+•   Mini-Lecture Part 1A: What is RAD?  
+•   Mini-Lecture Part 1B: Phred scores and the *process_radtags* cleaning algorithm.  
 •   [Exercise I](stacks_exerciseI_dataprep.md): Data preparation.  
-•   Mini-Lecture 3: Stacks, primary/secondary reads, and parameters.  
+•   Mini-Lecture 2: Stacks, primary/secondary reads, and parameters.  
 •   [Exercise II](stacks_exerciseII_denovo.md): *de novo* assembly of RAD tags without a genome  
 •   [Further filtering](filteringSNPs.md): further filtering of the SNPs we obtain from the Stacks pipeline.  
 
