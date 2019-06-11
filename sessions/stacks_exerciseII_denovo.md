@@ -36,7 +36,7 @@ et al. (2017)](https://besjournals.onlinelibrary.wiley.com/doi/epdf/10.1111/2041
 This approach is described more in [Paris et al. (2017)](https://besjournals.onlinelibrary.wiley.com/doi/epdf/10.1111/2041-210X.12775):
 *"After putative alleles are formed, stacks performs a search to match alleles together into putative loci. This search is governed by the M parameter, which controls for the maximum number of mismatches allowed between putative alleles [...] Correctly setting **M** requires a balance – set it too low and alleles from the same locus will not collapse, set it too high and paralogous or repetitive loci will incorrectly merge together."*
 
-1. Go to your ```/nesi/project/nesi02659/<yourusername>/working``` workspace, create a directory called ```denovo``` to contain all the
+1. Go to your ```/nesi/nobackup/nesi02659/<yourusername>/working``` workspace, create a directory called ```denovo``` to contain all the
 data for this exercise. *Inside* that directory, create two additional directories:
 ```samples```, and ```opt```. 
 
@@ -44,7 +44,7 @@ data for this exercise. *Inside* that directory, create two additional directori
    data and will start from the cleaned samples stage. Inside the opt directory, create four
    additional directories: ```M4```, ```M5```, ```M6```   and ```M7```. 
 
-   • Go to ```samples``` directory. Copy the dataset below in the ```samples``` directory: ```/nesi/project/nesi02659/source_data/denovo/oregon_stickleback.tar```
+   • Go to ```samples``` directory. Copy the dataset below in the ```samples``` directory: ```/nesi/nobackup/nobackup/source_data/denovo/oregon_stickleback.tar```
     
    • Extract it. The unarchived dataset contains 30 stickleback
      samples (Catchen, et al., [2013](https://onlinelibrary.wiley.com/doi/10.1111/mec.12330)), but we will use only 3 of them (`cs_1335.01`,  `pcr_1211.04`, `stl_1274.33`) in this first part of the exercise as we will run denovo_map.pl just a few times for optimisation. 
@@ -220,15 +220,15 @@ Stacks generated to this directory. `cd` into your new structure directory.
         “#”).  
    • The parameters to run Structure (with value of *K*=3) have already been
         prepared, you can find them here:
-            `/nesi/project/nesi02659/source_data/denovo/mainparams`
+            `/nesi/nobackup/nesi02659/source_data/denovo/mainparams`
         and
-            `/nesi/project/nesi02659/source_data/denovo/extraparams`  
+            `/nesi/nobackup/nesi02659/source_data/denovo/extraparams`  
    • Copy them into your structure directory as well.  
      
-10. So far, when we've gone to run programs, we've been able to use `module spider` to figure out the program name, and then `module load program_name` to get access to the program and run it. However, structure is not an available module on Mahuika. Instead, we've done a local installation of the progam into /```nesi/project/nesi02659/source_data/structure```.  Run Structure:
+10. So far, when we've gone to run programs, we've been able to use `module spider` to figure out the program name, and then `module load program_name` to get access to the program and run it. However, structure is not an available module on Mahuika. Instead, we've done a local installation of the progam into /```nesi/nobackup/nesi02659/source_data/structure```.  Run Structure:
 
 ```     
- /nesi/project/nesi02659/source_data/structure
+ /nesi/nobackup/nesi02659/source_data/structure
 ```  
 
 The program should ive you some information as it runs. If the program immediately finishes, something has gone wrong!  Do a `less` on populations.structure.console. Do you see `WARNING! Probable error in the input file.`? In our mainparams file it says that we have 1000 loci, but due to filters, it is possible that the populations module of Stacks actually output less than the 1000 loci we requested in ```whitelist.txt```. In the output of ```populations.log``` in your stacks directory, how many variant sites remained after filtering? This is the number of loci actually contained in your structure file. You will need to adjust the number of loci in the mainparams file to
