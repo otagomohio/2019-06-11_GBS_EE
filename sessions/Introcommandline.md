@@ -15,7 +15,7 @@ ssh -Y ga-vl01
 Once you have jumped on to `ga-vl01` using the commands above, get into the space created for you for this workshop by using the `cd` (change directory) command (don't worry - we are going to go through commands like `cd` in more detail in a sec!):
 
 ```
-cd /nesi/project/nesi02659/users/<yourusername>
+cd /nesi/nobackup/nesi02659/users/<yourusername>
 ```
 
 NeSI has a ton of different projects for a bunch of researchers around the motu (country). The project we are using for this workshop is `nesi02659`. You might notice `nesi02659` is in the "path" shown in the `cd` command above. We are going to cover paths to files and folders in just a minute!
