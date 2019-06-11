@@ -246,15 +246,15 @@ our samples.
 
    •  Once you are done, save it and run it using 
 
-       ```
-       sbatch examplejob.sh
-       ```
+```
+sbatch examplejob.sh
+```
 
    • You can check what is the status of your job using 
 
-       ```
-       squeue -u <yourusername>
-       ```
+```
+squeue -u <yourusername>
+```
 
    • Once this place is empty, your job ran and what would have printed to your screen is into *prcoessrads.out*. You should also have recieved an email!
 
