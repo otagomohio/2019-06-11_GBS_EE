@@ -34,9 +34,9 @@ Before doing anything, open a text file in your favorite plain text editor e.g. 
     
     • For each exercise, you will set up a directory structure on the remote server that will hold your data and the different          steps of your analysis. We will start by making the directory ```working``` in your working space, so let's `cd` (change directory) to your working location:
 
-       cd /nesi/project/nesi02659/users/<yourusername>
+       cd /nesi/nobackup/nesi02659/users/<yourusername>
 
-    • Once there, create the directory: ```/nesi/project/nesi02659/users/<yourusername>/working``` (by using `mkdir working`) and then `cd` into `working`
+    • Once there, create the directory: ```/nesi/nobackup/nesi02659/users/<yourusername>/working``` (by using `mkdir working`) and then `cd` into `working`
         so we can create more subdirectories to hold our analyses. Be careful that you are reading and writing files to the appropriate directories within
         your hierarchy. You’ll be making many directories, so stay organized!
     
@@ -64,7 +64,7 @@ Before doing anything, open a text file in your favorite plain text editor e.g. 
     ```
     
     • Copy the data set 1 (DS1) to your ```lane1``` directory. The data set is in the file
-       `/nesi/project/nesi02659/source_data/clean/lane1.tar` 
+       `/nesi/nobackup/nesi02659/source_data/clean/lane1.tar` 
        (*hint*: `cp /path/to/what/you/want/to/copy /destination/you/want/it/to/go`)          
     
     • `cd` to your ```lane1``` folder to extract/unzip the content of this ```tar``` archive. We realise that we have not told you how         to do so! But a quick look to a friendly search engine will show you how easy it is to find this kind of information           on basic bash commands (your instructors *still* spend a lot of time doing this themselves!).     
@@ -153,7 +153,7 @@ process_radtags](http://catchenlab.life.illinois.edu/stacks/manual/#procrad) on 
         AAACGG       indv_01
         AACGTT       indv_02
     
-   • Append the remaining barcodes for this lane of samples from `/nesi/project/nesi02659/source_data/clean/lane1_barcodes.txt` (*Hint:* `cat` and `>>`)
+   • Append the remaining barcodes for this lane of samples from `/nesi/nobackup/nesi02659/source_data/clean/lane1_barcodes.txt` (*Hint:* `cat` and `>>`)
     
    • Based on the barcode file, how many samples were multiplexed together in this
         RAD library? (*Hint:* count the lines.)
@@ -189,7 +189,7 @@ pairs of barcodes.
         exercise and create the directory ```ddsamples``` to contain the cleaned output.
     
    •  Copy the dataset 2 (DS2):
-        `/nesi/project/nesi02659/source_data/clean/lane2.tar`
+        `/nesi/nobackup/nesi02659/source_data/clean/lane2.tar`
         into the ```lane2``` directory.
         
    •  Extract the lane2.tar file
@@ -226,7 +226,7 @@ our samples.
             CATAT    ATCACG indv_02
            
    • Append the remaining barcodes for this lane of samples from the file:
-        ```/nesi/project/nesi02659/source_data/clean/lane2_barcodes.txt```
+        ```/nesi/nobackup/nesi02659/source_data/clean/lane2_barcodes.txt```
         to your barcodes file in your dataprep directory 
    
    • How many samples were multiplexed together in this RAD library? (*Hint:* count the lines.) 
@@ -240,7 +240,7 @@ our samples.
 
 4.Running the commands directly on the screen is not common practice. You now are on ```ga-vl01``` which is a reserved amount of resources for this workshop and this iallows us to run pur command directly. On a day to day basis, you would be evolving on the *logi*n node (i.e. The place you reach when you login). All the [resources](https://support.nesi.org.nz/hc/en-gb/articles/360000204076-Mahuika-Slurm-Partitions) are tucked away from the login node. You generally run your commands as jobs that are *sent* to this [resources](https://support.nesi.org.nz/hc/en-gb/articles/360000204076-Mahuika-Slurm-Partitions), not on the login node itself. We will use this process_radtags command as a perfect example to run our first job.
 
-   • copy an example jobfile into this directory. The example is at : '''/nesi/project/nesi02659/source_data/example_job.sh'''
+   • copy an example jobfile into this directory. The example is at : '''/nesi/nobackup/nesi02659/source_data/example_job.sh'''
 
    • Open it with nano, have a look at what is there. As you can see, the first bit is parameters for the *job . system*            informing on who you are, which type of ressources you need and for how long
 
