@@ -13,7 +13,7 @@ For this exercise we will work with the chicken genome.
 2. Copy the chicken genome *chicken.fa* from: 
 
 ```
-/nesi/project/nesi02659/source_data/chicken.fa
+/nesi/nobackup/nesi02659/source_data/chicken.fa
 ```
 
 to your newly created *chicken_genome_exercise/* directory. [Hint](hints/bash_genomics_2.md)
