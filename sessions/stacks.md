@@ -8,7 +8,7 @@
 ### Plan
 
 Throughout the day, we will work through the following plan:  
-•   [A small bash fior genomics exercise](bash_genomics.md)
+•   [A small bash for genomics exercise](bashgenomics.md)
 •   Mini-Lecture Part 1A: What is RAD?  
 •   Mini-Lecture Part 1B: Phred scores and the *process_radtags* cleaning algorithm.  
 •   [Exercise I](stacks_exerciseI_dataprep.md): Data preparation.  
