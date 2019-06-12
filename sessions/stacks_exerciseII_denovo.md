@@ -66,11 +66,11 @@ study as well as the ```population``` program. The set of instructions below sho
          Note: do not include the extension ```.fa.gz``` in the sample name.
     
    • Include samples in this file and **specify that all individuals belong to one
-        single population** (e.g. give them all the same population code). You will need to supply this        ```opt_popmap.txt```population map to ddenovo_map.pl when you
+        single population** (e.g. give them all the same population code). You will need to supply this        ```opt_popmap.txt```population map to [denovo_map.pl](http://catchenlab.life.illinois.edu/stacks/comp/denovo_map.php) when you
         execute it for each parameter run.
     
    • To optimize for r80 loci you will need to tell denovo_map.pl to use the '''-r''' parameter to filter for loci in 80% of the
-        samples) program. We will keep ```m``` at 3. Initially, we will set M to 4. We will also follow the general rule of ```M = n``` and we will tell denovo_map.pl to output to the M4 folder.
+        samples) program. We will keep ```m``` at 3. Initially, we will set M to 4. We will also follow the general rule of ```M = n``` and we will tell [denovo_map.pl](http://catchenlab.life.illinois.edu/stacks/comp/denovo_map.php) to output to the M4 folder.
         
    • With this information, you should be able to launch the M4 run now. It will take a couple of minutes.
        
@@ -88,10 +88,8 @@ study as well as the ```population``` program. The set of instructions below sho
 
     • What is the number of the last locus assembled for M4?
     
-    • How many SNPs in total? (*Hint:* count the lines)
-    
-    • How many loci in total? (*Hint:* using pipes, combine `cat`, the file name of interest, select the first column that contains the locus IDs using `cut -f 1`, and `wc -l`)
-    
+    • How many loci in total? (*Hint:* count the lines)
+        
     • Using this technique, how many loci were assembled for M5 to M7 once they finish running?
     
     • Which iteration of M provided the highest number of r80 loci?   
