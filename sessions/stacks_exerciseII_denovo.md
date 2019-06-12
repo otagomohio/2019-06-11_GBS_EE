@@ -44,7 +44,7 @@ data for this exercise. *Inside* that directory, create two additional directori
    data and will start from the cleaned samples stage. Inside the opt directory, create four
    additional directories: ```M4```, ```M5```, ```M6```   and ```M7```. 
 
-   • Go to ```samples``` directory. Copy the dataset below in the ```samples``` directory: ```/nesi/nobackup/nobackup/source_data/denovo/oregon_stickleback.tar```
+   • Go to ```samples``` directory. Copy the dataset below in the ```samples``` directory: ```/nesi/nobackup/nesi02659/source_data/denovo/oregon_stickleback.tar```
     
    • Extract it. The unarchived dataset contains 30 stickleback
      samples (Catchen, et al., [2013](https://onlinelibrary.wiley.com/doi/10.1111/mec.12330)), but we will use only 3 of them (`cs_1335.01`,  `pcr_1211.04`, `stl_1274.33`) in this first part of the exercise as we will run denovo_map.pl just a few times for optimisation. 
