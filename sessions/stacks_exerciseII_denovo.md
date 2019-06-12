@@ -53,7 +53,7 @@ data for this exercise. *Inside* that directory, create two additional directori
 ```M```. `denovo_map.pl` will run ustacks, cstacks, and sstacks on the individuals in our
 study as well as the ```population``` program. The set of instructions below should help you build your command.
     
-   • Get back into the ```opt``` folder. (*Hint*:  Use```pwd``` if you don't know where you are anymore.
+   • Get back into the ```opt``` folder. (*Hint*:  Use ```pwd``` if you don't know where you are anymore.
     
    • Load the ```Stacks``` module
     
@@ -66,15 +66,15 @@ study as well as the ```population``` program. The set of instructions below sho
          Note: do not include the extension ```.fa.gz``` in the sample name.
     
    • Include samples in this file and **specify that all individuals belong to one
-        single population** (e.g. give them all the same population code). You will need to supply this        ```opt_popmap.txt```population map to ddenovo_map.pl when you
+        single population** (e.g. give them all the same population code). You will need to supply this        ```opt_popmap.txt```population map to `ddenovo_map.pl` when you
         execute it for each parameter run.
     
-   • To optimize for r80 loci you will need to tell denovo_map.pl to use the x parameter to filter for loci in 80% of the
+   • To optimize for r80 loci you will need to tell `denovo_map.pl` to use the x parameter to filter for loci in 80% of the
         samples) program. We will keep ```m``` at 3. Initially, we will set M to 4. We will also follow the general rule of ```M = n``` and we will tell denovo_map.pl to output to the M4 folder.
         
    • With this information, you should be able to launch the M4 run now. It will take a couple of minutes.
        
-3. Once done, you should now see the denovo_map.pl output files in the directory M4.
+3. Once done, you should now see the `denovo_map.pl` output files in the directory M4.
 
     • After M4 is completed, do the same process for M = 5 through M = 7 (this should take around 10min total).    
     
@@ -109,7 +109,7 @@ determine population structure using the Structure program. For more information
 the background of this study, see Catchen, et al. 2013.
 3. In your ```./working/denovo``` workspace, create a directory called stacks to contain
 the assembled data for this exercise.
-4. Run Stacks’ denovo_map.pl pipeline program according to the following set of instructions:
+4. Run Stacks’ `denovo_map.pl` pipeline program according to the following set of instructions:
     
     • Get back in the ```working/denovo``` folder.
     
@@ -117,7 +117,7 @@ the assembled data for this exercise.
     
     •We want Stacks to understand which individuals in our study belong to which
         population. To specify this, create a file ```complete_popmap.txt``` in the denovo directory called popmap, using
-        an editor. The file should be formatted in 2 columns like [this](http://catchenlab.life.illinois.edu/stacks/manual/#popmap). Include all 30 samples in this file and specify which individuals            belong to which populations. You must supply the population map to denovo_map.pl when you execute it. You could for             example use ```ls -1 *fa.gz``` to see all the samples in a list before adding the populations. Add the populations as simple integers (i.e. 1, 2 and 3) to make it easier to use the program ```Structure``` that we will run downstream.
+        an editor. The file should be formatted in 2 columns like [this](http://catchenlab.life.illinois.edu/stacks/manual/#popmap). Include all 30 samples in this file and specify which individuals            belong to which populations. You must supply the population map to `denovo_map.pl` when you execute it. You could for             example use ```ls -1 *fa.gz``` to see all the samples in a list before adding the populations. Add the populations as simple integers (i.e. 1, 2 and 3) to make it easier to use the program ```Structure``` that we will run downstream.
     
     • There are three important parameters that must be specified to denovo_map.pl, the
         minimum stack depth (`m`), the distance allowed between stacks (`M`), and the distance allowed
@@ -144,7 +144,7 @@ the assembled data for this exercise.
     • How many were filtered and for what reasons?
     
     • Familiarize yourself with the population genetics statistics produced by the
-        populations component of stacks populations.sumstats_summary.tsv
+        populations component of stacks `populations.sumstats_summary.tsv`
     
     • What is the mean value of nucleotide diversity (π) and FIS for each of the three
         populations? [HINT: The less -S command may help you view these files easily by avoiding the wrapping]
@@ -168,7 +168,7 @@ will take a long time to run on the number of loci generated in a typical RAD da
 represented in our three populations. Nonetheless, this random subset contains more
 than enough information to define population structure:
 
- The final stage of the denovo_map.pl pipeline is to run the populations program. We want to execute just populations, rather than the full denovo_map.pl pipeline, to specify filters that will give us only the most well represented loci. [Populations](http://catchenlab.life.illinois.edu/stacks/comp/populations.php) is a very useful pice of software both for filtering and for outputting population genetics. It can work with non-stacks generated data too.
+ The final stage of the `denovo_map.pl` pipeline is to run the populations program. We want to execute just populations, rather than the full `denovo_map.pl` pipeline, to specify filters that will give us only the most well represented loci. [Populations](http://catchenlab.life.illinois.edu/stacks/comp/populations.php) is a very useful pice of software both for filtering and for outputting population genetics. It can work with non-stacks generated data too.
 
    • Since we won't be able to use all loci for our quick downstream analysis today, we will run [populations](http://catchenlab.life.illinois.edu/stacks/comp/populations.php) again, specifying that loci must be present in at least 80% of
         individuals in all three populations to cut down on the total number of loci. You will have to tell populations where to
@@ -184,11 +184,11 @@ than enough information to define population structure:
 
 7. Now we want to select 1,000 loci randomly from the results and save these loci into a
 file. We can easily do this using the shell given a list of catalog IDs output in the
-previous step. The populations.sumstats.tsv file gives a list of all polymorphic
+previous step. The `populations.sumstats.tsv` file gives a list of all polymorphic
 loci. Use the ```cat, grep, cut, sort, uniq, shuf, and head``` commands to generate a
 list of 1000 random loci. Save this list of loci as  ```whitelist.txt```, that we can feed back into
 populations. This operation can be done in a single shell command. That sounds challenging, but the instructions
-below should help you create one command with several pipes to create that whitelist.txt. Create that command step by step:
+below should help you create one command with several pipes to create that `whitelist.txt`. Create that command step by step:
 
    • First, use ``` cat``` to concatenante  ```stacks/populations.sumstats.tsv```.
     
@@ -200,7 +200,7 @@ below should help you create one command with several pipes to create that white
    
    • Now try adding ```shuf``` which will mix all these lines all over.
     
-   • Select the first one thousand lines with head and put it all into whitelist.txt.
+   • Select the first one thousand lines with head and put it all into `whitelist.txt`.
     
    •  You got this! If you are new to bash, I am sure that seemed impossible yesterday, so take a minute to congratulate               yourself on the progress made even if you required a little help!
 
