@@ -69,7 +69,7 @@ study as well as the ```population``` program. The set of instructions below sho
         single population** (e.g. give them all the same population code). You will need to supply this        ```opt_popmap.txt```population map to ddenovo_map.pl when you
         execute it for each parameter run.
     
-   • To optimize for r80 loci you will need to tell denovo_map.pl to use the x parameter to filter for loci in 80% of the
+   • To optimize for r80 loci you will need to tell denovo_map.pl to use the '''-r''' parameter to filter for loci in 80% of the
         samples) program. We will keep ```m``` at 3. Initially, we will set M to 4. We will also follow the general rule of ```M = n``` and we will tell denovo_map.pl to output to the M4 folder.
         
    • With this information, you should be able to launch the M4 run now. It will take a couple of minutes.
