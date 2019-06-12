@@ -5,7 +5,7 @@
 **Adapted by:** Ludovic Dutoit
 
 ## Part 1: Running Stacks denovo
-
+ 
 In this first exercise, we will be working on a subset of data from threespine
 stickleback data from Oregon (Catchen et al, [2013](https://onlinelibrary.wiley.com/doi/10.1111/mec.12330)), on the
 west coast of the United States.
@@ -66,7 +66,7 @@ study as well as the ```population``` program. The set of instructions below sho
          Note: do not include the extension ```.fa.gz``` in the sample name.
     
    • Include samples in this file and **specify that all individuals belong to one
-        single population** (e.g. give them all the same population code). You will need to supply this        ```opt_popmap.txt```population map to ddenovo_map.pl when you
+        single population** (e.g. give them all the same population code). You will need to supply this        ```opt_popmap.txt```population map to `denovo_map.pl` when you
         execute it for each parameter run.
     
    • To optimize for r80 loci you will need to tell denovo_map.pl to use the x parameter to filter for loci in 80% of the
